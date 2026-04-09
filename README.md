@@ -62,20 +62,19 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 | Integrantes | Nombre en GitHub |
 | :--- | :--- |
 | Aponte Cruzado, Andrea Marielena | iconicmiau |
-| Lopez Acuna, Mario Joaquin | mariojoaquin-l |
-| Urrutia Pena, Jasmin Adriana | jasmin-up |
-| Vivanco Salazar, Rafael Andres | rafvivanco |
-| Velasquez Chambi, Ruben Genaro | ruben-velasquez |
+| Lopez Acuna, Mario Joaquin | tertegen |
+| Urrutia Pena, Jasmin Adriana | SrtaYeis |
+| Vivanco Salazar, Rafael Andres | RafaelVivanco |
+| Velasquez Chambi, Ruben Genaro | RubenGenaro10 |
 
 Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas principales:
 
 * **main:** Rama principal que contiene la versión estable y consolidada del documento.
 * **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
-* **feature/tb1-andrea:** Rama para el desarrollo de tareas de diseño de usuario y DDD inicial.
-* **feature/tb1-mario:** Rama para el desarrollo del perfil de la solución y análisis competitivo.
-* **feature/tb1-jasmin:** Rama para la gestión del Product Backlog y Event Storming.
-* **feature/tb1-rafael:** Rama para la arquitectura de software y diagramas C4.
-* **feature/tb1-ruben:** Rama para documentación de objetivos, Student Outcome y Bounded Contexts.
+* **feature/chapter-I:** Rama para el desarrollo del Capítulo I (Startup Profile, Solution Profile, Lean UX Process y Segmentos objetivo).
+* **feature/chapter-II:** Rama para el desarrollo del Capítulo II (Análisis competitivo, Entrevistas, Needfinding, EventStorming de alto nivel y Ubiquitous Language).
+* **feature/chapter-III:** Rama para el desarrollo del Capítulo III (User Stories, Impact Mapping y estructuración del Product Backlog).
+* **feature/chapter-IV:** Rama para el desarrollo del Capítulo IV (Diseño estratégico y táctico con Domain-Driven Design, Context Mapping y Arquitectura de Software C4).
 * **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
 * **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
 
