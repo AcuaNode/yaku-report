@@ -29,11 +29,12 @@
     <p>U202117342 — Velasquez Chambi, Ruben Genaro</p>
 </div>
 
----
 
 <div style="text-align: center;">
     <h4 style="text-align: center">Lima – abril 2025</h4>
 </div>
+
+<hr class="page-break">
 
 ### Registro de Versiones del Informe
 
@@ -46,7 +47,7 @@
 | **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Product Implementation & Validation. |
 | **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión final, levantamiento de observaciones y entrega del informe. |
 
----
+<hr class="page-break">
 
 ## Project Report Collaboration Insights
 
@@ -54,7 +55,7 @@
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/nistrahq/demy-report)
+Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/AcuaNode/yaku-report)
 
 Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
 
@@ -78,9 +79,9 @@ Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas princi
 * **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
 * **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
 
----
+<hr class="page-break">
 
-## TB1
+## AV1
 
 **Tareas**
 
@@ -122,7 +123,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 </div>
 
----
+<hr class="page-break">
 
 # Contenido
 
@@ -172,76 +173,59 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
     - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
     - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
     - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-
 - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
   - [4.2.X. Bounded Context](#42x-bounded-context)
     - [4.2.X.1. Domain Layer](#42x1-domain-layer)
     - [4.2.X.2. Interface Layer](#42x2-interface-layer)
     - [4.2.X.3. Application Layer](#42x3-application-layer)
     - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
-    - [4.2.X.5. Component Level Diagrams](#42x5-component-level-diagrams)
-    - [4.2.X.6. Code Level Diagrams](#42x6-code-level-diagrams)
-      - [4.2.X.6.1. Domain Layer Class Diagrams](#42x61-domain-layer-class-diagrams)
-      - [4.2.X.6.2. Database Design Diagram](#42x62-database-design-diagram)
+    - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
+      - [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
 
-## Capítulo V: Solution UI/UX Design
-- [5.1. Style Guidelines](#51-style-guidelines)
-  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografia)
+- [Anexos](#anexos)
 
-- [5.2. Information Architecture](#52-information-architecture)
-  - [5.2.1. Organization Systems](#521-organization-systems)
-  - [5.2.2. Labeling Systems](#522-labeling-systems)
-  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-  - [5.2.4. Searching Systems](#524-searching-systems)
-  - [5.2.5. Navigation Systems](#525-navigation-systems)
 
-- [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+<hr class="page-break">
 
-- [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-  - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
-  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+# Student Outcome
+En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
-- [5.5. Applications Prototyping](#55-applications-prototyping)
-- [5.6. IoT Device Design](#56-iot-device-design)
+| Criterio específico | Acciones realizadas | Conclusiones |
+| :--- | :--- | :--- |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Aponte Cruzado, Andrea Marielena**<br>*AV1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Lopez Acuna, Mario Joaquin**<br>*AV1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Urrutia Pena, Jasmin Adriana**<br>*AV1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Vivanco Salazar, Rafael Andres**<br>*AV1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Velasquez Chambi, Ruben Genaro**<br>*AV1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *AV1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
+| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Aponte Cruzado, Andrea Marielena**<br>*AV1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Lopez Acuna, Mario Joaquin**<br>*AV1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Urrutia Pena, Jasmin Adriana**<br>*AV1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Vivanco Salazar, Rafael Andres**<br>*AV1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Velasquez Chambi, Ruben Genaro**<br>*AV1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *AV1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
 
-### Capítulo VI: Product Implementation, Validation & Deployment
-- [6.1. Software Configuration Management](#61-software-configuration-management)
-  - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-  - [6.1.2. Source Code Management](#612-source-code-management)
-  - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+<hr class="page-break">
 
-- [6.2. Implementation](#62-implementation)
-  - [6.2.X. Sprint](#62x-sprint)
-    - [Sprint Planning](#62x1-sprint-planning)
-    - [Sprint Backlog](#62x3-sprint-backlog)
+# Objetivos Smart
 
-- [6.3. Validation Interviews](#63-validation-interviews)
-  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
 
-- [6.4. Video About-the-Product](#64-video-about-the-product)
+**Aponte Cruzado, Andrea Marielena (UX/UI & Research)**
+Diseñar y documentar un mínimo de 3 perfiles de usuario (User Personas) y sus respectivos flujos (User Journey Maps) basándose en los hallazgos de las entrevistas iniciales. Este mapeo de empatía debe estar finalizado e integrado en el reporte antes del cierre de la segunda semana del sprint, garantizando que el diseño estratégico de la solución esté estrictamente alineado con las necesidades reales del cliente.
 
-### Conclusiones
-- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-- [Video About-the-Team](#video-about-the-team)
+**Lopez Acuna, Mario Joaquin (Business & Strategy)**
+Elaborar el Lean UX Canvas completo y documentar el análisis de al menos 3 competidores directos en el mercado tecnológico actual. Asimismo, deberá consolidar la primera versión del Lenguaje Ubicuo (Ubiquitous Language) estandarizado para el equipo durante los primeros 10 días del sprint, lo cual servirá como base indispensable para evitar ambigüedades en el modelado del dominio.
 
-### Bibliografía
-### Anexos
+**Urrutia Pena, Jasmin Adriana (Requirements & EventStorming)**
+Estructurar el Product Backlog inicial redactando y estimando un mínimo de 20 Historias de Usuario priorizadas bajo criterios de valor de negocio. Además, completará el diagrama de EventStorming de alto nivel en la plataforma colaborativa al menos 3 días antes de la entrega final del AV1, permitiendo al equipo tener una visión integral del flujo de eventos del sistema.
 
-## Student Outcome
+**Vivanco Salazar, Rafael Andres (Architecture & DevOps)**
+Diseñar los 4 niveles fundamentales de arquitectura de software (System Landscape, Context, Container y Deployment) utilizando el estándar C4. En paralelo, configurará el repositorio oficial implementando las reglas del flujo GitFlow y protecciones de ramas principales, debiendo cumplir con el despliegue de esta infraestructura y documentación técnica a más tardar el 20 de abril para permitir la revisión grupal.
+
+**Velasquez Chambi, Ruben Genaro (Documentation & Context Mapping)**
+Consolidar la documentación técnica final integrando los 5 Bounded Context Canvases elaborados por el equipo, garantizando la coherencia del Context Mapping. Además, extraerá y maquetará el reporte de métricas de colaboración de GitHub (Insights) con al menos 3 gráficos clave de rendimiento, entregando la versión candidata del documento en la rama *release* 48 horas antes de la presentación oficial para su auditoría final.
+
+<hr class="page-break">
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 ### 1.1.2. Perfiles de integrantes del equipo
-
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
 ### 1.2.2. Lean UX Process
@@ -249,46 +233,36 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 #### 1.2.2.2. Lean UX Assumptions
 #### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
-
 ## 1.3. Segmentos objetivo
-
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
 ### 2.1.2. Estrategias y tácticas frente a competidores
-
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
-
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
-
 ## 2.4. Big Picture EventStorming
 ## 2.5. Ubiquitous Language
-
 
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories
 ## 3.2. Impact Mapping
 ## 3.3. Product Backlog
 
-
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
-
 ### 4.1.1. Design-Level EventStorming
 #### 4.1.1.1. Candidate Context Discovery
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
-
 ### 4.1.2. Context Mapping
-
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 #### 4.1.3.2. Software Architecture Context Level Diagrams
@@ -296,7 +270,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.X. Bounded Context: <Bounded Context Name>
+### 4.2.X. Bounded Context:
 #### 4.2.X.1. Domain Layer
 #### 4.2.X.2. Interface Layer
 #### 4.2.X.3. Application Layer
@@ -305,59 +279,6 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
-
-
-# Capítulo V: Solution UI/UX Design
-## 5.1. Style Guidelines
-### 5.1.1. General Style Guidelines
-### 5.1.2. Web, Mobile and IoT Style Guidelines
-
-## 5.2. Information Architecture
-### 5.2.1. Organization Systems
-### 5.2.2. Labeling Systems
-### 5.2.3. SEO Tags and Meta Tags
-### 5.2.4. Searching Systems
-### 5.2.5. Navigation Systems
-
-## 5.3. Landing Page UI Design
-### 5.3.1. Landing Page Wireframe
-### 5.3.2. Landing Page Mock-up
-
-## 5.4. Applications UX/UI Design
-### 5.4.1. Applications Wireframes
-### 5.4.2. Applications Wireflow Diagrams
-### 5.4.3. Applications Mock-ups
-### 5.4.4. Applications User Flow Diagrams
-
-## 5.5. Applications Prototyping
-## 5.6. IoT Device Design
-
-
-# Capítulo VI: Product Implementation, Validation & Deployment
-## 6.1. Software Configuration Management
-### 6.1.1. Software Development Environment Configuration
-### 6.1.2. Source Code Management
-### 6.1.3. Source Code Style Guide & Conventions
-### 6.1.4. Software Deployment Configuration
-
-## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.X. Sprint n
-#### 6.2.X.1. Sprint Planning n
-#### 6.2.X.2. Aspect Leaders and Collaborators
-#### 6.2.X.3. Sprint Backlog n
-#### 6.2.X.4. Development Evidence for Sprint Review
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review
-#### 6.2.X.6. Execution Evidence for Sprint Review
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review
-#### 6.2.X.9. Team Collaboration Insights during Sprint
-
-## 6.3. Validation Interviews
-### 6.3.1. Diseño de Entrevistas
-### 6.3.2. Registro de Entrevistas
-### 6.3.3. Evaluaciones según heurísticas
-
-## 6.4. Video About-the-Product
 
 # Conclusiones
 ## Conclusiones y recomendaciones
