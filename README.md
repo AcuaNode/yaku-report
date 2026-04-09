@@ -23,7 +23,7 @@
 
 <div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
     <p>U202224135 — Aponte Cruzado, Andrea Marielena</p>
-    <p>U000000000 — Lopez Acuna, Mario Joaquin </p>
+    <p>U202116250 — Lopez Acuna, Mario Joaquin </p>
     <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
     <p>U202311064 — Vivanco Salazar, Rafael Andres</p>
     <p>U202117342 — Velasquez Chambi, Ruben Genaro</p>
