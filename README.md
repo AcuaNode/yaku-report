@@ -1,46 +1,130 @@
-<p align="center">
+<div style="text-align: center;">
   <img src="img/logo_upc.png" alt="Logo UPC" width="80"/>
-</p>
+</div>
 
-<p align="center">
-  <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
-  Facultad de Ingeniería
-</p>
+<div style="text-align: center;">
+    <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
+    <h4 style="text-align: center;">Ingeniería de Software</h2> 
+    <h4 style="text-align: center"> Periodo: 202520 </h4>
+    <h4 style="text-align: center"> 1ASI0572 - Desarrollo de Soluciones IOT </h4>
+    <h4 style="text-align: center"> NRC: 17755  </h4>
+    <h4 style="text-align: center"> Docente: Marco Antonio León Baca </h4>
+</div>
 
 <br>
 
-*Curso:* 1ASI0572 - Desarrollo de Soluciones IOT <br>
-*NRC:* 17755  
+<div style="text-align: center;">
+    <h3 style="text-align: center">Informe del Trabajo Final </h3>
+    <h4 style="text-align: center;"> Startup: Acua Node </h3>
+    <h4 style="text-align: center"> Producto: YakuControl </h4>
+</div>
 
-*Nombre del profesor:* Marco Antonio León Baca  
+<br>
 
-
-# “Informe del Trabajo Final”
-
-
-*Nombre del grupo:* Acua Node <br> 
-*Nombre del producto:* YacuControl
-
-
-## Integrantes
-
-| Código       | Apellidos y Nombres            |
-|--------------|--------------------------------|
-| u            | Aponte Cruzado, Andrea Marielena  |
-| u            | Lopez Acuna, Mario Joaquin        |
-| u202117342   | Velasquez Chambi, Ruben Genaro    |
-| u            | Vivanco Salazar, Rafael Andres    |
-| u202310008   | Urrutia Pena, Jasmin Adriana      |
+<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
+    <p>U202224135 — Aponte Cruzado, Andrea Marielena</p>
+    <p>U000000000 — Lopez Acuna, Mario Joaquin </p>
+    <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
+    <p>U202311064 — Vivanco Salazar, Rafael Andres</p>
+    <p>U202117342 — Velasquez Chambi, Ruben Genaro</p>
+</div>
 
 ---
 
-<p align="center">
-  <strong>Lima – diciembre 2025</strong>
-</p>
+<div style="text-align: center;">
+    <h4 style="text-align: center">Lima – abril 2025</h4>
+</div>
 
-## Registro de Versiones del Informe
+### Registro de Versiones del Informe
+
+| Versión | Fecha | Autor | Descripción de modificación |
+| :--- | :--- | :--- | :--- |
+| **1.0** | 09/04/2026 | Rafael Vivanco | Creación inicial de la estructura del informe y definición de lineamientos. |
+| **2.0** | 12/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo I: Presentación del proyecto y Background. |
+| **3.0** | 15/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Finalización del Capítulo II: Requirements Development and Software Solution Design. |
+| **4.0** | 18/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo III: Solution UI/UX Design. |
+| **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Product Implementation & Validation. |
+| **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión final, levantamiento de observaciones y entrega del informe. |
+
+---
+
 ## Project Report Collaboration Insights
-## Contenido
+
+# Student Outcome: Project Report Collaboration Insights
+
+En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
+
+Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/nistrahq/demy-report)
+
+Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
+
+| Integrantes | Nombre en GitHub |
+| :--- | :--- |
+| Aponte Cruzado, Andrea Marielena | iconicmiau |
+| Lopez Acuna, Mario Joaquin | mariojoaquin-l |
+| Urrutia Pena, Jasmin Adriana | jasmin-up |
+| Vivanco Salazar, Rafael Andres | rafvivanco |
+| Velasquez Chambi, Ruben Genaro | ruben-velasquez |
+
+Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas principales:
+
+* **main:** Rama principal que contiene la versión estable y consolidada del documento.
+* **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
+* **feature/tb1-andrea:** Rama para el desarrollo de tareas de diseño de usuario y DDD inicial.
+* **feature/tb1-mario:** Rama para el desarrollo del perfil de la solución y análisis competitivo.
+* **feature/tb1-jasmin:** Rama para la gestión del Product Backlog y Event Storming.
+* **feature/tb1-rafael:** Rama para la arquitectura de software y diagramas C4.
+* **feature/tb1-ruben:** Rama para documentación de objetivos, Student Outcome y Bounded Contexts.
+* **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
+* **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
+
+---
+
+## TB1
+
+**Tareas**
+
+Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Institution Context) |
+| Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Scheduling Context) |
+| Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Billing & Accounting Context) |
+| Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (Enrollment Context) |
+| Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Attendance Context) |
+
+**GitHub Collaboration Insights**
+
+A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la fecha de entrega final el 24 de abril.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Gráfico de red (network graph) de ramas en el repositorio de GitHub.*
+
+![Insights - Network Graph](./assets/images/screenshots/insights-network-graph.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Análisis de líneas de código añadidas por contribuyente (Aponte, Lopez, Urrutia, Vivanco, Velasquez).*
+
+![Insights - Contributors](./assets/images/screenshots/insights-contributor.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Análisis de actividad de commits registrada durante el periodo del 09/04 al 24/04.*
+
+![Insights - Commits](./assets/images/screenshots/insights-commits.png)
+
+</div>
+
+---
+
+# Contenido
 
 ### Capítulo I: Introducción
 - [1.1. Startup Profile](#11-startup-profile)
