@@ -238,8 +238,55 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
 ## 2.2. Entrevistas
+
 ### 2.2.1. Diseño de entrevistas
+
+En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los dos segmentos objetivo identificados: Piscicultores, quienes son los operadores de campo encargados del monitoreo y manejo directo de los estanques y Administradores de piscigranja, quienes son los dueños y responsables de la gestión del negocio acuícola. Las preguntas han sido elaboradas aplicando buenas prácticas de diseño de entrevistas, con el fin de recopilar información subjetiva que permita construir arquetipos precisos para cada segmento.
+
+---
+
+#### Segmento 1: Piscicultores
+
+**Preguntas generales**
+
+1. ¿En qué distrito o región trabaja actualmente?
+2. ¿Ha recibido alguna capacitación técnica en acuicultura o manejo de estanques?
+3. ¿Podría describirnos cómo es un día típico de trabajo en la piscigranja? ¿Cuáles son las tareas que realiza con mayor frecuencia?
+4. ¿Qué parámetros del agua monitorea actualmente (temperatura, oxígeno disuelto, pH, turbidez)? ¿Con qué frecuencia lo hace?
+5. ¿Cómo registra actualmente los datos que recopila durante su jornada? ¿Utiliza algún cuaderno, planilla, aplicación u otro método?
+6. ¿Ha tenido situaciones en las que algún parámetro del agua se salió de control? ¿Cómo se enteró y cómo lo manejó?
+7. ¿Cuáles son los mayores problemas o dificultades que enfrenta en su trabajo diario con los estanques?
+
+**Preguntas sobre la solución**
+
+8. ¿Utiliza alguna aplicación móvil o sistema digital en su trabajo? Si es así, ¿cuál y para qué?
+9. Si tuviera una herramienta que le alertara automáticamente cuando algún parámetro del agua de la piscigranja está fuera del rango normal ¿cómo cree que cambiaría su trabajo?
+10. ¿Qué información le gustaría tener disponible de forma rápida y sencilla desde su celular mientras está en campo?
+11. ¿Qué es lo más importante para usted en una herramienta de trabajo: que sea simple?
+
+---
+
+#### Segmento 2: Administradores de piscigranja
+
+**Preguntas generales**
+
+1. ¿En qué región o distrito se ubica la piscigranja que administra?
+2. ¿Cómo obtiene actualmente la información sobre el estado de los estanques y la producción? ¿Con qué frecuencia la revisa?
+3. ¿Por qué medio sus trabajadores le dan la información diaria sobre el estado de sus estanques?
+4. ¿Cuáles son los indicadores que considera más importantes para evaluar el desempeño de la piscigranja?
+5. ¿Cuáles son los principales problemas que enfrenta al gestionar la operación de la piscigranja?
+6. ¿Ha tenido pérdidas económicas por no contar con información oportuna sobre la calidad del agua o la salud de los peces?
+
+**Preguntas sobre la solución**
+
+7. ¿Qué dispositivos y herramientas digitales utiliza actualmente para la gestión del negocio?
+8. ¿Qué información priorizaría ver primero en un dashboard con datos en tiempo real de todos sus estanques?
+9. ¿Qué tan importante es para usted recibir alertas automáticas ante situaciones críticas en los estanques?
+10. ¿Qué características debería tener una solución tecnológica para que la adoptara en su negocio sin dudarlo?
+11. ¿Qué tan dispuesto estaría de invertir en una solución que le permita monitorear los parámetros del agua de sus piscigranjas?
+
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
