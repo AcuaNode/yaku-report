@@ -224,15 +224,148 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+**Acua Node** es una startup peruana de tecnología especializada en soluciones IoT para el sector acuícola. Nace como respuesta a una problemática crítica y recurrente en las piscigranjas del país: la mortalidad masiva de truchas causada por la degradación no detectada a tiempo de las variables bio-químicas del agua, como el pH, la temperatura y la turbidez.
+
+El producto principal de Acua Node es **YakuControl** (del quechua *yaku*, "agua"), una plataforma integral que combina un dispositivo de hardware con sensores sumergibles, procesamiento inteligente en la nube y un ecosistema de aplicaciones (móvil y web) para ofrecer monitoreo continuo, alertas en tiempo real y control remoto de equipos desde cualquier lugar.
+
+La propuesta de valor se sustenta en un modelo **SaaS B2B** (Software as a Service), donde las piscigranjas pagan una suscripción mensual por estanque monitoreado. Este modelo garantiza acceso continuo a la plataforma, actualizaciones del sistema e integraciones con servicios externos como la API climática de OpenWeatherMap y notificaciones SMS vía Twilio.
+
+| | |
+| :--- | :--- |
+| **Nombre de la Startup** | Acua Node |
+| **Producto** | YakuControl |
+| **Sector** | Acuicultura / IoT |
+| **Modelo de negocio** | SaaS B2B |
+| **Mercado objetivo** | Piscigranjas de trucha en el Perú |
+
+**Misión:** Proteger la rentabilidad de los productores acuícolas peruanos mediante tecnología IoT accesible, precisa y autónoma.
+
+**Visión:** Ser la plataforma de referencia en monitoreo inteligente del agua para piscigranjas en Latinoamérica.
+
 ### 1.1.2. Perfiles de integrantes del equipo
+
+| Integrante | Perfil |
+| :--- | :--- |
+| **Aponte Cruzado, Andrea Marielena** | *[Por completar]* |
+| **Lopez Acuna, Mario Joaquin** | *[Por completar]* |
+| **Urrutia Pena, Jasmin Adriana** | *[Por completar]* |
+| **Vivanco Salazar, Rafael Andres** | *[Por completar]* |
+| **Velasquez Chambi, Ruben Genaro** | *[Por completar]* |
+
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
+
+#### Antecedentes
+
+La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
+
+#### Problemática (5W + 2H)
+
+**What — ¿Qué sucede?**
+Los estanques de piscigranjas experimentan degradaciones súbitas en la calidad del agua (caída del pH, aumento de turbidez, cambios de temperatura) que provocan la muerte masiva de truchas, generando pérdidas económicas significativas para los productores.
+
+**Who — ¿A quién afecta?**
+A los dueños y administradores de piscigranjas, quienes asumen las pérdidas económicas, y a los operarios de campo, quienes no cuentan con herramientas para detectar el problema a tiempo durante sus rondas.
+
+**Where — ¿Dónde ocurre?**
+En piscigranjas ubicadas principalmente en las regiones andinas del Perú: Junín, Puno, Cusco y Huancavelica, donde la crianza de trucha arcoíris es una de las principales fuentes de ingresos.
+
+**When — ¿Cuándo ocurre?**
+De forma recurrente durante cambios estacionales, lluvias intensas, épocas de calor extremo o contaminación del afluente hídrico. La falta de monitoreo continuo hace que cualquier momento sea de riesgo.
+
+**Why — ¿Por qué ocurre?**
+Porque no existe un sistema de monitoreo automatizado y en tiempo real. Las inspecciones manuales son insuficientes para detectar cambios súbitos en variables críticas como el pH o la turbidez, y los productores no disponen de alertas tempranas que les permitan actuar de forma preventiva.
+
+**How — ¿Cómo se produce el impacto?**
+El deterioro del agua reduce el oxígeno disponible, altera el equilibrio biológico del estanque y hace que el ambiente sea letal para las truchas en cuestión de horas. Para cuando el operario detecta el problema en su siguiente ronda, la mortalidad ya es masiva.
+
+**How much — ¿Cuánto impacta?**
+Un evento de mortalidad masiva puede eliminar entre el 30% y el 70% de la población de un estanque en pocas horas, representando pérdidas que pueden superar los miles de soles por crianza. A nivel nacional, estos eventos afectan la competitividad del sector acuícola y la estabilidad económica de cientos de familias productoras.
+
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
+
+**Problem Statement 1 — Operario de Campo**
+
+El estado actual del monitoreo de estanques en piscigranjas se ha centrado principalmente en rondas físicas periódicas y observación visual directa por parte del personal de campo. Lo que los métodos y herramientas existentes no logran abordar es la detección temprana y automática de condiciones críticas del agua (pH bajo, turbidez alta, temperatura fuera de rango) durante los intervalos entre inspecciones. Nuestro producto abordará esta brecha mediante una aplicación móvil conectada a sensores IoT en tiempo real, que emite alertas críticas inmediatas y permite accionar equipos de emergencia de forma remota. Nuestro enfoque inicial serán los operarios y trabajadores de campo de piscigranjas de trucha en el Perú. Sabremos que hemos tenido éxito cuando los operarios respondan a eventos críticos de calidad del agua en menos de 10 minutos desde su detección.
+
+**Problem Statement 2 — Dueño / Administrador de Piscigranja**
+
+El estado actual de la gestión acuícola se ha centrado principalmente en el registro manual de datos y la toma de decisiones basada en la experiencia empírica del productor. Lo que las herramientas existentes no logran abordar es la disponibilidad de datos históricos procesados, tendencias y reportes consolidados que permitan al dueño tomar decisiones preventivas y estratégicas sobre la salud de sus estanques. Nuestro producto abordará esta brecha mediante un Web Dashboard con visualización de históricos, gráficos de tendencias y un índice global de calidad del agua calculado automáticamente. Nuestro enfoque inicial serán los propietarios y administradores de piscigranjas con más de un estanque activo. Sabremos que hemos tenido éxito cuando los dueños reporten una reducción medible en eventos de mortalidad masiva y adopten el dashboard como herramienta principal de gestión.
+
 #### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions**
+
+1. Creemos que los dueños de piscigranjas están dispuestos a pagar una suscripción mensual recurrente si la plataforma demuestra reducir la mortalidad de truchas de forma tangible.
+2. Creemos que el principal riesgo del negocio es la baja digitalización de los productores acuícolas, que puede generar resistencia a la adopción tecnológica.
+3. Creemos que el modelo SaaS por estanque es más viable financieramente que la venta única de hardware, ya que genera ingresos recurrentes y permite escalar el servicio.
+4. Creemos que las integraciones con servicios externos (clima, SMS) incrementan el valor percibido de la suscripción y reducen la tasa de cancelación.
+5. Creemos que el mercado peruano de acuicultura de trucha tiene la escala suficiente para sostener el crecimiento de la startup en sus primeros tres años de operación.
+
+**User Assumptions**
+
+1. **¿Quiénes son nuestros usuarios?** Dueños y administradores de piscigranjas de trucha, y sus operarios de campo en regiones andinas del Perú.
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** En la rutina diaria de monitoreo de estanques y en la toma de decisiones operativas y estratégicas sobre la salud del agua.
+3. **¿Qué problemas resuelve nuestro producto?** La detección tardía de condiciones críticas del agua y la falta de datos históricos para la toma de decisiones preventivas.
+4. **¿Cuándo y cómo usan nuestro producto?** Los operarios lo usan en campo, en tiempo real, a través de la app móvil. Los dueños lo consultan desde web para revisiones periódicas y análisis histórico.
+5. **¿Qué características son las más importantes?** Alertas críticas en tiempo real, índice global de calidad del agua, control remoto de actuadores y visualización de tendencias históricas.
+6. **¿Cómo debe verse y comportarse el producto?** Rápido, intuitivo y confiable. La app móvil debe priorizar la acción inmediata; el dashboard web debe priorizar la claridad de los datos.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hipótesis 1**
+Creemos que lograremos **reducir el tiempo de respuesta ante eventos críticos del agua** si los **operarios de campo** pueden **recibir alertas push inmediatas con el tipo de riesgo detectado** mediante la **funcionalidad de notificaciones en tiempo real de la app móvil**.
+
+**Hipótesis 2**
+Creemos que lograremos **incrementar la retención de suscriptores** si los **dueños de piscigranja** pueden **visualizar tendencias históricas y comparar el rendimiento entre estanques** mediante el **Web Dashboard con gráficos de análisis de calidad del agua**.
+
+**Hipótesis 3**
+Creemos que lograremos **reducir la mortalidad masiva de truchas** si los **operarios** pueden **accionar remotamente motores y bombas de emergencia desde su celular** mediante los **botones de control IoT de la app móvil**.
+
+**Hipótesis 4**
+Creemos que lograremos **validar la disposición a pagar del mercado** si los **dueños de piscigranja con más de un estanque** pueden **gestionar todos sus estanques desde una sola plataforma** mediante el **modelo de suscripción mensual por estanque de YakuControl**.
+
+**Hipótesis 5**
+Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el **sistema** puede **filtrar lecturas de sensores mediante el Índice de Calidad del Agua ponderado** mediante el **algoritmo matemático ejecutado en el Edge API antes de emitir cualquier alerta**.
+
 #### 1.2.2.4. Lean UX Canvas
+
+| Bloque | Contenido |
+| :--- | :--- |
+| **Business Problem** | Los productores acuícolas peruanos sufren pérdidas económicas severas por mortalidad masiva de truchas causada por la detección tardía de condiciones críticas del agua. |
+| **Business Outcomes** | Reducción de eventos de mortalidad masiva en clientes activos. Crecimiento del número de estanques suscritos. Tasa de retención mensual superior al 85%. |
+| **Users & Customers** | **Usuarios:** Operarios de campo y dueños de piscigranjas. **Clientes:** Propietarios y administradores de piscigranjas (quienes pagan la suscripción). |
+| **User Benefits** | Operarios: tranquilidad y capacidad de actuar a tiempo ante emergencias. Dueños: visibilidad total del estado de sus estanques y datos para decisiones estratégicas. |
+| **Solutions** | Dispositivo IoT con sensores sumergibles (temperatura, pH, turbidez) + Edge API para procesamiento en tiempo real + App móvil para operarios + Web Dashboard para administradores. |
+| **Hypotheses** | Si los operarios reciben alertas inmediatas, responderán en menos de 10 minutos. Si los dueños tienen acceso a históricos, adoptarán la plataforma como herramienta de gestión principal. |
+| **What's the most important thing we need to learn first?** | Si los productores acuícolas están dispuestos a pagar una suscripción mensual recurrente y si los operarios adoptarán el uso de una app móvil en su rutina de campo. |
+| **What's the least amount of work we need to do to learn the next most important thing?** | Desplegar un prototipo funcional con un solo estanque real, medir el tiempo de respuesta del operario ante alertas y entrevistar al dueño sobre el valor percibido de los datos históricos. |
+
 ## 1.3. Segmentos objetivo
+
+YakuControl dirige su propuesta de valor a dos segmentos de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja:
+
+**Segmento 1: Operarios / Trabajadores de Campo**
+
+Son el personal técnico que realiza las rondas físicas diarias entre los estanques. Su principal responsabilidad es mantener las condiciones operativas de los estanques y responder ante cualquier anomalía. Sus características clave son:
+
+- Realizan múltiples rondas al día en instalaciones que pueden abarcar varios estanques dispersos geográficamente.
+- Necesitan información rápida y accionable, no reportes complejos.
+- Requieren acceso móvil para recibir alertas críticas (pH bajo, turbidez alta, temperatura fuera de rango) en cualquier momento y desde cualquier punto de la piscigranja.
+- Necesitan botones de acción rápida para activar equipos de emergencia (bombas de oxigenación, sistemas de recirculación) de forma remota sin desplazarse físicamente hasta el panel de control.
+- Su nivel de digitalización puede ser bajo, por lo que la interfaz debe ser intuitiva y de uso inmediato.
+
+**Segmento 2: Dueños / Administradores de Piscigranja**
+
+Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la prevención de pérdidas y la toma de decisiones estratégicas a largo plazo. Sus características clave son:
+
+- No necesariamente están presentes físicamente en la piscigranja de forma continua.
+- Requieren una visión consolidada del estado de todos sus estanques desde un solo lugar.
+- Necesitan acceso a reportes históricos, gráficos de tendencias y el índice global de calidad del agua para identificar patrones y anticipar riesgos.
+- Valoran la trazabilidad de eventos para tomar decisiones sobre mantenimiento, inversión en equipos o cambios operativos.
+- Son los tomadores de decisión de compra: evalúan el costo de la suscripción frente al costo potencial de una mortalidad masiva.
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
