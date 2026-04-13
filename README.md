@@ -225,23 +225,21 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-**Acua Node** es una startup peruana de tecnología especializada en soluciones IoT para el sector acuícola. Nace como respuesta a una problemática crítica y recurrente en las piscigranjas del país: la mortalidad masiva de truchas causada por la degradación no detectada a tiempo de las variables bio-químicas del agua, como el pH, la temperatura y la turbidez.
+**AcuaNode** es una startup tecnológica dedicada al desarrollo de soluciones de Smart Farming y monitoreo ambiental, con un enfoque en la modernización de la industria acuícola. La startup nace con el propósito de transformar la gestión tradicional de las piscigranjas en ecosistemas inteligentes y resilientes, utilizando el *Internet de las Cosas (IoT)* y *computación en la nube* para proteger la biodiversidad y la rentabilidad del productor.
 
-El producto principal de Acua Node es **YakuControl** (del quechua *yaku*, "agua"), una plataforma integral que combina un dispositivo de hardware con sensores sumergibles, procesamiento inteligente en la nube y un ecosistema de aplicaciones (móvil y web) para ofrecer monitoreo continuo, alertas en tiempo real y control remoto de equipos desde cualquier lugar.
+**YakuControl** (del quechua *yaku*, "agua") es un ecosistema digital integral que permite a los administradores de piscigranjas monitorear en tiempo real las variables bioquímicas críticas de sus estanques. Mediante el uso de hardware especializado y algoritmos alojados en la nube, el sistema actúa como un soporte vital preventivo par los piscicultores, con el fin de mitigar riesgos de mortalidad masiva causados por variaciones térmicas o intoxicaciones químicas.
 
-La propuesta de valor se sustenta en un modelo **SaaS B2B** (Software as a Service), donde las piscigranjas pagan una suscripción mensual por estanque monitoreado. Este modelo garantiza acceso continuo a la plataforma, actualizaciones del sistema e integraciones con servicios externos como la API climática de OpenWeatherMap y notificaciones SMS vía Twilio.
+El objetivo de YakuTech es promover el acceso a la tecnología a través de un modelo de **Software as a Service (SaaS)** **B2B**. De esta manera, no solo buscamos reducir la brecha digital en el sector agropecuario, sino también optimizar el uso de recursos energéticos y mejorar la calidad final del producto, fomentando una industria acuícola más eficiente, transparente y sostenible.
 
-| | |
-| :--- | :--- |
-| **Nombre de la Startup** | Acua Node |
-| **Producto** | YakuControl |
-| **Sector** | Acuicultura / IoT |
-| **Modelo de negocio** | SaaS B2B |
-| **Mercado objetivo** | Piscigranjas de trucha en el Perú |
+La relevancia de esta innovación se sustenta en el contexto del sector acuícola nacional. Por un lado, la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2025) señala que la acuicultura en el Perú enfrenta constantes fluctuaciones y cuantiosas pérdidas de producción asociadas a la alteración en la calidad del agua y la contaminación de los cauces.
 
-**Misión:** Proteger la rentabilidad de los productores acuícolas peruanos mediante tecnología IoT accesible, precisa y autónoma.
+A esto se suma que, de los más de 12,700 acuicultores registrados a nivel nacional, un porcentaje crítico opera en la categoría de Acuicultura de Recursos Limitados (AREL), evidenciando una escasa adopción de tecnologías de control (PRODUCE, 2024).
 
-**Visión:** Ser la plataforma de referencia en monitoreo inteligente del agua para piscigranjas en Latinoamérica.
+Todo este panorama evidencia la importancia crítica y el respaldo necesario para introducir nuestro producto en el sector, actuando como la herramienta definitiva para cerrar esta profunda brecha tecnológica.
+
+- **Misión:** Impulsar la transformación digital del sector acuícola mediante soluciones IoT de alta precisión, garantizando la seguridad alimentaria y la rentabilidad de nuestros clientes a través de la prevención de desastres biológicos.
+
+- **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -260,28 +258,40 @@ La propuesta de valor se sustenta en un modelo **SaaS B2B** (Software as a Servi
 
 La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
 
-#### Problemática (5W + 2H)
+### 1.2.1. Antecedentes y problemática
 
-**What — ¿Qué sucede?**
-Los estanques de piscigranjas experimentan degradaciones súbitas en la calidad del agua (caída del pH, aumento de turbidez, cambios de temperatura) que provocan la muerte masiva de truchas, generando pérdidas económicas significativas para los productores.
+**Who (¿Quién?)**<br>
+La problemática afecta directamente a dos actores fundamentales en el ecosistema acuícola:
+- **Administradores de piscigranja**: Profesionales responsables de la planificación estratégica, rentabilidad financiera y toma de decisiones basada en el rendimiento histórico de producción.
 
-**Who — ¿A quién afecta?**
-A los dueños y administradores de piscigranjas, quienes asumen las pérdidas económicas, y a los operarios de campo, quienes no cuentan con herramientas para detectar el problema a tiempo durante sus rondas.
+- **Piscicultores:** Personal técnico encargado de la supervisión física diaria, el mantenimiento de los estanques y la ejecución de maniobras de emergencia ante variaciones ambientales.
 
-**Where — ¿Dónde ocurre?**
-En piscigranjas ubicadas principalmente en las regiones andinas del Perú: Junín, Puno, Cusco y Huancavelica, donde la crianza de trucha arcoíris es una de las principales fuentes de ingresos.
+**What (¿Qué?)** <br>
+La ausencia de un sistema de monitoreo inteligente impacta a cada perfil de la siguiente manera:
 
-**When — ¿Cuándo ocurre?**
-De forma recurrente durante cambios estacionales, lluvias intensas, épocas de calor extremo o contaminación del afluente hídrico. La falta de monitoreo continuo hace que cualquier momento sea de riesgo.
+- **Administrador de piscigranja**: La falta de una plataforma centralizada impide visualizar tendencias o calcular costos operativos. Sin datos históricos, no puede optimizar el uso de recursos ni garantizar la escalabilidad del negocio, quedando vulnerable ante pérdidas masivas de inventario.
 
-**Why — ¿Por qué ocurre?**
-Porque no existe un sistema de monitoreo automatizado y en tiempo real. Las inspecciones manuales son insuficientes para detectar cambios súbitos en variables críticas como el pH o la turbidez, y los productores no disponen de alertas tempranas que les permitan actuar de forma preventiva.
+- **Piscicultor:** Su limitación es la dependencia de la observación, lo que le impide detectar anomalías invisibles a simple vista. Esto los fuerza a actuar de forma reactiva, enfrentando crisis cuando el pez ya muestra signos de estrés, lo que eleva la carga laboral y riesgo de mortalidad por error humano.
 
-**How — ¿Cómo se produce el impacto?**
-El deterioro del agua reduce el oxígeno disponible, altera el equilibrio biológico del estanque y hace que el ambiente sea letal para las truchas en cuestión de horas. Para cuando el operario detecta el problema en su siguiente ronda, la mortalidad ya es masiva.
+**Where (¿Dónde?)** <br>
+ Esta problemática se observa en piscigranjas de truchas arcoíris, particularmente en zonas andinas y rurales del Perú alimentadas por ríos.
 
-**How much — ¿Cuánto impacta?**
-Un evento de mortalidad masiva puede eliminar entre el 30% y el 70% de la población de un estanque en pocas horas, representando pérdidas que pueden superar los miles de soles por crianza. A nivel nacional, estos eventos afectan la competitividad del sector acuícola y la estabilidad económica de cientos de familias productoras.
+**When (¿Cuándo?)** <br>
+ El problema es una amenaza constante, pero se intensifica de forma crítica durante anomalías climáticas (como mediodías de calor extremo que disminuyen la solubilidad del oxígeno), lluvias intensas que elevan repentinamente la turbidez del agua (lodo), y tras los ciclos de alimentación intensiva, cuando la concentración de desechos altera el equilibrio químico del estanque.
+
+**Why (¿Por qué?)** <br>
+ La raíz del problema es la *falta de adopción tecnológica y de sistemas de telemetría en el sector acuícola.* Muchos productores de las categorías de micro y pequeña escala dependen de la simple observación o de mediciones químicas manuales esporádicas. Esto impide contar con un registro histórico, generando ineficiencia operativa que impide reaccionar a los cambios termodinámicos que destruyen el ecosistema.
+
+**How (¿Cómo?)** <br>
+ **YakuControl** propone una solución integrando el Internet de las Cosas (IoT) con una arquitectura en la nube. A través de hardware instalado en los estanques (Edge API), el sistema recopila lecturas de temperatura, pH y turbidez en tiempo real, ejecutando algoritmos que determinan la calidad del agua. Simultáneamente, las aplicaciones cliente (Web y Móvil) alertan a los operarios sobre estados críticos y permiten el encendido remoto (o automatizado) de actuadores de emergencia.
+
+**How Much (¿Cuánto?)**<br>
+Uno de los principales desafíos en el sector acuícola es la alta vulnerabilidad ante alteraciones ambientales y bioquímicas en el agua, lo que genera mortalidades masivas y pérdida total del capital. 
+
+Según documenta el portal Actualidad Ambiental (2025), el impacto económico de no contar con un monitoreo preventivo es devastador: incidentes recientes en zonas andinas, ocasionados por contaminación o alteraciones en los cauces, han generado la muerte repentina de hasta 200,000 truchas en un solo evento. Este tipo de desastres representa pérdidas de capital superiores a los S/ 300,000 para una sola piscigranja. 
+
+Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
+
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
@@ -417,5 +427,10 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 ## Video About-the-Team
 
 # Bibliografía
+Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
+
+Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
+
+Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
 # Anexos
