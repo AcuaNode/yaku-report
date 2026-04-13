@@ -258,7 +258,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 
 La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
 
-### 1.2.1. Antecedentes y problemática
+#### Problemática
 
 **Who (¿Quién?)**<br>
 La problemática afecta directamente a dos actores fundamentales en el ecosistema acuícola:
@@ -357,7 +357,7 @@ Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el
 
 YakuControl dirige su propuesta de valor a dos segmentos de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja:
 
-**Segmento 1: Operarios / Trabajadores de Campo**
+**Segmento 1: Piscicultores**
 
 Son el personal técnico que realiza las rondas físicas diarias entre los estanques. Su principal responsabilidad es mantener las condiciones operativas de los estanques y responder ante cualquier anomalía. Sus características clave son:
 
@@ -367,7 +367,7 @@ Son el personal técnico que realiza las rondas físicas diarias entre los estan
 - Necesitan botones de acción rápida para activar equipos de emergencia (bombas de oxigenación, sistemas de recirculación) de forma remota sin desplazarse físicamente hasta el panel de control.
 - Su nivel de digitalización puede ser bajo, por lo que la interfaz debe ser intuitiva y de uso inmediato.
 
-**Segmento 2: Dueños / Administradores de Piscigranja**
+**Segmento 2: Administradores de Piscigranja**
 
 Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la prevención de pérdidas y la toma de decisiones estratégicas a largo plazo. Sus características clave son:
 
