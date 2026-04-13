@@ -237,7 +237,58 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
+
+**¿Por qué llevar a cabo este análisis?**
+
+Identificar las fortalezas y debilidades de las soluciones existentes en el mercado de monitoreo acuícola e IoT de calidad del agua, con el fin de posicionar estratégicamente a YakuControl y definir su ventaja competitiva diferenciadora frente a competidores directos e indirectos.
+
+| | | **Acua Node — YakuControl** | **AquaManager** | **Libelium Smart Water** | **Pentair Aquatic Eco-Systems** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Startup peruana que desarrolla YakuControl, plataforma IoT integral para monitoreo de calidad del agua en piscigranjas de trucha. Combina hardware propio con sensores sumergibles, procesamiento en la nube y apps móvil y web. | Plataforma holandesa de gestión acuícola basada en software. Permite registrar datos productivos, gestionar stocks, alimentación y salud de los peces. No incluye hardware propio de sensores IoT. | Empresa española especializada en plataformas IoT para monitoreo de calidad del agua. Ofrece kits de sensores inalámbricos para múltiples parámetros hídricos en aplicaciones ambientales, industriales y acuícolas. | División de Pentair especializada en equipos para acuicultura y ecosistemas acuáticos. Ofrece sistemas de recirculación, filtración, aireación y monitoreo de agua para piscigranjas de diversas escalas. |
+| | **Ventaja competitiva** | Solución integral diseñada específicamente para el contexto acuícola peruano, con modelo SaaS accesible, algoritmos de procesamiento en tiempo real (Índice de Calidad del Agua) y control remoto de actuadores desde app móvil. | Amplia trayectoria en el mercado global de acuicultura; plataforma robusta con módulos de gestión integral del negocio acuícola (producción, salud, inventarios). | Amplio catálogo de sensores de alta precisión; plataforma IoT agnóstica compatible con múltiples protocolos (LoRa, 4G, Wi-Fi); solución modular y escalable para distintos sectores. | Marca consolidada con décadas de experiencia en acuicultura; catálogo completo de hardware para gestión del agua; red global de distribuidores especializados. |
+| **Perfil de Marketing** | **Mercado objetivo** | Piscigranjas de trucha en regiones andinas del Perú (Junín, Puno, Cusco, Huancavelica). Pequeños y medianos productores acuícolas. | Empresas acuícolas de mediana y gran escala a nivel mundial (salmón, camarones, truchas). Enfocado en Europa y mercados desarrollados. | Gobiernos, empresas de utilities e industrias que requieren monitoreo ambiental de calidad del agua a nivel global. Sector agrícola y acuícola de mediana y gran escala. | Piscigranjas comerciales de mediana y gran escala, acuarios públicos e instalaciones de investigación acuícola a nivel mundial. |
+| | **Estrategias de marketing** | Venta directa B2B a piscigranjas; alianzas con proveedores de insumos acuícolas; demostración con maqueta física en ferias del sector peruano; landing page para captación de clientes. | Participación en ferias internacionales de acuicultura (Aqua Nor, Aquaculture Europe); marketing de contenidos y demostraciones online; canal de ventas enterprise. | Canal de distribuidores internacionales autorizados; participación en conferencias IoT y medioambientales; documentación técnica extensa y casos de uso publicados. | Catálogos técnicos y venta directa a través de distribuidores especializados en acuicultura; presencia en ferias del sector; alianzas con instituciones de investigación. |
+| **Perfil de Producto** | **Productos & Servicios** | Dispositivo IoT con sensores de temperatura, pH y turbidez + Edge API de procesamiento + App móvil para operarios + Web Dashboard para administradores. Suscripción mensual por estanque. | Software SaaS de gestión acuícola (producción, alimentación, salud, inventarios). Requiere integración con sensores de terceros para datos en tiempo real. | Kits de sensores IoT (temperatura, pH, turbidez, oxígeno disuelto, entre otros) + plataforma de visualización en la nube. Venta de hardware con licencia de plataforma. | Equipos físicos de recirculación, aireación, filtración y controladores digitales de parámetros hídricos. Sin plataforma SaaS ni app móvil nativa integrada. |
+| | **Precios & Costos** | Hardware ~S/ 250–280 (costo del prototipo). Modelo SaaS con suscripción mensual por estanque monitoreado (precio a validar en mercado). | Suscripción mensual de precio elevado orientada a empresas de gran escala. No publicado abiertamente; cotización personalizada según número de módulos. | Hardware de gama alta con costos elevados (kits desde $500–$2,000 USD). Orientado a proyectos industriales y gubernamentales con presupuesto alto. | Equipos de gama media-alta con inversión inicial elevada. Modelo de venta directa de hardware sin suscripción recurrente. |
+| | **Canales de distribución (Web y/o Móvil)** | App móvil (Android/iOS compilada con Flutter) y Web App. Landing page estática para captación B2B. | Exclusivamente Web App. Acceso vía navegador sin app móvil dedicada para campo. | Plataforma web para visualización de datos. Sin app móvil para operarios de campo. Distribución vía resellers. | Catálogo web para consulta técnica. Distribuidores físicos especializados. Sin canal digital de gestión remota. |
+| **Análisis SWOT** | **Fortalezas** | Diseño específico para acuicultura peruana; modelo SaaS escalable; procesamiento edge que filtra falsos positivos; control remoto de actuadores; bajo costo de hardware. | Plataforma madura con múltiples módulos integrados; reconocimiento global; soporte técnico especializado; amplia base de clientes internacionales. | Alta precisión y confiabilidad de sensores; soporte para múltiples protocolos de conectividad; amplio historial de proyectos exitosos; alta escalabilidad. | Experiencia consolidada en acuicultura; equipos de alta durabilidad; amplio catálogo de soluciones complementarias; marca reconocida globalmente. |
+| | **Debilidades** | Startup en etapa temprana sin historial de clientes; dependencia de conectividad Wi-Fi en zonas rurales; equipo pequeño con recursos limitados. | No incluye hardware IoT propio; precio elevado inaccesible para pequeños productores; no localizado para el mercado peruano ni andino. | Precio inaccesible para pequeñas piscigranjas; sin app móvil para operarios; sin control remoto de actuadores; plataforma genérica no especializada en acuicultura. | No ofrece plataforma SaaS ni app móvil; sin alertas automáticas en tiempo real; sin procesamiento en la nube; costo inicial elevado sin modelo de suscripción. |
+| | **Oportunidades** | Mercado acuícola peruano en crecimiento con baja digitalización; potencial de expansión a otras especies y países de la región andina. | Incorporación de módulos IoT de calidad del agua; expansión en mercados emergentes de Latinoamérica. | Creación de verticales especializadas en acuicultura; expansión en mercados emergentes con soluciones más económicas. | Digitalización de sus equipos existentes con plataforma IoT; expansión en mercados emergentes de Latinoamérica. |
+| | **Amenazas** | Posible entrada de competidores internacionales con mayor capital; resistencia a la adopción tecnológica; variabilidad en conectividad de zonas andinas. | Startups IoT locales más accesibles y adaptadas al contexto regional que integran hardware y software en una sola solución. | Competidores más económicos con propuestas específicas para acuicultura; startups IoT locales con mejor comprensión del contexto regional. | Startups IoT que ofrecen soluciones completas (hardware + software + app) a menor costo; tendencia del mercado hacia plataformas digitales integradas. |
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+A partir del análisis competitivo realizado, se identificaron las siguientes estrategias y tácticas que YakuControl adoptará para diferenciarse y ganar participación de mercado frente a sus competidores:
+
+**Estrategia 1: Especialización vertical en el mercado acuícola peruano**
+
+A diferencia de competidores como Libelium o Pentair, que ofrecen soluciones genéricas para múltiples industrias, YakuControl se posiciona como la única plataforma diseñada exclusivamente para piscigranjas de trucha en el contexto andino peruano. Esta especialización permite ofrecer algoritmos calibrados para las condiciones biológicas específicas de la trucha arcoíris (rangos de pH, temperatura y turbidez óptimos), terminología familiar para el productor local y soporte adaptado a las condiciones de conectividad de las regiones andinas.
+
+- **Táctica:** Desarrollar perfiles de alerta predefinidos para trucha arcoíris y documentar casos de uso con piscigranjas reales de Junín y Puno como prueba de concepto.
+
+**Estrategia 2: Accesibilidad económica mediante modelo SaaS por estanque**
+
+Frente a AquaManager y Pentair, cuyos precios están orientados a grandes empresas acuícolas, YakuControl apuesta por un modelo de suscripción mensual de bajo costo por estanque monitoreado. Esto elimina la barrera de la inversión inicial elevada y permite que pequeños y medianos productores accedan a tecnología de monitoreo antes reservada para operaciones industriales.
+
+- **Táctica:** Ofrecer un periodo de prueba gratuito de 30 días por estanque y un plan de onboarding asistido para facilitar la adopción en productores con baja digitalización.
+
+**Estrategia 3: Solución integral hardware + software + app en un solo ecosistema**
+
+La principal debilidad de los competidores identificados es que ninguno ofrece la combinación completa de hardware IoT propio, procesamiento inteligente en la nube y aplicaciones móvil/web en un solo producto. AquaManager no tiene hardware; Libelium no tiene app móvil para operarios; Pentair no tiene plataforma SaaS. YakuControl cubre todo el stack, eliminando la necesidad de integrar soluciones de múltiples proveedores.
+
+- **Táctica:** Enfatizar en el discurso comercial y en la landing page la propuesta de "todo en uno": un solo proveedor, un solo contrato, una sola plataforma para hardware, datos y control remoto.
+
+**Estrategia 4: Ventaja en conectividad de campo mediante app móvil offline-first**
+
+La baja cobertura de internet en zonas rurales andinas es una amenaza real para cualquier solución IoT. A diferencia de los competidores, cuyas plataformas dependen de conexión constante, YakuControl diseña su app móvil con capacidades de operación en condiciones de baja señal, priorizando la recepción de alertas críticas incluso con conectividad intermitente.
+
+- **Táctica:** Implementar caché local en la app Flutter y sincronización diferida con el backend principal para garantizar la funcionalidad básica del operario de campo sin conexión estable.
+
+**Estrategia 5: Construcción de confianza mediante demostración física**
+
+Para superar la resistencia a la adopción tecnológica —una de las principales amenazas identificadas—, YakuControl utilizará su maqueta física con estanque real como herramienta de ventas en ferias y visitas comerciales. Ver el sistema funcionando en tiempo real, con peces reales y actuadores respondiendo a cambios en el agua, genera credibilidad inmediata que ninguna presentación digital puede reemplazar.
+
+- **Táctica:** Participar en ferias agropecuarias y acuícolas regionales (AGROPECUARIA, ferias de PRODUCE) con la maqueta operativa como principal punto de contacto con clientes potenciales.
 
 ## 2.2. Entrevistas
 
