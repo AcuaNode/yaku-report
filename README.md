@@ -346,16 +346,11 @@ Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el
 
 #### 1.2.2.4. Lean UX Canvas
 
-| Bloque | Contenido |
-| :--- | :--- |
-| **Business Problem** | Los productores acuícolas peruanos sufren pérdidas económicas severas por mortalidad masiva de truchas causada por la detección tardía de condiciones críticas del agua. |
-| **Business Outcomes** | Reducción de eventos de mortalidad masiva en clientes activos. Crecimiento del número de estanques suscritos. Tasa de retención mensual superior al 85%. |
-| **Users & Customers** | **Usuarios:** Operarios de campo y dueños de piscigranjas. **Clientes:** Propietarios y administradores de piscigranjas (quienes pagan la suscripción). |
-| **User Benefits** | Operarios: tranquilidad y capacidad de actuar a tiempo ante emergencias. Dueños: visibilidad total del estado de sus estanques y datos para decisiones estratégicas. |
-| **Solutions** | Dispositivo IoT con sensores sumergibles (temperatura, pH, turbidez) + Edge API para procesamiento en tiempo real + App móvil para operarios + Web Dashboard para administradores. |
-| **Hypotheses** | Si los operarios reciben alertas inmediatas, responderán en menos de 10 minutos. Si los dueños tienen acceso a históricos, adoptarán la plataforma como herramienta de gestión principal. |
-| **What's the most important thing we need to learn first?** | Si los productores acuícolas están dispuestos a pagar una suscripción mensual recurrente y si los operarios adoptarán el uso de una app móvil en su rutina de campo. |
-| **What's the least amount of work we need to do to learn the next most important thing?** | Desplegar un prototipo funcional con un solo estanque real, medir el tiempo de respuesta del operario ante alertas y entrevistar al dueño sobre el valor percibido de los datos históricos. |
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Lean UX Canvas - YakuControl](./assets/images/LeanUX.png)
+
+</div>
 
 ## 1.3. Segmentos objetivo
 
