@@ -320,12 +320,12 @@ El estado actual del monitoreo de estanques en piscigranjas se ha centrado princ
 
 **User Assumptions**
 
-1. **¿Quiénes son nuestros usuarios?** Dueños y administradores de piscigranjas de trucha, y sus operarios de campo en regiones andinas del Perú.
-2. **¿Dónde encaja nuestro producto en su trabajo o vida?** En la rutina diaria de monitoreo de estanques y en la toma de decisiones operativas y estratégicas sobre la salud del agua.
-3. **¿Qué problemas resuelve nuestro producto?** La detección tardía de condiciones críticas del agua y la falta de datos históricos para la toma de decisiones preventivas.
-4. **¿Cuándo y cómo usan nuestro producto?** Los operarios lo usan en campo, en tiempo real, a través de la app móvil. Los dueños lo consultan desde web para revisiones periódicas y análisis histórico.
-5. **¿Qué características son las más importantes?** Alertas críticas en tiempo real, índice global de calidad del agua, control remoto de actuadores y visualización de tendencias históricas.
-6. **¿Cómo debe verse y comportarse el producto?** Rápido, intuitivo y confiable. La app móvil debe priorizar la acción inmediata; el dashboard web debe priorizar la claridad de los datos.
+1. **¿Quiénes son nuestros usuarios?** Dueños y administradores de piscigranjas de trucha, y sus operarios de campo en regiones andinas del Perú. 
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** En la rutina diaria de monitoreo físico de estanques, y como eje central en la toma de decisiones estratégicas sobre la bioseguridad del ecosistema.
+3. **¿Qué problemas resuelve nuestro producto?** La detección tardía de condiciones químicas/térmicas mortales en el agua, la dependencia visual empírica y la falta de datos históricos para anticiparse a desastres.
+4. **¿Cuándo y cómo usan nuestro producto?** Los operarios lo usan en campo, en tiempo real, a través de la app móvil conectada a los sensores IoT. Los dueños lo consultan desde el Web Dashboard para revisiones periódicas, control de consumo energético y análisis histórico.
+5. **¿Qué características son las más importantes?** Ingesta de datos telemétricos sin latencia, cálculo algorítmico del Índice de Calidad del Agua, alertas push críticas, control remoto de actuadores (Airlift/Bombas) y dashboards analíticos.
+6. **¿Cómo debe verse y comportarse el producto?** Altamente responsivo, intuitivo y resiliente ante fallos de red. La App móvil debe priorizar Status Cards para acción inmediata; el Web Dashboard debe priorizar la claridad en gráficos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
