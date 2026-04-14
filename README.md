@@ -286,6 +286,34 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ## 3.2. Impact Mapping
 ## 3.3. Product Backlog
 
+| # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **US01** | Propuesta de Valor | Como visitante, deseo leer sobre YakuControl en la landing para entender el producto. | **2** |
+| **2** | **US02** | Catálogo de Planes | Como visitante, deseo ver los precios de las suscripciones para evaluar mi presupuesto. | **2** |
+| **3** | **US04** | Formulario de Ventas | Como visitante, deseo dejar mis datos de contacto para que un asesor me contacte. | **3** |
+| **4** | **US03** | FAQ de Soporte | Como visitante, deseo ver una sección de preguntas frecuentes para resolver dudas básicas. | **1** |
+| **5** | **TS02** | Seguridad JWT | Como developer, deseo proteger los endpoints con tokens para evitar robos de datos. | **5** |
+| **6** | **US05** | Login en App Móvil | Como piscicultor, deseo acceder a la app con mis credenciales para visualizar mis estanques. | **3** |
+| **7** | **TS01** | API de Ingesta | Como developer, deseo un endpoint POST para recibir datos del hardware Edge. | **5** |
+| **8** | **US06** | Lectura de Sensores | Como piscicultor, deseo ver el pH y temperatura actual en mi celular para evitar rondas físicas. | **3** |
+| **9** | **US07** | Alertas Push | Como piscicultor, deseo recibir notificaciones si el agua está fuera de rango para actuar rápido. | **5** |
+| **10** | **TS03** | Webhook de Alertas | Como developer, deseo un webhook que conecte el API con el servicio de notificaciones. | **3** |
+| **11** | **US16** | Configuración de Umbrales | Como administrador, deseo definir los límites de alerta en la web para personalizar el control. | **3** |
+| **12** | **US08** | Control de Aireación | Como piscicultor, deseo prender los aireadores desde la app para oxigenar el agua. | **5** |
+| **13** | **US13** | Dashboard Multisede | Como administrador, deseo ver un mapa con todas mis granjas para supervisar el estado global. | **5** |
+| **14** | **US12** | Gestión de Usuarios | Como administrador, deseo crear cuentas para mis operarios en la web para delegar el acceso. | **3** |
+| **15** | **US11** | Estado de Batería IoT | Como piscicultor, deseo ver si los sensores tienen carga para realizar el mantenimiento. | **2** |
+| **16** | **TS04** | API de Clima Externo | Como developer, deseo integrar una API meteorológica para cruzar datos con los estanques. | **3** |
+| **17** | **US15** | Historial de Tendencias | Como administrador, deseo ver gráficos de pH de todo el año para planificar el próximo ciclo. | **5** |
+| **18** | **US14** | Reporte de Mortalidad | Como administrador, deseo generar un PDF mensual de bajas para mis registros contables. | **3** |
+| **19** | **US17** | Facturación SaaS | Como administrador, deseo descargar mis facturas de pago para mi declaración de impuestos. | **2** |
+| **20** | **US19** | Registro de Inversión | Como administrador, deseo anotar gastos de alimento en la web para calcular la rentabilidad. | **3** |
+| **21** | **US10** | Registro de Novedades | Como piscicultor, deseo escribir notas sobre un estanque para informar incidencias. | **2** |
+| **22** | **US18** | Panel de Ayuda | Como administrador, deseo un chat de soporte en la web para resolver problemas técnicos. | **3** |
+| **23** | **US09** | Modo Oscuro en App | Como piscicultor, deseo un modo oscuro en la app para evitar la fatiga visual nocturna. | **1** |
+
+Link Trello: https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
+
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. Design-Level EventStorming
