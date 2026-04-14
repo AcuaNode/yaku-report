@@ -252,6 +252,37 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Relacionado con |
+| :--- | :--- | :--- | :--- | :--- |
+| **EP01** | **Landing Page Informativa** | Épica: Sitio web estático para atracción de clientes y presencia de marca. | N/A | N/A |
+| **EP02** | **App Móvil (Piscicultor)** | Épica: Herramienta de campo para monitoreo y respuesta rápida. | N/A | N/A |
+| **EP03** | **Web App (Administrador)** | Épica: Gestión de negocio, analítica y control administrativo. | N/A | N/A |
+| **EP04** | **Backend & API (Technical)** | Épica: Servicios de datos, seguridad e integraciones del sistema. | N/A | N/A |
+| **US01** | Propuesta de Valor | Como visitante, quiero leer sobre YakuControl en la landing para entender el producto. | **Given** que el visitante carga la página de inicio, **When** visualiza la sección principal, **Then** el sistema muestra los beneficios clave del Smart Farming. | EP01 |
+| **US02** | Catálogo de Planes | Como visitante, quiero ver los precios de las suscripciones para evaluar mi presupuesto. | **Given** que el visitante está en la sección de precios, **When** revisa las tarjetas de planes, **Then** el sistema detalla el costo por estanque y beneficios incluidos. | EP01 |
+| **US03** | FAQ de Soporte | Como visitante, quiero ver una sección de preguntas frecuentes para resolver dudas básicas. | **Given** que el visitante tiene dudas técnicas, **When** accede a la sección FAQ, **Then** el sistema despliega las respuestas a las consultas más comunes. | EP01 |
+| **US04** | Formulario de Ventas | Como visitante, quiero dejar mis datos de contacto para que un asesor me llame. | **Given** que el visitante completa el formulario, **When** presiona el botón de envío, **Then** el sistema muestra un mensaje de éxito y guarda el lead. | EP01 |
+| **US05** | Login en App Móvil | Como piscicultor, quiero acceder a la app con mis credenciales para ver mis estanques. | **Given** que el usuario ingresa su correo y clave, **When** presiona "Entrar", **Then** el sistema le otorga acceso a su tablero de monitoreo personal. | EP02 |
+| **US06** | Lectura de Sensores | Como piscicultor, quiero ver el pH y temperatura actual en mi celular para evitar rondas físicas. | **Given** que el operario selecciona un estanque, **When** el dashboard carga, **Then** el sistema muestra los últimos valores recibidos del hardware. | EP02 |
+| **US07** | Alertas Push | Como piscicultor, quiero recibir notificaciones si el agua está muy caliente para actuar rápido. | **Given** que la temperatura supera el límite, **When** el sistema detecta la anomalía, **Then** el celular emite una alerta sonora y visual. | EP02 |
+| **US08** | Control de Aireación | Como piscicultor, quiero prender los aireadores desde la app para oxigenar el agua. | **Given** que el aireador está apagado, **When** el usuario activa el switch en la app, **Then** el motor físico se enciende de inmediato. | EP02 |
+| **US09** | Modo Oscuro en App | Como piscicultor, quiero un modo oscuro en la app para no cansar la vista durante la noche. | **Given** que el usuario está en configuración, **When** activa el modo noche, **Then** el sistema cambia la interfaz a colores oscuros. | EP02 |
+| **US10** | Registro de Novedades | Como piscicultor, quiero escribir notas rápidas sobre un estanque para informar al dueño. | **Given** que el operario está en la vista de estanque, **When** escribe un comentario y guarda, **Then** el sistema almacena la nota con fecha y hora. | EP02 |
+| **US11** | Estado de Batería IoT | Como piscicultor, quiero ver si los sensores tienen batería para cambiarlas a tiempo. | **Given** que el usuario revisa el estado del hardware, **When** visualiza el icono de energía, **Then** el sistema muestra el porcentaje de carga restante. | EP02 |
+| **US12** | Gestión de Usuarios | Como administrador, quiero crear cuentas para mis operarios en la web para darles acceso. | **Given** que el dueño está en el panel de equipo, **When** completa los datos del nuevo trabajador, **Then** el sistema envía una invitación al correo del operario. | EP03 |
+| **US13** | Dashboard Multisede | Como administrador, quiero ver un mapa con todas mis granjas para saber si todo está bien. | **Given** que el administrador inicia sesión en la web, **When** carga el mapa principal, **Then** el sistema muestra pines verdes o rojos según el estado de cada sede. | EP03 |
+| **US14** | Reporte de Mortalidad | Como administrador, quiero generar un PDF mensual de bajas para mis registros contables. | **Given** que el dueño selecciona el mes anterior, **When** pulsa "Generar Reporte", **Then** el sistema descarga un documento con las estadísticas de mortalidad. | EP03 |
+| **US15** | Historial de Tendencias | Como administrador, quiero ver gráficos de pH de todo el año para planificar el próximo ciclo. | **Given** que el usuario selecciona el filtro anual, **When** solicita la visualización, **Then** el sistema muestra un gráfico de líneas con el comportamiento histórico. | EP03 |
+| **US16** | Configuración de Umbrales | Como administrador, quiero definir los límites de alerta en la web para personalizar el control. | **Given** que el dueño edita los parámetros de un estanque, **When** guarda los cambios, **Then** el sistema actualiza la lógica de notificaciones push. | EP03 |
+| **US17** | Facturación SaaS | Como administrador, quiero descargar mis facturas de pago para mi declaración de impuestos. | **Given** que el usuario va a historial de pagos, **When** selecciona un recibo, **Then** el sistema descarga la factura legal en formato PDF. | EP03 |
+| **US18** | Panel de Ayuda | Como administrador, quiero un chat de soporte en la web para resolver problemas técnicos. | **Given** que el administrador tiene un problema, **When** abre la burbuja de chat, **Then** el sistema lo conecta con un agente de servicio al cliente. | EP03 |
+| **US19** | Registro de Inversión | Como administrador, quiero anotar gastos de alimento en la web para calcular mi rentabilidad. | **Given** que el dueño ingresa un nuevo gasto, **When** confirma la transacción, **Then** el sistema descuenta el monto del balance proyectado. | EP03 |
+| **TS01** | API de Ingesta | Como developer, quiero un endpoint POST para recibir datos del hardware Edge. | **Given** un request JSON válido, **When** el sensor envía la telemetría, **Then** el API responde con un código 201 y guarda el registro. | EP04 |
+| **TS02** | Seguridad JWT | Como developer, quiero proteger los endpoints con tokens para evitar robos de datos. | **Given** una petición sin token de acceso, **When** se intenta consultar un estanque, **Then** el API deniega la entrada con un error 401. | EP04 |
+| **TS03** | Webhook de Alertas | Como developer, quiero un webhook que conecte el API con el servicio de notificaciones. | **Given** un valor fuera de rango en la base de datos, **When** se detecta la anomalía, **Then** el sistema envía un trigger inmediato al servidor de mensajería. | EP04 |
+| **TS04** | API de Clima Externo | Como developer, quiero integrar una API meteorológica para cruzar datos con los estanques. | **Given** que se solicita el clima local, **When** el backend consulta el servicio externo, **Then** el sistema retorna la probabilidad de lluvia al dashboard. | EP04 |
+
 ## 3.2. Impact Mapping
 ## 3.3. Product Backlog
 
