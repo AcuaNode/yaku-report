@@ -348,6 +348,39 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 ## 2.4. Big Picture EventStorming
 ## 2.5. Ubiquitous Language
 
+El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compartido y estandarizado que usan tanto el equipo de desarrollo como los expertos del dominio acuícola para comunicarse sin ambigüedades. Todos los términos definidos aquí deben usarse de forma consistente en el código, los modelos, las entrevistas y la documentación del proyecto.
+
+### Términos del Dominio
+
+| Término | Definición | Contexto |
+| :--- | :--- | :--- |
+| **Piscigranja** | Instalación dedicada a la crianza comercial de truchas en estanques controlados. Es la unidad principal de negocio del cliente. | General |
+| **Estanque** | Depósito de agua individual dentro de una piscigranja donde se aloja y cría un lote de truchas. Es la unidad mínima de monitoreo de YakuControl. | General |
+| **Lote** | Conjunto de truchas que comparten un mismo estanque en un periodo productivo determinado. | General |
+| **Trucha arcoíris** (*Oncorhynchus mykiss*) | Especie objetivo del sistema. Sus rangos óptimos de supervivencia (pH 6.5–8.0, temperatura 10–18°C, turbidez baja) determinan los umbrales críticos configurados en el sistema. | General |
+| **Operario de campo** | Usuario del sistema con rol `ROLE_WORKER`. Realiza rondas físicas entre los estanques y es el responsable de responder ante alertas críticas y accionar equipos de emergencia. | Monitoreo / Control |
+| **Administrador** | Usuario del sistema con rol `ROLE_ADMIN`. Es el dueño o gestor de la piscigranja. Accede al Web Dashboard para revisar históricos, tendencias y el estado general de los estanques. No puede accionar equipos directamente. | Gestión / Reportes |
+| **Dispositivo IoT** | Hardware físico instalado en el estanque. Compuesto por un microcontrolador ESP32-WROOM-32 con sensores sumergibles y actuadores. Envía telemetría bruta a la nube vía Wi-Fi. | Embedded / Monitoreo |
+| **Sensor** | Componente electrónico del dispositivo IoT que mide una variable bio-química del agua. Los sensores activos son: sensor de temperatura (DS18B20), sonda de pH (PH-4502C) y sensor de turbidez. | Embedded / Monitoreo |
+| **Actuador** | Componente electrónico del dispositivo IoT que ejecuta una acción física en el estanque al recibir una instrucción. Los actuadores activos son: módulo relé (controla bomba de agua) y módulo MOSFET (controla tira LED). | Embedded / Control |
+| **Telemetría bruta** | Conjunto de valores numéricos crudos enviados por el dispositivo IoT al Edge API de forma continua. Incluye la lectura directa de cada sensor antes de cualquier procesamiento. | Monitoreo |
+| **Lectura** | Registro puntual de una variable del agua (pH, temperatura o turbidez) en un momento específico, asociado a un estanque determinado. | Monitoreo |
+| **Índice de Calidad del Agua (ICA)** | Puntaje global normalizado calculado por el Edge API que pondera las lecturas de temperatura, pH y turbidez. Si cae por debajo del umbral crítico, el estado del estanque se clasifica como peligroso y se disparan las alertas. | Monitoreo / Alertas |
+| **Umbral crítico** | Valor límite predefinido para el ICA o para una variable individual, por debajo (o encima) del cual el sistema considera que las condiciones del agua representan un riesgo para la supervivencia de las truchas. | Monitoreo / Alertas |
+| **Falso positivo** | Lectura anómala de un sensor que no refleja un riesgo real (causada por interferencia, suciedad del sensor o pico transitorio). El Edge API aplica algoritmos de filtrado para descartarlos antes de emitir alertas. | Monitoreo |
+| **Transmitancia de luz** | Porcentaje de luz capaz de penetrar el agua del estanque, calculado mediante la Ley de Beer-Lambert modificada aplicada al valor del sensor de turbidez. Determina la intensidad de la tira LED compensatoria. | Monitoreo / Control |
+| **Señal PWM** | Señal de ancho de pulso (Pulse Width Modulation) de 8 bits enviada por el microcontrolador al módulo MOSFET para regular la intensidad de la tira LED en función de la transmitancia de luz calculada. | Embedded / Control |
+| **Alerta crítica** | Notificación push o SMS generada automáticamente por el sistema cuando el ICA de un estanque supera el umbral crítico. Se envía al operario de campo asignado de forma inmediata. | Alertas |
+| **Acción de emergencia** | Instrucción remota enviada por un operario desde la app móvil para activar un actuador (encender la bomba o ajustar la iluminación LED) ante una condición crítica del agua. | Control |
+| **Edge API** | Microservicio independiente en la nube que actúa como primer filtro de la telemetría bruta. Ejecuta los algoritmos de cálculo del ICA y de transmitancia de luz, filtra falsos positivos y, solo si confirma un riesgo real, emite un evento al backend principal. | Arquitectura |
+| **Evento de riesgo** | Mensaje emitido por el Edge API hacia el backend principal cuando confirma que las condiciones de un estanque superan el umbral crítico. Desencadena el flujo de alertas y notificaciones. | Arquitectura / Alertas |
+| **Backend principal** | Servicio central RESTful que gestiona usuarios, historial de lecturas, suscripciones, autenticación y la comunicación hacia las aplicaciones cliente (app móvil y web). | Arquitectura |
+| **Suscripción** | Contrato de acceso mensual al servicio YakuControl, facturado por estanque monitoreado. Incluye conectividad, mantenimiento de servidores e integraciones con servicios externos. | Facturación |
+| **Estado del estanque** | Clasificación del nivel de riesgo de un estanque en un momento dado, derivada del ICA calculado. Puede ser: **Normal**, **Advertencia** o **Crítico**. | Monitoreo |
+| **Historial de lecturas** | Registro persistente de todas las lecturas y estados de un estanque a lo largo del tiempo. Utilizado por el administrador para análisis de tendencias y toma de decisiones estratégicas. | Reportes |
+| **Ronda de campo** | Recorrido físico periódico realizado por el operario entre los estanques de la piscigranja para inspección y mantenimiento. YakuControl complementa (no reemplaza) esta actividad con monitoreo continuo. | Operaciones |
+| **Dashboard** | Interfaz web del administrador que centraliza el estado en tiempo real de todos los estanques, gráficos de tendencias históricas e indicadores clave de calidad del agua. | Reportes / Gestión |
+
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories
 ## 3.2. Impact Mapping
