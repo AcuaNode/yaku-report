@@ -352,13 +352,13 @@ Los User Personas se construyen a partir del análisis de la información recopi
 
 Representa a los trabajadores encargados del manejo diario de los estanques, enfocados en el monitoreo del agua, alimentación de los peces y detección de problemas operativos.
 
-![User Persona – Piscicultor](./assets/images/photos/user-persona-alumno.png)
+![User Persona – Piscicultor](./assets/images/user-persona-piscicultor.png)
 
 **User persona: Administradores de piscigranjas**
 
 Es la responsable de la gestión y toma de decisiones, quienes supervisan la producción, analizan reportes y coordinan acciones para optimizar el rendimiento de la piscigranja.
 
-![User Persona – Administradores de piscigranjas](./assets/images/photos/user-persona-alumno.png)
+![User Persona – Administradores de piscigranjas](./assets/images/user-persona-administrador.png)
 
 ## 2.3.2. User Task Matrix
  
