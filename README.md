@@ -363,30 +363,36 @@ Es la responsable de la gestión y toma de decisiones, quienes supervisan la pro
 ## 2.3.2. User Task Matrix
  
 En esta sección se presentan las tareas que los User Persona representativos de cada segmento objetivo realizan para cumplir sus metas. Se consideran dos User Persona: José Guevara, piscicultor de campo, y Pedro Alvarado, administrador de piscigranja.
- 
+  
 | **TAREA** | **José Guevara (Piscicultor) - Frecuencia** | **José Guevara (Piscicultor) - Importancia** |
 |---|:---:|:---:|
-| Medir la temperatura del agua en los estanques | Always | High |
-| Registrar parámetros del agua en un cuaderno | Always | High |
-| Alimentar a los peces según el horario del día | Always | High |
+| Medir manualmente la temperatura del agua en los estanques | Always | High |
+| Registrar parámetros del agua manualmente | Always | High |
+| Alimentar a los peces según el horario | Always | High |
 | Identificar visualmente el comportamiento anormal de los peces | Sometimes | High |
-| Limpiar y dar mantenimiento a los estanques | Sometimes | High |
-| Reportar novedades al administrador vía WhatsApp o llamada | Sometimes | High |
-| Reaccionar ante una emergencia en el agua (baja de oxígeno, etc.) | Sometimes | High |
-| Trasladar peces entre estanques | Sometimes | Medium |
-| Coordinar con otros trabajadores de campo | Sometimes | Low |
+| Verificar el volumen y caudal de agua disponible en los estanques | Always | High |
+| Evaluar la turbidez y calidad del agua | Always | High |
+| Limpiar y dar mantenimiento a los estanques | Sometimes | Medium |
+| Reportar novedades al administrador vía documento físico o WhatsApp | Sometimes | High |
+| Reaccionar ante una emergencia en el agua (baja de oxígeno,etc.)| Sometimes | High |
+| Coordinar con otros trabajadores de campo | Sometimes | Medium |
+| Anotar el consumo de alimento por estanque | Always | Medium |
+| Verificar que los peces estén sanos y sin enfermedades | Always | High |
  
 | **TAREA** | **Pedro Alvarado (Administrador) - Frecuencia** | **Pedro Alvarado (Administrador) - Importancia** |
 |---|:---:|:---:|
-| Revisar el reporte del piscicultor | Always | High |
+| Revisar el reporte físico del piscicultor | Always | High |
+| Monitorear el volumen y caudal de agua disponible | Always | High |
+| Corroborar la calidad y turbidez del agua de los estanques | Always | High |
 | Decidir sobre cambios en la alimentación o tratamiento sanitario | Sometimes | High |
-| Controlar los costos operativos de la piscigranja | Always | High |
-| Planificar los ciclos de producción y fechas de "cosecha" | Sometimes | High |
+| Controlar los costos operativos y rentabilidad de la piscigranja | Always | High |
+| Planificar los ciclos de producción y fechas de "cosecha"(de peces) | Sometimes | High |
 | Supervisar el desempeño del personal de campo | Sometimes | High |
-| Negociar con proveedores de alimento e insumos | Sometimes | Medium |
-| Evaluar la rentabilidad de cada ciclo productivo | Sometimes | High |
-| Gestionar la venta y distribución de la producción | Sometimes | High |
-| Visitar la piscigranja para verificar el estado | Sometimes | High |
+| Negociar con compradores del producto | Sometimes | High |
+| Evaluar el impacto de factores externos (sequías, fenómeno del niño, etc.) | Sometimes | High |
+| Verificar la procedencia y sanidad de las especies para certificación | Sometimes | High |
+| Tomar decisiones ante pérdidas o mortalidad de peces | Sometimes | High |
+| Proyectar disponibilidad de agua para los próximos meses | Sometimes | High |
  
 Las tareas con mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, todas actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado, destacan la revisión del reporte y el control de costos como tareas frecuentes de alta importancia, evidenciando su dependencia de información de segunda mano para tomar decisiones. La coincidencia más relevante entre ambos segmentos es la gestión de emergencias en los estanques: José debe reaccionar en campo y Pedro debe decidir a modo de gestión, lo que refuerza la necesidad de una solución como YakuControl que conecte a ambos en tiempo real.
 
