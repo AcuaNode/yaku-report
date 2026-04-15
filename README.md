@@ -290,6 +290,16 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 | **TS03** | Webhook de Alertas | Como developer, deseo un webhook que dispare notificaciones ante anomalías detectadas. | **Escenario 1: Trigger inmediato** <br> **Given** valor fuera de rango <br> **When** confirma anomalía <br> **Then** envía trigger a Firebase Cloud Messaging. <br><br> **Escenario 2: Reintento** <br> **Given** FCM no responde <br> **When** falla el trigger <br> **Then** encola petición para reintento automático. | EP04 |
 
 ## 3.2. Impact Mapping
+En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Impact Mapping - YakuControl](./assets/images/Impactmap.png)
+
+</div>
+
+*El mapa refleja dos personas principales: el Piscicultor, enfocado en el monitoreo y control operativo en campo, y el Administrador, orientado a la gestión estratégica y análisis de datos. Cada impacto se conecta con los entregables del producto y las User Stories priorizadas en el Product Backlog.*
+
 ## 3.3. Product Backlog
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
