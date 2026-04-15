@@ -397,6 +397,18 @@ En esta sección se presentan las tareas que los User Persona representativos de
 Las tareas con mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, todas actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado, destacan la revisión del reporte y el control de costos como tareas frecuentes de alta importancia, evidenciando su dependencia de información de segunda mano para tomar decisiones. La coincidencia más relevante entre ambos segmentos es la gestión de emergencias en los estanques: José debe reaccionar en campo y Pedro debe decidir a modo de gestión, lo que refuerza la necesidad de una solución como YakuControl que conecte a ambos en tiempo real.
 
 ### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+
+- User Journey Map de Pedro Alvarado
+
+![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
+
+- User Journey Map de José Guevara
+
+![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
+
+
 ### 2.3.4. Empathy Mapping
 ## 2.4. Big Picture EventStorming
 ## 2.5. Ubiquitous Language
