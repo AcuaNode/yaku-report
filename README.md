@@ -341,8 +341,55 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
+
+El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto. A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
+
 ### 2.3.1. User Personas
-### 2.3.2. User Task Matrix
+
+Los User Personas se construyen a partir del análisis de la información recopilada en entrevistas, representando perfiles clave de los usuarios objetivo. Cada uno integra características demográficas, comportamientos y necesidades, sirviendo como base para orientar el diseño y desarrollo de la solución.
+
+**User persona: Piscicultores**
+
+Representa a los trabajadores encargados del manejo diario de los estanques, enfocados en el monitoreo del agua, alimentación de los peces y detección de problemas operativos.
+
+![User Persona – Piscicultor](./assets/images/photos/user-persona-alumno.png)
+
+**User persona: Administradores de piscigranjas**
+
+Es la responsable de la gestión y toma de decisiones, quienes supervisan la producción, analizan reportes y coordinan acciones para optimizar el rendimiento de la piscigranja.
+
+![User Persona – Administradores de piscigranjas](./assets/images/photos/user-persona-alumno.png)
+
+## 2.3.2. User Task Matrix
+ 
+En esta sección se presentan las tareas que los User Persona representativos de cada segmento objetivo realizan para cumplir sus metas. Se consideran dos User Persona: José Guevara, piscicultor de campo, y Pedro Alvarado, administrador de piscigranja.
+ 
+| **TAREA** | **José Guevara (Piscicultor) - Frecuencia** | **José Guevara (Piscicultor) - Importancia** |
+|---|:---:|:---:|
+| Medir la temperatura del agua en los estanques | Always | High |
+| Registrar parámetros del agua en un cuaderno | Always | High |
+| Alimentar a los peces según el horario del día | Always | High |
+| Identificar visualmente el comportamiento anormal de los peces | Sometimes | High |
+| Limpiar y dar mantenimiento a los estanques | Sometimes | High |
+| Reportar novedades al administrador vía WhatsApp o llamada | Sometimes | High |
+| Reaccionar ante una emergencia en el agua (baja de oxígeno, etc.) | Sometimes | High |
+| Trasladar peces entre estanques | Sometimes | Medium |
+| Coordinar con otros trabajadores de campo | Sometimes | Low |
+ 
+| **TAREA** | **Pedro Alvarado (Administrador) - Frecuencia** | **Pedro Alvarado (Administrador) - Importancia** |
+|---|:---:|:---:|
+| Revisar el reporte del piscicultor | Always | High |
+| Decidir sobre cambios en la alimentación o tratamiento sanitario | Sometimes | High |
+| Controlar los costos operativos de la piscigranja | Always | High |
+| Planificar los ciclos de producción y fechas de "cosecha" | Sometimes | High |
+| Supervisar el desempeño del personal de campo | Sometimes | High |
+| Negociar con proveedores de alimento e insumos | Sometimes | Medium |
+| Evaluar la rentabilidad de cada ciclo productivo | Sometimes | High |
+| Gestionar la venta y distribución de la producción | Sometimes | High |
+| Visitar la piscigranja para verificar el estado | Sometimes | High |
+ 
+Las tareas con mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, todas actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado, destacan la revisión del reporte y el control de costos como tareas frecuentes de alta importancia, evidenciando su dependencia de información de segunda mano para tomar decisiones. La coincidencia más relevante entre ambos segmentos es la gestión de emergencias en los estanques: José debe reaccionar en campo y Pedro debe decidir a modo de gestión, lo que refuerza la necesidad de una solución como YakuControl que conecte a ambos en tiempo real.
+
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ## 2.4. Big Picture EventStorming
