@@ -258,7 +258,32 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. Design-Level EventStorming
+En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de YakuControl, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
 #### 4.1.1.1. Candidate Context Discovery
+##### Step 1
+![Step 1](assets/images/step1.png)<br>
+##### Step 2
+![Step 2](assets/images/step2.png)<br>
+##### Step 3
+![Step 3](assets/images/step3.png)<br>
+##### Step 4
+![Step 4](assets/images/step4.png)<br>
+##### Step 5
+![Step 5](assets/images/step5.png)<br>
+##### Step 6
+![Step 6](assets/images/step6.png)<br>
+##### Step 7
+![Step 7](assets/images/step7.png)<br>
+##### Step 8
+![Step 8](assets/images/step8.png)<br>
+##### Step 9
+![Step 9](assets/images/step9.png)<br>
+##### Step 10
+![Step 10](assets/images/step10.png)<br>
+
+Link Miro: <br>
+https://miro.com/welcomeonboard/dGFtbnNmZWozeFE1UnJUcWZiY05ISlBxMGZRTFNnWGhKNHU3YkZRTkd1U2tnd3NzZVoybUtQRWRDNDZkdlI0OGFjS2VBTGU3ZWdsRS8wa3RodTl2a2FhcGk0Qm1HdFJkZDVNdTdkQjR5V3hvNXE5MTFDWTJEaFhUNkg2Sm52bXlQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=635140542507
+
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
 ### 4.1.2. Context Mapping
