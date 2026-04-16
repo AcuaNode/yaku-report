@@ -410,6 +410,17 @@ En esta sección se presentan los User Journey Maps para cada uno de los User Pe
 
 
 ### 2.3.4. Empathy Mapping
+
+Se elaboraron los Empathy Maps para los dos User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
+
+- Empathy mapping de Administrador de piscigranja
+
+![Empathy mapping – Administradores de piscigranjas](./assets/images/empathy-map-administrador.png)
+
+- Empathy mapping de Piscicultor
+
+![Empathy mapping – Piscicultores](./assets/images/empathy-map-piscicultor.png)
+
 ## 2.4. Big Picture EventStorming
 ## 2.5. Ubiquitous Language
 
