@@ -287,6 +287,13 @@ https://miro.com/welcomeonboard/dGFtbnNmZWozeFE1UnJUcWZiY05ISlBxMGZRTFNnWGhKNHU3
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
 ![Report-Canvas](./assets/images/Report%20Context%20Canvas.jpg)
+
+![Notification-Canvas](./assets/images/Notification%20Context%20Canvas.jpg)
+
+![Payment-Canvas](./assets/images/Payment%20Context%20Canvas.jpg)
+
+![Iam-Canvas](./assets/images/Iam%20Context%20Canvas.jpg)
+
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
