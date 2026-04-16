@@ -294,6 +294,8 @@ https://miro.com/welcomeonboard/dGFtbnNmZWozeFE1UnJUcWZiY05ISlBxMGZRTFNnWGhKNHU3
 
 ![Iam-Canvas](./assets/images/Iam%20Context%20Canvas.jpg)
 
+![Hardware-canvas](./assets/images/Hardware%20Context%20Canvas.jpg)
+
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
