@@ -339,7 +339,103 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 11. ¿Qué tan dispuesto estaría de invertir en una solución que le permita monitorear los parámetros del agua de sus piscigranjas?
 
 ### 2.2.2. Registro de entrevistas
+
+A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
+
+---
+
+**Segmento Piscicultores: Entrevistado 1**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Martín Salcedo |
+| **Edad** | 30 |
+| **Sexo** | Masculino |
+| **Distrito** | Cieneguilla, Lima |
+| **Ocupación** | Piscicultor en piscigranja familiar |
+| **Fecha de entrevista** | 14/04/2026  |
+| **Timing** |00:00 -  |
+| **Video** | [Ver entrevista](URL_POR_DEFINIR) |
+| **Captura** | ![Captura entrevista piscicultor](./assets/images/screenshots/interview-screenshot-pisci1.png) |
+| **Resumen** | Martín trabaja en una piscigranja familiar en Cieneguilla donde se dedica al cultivo de tilapia. Ha recibido capacitaciones básicas en acuicultura, manejo de tilapia y control de agua por parte del Ministerio de la Producción. Su jornada comienza a las 6 am revisando los estanques, limpiando bordes, controlando el nivel del agua y verificando el funcionamiento general de los sistemas. Los parámetros que monitorea con mayor frecuencia son el pH y la temperatura; el oxígeno solo lo mide cuando detecta algo fuera de lo normal, como peces que dejan de comer o suben a la superficie. Registra los datos en un cuaderno o en su celular. Ante situaciones críticas como turbidez o cambios en el nivel del agua, restringe la alimentación y regula el flujo de agua. Señala que el costo de los equipos es un factor limitante importante a considerar. Le gustaría contar con una solución que le brinde información sobre el estado del agua, alertas claras ante anomalías y el ciclo de alimentación de los peces. Su principal criterio para adoptar una herramienta es que sea simple y fácil de usar. |
+
+---
+
+**Segmento Administradores de piscigranja: Entrevistado 1**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Rafael Mendoza |
+| **Edad** | 47 |
+| **Sexo** | Masculino |
+| **Distrito** |  |
+| **Ocupación** | Administrador de piscigranja |
+| **Fecha de entrevista** | 12/04/2026 |
+| **Timing** |  |
+| **Video** | [Ver entrevista](URL_POR_DEFINIR) |
+| **Captura** | ![Captura entrevista administrador](./assets/images/screenshots/interview-screenshot-admin1.png) |
+| **Resumen** | Rafael administra una piscigranja donde produce truchas y paiches para venta directa a mercados, sin procesar ni filetear el producto. Actualmente recibe información del estado de sus estanques a través de reportes físicos entregados por sus trabajadores de campo, con uso mínimo de WhatsApp. Los factores más importantes para su gestión son el volumen y la calidad del agua, especialmente la turbidez y densidad, ya que de estos depende directamente la rentabilidad del negocio. Ha sufrido pérdidas significativas por el Fenómeno del Niño debido a sequías que redujeron el caudal de agua y afectaron la calidad de sus cultivos. Certifica que sus especies estén bien alimentadas, libres de enfermedades y que no representen riesgo para la salud del consumidor. Considera que un software ideal sería aquel que le permita predecir la disponibilidad de agua a futuro, detectar contaminación con químicos y enviarle alertas automáticas. Priorizaría contratar la solución según su costo y el tamaño de su producción, y en una primera instancia le bastaría con monitorear el volumen del agua en tiempo real. |
+
+---
+
 ### 2.2.3. Análisis de entrevistas
+
+Las entrevistas se realizaron en abril de 2026 a un total de dos participantes: un administrador de piscigranja y un piscicultor de campo, en diferentes zonas de Perú. El objetivo fue comprender sus contextos operativos, frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl.
+
+---
+
+**Segmento: Piscicultores**
+
+**Total entrevistados:** 1
+**Edades:** 
+**Distritos:** Cieneguilla, Lima
+**Instituciones/Empresas:** Piscigranja familiar
+**Fechas:** 
+
+**Características objetivas**
+- Inicia su jornada a las 6 am revisando estanques, limpiando bordes y controlando niveles de agua: **1/1 (100%)**
+- Monitorea principalmente pH y temperatura; el oxígeno solo ante anomalías: **1/1 (100%)**
+- Registra datos en cuaderno físico o celular de forma manual: **1/1 (100%)**
+- Ha recibido capacitaciones básicas del Ministerio de la Producción: **1/1 (100%)**
+- Detecta problemas por el comportamiento de los peces (dejan de comer, suben a la superficie): **1/1 (100%)**
+
+**Características subjetivas**
+- Considera el costo de los equipos como un factor limitante importante: **1/1 (100%)**
+- Valora que una herramienta sea simple y fácil de usar por encima de otras características: **1/1 (100%)**
+- Le gustaría recibir alertas claras ante anomalías en el agua: **1/1 (100%)**
+- Desea tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **1/1 (100%)**
+- Está dispuesto a adoptar YakuControl si le simplifica su trabajo diario: **1/1 (100%)**
+
+---
+
+**Segmento: Administradores de piscigranja**
+
+**Total entrevistados:** 1
+**Edades:** 
+**Distritos:** 
+**Instituciones/Empresas:** 
+**Fechas:** 
+
+**Características objetivas**
+- Recibe información del estado de los estanques únicamente a través de reportes físicos o WhatsApp: **1/1 (100%)**
+- No cuenta con ningún sistema digital para monitorear parámetros del agua: **1/1 (100%)**
+- Ha sufrido pérdidas económicas por factores climáticos como sequías y el Fenómeno del Niño: **1/1 (100%)**
+- Realiza venta directa al mercado sin procesamiento del producto: **1/1 (100%)**
+- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/1 (100%)**
+
+**Características subjetivas**
+- Considera el volumen y la calidad del agua como los factores más críticos de su negocio: **1/1 (100%)**
+- Valora altamente la posibilidad de predecir la disponibilidad de agua a futuro: **1/1 (100%)**
+- Evaluaría contratar una solución tecnológica según su costo y el tamaño de su producción: **1/1 (100%)**
+- Priorizaría en una primera etapa monitorear únicamente el volumen del agua: **1/1 (100%)**
+- Desea recibir alertas automáticas ante contaminación o cambios críticos en el agua: **1/1 (100%)**
+
+---
+
+**Conclusión general**
+
+El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto el administrador como el piscicultor coinciden en que el volumen y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. El administrador prioriza la visibilidad remota y la capacidad predictiva del sistema, mientras que el piscicultor prioriza la simplicidad de uso y las alertas en tiempo real. Estas necesidades complementarias refuerzan la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real.
+
 ## 2.3. Needfinding
 
 El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto. A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
