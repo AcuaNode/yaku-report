@@ -347,9 +347,30 @@ Esta arquitectura garantiza que los cambios en la lógica de pagos o notificacio
 
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+En esta sección se ofrece una visión macroscópica del ecosistema tecnológico de la piscigranja. El objetivo de este nivel de abstracción es contextualizar a YakuControl dentro de su entorno operativo real. El diagrama ilustra la convivencia de la plataforma principal con otros sistemas aislados de la empresa y los actores organizacionales. Esto permite comprender los flujos de información y los procesos de negocio en el terreno, existan o no integraciones directas a nivel de código.
+
+![Landscape Diagram](./assets/images/c0_system_landscape.png)
+<br>
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+El propósito de este nivel es definir de manera estricta las fronteras del software en desarrollo. El diagrama detalla a los usuarios directos (el Administrador y el Piscicultor) y las dependencias con sistemas externos críticos para la operatividad y monetización, tales como la infraestructura IoT en los estanques, la pasarela de pagos B2B y las APIs meteorológicas.
+
+![Context Diagram](./assets/images/c1_yakucontrol_context.png)
+<br>
+
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+Se expone la estructura interna de YakuControl y las decisiones tecnológicas de alto nivel. Este esquema identifica las unidades de ejecución independientes que conforman el sistema, abarcando desde las interfaces de usuario (aplicaciones web SPA y aplicaciones móviles nativas) hasta el enrutamiento mediante un API Gateway y la malla de microservicios backend. Asimismo, ilustra la estrategia de persistencia en bases de datos relacionales y de series de tiempo y el modelo de comunicación asíncrona mediante un bus de eventos, demostrando la escalabilidad y el desacoplamiento de la arquitectura.
+
+![Container Diagram](./assets/images/c2_yakucontrol_container.png)
+<br>
+
+
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+Mapea la arquitectura lógica hacia la infraestructura física y los servicios en la nube. Este nivel visualiza la distribución topológica y geográfica del software, detallando cómo los artefactos y contenedores se instalan en los entornos de ejecución reales. El esquema evidencia la separación estratégica en ejecución en el "Edge", la distribución global del frontend mediante redes de entrega de contenido, y el despliegue seguro del backend dentro de una red virtual privada (VNet) administrada en la nube de Microsoft Azure.
+
+![Deployment Diagram](./assets/images/c4_deployment_yakucontrol.png)
+<br>
+
 
 ## 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.X. Bounded Context:
