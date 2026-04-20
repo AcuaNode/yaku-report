@@ -426,6 +426,18 @@ Bounded Context Notification presenta una descripción estructurada de las clase
 
 
 #### 4.2.4.2. Interface Layer
+La capa de interfaz de usuario (o Interface Layer) en el Bounded Context de Notification actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la gestión de alertas y asegurar que la comunicación con los clientes (App Web y App Móvil) y otros contextos (Hardware) sea estandarizada.
+
+##### Controller
+* **NotificationController:** Controlador REST que gestiona las operaciones relacionadas con las notificaciones, permitiendo la recepción de alertas desde el hardware
+##### DTO
+* **CreateNotificationResource (DTO):** Objeto de transferencia de datos utilizado para capturar la información necesaria al generar una nueva alerta desde los sensores
+* **NotificationResource (DTO):** Representa la respuesta estándar del sistema al consultar una notificación, formateada para ser consumida por la aplicación web o móvil.
+* **SensorDataResource (DTO):** Objeto de transferencia de datos utilizndo para capturar la informacion del estado de los Sensores.
+
+![Controller](./assets/images/Notification-interface-controller.png)
+![DTO](./assets/images/Notification-interface-dto.png)
+
 #### 4.2.4.3. Application Layer
 #### 4.2.4.4. Infrastructure Layer
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
