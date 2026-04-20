@@ -451,6 +451,15 @@ La capa de aplicación en el Bounded Context de Notification define los trabajos
 ![command&query](./assets/images/Notification-application-command-query.png)
 
 #### 4.2.4.4. Infrastructure Layer
+La capa de infraestructura proporciona las capacidades técnicas y tecnológicas que soportan a las demás capas (Interfaces, Aplicación y Dominio). Su propósito es implementar las interfaces (puertos) que definimos en la capa de Aplicación, aplicando el principio de Inversión de Dependencias.
+
+Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando JPA/Hibernate con PostgreSQL o MySQL
+
+**NotificationRepositoryImpl:** Clase que implementa la interfaz NotificationRepository definida en la capa de Aplicación. Traduce las entidades de dominio a NotificationJpaEntity y utiliza un repositorio de Spring Data JPA para guardar o consultar en la base de datos
+
+![Infrastructure](./assets/images/Notification-infrastructure.png)
+]
+
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
