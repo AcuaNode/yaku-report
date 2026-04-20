@@ -407,6 +407,24 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 
 ### 4.2.4. Bounded Context: Notification Context
 #### 4.2.4.1. Domain Layer
+Bounded Context Notification presenta una descripción estructurada de las clases que conforman el modelo de dominio encargado de la gestión de alertas y notificaciones dentro del sistema IOT de monitoreo en criaderos de truchas. Este modelo se ha diseñado bajo los principios de Domain-Driven Design (DDD), con el objetivo de reflejar fielmente las reglas del negocio en el código, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+##### Aggregate 
+* **Notification** : Representa una alerta (normal o crítica) generada por el sistema cuando los sensores envían datos por debajo del umbral permitido, si hay daño o pérdida de conexión.
+##### Entity
+* **Recipient** : Representa a la persona (Piscicultor o Administrador/Dueño) que recibe la notificación.
+* **SensorData**: Contiene la información capturada por el hardware (temperatura, turbidez, ph, estado de bombas) en el momento de la alerta.
+##### Value Object
+* **NotificationType**
+* **RecipientRole**
+* **ContactInfo**
+* **HardwareStatus**
+
+![Agregate](./assets/images/Notification-domain-aggregate.png)
+![Entity](./assets/images/Notification-domain-entity.png)
+![Value Object](./assets/images/Notification-domain-valueobject.png)
+
+
 #### 4.2.4.2. Interface Layer
 #### 4.2.4.3. Application Layer
 #### 4.2.4.4. Infrastructure Layer
