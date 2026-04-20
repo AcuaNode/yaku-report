@@ -458,7 +458,6 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 **NotificationRepositoryImpl:** Clase que implementa la interfaz NotificationRepository definida en la capa de Aplicación. Traduce las entidades de dominio a NotificationJpaEntity y utiliza un repositorio de Spring Data JPA para guardar o consultar en la base de datos
 
 ![Infrastructure](./assets/images/Notification-infrastructure.png)
-]
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
