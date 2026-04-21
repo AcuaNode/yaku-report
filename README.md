@@ -463,6 +463,7 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 ![Notification-component-level](./assets/images/Notification-component-level.png)
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+![Notification-domain-level](./assets/images/Notification-domain-class.png)
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
 
 
