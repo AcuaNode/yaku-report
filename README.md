@@ -599,6 +599,7 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ![Notification-domain-level](./assets/images/Notification-domain-class.png)
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
+![Notification-db](./assets/images/Notification-db.png)
 
 
 ### 4.2.5. Bounded Context: Payment Context
