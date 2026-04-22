@@ -385,7 +385,7 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Nombre** | Harvey Peña Franco|
 | **Edad** | 48 |
 | **Sexo** | Masculino |
-| **Distrito** |  |
+| **Region** | Huancavelica |
 | **Ocupación** | Administrador de piscigranja |
 | **Fecha de entrevista** | 21/04/2026 |
 | **Timing** |  |
