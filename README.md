@@ -88,7 +88,7 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 
 | Integrantes | Tarea asignada |
 | :--- | :--- |
-| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Infrastructure Context) |
+| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Equipment Context) |
 | Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Payment Context) |
 | Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Telemetry Context) |
 | Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
