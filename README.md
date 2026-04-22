@@ -361,7 +361,9 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 
 ---
 
-**Segmento Administradores de piscigranja: Entrevistado 1**
+**Segmento Administradores de piscigranja:** <br>
+
+**Entrevistado 1**
 
 | Atributo | Detalle |
 |---|---|
@@ -375,6 +377,22 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Video** | [Ver entrevista](URL_POR_DEFINIR) |
 | **Captura** | ![Captura entrevista administrador](./assets/images/screenshots/interview-screenshot-admin1.png) |
 | **Resumen** | Rafael administra una piscigranja donde produce truchas y paiches para venta directa a mercados, sin procesar ni filetear el producto. Actualmente recibe información del estado de sus estanques a través de reportes físicos entregados por sus trabajadores de campo, con uso mínimo de WhatsApp. Los factores más importantes para su gestión son el volumen y la calidad del agua, especialmente la turbidez y densidad, ya que de estos depende directamente la rentabilidad del negocio. Ha sufrido pérdidas significativas por el Fenómeno del Niño debido a sequías que redujeron el caudal de agua y afectaron la calidad de sus cultivos. Certifica que sus especies estén bien alimentadas, libres de enfermedades y que no representen riesgo para la salud del consumidor. Considera que un software ideal sería aquel que le permita predecir la disponibilidad de agua a futuro, detectar contaminación con químicos y enviarle alertas automáticas. Priorizaría contratar la solución según su costo y el tamaño de su producción, y en una primera instancia le bastaría con monitorear el volumen del agua en tiempo real. |
+
+**Entrevistado 1**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Harvey Peña Franco|
+| **Edad** | 48 |
+| **Sexo** | Masculino |
+| **Distrito** |  |
+| **Ocupación** | Administrador de piscigranja |
+| **Fecha de entrevista** | 21/04/2026 |
+| **Timing** |  |
+| **Video** | [Ver entrevista](https://www.youtube.com/watch?v=hzrA8M5Td48) |
+| **Captura** | ![Captura entrevista administrador](./assets/images/screenshots/interview-screenshot-admin2.png) 
+| **Resumen** | La entrevista con el señor Harvey Peña confirma que la gestión de las piscigranjas en Huancavelica es actualmente empírica y reactiva, lo que genera pérdidas económicas debido a la imposibilidad de detectar a tiempo factores críticos como la turbidez por lodo en invierno o el alza de temperatura en verano. El administrador destaca la falta de comunicación diaria con el personal de campo —quien suele informar solo cuando la mortandad ya ha ocurrido— y valida la necesidad urgente de una solución basada en dispositivos móviles que emita alertas de oxígeno y pH. Finalmente, su disposición a invertir "lo que fuera necesario" ratifica el valor de negocio de YakuControl como una herramienta esencial para transformar la prevención de desastres biológicos en rentabilidad real. |
+
 
 ---
 
