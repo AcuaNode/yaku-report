@@ -369,15 +369,15 @@ El resto de contextos serán modelados en las siguientes secciones mediante **Bo
 
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
-![Report-Canvas](./assets/images/Report%20Context%20Canvas.jpg)
+![Telemetry-Canvas](./assets/images/Telemetry-canva.jpg)
 
-![Notification-Canvas](./assets/images/Notification%20Context%20Canvas.jpg)
+![Notification-Canvas](./assets/images/Notification-canva.jpg)
 
-![Payment-Canvas](./assets/images/Payment%20Context%20Canvas.jpg)
+![Payment-Canvas](./assets/images/Payment-canva.jpg)
 
-![Iam-Canvas](./assets/images/Iam%20Context%20Canvas.jpg)
+![Iam-Canvas](./assets/images/Iam-canva.jpg)
 
-![Hardware-canvas](./assets/images/Hardware%20Context%20Canvas.jpg)
+![Equipment-canvas](./assets/images/Equipment-canva.jpg)
 
 ### 4.1.2. Context Mapping
 
@@ -606,6 +606,7 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ![Notification-domain-level](./assets/images/Notification-domain-class.png)
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
+![Notification-db](./assets/images/Notification-db.png)
 
 
 ### 4.2.5. Bounded Context: Payment Context
