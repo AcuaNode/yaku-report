@@ -88,11 +88,11 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 
 | Integrantes | Tarea asignada |
 | :--- | :--- |
-| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Institution Context) |
-| Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Scheduling Context) |
-| Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Billing & Accounting Context) |
-| Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (Enrollment Context) |
-| Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Attendance Context) |
+| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Infrastructure Context) |
+| Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Payment Context) |
+| Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Telemetry Context) |
+| Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
+| Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
 **GitHub Collaboration Insights**
 
@@ -242,14 +242,28 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 - **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-| Integrante | Perfil |
-| :--- | :--- |
-| **Aponte Cruzado, Andrea Marielena** | *[Por completar]* |
-| **Lopez Acuna, Mario Joaquin** | *[Por completar]* |
-| **Urrutia Pena, Jasmin Adriana** | *[Por completar]* |
-| **Vivanco Salazar, Rafael Andres** | *[Por completar]* |
-| **Velasquez Chambi, Ruben Genaro** | *[Por completar]* |
+<table border="1">
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" img alt="Andrea Aponte" src="./assets/images/andrea_aponte.png" /></td>
+      <td><strong>Aponte Cruzado, Andrea Marielena - u202224135</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Mario Lopez" src="./assets/images/mario_lopez.png" /></td>
+      <td><strong>Lopez Acuna, Mario Joaquin - </strong><br>-</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Jasmin Urrutia" src="./assets/images/ruben_velasquez.png" /></td>
+      <td><strong>Velasquez Chambi, Ruben Genaro - </strong><br>-</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
+      <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br>Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
+      <td><strong>Vivanco Salazar, Rafael Andres - u202311064</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
+  </tr>
+</table>
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
