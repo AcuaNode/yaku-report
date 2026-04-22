@@ -258,31 +258,67 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. Design-Level EventStorming
-En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de YakuControl, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
-#### 4.1.1.1. Candidate Context Discovery
-##### Step 1
-![Step 1](assets/images/step1.png)<br>
-##### Step 2
-![Step 2](assets/images/step2.png)<br>
-##### Step 3
-![Step 3](assets/images/step3.png)<br>
-##### Step 4
-![Step 4](assets/images/step4.png)<br>
-##### Step 5
-![Step 5](assets/images/step5.png)<br>
-##### Step 6
-![Step 6](assets/images/step6.png)<br>
-##### Step 7
-![Step 7](assets/images/step7.png)<br>
-##### Step 8
-![Step 8](assets/images/step8.png)<br>
-##### Step 9
-![Step 9](assets/images/step9.png)<br>
-##### Step 10
-![Step 10](assets/images/step10.png)<br>
 
-Link Miro: <br>
-https://miro.com/welcomeonboard/dGFtbnNmZWozeFE1UnJUcWZiY05ISlBxMGZRTFNnWGhKNHU3YkZRTkd1U2tnd3NzZVoybUtQRWRDNDZkdlI0OGFjS2VBTGU3ZWdsRS8wa3RodTl2a2FhcGk0Qm1HdFJkZDVNdTdkQjR5V3hvNXE5MTFDWTJEaFhUNkg2Sm52bXlQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=635140542507
+En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de **YakuControl**, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
+
+---
+
+##### Step 1: Domain Events
+El proceso inicia con la identificación de los **Domain Events** (post-its naranjas), representados en tiempo pasado. En esta etapa, se vuelcan de manera libre todos los sucesos relevantes en el ecosistema de AcuaNode, desde la captura de una métrica de PH hasta la confirmación de una suscripción, permitiendo visualizar la magnitud del sistema sin restricciones jerárquicas.
+
+![Step 1](assets/images/step1.png)
+
+##### Step 2: Timelining
+Una vez identificados los eventos, se organizan en una **línea de tiempo lógica** de izquierda a derecha. Esto permite detectar inconsistencias, eventos duplicados o vacíos en el proceso de negocio, asegurando que el flujo desde que un sensor detecta un cambio hasta que el piscicultor es notificado sea coherente y fluido.
+
+![Step 2](assets/images/step2.png)
+
+##### Step 3: Pivotal Events & Bounded Contexts Discovery
+Se identifican los **Pivotal Events**, sucesos clave que marcan un cambio de fase o responsabilidad (como la emisión de un Token o la generación de una Alerta). Estos puntos de inflexión facilitan la definición de las fronteras de los **Bounded Contexts**, separando responsabilidades como Seguridad (IAM), Monitoreo (Telemetría) y Negocio (Pagos).
+
+![Step 3](assets/images/step3.png)
+
+##### Step 4: Commands and Actors
+A cada evento se le asocia un **Command** (post-it azul), que representa la intención o acción que lo dispara, y un **Actor** (post-it amarillo pequeño), que identifica quién tiene la responsabilidad de ejecutarlo. En YakuControl, esto clarifica qué acciones realiza el Administrador en la Web frente a las del Piscicultor en la App Mobile.
+
+![Step 4](assets/images/step4.png)
+
+##### Step 5: External Systems
+Se integran los **External Systems** (post-its rosas) con los que interactúa la plataforma. Aquí se mapean las dependencias con servicios fuera del control directo de la aplicación, como Pasarelas de Pago (Stripe), servicios de notificaciones (Firebase) o el hardware físico de los actuadores.
+
+![Step 5](assets/images/step5.png)
+
+##### Step 6: Aggregates Identification
+En este paso se definen los **Aggregates** (post-its amarillos grandes), que funcionan como los núcleos de consistencia del sistema. Son entidades raíz como "Estanque", "Suscripción" o "Usuario", que encapsulan lógica de negocio compleja y aseguran que los comandos solo se ejecuten si cumplen con las reglas del dominio.
+
+![Step 6](assets/images/step6.png)
+
+##### Step 7: Policies and Business Rules
+Se establecen las **Policies** (post-its lilas), que definen reacciones automáticas bajo la premisa "Siempre que [Evento], entonces [Comando]". Esto es fundamental para la automatización de AcuaNode, como la regla que activa automáticamente un oxigenador tras detectar una lectura crítica de oxígeno disuelto.
+
+![Step 7](assets/images/step7.png)
+
+##### Step 8: Read Models (UI/UX)
+Se identifican los **Read Models** (post-its verdes), que representan la información optimizada para la vista del usuario. Estos modelos definen qué datos se mostrarán en los dashboards de la aplicación, asegurando que el Piscicultor vea métricas esenciales y el Administrador reportes estadísticos complejos.
+
+![Step 8](assets/images/step8.png)
+
+##### Step 9: Pain Points & Hotspots
+Se señalan los **Pain Points** (post-its fucsia en diamante), identificando riesgos, dudas o debilidades técnicas. En este proyecto, se destacan retos como la conectividad en zonas rurales y la seguridad de las "Keys de Granja", los cuales se mitigan mediante el uso de arquitecturas **Edge Computing**.
+
+![Step 9](assets/images/step9.png)
+
+##### Step 10: Final Architecture & Context Mapping
+El paso final consiste en consolidar el mapa completo para definir la arquitectura técnica. Se establecen los canales de comunicación entre contextos, asegurando que el **IAM** actúe como guardián transversal mientras que **Telemetría** y **Alertas** funcionan como el motor reactivo de la solución inteligente.
+
+![Step 10](assets/images/step10.png)
+
+---
+
+**Link Miro:** [Acceso al Tablero de EventStorming - YakuControl](https://miro.com/welcomeonboard/dGFtbnNmZWozeFE1UnJUcWZiY05ISlBxMGZRTFNnWGhKNHU3YkZRTkd1U2tnd3NzZVoybUtQRWRDNDZkdlI0OGFjS2VBTGU3ZWdsRS8wa3RodTl2a2FhcGk0Qm1HdFJkZDVNdTdkQjR5V3hvNXE5MTFDWTJEaFhUNkg2Sm52bXlQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=635140542507)
+
+#### 4.1.1.1. Candidate Context Discovery
+
 
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
