@@ -448,55 +448,59 @@ Las entrevistas se realizaron en abril de 2026 a un total de dos participantes: 
 
 **Segmento: Piscicultores**
 
-**Total entrevistados:** 1
-**Edades:** 
-**Distritos:** Cieneguilla, Lima
-**Instituciones/Empresas:** Piscigranja familiar
-**Fechas:** 
+**Total entrevistados:** 3
+**Edades:** 30, 30, 31
+**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)
+**Instituciones/Empresas:** Piscigranja negocio normal y familiar
+**Fechas:** 14 de abril de 2026
 
 **Características objetivas**
-- Inicia su jornada a las 6 am revisando estanques, limpiando bordes y controlando niveles de agua: **1/1 (100%)**
-- Monitorea principalmente pH y temperatura; el oxígeno solo ante anomalías: **1/1 (100%)**
-- Registra datos en cuaderno físico o celular de forma manual: **1/1 (100%)**
-- Ha recibido capacitaciones básicas del Ministerio de la Producción: **1/1 (100%)**
-- Detecta problemas por el comportamiento de los peces (dejan de comer, suben a la superficie): **1/1 (100%)**
+- Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción: **3/3 (100%)**
+- Monitorean principalmente temperatura; el oxígeno y pH solo ante anomalías o cuando tienen equipo disponible: **3/3 (100%)**
+- Registran datos en cuaderno físico, celular o Excel de forma manual: **3/3 (100%)**
+- Detectan problemas por el comportamiento visual de los peces (dejan de comer, suben a la superficie): **3/3 (100%)**
+- No utilizan ninguna aplicación digital especializada en su trabajo: **3/3 (100%)**
+- Usan el celular como principal dispositivo de trabajo: **3/3 (100%)**
+- Consideran la limpieza y sedimentación de estanques como una tarea fundamental: **2/3 (67%)**
 
 **Características subjetivas**
-- Considera el costo de los equipos como un factor limitante importante: **1/1 (100%)**
-- Valora que una herramienta sea simple y fácil de usar por encima de otras características: **1/1 (100%)**
-- Le gustaría recibir alertas claras ante anomalías en el agua: **1/1 (100%)**
-- Desea tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **1/1 (100%)**
-- Está dispuesto a adoptar YakuControl si le simplifica su trabajo diario: **1/1 (100%)**
-
----
+- Consideran el costo de los equipos como un factor limitante importante para adoptar tecnología: **3/3 (100%)**
+- Valoran que una herramienta sea simple y fácil de usar por encima de otras características: **3/3 (100%)**
+- Les gustaría recibir alertas claras y automáticas ante anomalías en el agua: **3/3 (100%)**
+- Desean ver el estado del agua en tiempo real desde su celular: **3/3 (100%)**
+- Están dispuestos a adoptar YakuControl si simplifica su trabajo diario: **3/3 (100%)**
+- Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas: **3/3 (100%)**
+- Desean tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **2/3 (67%)**
 
 **Segmento: Administradores de piscigranja**
 
-**Total entrevistados:** 1
-**Edades:** 
-**Distritos:** 
-**Instituciones/Empresas:** 
-**Fechas:** 
-
+**Total entrevistados:** 3
+**Edades:** 47, 45, 48 años
+**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)
+**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra
+**Fechas:** 12 y 21 de abril de 2026
+ 
 **Características objetivas**
-- Recibe información del estado de los estanques únicamente a través de reportes físicos o WhatsApp: **1/1 (100%)**
-- No cuenta con ningún sistema digital para monitorear parámetros del agua: **1/1 (100%)**
-- Ha sufrido pérdidas económicas por factores climáticos como sequías y el Fenómeno del Niño: **1/1 (100%)**
-- Realiza venta directa al mercado sin procesamiento del producto: **1/1 (100%)**
-- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/1 (100%)**
+- Reciben información del estado de los estanques a través de reportes físicos, fotos de cuadernos o audios de WhatsApp: **3/3 (100%)**
+- No cuentan con ningún sistema digital especializado para monitorear parámetros del agua: **3/3 (100%)**
+- Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas: **3/3 (100%)**
+- Usan Excel y WhatsApp como únicas herramientas de gestión: **3/3 (100%)**
+- Realizan venta directa al mercado sin procesamiento del producto: **2/3 (67%)**
+- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/3 (33%)**
+- La información que reciben del personal de campo llega con retraso o es difícil de interpretar: **3/3 (100%)**
 
 **Características subjetivas**
-- Considera el volumen y la calidad del agua como los factores más críticos de su negocio: **1/1 (100%)**
-- Valora altamente la posibilidad de predecir la disponibilidad de agua a futuro: **1/1 (100%)**
-- Evaluaría contratar una solución tecnológica según su costo y el tamaño de su producción: **1/1 (100%)**
-- Priorizaría en una primera etapa monitorear únicamente el volumen del agua: **1/1 (100%)**
-- Desea recibir alertas automáticas ante contaminación o cambios críticos en el agua: **1/1 (100%)**
-
----
+- Consideran la temperatura y el oxígeno del agua como los factores más críticos del negocio: **3/3 (100%)**
+- Evalúan contratar una solución tecnológica principalmente según su costo: **3/3 (100%)**
+- Desean recibir alertas automáticas ante cambios críticos en el agua: **3/3 (100%)**
+- Valoran poder monitorear sus estanques de forma remota desde el celular: **3/3 (100%)**
+- Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad: **3/3 (100%)**
+- Valoran la posibilidad de predecir la disponibilidad de agua a futuro: **2/3 (67%)**
+- Priorizarían en una primera etapa monitorear el volumen y temperatura del agua: **3/3 (100%)**
 
 **Conclusión general**
 
-El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto el administrador como el piscicultor coinciden en que el volumen y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. El administrador prioriza la visibilidad remota y la capacidad predictiva del sistema, mientras que el piscicultor prioriza la simplicidad de uso y las alertas en tiempo real. Estas necesidades complementarias refuerzan la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real.
+El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto piscicultores como administradores coinciden en que la temperatura, el oxígeno y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. Los piscicultores priorizan la simplicidad de uso y las alertas en tiempo real desde el celular, mientras que los administradores priorizan la visibilidad remota, la capacidad predictiva del sistema y un costo accesible. Estas necesidades complementarias refuerzan directamente la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real, previniendo pérdidas y mejorando la rentabilidad del negocio acuícola peruano.
 
 ## 2.3. Needfinding
 
