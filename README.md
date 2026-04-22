@@ -435,9 +435,57 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 
 ### 4.2.3. Bounded Context: Iam Context
 #### 4.2.3.1. Domain Layer
+Bounded Context IAM presenta una descripción estructurada de las clases que conforman el modelo de dominio encargado de la gestión de identidades, roles y control de acceso de los usuarios dentro del sistema IoT de monitoreo en criaderos de truchas. Este modelo se ha diseñado bajo los principios de Domain-Driven Design (DDD), con el objetivo de reflejar fielmente las reglas del negocio y de seguridad en el código, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+##### Aggregate
+* **User** : Representa un usuario (administrador o piscicultor) registrado en el sistema cuando se otorgue la cuenta al administrador o se registre el usuario como piscicultor.
+##### Entity
+* **PondToken** : Código único generado por el rol administrador que permite el registro de piscicultores a su nombre.
+##### Value Object
+* **Role** 
+![Domain Layer IAM](./assets/images/domain_iam_aggregate.png)
+
 #### 4.2.3.2. Interface Layer
+La capa de interfaz (o Interface Layer) en el Bounded Context IAM actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la autenticación de usuarios, la gestión de identidades y el control de acceso, asegurando una comunicación segura y estandarizada con los clientes (App Web y App Móvil).
+
+##### Controller
+* **UserController** : Controlador REST que gestiona las operaciones relacionadas con las gestión de identidades, manejo de permisos y roles.
+
+##### DTO
+* **SignInResource** : Objeto que captura las credenciales del usuario al intentar acceder al sistema.
+* **SignUpResource** : Objeto que captura la información necesaria (incluyendo el PondToken para piscicultores) al momento del registro.
+* **UpdateUserProfileResource** : Objeto utilizado para capturar la información al momento de actualizar el perfil de un usuario existente.
+* **UserResource** : Representa la respuesta estándar del sistema al consultar los datos de un usuario.
+* **AuthenticationResponseResource** : Representa la respuesta exitosa tras el inicio de sesión, conteniendo el token de acceso (JWT).
+
+#### Transform
+* **SignInCommandFromResourceAssembler** : Componente encargado de transformar el DTO de entrada (SignInResource) en un comando de dominio puro (SignInCommand) para ser procesado por la capa de aplicación.
+* **SignUpCommandFromResourceAssembler** : Transforma el DTO de registro (SignUpResource) en su respectivo comando (SignUpCommand).
+* **UserResourceFromEntityAssembler** : Convierte la entidad de dominio User en un formato seguro y estructurado (UserResource) para ser expuesto al cliente.
+
+![Interface Layer IAM](./assets/images/interface_layer_iam.png)
+
 #### 4.2.3.3. Application Layer
+La capa de aplicación en el Bounded Context IAM define los trabajos que el software debe realizar y dirige los objetos de dominio para que resuelvan los problemas de negocio. Siguiendo el principio de inversión de dependencias y el patrón CQRS (separación de comandos y consultas), esta capa se divide en servicios de comandos (para el registro, autenticación y modificación de datos) y servicios de consultas (para leer la información de los perfiles).
+
+##### Command
+* **UserCommandService** : Servicio encargado de orquestar las operaciones que alteran el estado del sistema. Coordina el inicio de sesión, la validación de los códigos de acceso (PondToken) requeridos para los piscicultores, la instanciación de la entidad User para nuevos registros y la actualización de perfiles, delegando a la infraestructura la persistencia de los cambios.
+* **SignInCommand / SignUpCommand / UpdateUserProfileCommand** : Objetos inmutables que transportan la intención de ejecutar una acción específica desde la capa de interfaz hacia la capa de aplicación. Contienen los datos estrictamente necesarios (credenciales, información personal o tokens de registro) para llevar a cabo su respectiva operación.
+
+##### Query
+* **UserQueryService** : Servicio encargado de orquestar las consultas de lectura puras. Permite a los clientes (App Web para Administradores y App Móvil para Piscicultores) obtener la información del perfil de un usuario específico o consultar la lista de personal registrado, sin realizar ninguna modificación en el estado del dominio.
+
+![Application Layer IAM](./assets/images/application_layer_iam.png)
+
 #### 4.2.3.4. Infrastructure Layer
+La capa de infraestructura proporciona las capacidades técnicas y tecnológicas que soportan a las demás capas (Interfaces, Aplicación y Dominio) dentro del Bounded Context IAM. Su propósito es implementar las interfaces que definimos en las capas superiores, aplicando el principio de Inversión de Dependencias. Aquí es donde se configura la conexión a la base de datos (por ejemplo, usando JPA/Hibernate con PostgreSQL) y se gestionan los mecanismos técnicos de seguridad.
+
+* **UserRepositoryImpl** : Clase que implementa la interfaz UserRepository. Traduce la entidad de dominio User a su representación técnica en la base de datos (UserJpaEntity) y utiliza un repositorio de Spring Data JPA para persistir o consultar los datos del usuario.
+* **PondTokenRepositoryImpl** : Clase que implementa la interfaz PondTokenRepository. Gestiona la traducción y persistencia en base de datos de los códigos de un solo uso generados para el registro de los piscicultores.
+* **JwtTokenProvider** : Componente técnico encargado de la infraestructura de seguridad, específicamente de la generación, firma criptográfica y validación de los tokens JWT entregados a los clientes (App Web y App Móvil).
+
+![Infrastructure Layer IAM](./assets/images/infrastructure_layer_iam.png)
+
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 ![Iam-Context](./assets/images/c3_iam_yakucontrol.png)
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
@@ -465,7 +513,7 @@ Bounded Context Notification presenta una descripción estructurada de las clase
 
 
 #### 4.2.4.2. Interface Layer
-La capa de interfaz de usuario (o Interface Layer) en el Bounded Context de Notification actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la gestión de alertas y asegurar que la comunicación con los clientes (App Web y App Móvil) y otros contextos (Hardware) sea estandarizada.
+La capa de interfaz de usuario (o Interface Layer) en el Bounded Context de Notification actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la gestión de alertas y asegurar que la comunicación con los clientes (App Web y App Móvil).
 
 ##### Controller
 * **NotificationController:** Controlador REST que gestiona las operaciones relacionadas con las notificaciones, permitiendo la recepción de alertas desde el hardware
