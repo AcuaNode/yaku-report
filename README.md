@@ -490,7 +490,8 @@ Bounded Context IAM presenta una descripción estructurada de las clases que con
 * **PondToken** : Código único generado por el rol administrador que permite el registro de piscicultores a su nombre.
 ##### Value Object
 * **Role** 
-![Domain Layer IAM](./assets/images/domain_iam_aggregate.png)
+
+![Domain Layer IAM](./assets/images/domain_aggregate_iam.png)
 
 #### 4.2.3.2. Interface Layer
 La capa de interfaz (o Interface Layer) en el Bounded Context IAM actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la autenticación de usuarios, la gestión de identidades y el control de acceso, asegurando una comunicación segura y estandarizada con los clientes (App Web y App Móvil).
@@ -537,7 +538,13 @@ La capa de infraestructura proporciona las capacidades técnicas y tecnológicas
 ![Iam-Context](./assets/images/c3_iam_yakucontrol.png)
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases de la capa de dominio de IAM detalla la estructura táctica del Bounded Context, especificando los agregados, entidades y objetos de valor que lo integran. Este esquema permite visualizar las interacciones y reglas de negocio plasmadas en los atributos y comportamientos de cada componente.
+
+![Domain Layer IAM](./assets/images/domain_layer_iam.png)
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
+Detalla la estructura relacional para la gestión de identidades. Define la persistencia de usuarios y sus roles, junto con el sistema de tokens para el registro de piscicultores. El modelo asegura la integridad mediante claves primarias y foráneas, garantizando una base sólida y segura para la autenticación en el sistema.
+
+![Database IAM](./assets/images/database_yakucontrol_iam.png)
 
 ### 4.2.4. Bounded Context: Notification Context
 #### 4.2.4.1. Domain Layer
