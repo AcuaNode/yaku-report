@@ -468,13 +468,13 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
-### 4.2.2. Bounded Context: Infrastructure Context
+### 4.2.2. Bounded Context: Equipment Context
 #### 4.2.2.1. Domain Layer
 #### 4.2.2.2. Interface Layer
 #### 4.2.2.3. Application Layer
 #### 4.2.2.4. Infrastructure Layer
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-![Infrastructure-Context](./assets/images/c3_infrastructure_yakucontrol.png)
+![Equipment-Context](./assets/images/c3_equipment_yakucontrol.png)
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
