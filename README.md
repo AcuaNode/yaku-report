@@ -416,18 +416,18 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 #### 4.2.1.3. Application Layer
 #### 4.2.1.4. Infrastructure Layer
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
-![Telemetry-Context](./assets/images/c3_telemetry_service.png)
+![Telemetry-Context](./assets/images/c3_telemetry_yakucontrol.png)
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
-### 4.2.2. Bounded Context: Hardware Context
+### 4.2.2. Bounded Context: Infrastructure Context
 #### 4.2.2.1. Domain Layer
 #### 4.2.2.2. Interface Layer
 #### 4.2.2.3. Application Layer
 #### 4.2.2.4. Infrastructure Layer
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-![Hardware-Context](./assets/images/c3_hardware.png)
+![Infrastructure-Context](./assets/images/c3_infrastructure_yakucontrol.png)
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
@@ -439,7 +439,7 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 #### 4.2.3.3. Application Layer
 #### 4.2.3.4. Infrastructure Layer
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-![Iam-Context](./assets/images/c3_iam_service.png)
+![Iam-Context](./assets/images/c3_iam_yakucontrol.png)
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
@@ -499,8 +499,7 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 ![Infrastructure](./assets/images/Notification-infrastructure.png)
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-![Notification-component-level](./assets/images/Notification-component-level.png)
-![Notification-Context](./assets/images/c3_notification_service.png)
+![Notification-Context](./assets/images/c3_notification_yakucontrol.png)
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ![Notification-domain-level](./assets/images/Notification-domain-class.png)
@@ -513,7 +512,7 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 #### 4.2.5.3. Application Layer
 #### 4.2.5.4. Infrastructure Layer
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-![Payment-Context](./assets/images/c3_subscription_service.png)
+![Payment-Context](./assets/images/c3_subscription_yakucontrol.png)
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
