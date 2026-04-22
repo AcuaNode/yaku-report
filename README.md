@@ -319,6 +319,53 @@ El paso final consiste en consolidar el mapa completo para definir la arquitectu
 
 #### 4.1.1.1. Candidate Context Discovery
 
+En esta sección se presenta el proceso seguido por el equipo para la identificación y clasificación de los **Bounded Contexts** candidatos a partir del Event Storming de **YakuControl**. El objetivo fue identificar los límites naturales del dominio IoT, determinar qué partes del sistema constituyen el núcleo estratégico (Core) y cuáles cumplen roles de apoyo, priorizando el diseño en los elementos que garantizan la supervivencia de la producción acuícola.
+
+#### **Preparación de la sesión**
+La sesión de Candidate Context Discovery se desarrolló de forma colaborativa con una duración de 1 hora 30 minutos. Se utilizaron los siguientes insumos:
+* La línea de tiempo de eventos organizada cronológicamente.
+* Los eventos clave (**Pivotal Events**) como "Lectura fuera de rango detectada" y "Token JWT emitido".
+* La lógica de procesamiento **Edge Computing** definida para la resiliencia del sistema.
+
+#### **Técnica aplicada: Start-with-Value**
+Se aplicó la técnica **Start-with-Value**, priorizando las partes del dominio que generan el mayor impacto en la reducción de la mortalidad de los peces y la eficiencia operativa. El proceso se organizó en tres pasos:
+1.  **Identificación de valor estratégico:** El equipo determinó que la capacidad de reacción autónoma ante anomalías hídricas es el principal diferenciador.
+2.  **Agrupación de eventos:** Se consolidaron los clusters de eventos alrededor de los agregados "Estanque", "Sensor" y "Actuador".
+3.  **Clasificación Estratégica:** Se categorizaron los contextos en **Core**, **Supporting** y **Generic** según su complejidad y diferenciación competitiva.
+
+#### **Candidate Contexts Identificados**
+
+El análisis permitió identificar los siguientes bounded contexts candidatos:
+
+| Candidate Context | Eventos Clave Asociados | Clasificación | Descripción | Justificación |
+| :--- | :--- | :--- | :--- | :--- |
+| **Identity & Access (IAM)** | Key de granja generada, Piscicultor vinculado, Token JWT emitido. | **Generic** | Gestión de autenticación, roles y seguridad mediante llaves de granja. | Es vital para la seguridad, pero utiliza estándares (JWT) que no diferencian el negocio acuícola. |
+| **Telemetry** | Lectura recibida, Dato válido detectado, Métrica de estanque actualizada. | **Core** | Ingesta y validación de datos en tiempo real provenientes de sensores IoT. | Es el origen de toda la inteligencia del sistema; la precisión del dato es crítica. |
+| **Notification** | Lectura fuera de rango, Alerta crítica enviada, Actuador activado. | **Core** | Cerebro reactivo que evalúa umbrales y controla el soporte vital (oxigenadores). | Representa el valor máximo: la capacidad de salvar la producción sin intervención humana. |
+| **Infraestucture** | Estanque registrado, Sensor vinculado, Instalación certificada. | **Supporting** | Gestión del inventario físico y mapeo de la planta acuícola. | Apoya la operación permitiendo saber qué hardware está en cada estanque, pero es administrativo. |
+| **Payment** | Plan seleccionado, Pago procesado, Suscripción suspendida por mora. | **Generic** | Control del modelo de negocio SaaS y facturación recurrente. | Necesario para la monetización, pero delegable a pasarelas externas como Stripe o Culqi. |
+
+#### **Clasificación Estratégica**
+
+Como parte del análisis, se distribuyeron los contextos en una matriz de **Diferenciación de Negocio** vs **Complejidad del Modelo**:
+
+* **Core (Alta diferenciación / Alta complejidad):** Telemetry, Notification.
+* **Supporting (Baja diferenciación / Mediana complejidad):** Infraestructure.
+* **Generic (Baja diferenciación / Baja-Mediana complejidad):** Identity & Access (IAM), Payment.
+![Candidate Contexts](./assets/images/cantidatecontext.png)
+#### **Resultados**
+
+Se definieron **seis bounded contexts candidatos**, los cuales se detallan a continuación según su clasificación estratégica:
+
+* **2 Core (Dominio Principal):** * **Telemetry:** Procesa la ingesta masiva de datos y asegura la fidelidad de las métricas.
+    * **Motification:** Ejecuta la lógica de respuesta inmediata y el control de dispositivos físicos.
+* **2 Supporting (Soporte Operativo):** * **Infraestructure:** Administra la relación física entre estanques, sensores y personal.
+* **2 Generic (Sistemas Genéricos):** * **Identity & Access (IAM):** Gestiona la seguridad, autenticación y el sistema de llaves de granja.
+    * **Payment:** Administra el flujo financiero del modelo SaaS y el acceso comercial.
+
+La aplicación de la técnica **Start-with-Value** permitió asegurar que la atención principal del diseño táctico y la inversión tecnológica (como la implementación de **Edge Computing**) se concentre en los contextos de **Telemetría** y **Automatización**, dado que allí reside la propuesta de valor diferenciadora de **YakuControl**. 
+
+El resto de contextos serán modelados en las siguientes secciones mediante **Bounded Context Canvas** y **Domain Message Flows**, garantizando consistencia y claridad en la arquitectura estratégica.
 
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
