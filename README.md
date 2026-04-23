@@ -342,7 +342,7 @@ El análisis permitió identificar los siguientes bounded contexts candidatos:
 | **Identity & Access (IAM)** | Key de granja generada, Piscicultor vinculado, Token JWT emitido. | **Generic** | Gestión de autenticación, roles y seguridad mediante llaves de granja. | Es vital para la seguridad, pero utiliza estándares (JWT) que no diferencian el negocio acuícola. |
 | **Telemetry** | Lectura recibida, Dato válido detectado, Métrica de estanque actualizada. | **Core** | Ingesta y validación de datos en tiempo real provenientes de sensores IoT. | Es el origen de toda la inteligencia del sistema; la precisión del dato es crítica. |
 | **Notification** | Lectura fuera de rango, Alerta crítica enviada, Actuador activado. | **Core** | Cerebro reactivo que evalúa umbrales y controla el soporte vital (oxigenadores). | Representa el valor máximo: la capacidad de salvar la producción sin intervención humana. |
-| **Infraestucture** | Estanque registrado, Sensor vinculado, Instalación certificada. | **Supporting** | Gestión del inventario físico y mapeo de la planta acuícola. | Apoya la operación permitiendo saber qué hardware está en cada estanque, pero es administrativo. |
+| **Equipment** | Estanque registrado, Sensor vinculado, Instalación certificada. | **Supporting** | Gestión del inventario físico y mapeo de la planta acuícola. | Apoya la operación permitiendo saber qué hardware está en cada estanque, pero es administrativo. |
 | **Payment** | Plan seleccionado, Pago procesado, Suscripción suspendida por mora. | **Generic** | Control del modelo de negocio SaaS y facturación recurrente. | Necesario para la monetización, pero delegable a pasarelas externas como Stripe o Culqi. |
 
 #### **Clasificación Estratégica**
@@ -350,7 +350,7 @@ El análisis permitió identificar los siguientes bounded contexts candidatos:
 Como parte del análisis, se distribuyeron los contextos en una matriz de **Diferenciación de Negocio** vs **Complejidad del Modelo**:
 
 * **Core (Alta diferenciación / Alta complejidad):** Telemetry, Notification.
-* **Supporting (Baja diferenciación / Mediana complejidad):** Infraestructure.
+* **Supporting (Baja diferenciación / Mediana complejidad):** Equipment.
 * **Generic (Baja diferenciación / Baja-Mediana complejidad):** Identity & Access (IAM), Payment.
 ![Candidate Contexts](./assets/images/cantidatecontext.png)
 #### **Resultados**
@@ -359,7 +359,7 @@ Se definieron **seis bounded contexts candidatos**, los cuales se detallan a con
 
 * **2 Core (Dominio Principal):** * **Telemetry:** Procesa la ingesta masiva de datos y asegura la fidelidad de las métricas.
     * **Motification:** Ejecuta la lógica de respuesta inmediata y el control de dispositivos físicos.
-* **2 Supporting (Soporte Operativo):** * **Infraestructure:** Administra la relación física entre estanques, sensores y personal.
+* **2 Supporting (Soporte Operativo):** * **Equipment:** Administra la relación física entre estanques, sensores y personal.
 * **2 Generic (Sistemas Genéricos):** * **Identity & Access (IAM):** Gestiona la seguridad, autenticación y el sistema de llaves de granja.
     * **Payment:** Administra el flujo financiero del modelo SaaS y el acceso comercial.
 
@@ -381,7 +381,7 @@ El resto de contextos serán modelados en las siguientes secciones mediante **Bo
 
 ### 4.1.2. Context Mapping
 
-Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Infrastructure** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
+Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
 
 #### Proceso de análisis: preguntas de diseño candidato
 
@@ -397,11 +397,11 @@ Separar la emisión de tokens JWT de la gestión de roles (ROLE_WORKER, ROLE_ADM
 **¿Qué pasaría si unimos el Identity & Access Context con el Payment Context para formar un contexto de "Customer Management"?**
 La idea de unir la identidad del usuario con su estado de suscripción podría simplificar la verificación de acceso. Sin embargo, mezclaría responsabilidades de dominio distintas: la identidad es un concepto técnico de seguridad, mientras que la suscripción es un concepto de negocio. Mantenerlos separados permite evolucionarlos de forma independiente. Se descarta la unificación.
 
-**¿Qué pasaría si integramos el Infrastructure Context dentro del Telemetry Context?**
-El Infrastructure Context gestiona el inventario físico (estanques, sensores, instalaciones), mientras que el Telemetry Context procesa los datos que esos sensores generan. Fusionarlos mezclaría la configuración del hardware con el flujo de datos, violando el principio de responsabilidad única. Se mantienen separados: Infrastructure provee el contexto físico y Telemetry consume esa información para asociar las métricas al estanque correcto.
+**¿Qué pasaría si integramos el Equipment Context dentro del Telemetry Context?**
+El Equipment Context gestiona el inventario físico (estanques, sensores, instalaciones), mientras que el Telemetry Context procesa los datos que esos sensores generan. Fusionarlos mezclaría la configuración del hardware con el flujo de datos, violando el principio de responsabilidad única. Se mantienen separados: Equipment provee el contexto físico y Telemetry consume esa información para asociar las métricas al estanque correcto.
 
 **¿Qué pasaría si creamos un Shared Service de notificaciones para centralizar los canales de comunicación del sistema?**
-Tanto el Telemetry Context (alertas críticas por anomalías) como el Infrastructure Context (notificaciones de mantenimiento) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un servicio compartido es la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push, SMS vía Twilio), evitando duplicación de integraciones externas.
+Tanto el Telemetry Context (alertas críticas por anomalías) como el Equipment Context (notificaciones de mantenimiento) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un servicio compartido es la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push, SMS vía Twilio), evitando duplicación de integraciones externas.
 
 **¿Qué pasaría si aislamos los core capabilities de monitoreo y movemos la facturación a un contexto genérico externo?**
 El core de YakuControl son el Telemetry y el Notification Context. El Payment Context es un dominio genérico de soporte que puede delegarse a pasarelas externas como Stripe o Culqi. Aislarlo como contexto genérico es la decisión correcta: si el proveedor de pagos cambia, solo se afecta el Payment Context sin impacto en el core del negocio acuícola.
@@ -416,15 +416,15 @@ Tras el análisis de alternativas, se definió el siguiente mapa de relaciones p
 | :--- | :--- | :--- | :--- |
 | **Identity & Access (IAM)** | **Telemetry** | Open Host Service (OHS) + ACL | El IAM Context expone un servicio de validación de tokens JWT y llaves de granja. El Telemetry Context implementa una Anti-Corruption Layer para traducir la identidad del dispositivo sin depender del modelo interno del IAM. |
 | **Identity & Access (IAM)** | **Notification** | Open Host Service (OHS) | El IAM Context provee los tokens de dispositivo y datos de contacto necesarios para que el Notification Context dirija las alertas al usuario correcto. El Notification Context consume este servicio sin modificar su modelo. |
-| **Identity & Access (IAM)** | **Infrastructure** | Open Host Service (OHS) | El Infrastructure Context consulta al IAM para verificar que el usuario tiene permisos (ROLE_ADMIN) para registrar o modificar estanques y sensores. |
+| **Identity & Access (IAM)** | **Equipment** | Open Host Service (OHS) | El Equipment Context consulta al IAM para verificar que el usuario tiene permisos (ROLE_ADMIN) para registrar o modificar estanques y sensores. |
 | **Identity & Access (IAM)** | **Payment** | Customer/Supplier | El Payment Context (cliente) depende del IAM (proveedor) para obtener la identidad del usuario al momento de procesar una suscripción. El IAM tiene influencia sobre el modelo del Payment Context. |
-| **Infrastructure** | **Telemetry** | Customer/Supplier | El Infrastructure Context (proveedor) mantiene el registro de qué sensor está vinculado a qué estanque. El Telemetry Context (cliente) consume esta información para asociar correctamente cada métrica recibida con su estanque y especie correspondiente. |
+| **Equipment** | **Telemetry** | Customer/Supplier | El Equipment Context (proveedor) mantiene el registro de qué sensor está vinculado a qué estanque. El Telemetry Context (cliente) consume esta información para asociar correctamente cada métrica recibida con su estanque y especie correspondiente. |
 | **Telemetry** | **Notification** | Customer/Supplier | El Telemetry Context (proveedor) emite eventos de anomalía cuando una métrica validada supera el umbral crítico del OptimalRange. El Notification Context (cliente) consume estos eventos para disparar alertas push o SMS de forma inmediata. |
 | **Payment** | **Identity & Access (IAM)** | Conformist | Una vez procesado el pago, el Payment Context notifica al IAM el estado activo de la suscripción. El IAM adopta esta información para habilitar o restringir el acceso de la granja a la plataforma, conformándose al modelo del Payment Context sin transformarlo. |
 
 #### Conclusión del Context Mapping
 
-El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** e **Infrastructure** constituyen el núcleo operativo del sistema: Infrastructure define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
+El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** e **Equipment** constituyen el núcleo operativo del sistema: Equipment define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
 
 Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
 
@@ -476,7 +476,7 @@ La capa de dominio del Bounded Context Telemetry presenta la descripción estruc
 * **OptimalRange** : Define los límites (mínimo/máximo) aceptables para una variable específica según la etapa de vida de la trucha.
 * **WaterVariableType** : Enumerado que define el tipo de métrica (PH, TEMPERATURE, OXYGEN).
 
-![Domain Layer Telemetry](./assets/images/domain_aggregate_telemetry.png)
+![Domain Layer Telemetry](./assets/images/domainlayertelemetry.png)
 
 #### 4.2.1.2. Interface Layer
 
@@ -495,7 +495,7 @@ La capa de interfaz en el Bounded Context Telemetry actúa como el punto de cont
 * **RawReadingFromIoTMessageAssembler** : Componente encargado de transformar el mensaje crudo de red (RawIoTMessageResource) en un Objeto de Valor de dominio puro (RawReading).
 * **CurrentStateResourceFromAggregateAssembler** : Convierte el estado actual del Agregado Pond en un formato ligero y optimizado (CurrentPondStateResource) para su visualización.
 
-![Interface Layer Telemetry](./assets/images/interface_layer_telemetry.png)
+![Interface Layer Telemetry](./assets/images/interfacelayertelemetry.png)
 
 #### 4.2.1.3. Application Layer
 
@@ -511,8 +511,8 @@ La capa de aplicación en el Bounded Context Telemetry coordina el flujo de dato
 
 ##### Domain Event Handlers
 * **LecturaFueraDeRangoHandler** : Escucha el evento de dominio interno `LecturaFueraDeRangoNormalDetectada` y orquesta su publicación hacia el Event Bus externo para que el contexto de Alertas reaccione.
-
-![Application Layer Telemetry](./assets/images/application_layer_telemetry.png)
+* 
+![Application Layer Telemetry](./assets/images/applicationlayertelemetry.png)
 
 #### 4.2.1.4. Infrastructure Layer
 
@@ -523,7 +523,7 @@ La capa de infraestructura proporciona las capacidades tecnológicas críticas p
 * **MqttIoTBrokerClient** : Adaptador técnico encargado de la conexión, suscripción y recepción de mensajes desde el broker MQTT (ej: AWS IoT Core o Mosquitto en el Edge).
 * **KafkaEventPublisher** : Componente encargado de publicar los eventos de dominio confirmados (ej: `MétricaActualizada`) hacia un bus de eventos externo (como **Apache Kafka**) para la integración con otros Bounded Contexts.
 
-![Infrastructure Layer Telemetry](./assets/images/infrastructure_layer_telemetry.png)
+![Infrastructure Layer Telemetry](./assets/images/infrastructurelayertelemetry.png)
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 ![Telemetry-Context](./assets/images/c3_telemetry_yakucontrol.png)
@@ -533,12 +533,12 @@ La capa de infraestructura proporciona las capacidades tecnológicas críticas p
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 El diagrama de clases de la capa de dominio de Telemetry detalla la estructura táctica del Bounded Context, especificando cómo el Agregado **Pond** garantiza la consistencia de sus entidades y cómo interactúa con los objetos de valor inmutables generados por el flujo IoT. Muestra los atributos y comportamientos críticos para la validación de la calidad del agua.
 
-![Domain Layer Telemetry](./assets/images/domain_layer_telemetry.png)
+![Domain Layer Telemetry](./assets/images/classdiagramtelemetry.png)
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 Detalla la estructura híbrida de persistencia para la gestión de métricas. Define un modelo relacional (**PostgreSQL**) para los metadatos de estanques y sensores, y un modelo optimizado de series de tiempo (**TimescaleDB/Hypertable**) para la ingesta masiva e inmutable de lecturas validadas, garantizando integridad y rendimiento en las consultas históricas.
 
-![Database Telemetry](./assets/images/database_yakucontrol_telemetry.png)
+![Database Telemetry](./assets/images/databaseyakucontroltelemetry.png)
 
 ### 4.2.2. Bounded Context: Equipment Context
 #### 4.2.2.1. Domain Layer
