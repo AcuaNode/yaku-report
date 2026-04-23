@@ -546,10 +546,88 @@ Detalla la estructura híbrida de persistencia para la gestión de métricas. De
 ![Database Telemetry](./assets/images/databaseyakucontroltelemetry.png)
 
 ### 4.2.2. Bounded Context: Equipment Context
+
 #### 4.2.2.1. Domain Layer
+
+El Bounded Context Equipment presenta las clases que conforman el modelo de dominio encargado de la gestión de estanques y hardware en el sistema de monitoreo. Este modelo se ha diseñado bajo los principios de DDD, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+##### Aggregate
+* **Pond** : Representa el estanque de crianza como unidad productiva central. Gestiona su ciclo de configuración y la asignación del piscicultor responsable.
+* **Equipment** : Representa un dispositivo físico (sensor o actuador). Gestiona su estado operativo y su vinculación a un estanque.
+* **PondAssignment** : Registra el historial de asignaciones de piscicultores a estanques.
+
+##### Value Object
+* **PondName** : Encapsula el nombre del estanque.
+* **PondStatus** : Estado operativo del estanque (ACTIVE, INACTIVE, FULL).
+* **EquipmentType** : Tipo de dispositivo físico (SENSOR, ACTUATOR).
+* **EquipmentStatus** : Estado del hardware (AVAILABLE, LINKED).
+
+##### Domain Service
+* **PondCommandService** : Define las operaciones de escritura sobre estanques.
+* **PondQueryService** : Define las consultas de lectura sobre estanques.
+* **EquipmentCommandService** : Define las operaciones de escritura sobre hardware.
+* **EquipmentQueryService** : Define la consulta de hardware por estanque.
+* **PondAssignmentQueryService** : Define la consulta del historial de asignaciones.
+
+##### Repository
+* **PondRepository** : Abstrae la persistencia del agregado Pond.
+* **EquipmentRepository** : Abstrae la persistencia de Equipment.
+* **PondAssignmentRepository** : Abstrae la persistencia del historial de asignaciones.
+
+![Domain Layer Equipment](./assets/images/domain_aggregate_equipment.png)
+
 #### 4.2.2.2. Interface Layer
+
+La capa de interfaz expone los endpoints RESTful para la gestión de estanques, registro de hardware y asignación de piscicultores desde el Web Dashboard.
+
+##### Controller
+* **PondController** : Gestiona la creación de estanques, consulta por granja, asignación de piscicultores y certificación para producción.
+* **EquipmentController** : Gestiona el registro de dispositivos y su vinculación a un estanque.
+
+##### DTO
+* **CreatePondResource** : Captura los datos para registrar un nuevo estanque.
+* **PondResource** : Respuesta estándar al consultar un estanque.
+* **RegisterEquipmentResource** : Captura los datos para registrar un dispositivo.
+* **LinkEquipmentResource** : Transporta el identificador del estanque destino.
+* **EquipmentResource** : Respuesta estándar al consultar un dispositivo.
+* **AssignFishFarmerResource** : Captura el identificador del piscicultor a asignar.
+
+##### Transform
+* **CreatePondCommandFromResourceAssembler** : Convierte CreatePondResource en CreatePondCommand.
+* **PondResourceFromEntityAssembler** : Convierte el agregado Pond en PondResource.
+* **RegisterEquipmentCommandFromResourceAssembler** : Convierte RegisterEquipmentResource en RegisterEquipmentCommand.
+* **EquipmentResourceFromEntityAssembler** : Convierte Equipment en EquipmentResource.
+
+![Interface Layer Equipment](./assets/images/interface_layer_equipment.png)
+
 #### 4.2.2.3. Application Layer
+
+La capa de aplicación orquesta los flujos de gestión de activos físicos. Siguiendo el patrón CQRS, se divide en servicios de comandos y servicios de consultas.
+
+##### Command
+* **PondCommandService** : Orquesta la creación de estanques, asignación de piscicultores y certificación para producción.
+* **EquipmentCommandService** : Orquesta el registro de dispositivos y su vinculación a estanques.
+* **CreatePondCommand / AssignFishFarmerCommand / CertifyPondCommand** : Transportan la intención de ejecutar acciones sobre un estanque.
+* **RegisterEquipmentCommand / LinkEquipmentToPondCommand** : Transportan la intención de registrar o vincular un dispositivo.
+
+##### Query
+* **PondQueryService** : Consulta estanques por ID o por granja.
+* **EquipmentQueryService** : Consulta hardware vinculado a un estanque.
+* **PondAssignmentQueryService** : Consulta el historial de asignaciones de un estanque.
+
+![Application Layer Equipment](./assets/images/application_layer_equipment.png)
+
 #### 4.2.2.4. Infrastructure Layer
+
+La capa de infraestructura implementa las interfaces definidas en Domain Layer aplicando el principio de Inversión de Dependencias, gestionando la persistencia con JPA/PostgreSQL y la publicación de eventos de dominio.
+
+* **PondRepositoryImpl** : Implementa PondRepository usando Spring Data JPA.
+* **EquipmentRepositoryImpl** : Implementa EquipmentRepository usando Spring Data JPA.
+* **PondAssignmentRepositoryImpl** : Implementa PondAssignmentRepository para el historial de asignaciones.
+* **SpringDomainEventPublisher** : Publica el evento FishFarmerAssignedEvent al bus interno de Spring para que el módulo IAM actualice los permisos del piscicultor.
+
+![Infrastructure Layer Equipment](./assets/images/infrastructure_layer_equipment.png)
+
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 ![Equipment-Context](./assets/images/c3_equipment_yakucontrol.png)
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
