@@ -615,7 +615,7 @@ La capa de aplicación orquesta los flujos de gestión de activos físicos. Sigu
 * **EquipmentQueryService** : Consulta hardware vinculado a un estanque.
 * **PondAssignmentQueryService** : Consulta el historial de asignaciones de un estanque.
 
-![Application Layer Equipment](./assets/images/application_layer_equipment.png)
+![Application Layer Equipment](./assets/images/Equipment_layer_command.png)
 
 #### 4.2.2.4. Infrastructure Layer
 
