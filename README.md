@@ -437,7 +437,16 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
 
 # Conclusiones
+El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
+
+Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las reglas de negocio de los detalles más técnicos. Al definir "Contextos Delimitados" independientes (por ejemplo, para gestionar usuarios o para la telemetría), conseguimos que la lógica de cómo se manejan los usuarios y la de cómo se vigilan los estanques no se mezclaran. Así es mucho más fácil mantener y mejorar el sistema con el tiempo.
+
+Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
+
 ## Conclusiones y recomendaciones
+
+Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
+
 ## Video About-the-Team
 
 # Bibliografía
