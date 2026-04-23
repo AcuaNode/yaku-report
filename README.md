@@ -574,7 +574,7 @@ El Bounded Context Equipment presenta las clases que conforman el modelo de domi
 * **EquipmentRepository** : Abstrae la persistencia de Equipment.
 * **PondAssignmentRepository** : Abstrae la persistencia del historial de asignaciones.
 
-![Domain Layer Equipment](./assets/images/domain_aggregate_equipment.png)
+![Domain Layer Equipment](./assets/images/equipment_domain_aggregate.png)
 
 #### 4.2.2.2. Interface Layer
 
