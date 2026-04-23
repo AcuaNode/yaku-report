@@ -248,8 +248,8 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
       <td><strong>Aponte Cruzado, Andrea Marielena - u202224135</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" alt="Mario Lopez" src="./assets/images/mario_lopez.png" /></td>
-      <td><strong>Lopez Acuna, Mario Joaquin - </strong><br>-</td>
+      <td style="text-align:center;"><img width="350" height="200" alt="Mario Lopez" src="./assets/images/Mario.jpeg" /></td>
+      <td><strong>Lopez Acuna, Mario Joaquin - U202116250</strong><br>Mi nombre es Mario Lopez, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
   </tr>
   <tr>
       <td style="text-align:center;"><img width="350" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
