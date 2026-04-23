@@ -381,30 +381,30 @@ El resto de contextos serán modelados en las siguientes secciones mediante **Bo
 
 ### 4.1.2. Context Mapping
 
-Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **IAM Context**, **Hardware Context**, **Notification Context**, **Report Context** y **Payment Context**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
+Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Infrastructure** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
 
 #### Proceso de análisis: preguntas de diseño candidato
 
-**¿Qué pasaría si movemos la lógica de umbrales críticos del Hardware Context al Notification Context?**
-Si el Notification Context asumiera la responsabilidad de decidir cuándo emitir alertas basándose en umbrales, crearía una dependencia directa con los datos de configuración del negocio acuícola. Esto contaminaría al Notification Context con reglas de dominio que no le corresponden, haciéndolo frágil ante cambios en los criterios de calidad del agua. Se descarta esta alternativa: la lógica de umbrales debe permanecer en el Hardware Context, que es quien procesa la telemetría.
+**¿Qué pasaría si movemos la lógica de umbrales críticos del Telemetry Context al Notification Context?**
+Si el Notification Context asumiera la responsabilidad de decidir cuándo emitir alertas basándose en umbrales, crearía una dependencia directa con los datos de configuración del negocio acuícola. Esto contaminaría al Notification Context con reglas de dominio que no le corresponden, haciéndolo frágil ante cambios en los criterios de calidad del agua. Se descarta esta alternativa: la lógica de validación de métricas y detección de anomalías debe permanecer en el Telemetry Context, que es quien procesa e interpreta los datos de los sensores.
 
-**¿Qué pasaría si descomponemos el Hardware Context y separamos la ingesta de telemetría del control de actuadores?**
-Podría tener sentido separar el Edge API (ingesta y procesamiento) del módulo de control remoto (actuadores). Sin embargo, dado el tamaño del equipo y la naturaleza del MVP, esta separación generaría overhead de comunicación entre contextos sin beneficio real en esta etapa. Se decide mantenerlos en un único Hardware Context cohesivo, con la posibilidad de descomponerlo en una versión futura del producto.
+**¿Qué pasaría si descomponemos el Telemetry Context y separamos la ingesta de datos crudos del procesamiento de métricas validadas?**
+Podría tener sentido crear un contexto exclusivo de ingesta (Edge) y otro de análisis (Analytics). Sin embargo, dado el tamaño del equipo y la naturaleza del MVP, esta separación generaría overhead de comunicación entre contextos sin beneficio real en esta etapa. Se decide mantener la ingesta, validación y persistencia de métricas en un único Telemetry Context cohesivo, con la posibilidad de descomponerlo en una versión futura del producto.
 
-**¿Qué pasaría si partimos el IAM Context en un contexto de Autenticación y otro de Autorización?**
-Separar la emisión de tokens JWT de la gestión de roles (RBAC) permitiría mayor granularidad. Sin embargo, ambas responsabilidades están fuertemente acopladas en la lógica de acceso de YakuControl (el token lleva el rol embebido). Dividirlos introduciría complejidad innecesaria. Se mantiene el IAM Context unificado.
+**¿Qué pasaría si partimos el Identity & Access (IAM) Context en un contexto de Autenticación y otro de Autorización?**
+Separar la emisión de tokens JWT de la gestión de roles (ROLE_WORKER, ROLE_ADMIN) y llaves de granja permitiría mayor granularidad. Sin embargo, ambas responsabilidades están fuertemente acopladas en la lógica de acceso de YakuControl (el token lleva el rol embebido). Dividirlos introduciría complejidad innecesaria para el MVP. Se mantiene el IAM Context unificado.
 
-**¿Qué pasaría si tomamos la gestión de usuarios del IAM Context y la unimos con Payment Context para formar un contexto de "Customer Management"?**
+**¿Qué pasaría si unimos el Identity & Access Context con el Payment Context para formar un contexto de "Customer Management"?**
 La idea de unir la identidad del usuario con su estado de suscripción podría simplificar la verificación de acceso. Sin embargo, mezclaría responsabilidades de dominio distintas: la identidad es un concepto técnico de seguridad, mientras que la suscripción es un concepto de negocio. Mantenerlos separados permite evolucionarlos de forma independiente. Se descarta la unificación.
 
-**¿Qué pasaría si duplicamos la lógica de historial de lecturas entre el Hardware Context y el Report Context para romper su dependencia?**
-Duplicar datos de telemetría procesados en ambos contextos permitiría que el Report Context opere de forma completamente autónoma. El costo es la sincronización de datos y el riesgo de inconsistencias. Se opta por una solución intermedia: el Hardware Context publica eventos de dominio que el Report Context consume de forma asíncrona, manteniendo independencia sin duplicación de lógica.
+**¿Qué pasaría si integramos el Infrastructure Context dentro del Telemetry Context?**
+El Infrastructure Context gestiona el inventario físico (estanques, sensores, instalaciones), mientras que el Telemetry Context procesa los datos que esos sensores generan. Fusionarlos mezclaría la configuración del hardware con el flujo de datos, violando el principio de responsabilidad única. Se mantienen separados: Infrastructure provee el contexto físico y Telemetry consume esa información para asociar las métricas al estanque correcto.
 
-**¿Qué pasaría si creamos un Shared Service de notificaciones para reducir duplicación entre Hardware y Report?**
-Tanto el Hardware Context (alertas críticas) como el Report Context (notificaciones de reportes generados) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un shared service es precisamente la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push, SMS), evitando duplicación de integraciones con Firebase o Twilio.
+**¿Qué pasaría si creamos un Shared Service de notificaciones para centralizar los canales de comunicación del sistema?**
+Tanto el Telemetry Context (alertas críticas por anomalías) como el Infrastructure Context (notificaciones de mantenimiento) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un servicio compartido es la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push, SMS vía Twilio), evitando duplicación de integraciones externas.
 
-**¿Qué pasaría si aislamos los core capabilities de monitoreo y movemos la facturación a un contexto de soporte externo?**
-El core de YakuControl es el monitoreo de calidad del agua y el control de actuadores. El Payment Context es claramente un dominio de soporte, no el núcleo del negocio. Aislarlo como un contexto de soporte con integración externa (Stripe) es la decisión correcta: si el proveedor de pagos cambia, solo se afecta el Payment Context y no el resto del sistema.
+**¿Qué pasaría si aislamos los core capabilities de monitoreo y movemos la facturación a un contexto genérico externo?**
+El core de YakuControl son el Telemetry y el Notification Context. El Payment Context es un dominio genérico de soporte que puede delegarse a pasarelas externas como Stripe o Culqi. Aislarlo como contexto genérico es la decisión correcta: si el proveedor de pagos cambia, solo se afecta el Payment Context sin impacto en el core del negocio acuícola.
 
 ---
 
@@ -414,19 +414,19 @@ Tras el análisis de alternativas, se definió el siguiente mapa de relaciones p
 
 | Contexto Upstream (U) | Contexto Downstream (D) | Patrón de Relación | Descripción |
 | :--- | :--- | :--- | :--- |
-| **IAM Context** | **Hardware Context** | Open Host Service (OHS) + ACL | El IAM Context expone un servicio de validación de tokens JWT. El Hardware Context implementa una Anti-Corruption Layer para traducir la identidad del dispositivo/usuario sin depender directamente del modelo interno del IAM. |
-| **IAM Context** | **Notification Context** | Open Host Service (OHS) | El IAM Context provee los datos de contacto y tokens de dispositivo necesarios para que el Notification Context envíe alertas al usuario correcto. El Notification Context consume este servicio sin modificar su modelo. |
-| **IAM Context** | **Report Context** | Open Host Service (OHS) | El Report Context consulta al IAM Context para verificar el rol del usuario (ROLE_ADMIN) antes de permitir el acceso a reportes históricos y configuraciones avanzadas. |
-| **IAM Context** | **Payment Context** | Customer/Supplier | El Payment Context (cliente) depende del IAM Context (proveedor) para obtener la identidad del usuario al momento de procesar una suscripción. El IAM Context tiene influencia sobre el modelo del Payment Context. |
-| **Hardware Context** | **Notification Context** | Customer/Supplier | El Hardware Context (proveedor) emite eventos de riesgo cuando el ICA supera el umbral crítico. El Notification Context (cliente) consume estos eventos para disparar alertas push o SMS. |
-| **Hardware Context** | **Report Context** | Customer/Supplier | El Hardware Context (proveedor) publica lecturas procesadas de forma asíncrona. El Report Context (cliente) las consume para construir el historial de tendencias y el estado de los estanques. |
-| **Payment Context** | **IAM Context** | Conformist | Una vez procesado el pago, el Payment Context notifica al IAM Context el estado activo de la suscripción. El IAM Context adopta esta información para habilitar o restringir el acceso del usuario, conformándose al modelo del Payment Context sin transformarlo. |
+| **Identity & Access (IAM)** | **Telemetry** | Open Host Service (OHS) + ACL | El IAM Context expone un servicio de validación de tokens JWT y llaves de granja. El Telemetry Context implementa una Anti-Corruption Layer para traducir la identidad del dispositivo sin depender del modelo interno del IAM. |
+| **Identity & Access (IAM)** | **Notification** | Open Host Service (OHS) | El IAM Context provee los tokens de dispositivo y datos de contacto necesarios para que el Notification Context dirija las alertas al usuario correcto. El Notification Context consume este servicio sin modificar su modelo. |
+| **Identity & Access (IAM)** | **Infrastructure** | Open Host Service (OHS) | El Infrastructure Context consulta al IAM para verificar que el usuario tiene permisos (ROLE_ADMIN) para registrar o modificar estanques y sensores. |
+| **Identity & Access (IAM)** | **Payment** | Customer/Supplier | El Payment Context (cliente) depende del IAM (proveedor) para obtener la identidad del usuario al momento de procesar una suscripción. El IAM tiene influencia sobre el modelo del Payment Context. |
+| **Infrastructure** | **Telemetry** | Customer/Supplier | El Infrastructure Context (proveedor) mantiene el registro de qué sensor está vinculado a qué estanque. El Telemetry Context (cliente) consume esta información para asociar correctamente cada métrica recibida con su estanque y especie correspondiente. |
+| **Telemetry** | **Notification** | Customer/Supplier | El Telemetry Context (proveedor) emite eventos de anomalía cuando una métrica validada supera el umbral crítico del OptimalRange. El Notification Context (cliente) consume estos eventos para disparar alertas push o SMS de forma inmediata. |
+| **Payment** | **Identity & Access (IAM)** | Conformist | Una vez procesado el pago, el Payment Context notifica al IAM el estado activo de la suscripción. El IAM adopta esta información para habilitar o restringir el acceso de la granja a la plataforma, conformándose al modelo del Payment Context sin transformarlo. |
 
 #### Conclusión del Context Mapping
 
-El mapa de contextos resultante posiciona al **IAM Context** como el contexto de soporte central del cual dependen todos los demás para validar identidad y permisos. El **Hardware Context** es el núcleo operativo del sistema, siendo la fuente de verdad de la telemetría. El **Notification Context** y el **Report Context** son contextos de soporte especializados que consumen eventos del Hardware Context de forma desacoplada. Finalmente, el **Payment Context** opera como un contexto de soporte de negocio, integrado externamente vía Stripe, con mínima interferencia sobre el resto del dominio.
+El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** e **Infrastructure** constituyen el núcleo operativo del sistema: Infrastructure define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
 
-Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo acuícola, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
+Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
 
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
