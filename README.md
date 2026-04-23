@@ -574,7 +574,7 @@ El Bounded Context Equipment presenta las clases que conforman el modelo de domi
 * **EquipmentRepository** : Abstrae la persistencia de Equipment.
 * **PondAssignmentRepository** : Abstrae la persistencia del historial de asignaciones.
 
-![Domain Layer Equipment](./assets/images/equipment_domain_aggregate.png)
+![Domain Layer Equipment](./assets/images/Equipment_domain_aggregate.png)
 
 #### 4.2.2.2. Interface Layer
 
@@ -598,7 +598,7 @@ La capa de interfaz expone los endpoints RESTful para la gestión de estanques, 
 * **RegisterEquipmentCommandFromResourceAssembler** : Convierte RegisterEquipmentResource en RegisterEquipmentCommand.
 * **EquipmentResourceFromEntityAssembler** : Convierte Equipment en EquipmentResource.
 
-![Interface Layer Equipment](./assets/images/interface_layer_equipment.png)
+![Interface Layer Equipment](./assets/images/Equipment_interface_controller.png)
 
 #### 4.2.2.3. Application Layer
 
