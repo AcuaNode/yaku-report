@@ -555,7 +555,9 @@ Detalla la estructura híbrida de persistencia para la gestión de métricas. De
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
+El siguiente diagrama detalla la estructura relacional para la gestión de activos físicos del sistema de crianza de peces. Define la tabla ponds(estanques) como entidad central que representa cada estanque registrado en una granja, incluyendo su capacidad, estado de configuración y el piscicultor actualmente responsable. La tabla equipment gestiona el inventario de dispositivos físicos (sensores y actuadores) vinculados a cada estanque mediante clave foránea. Finalmente, la tabla pond_assignments mantiene el historial completo de asignaciones de piscicultores, registrando tanto la fecha de asignación como la de desvinculación, lo que permite auditar la trazabilidad de responsabilidades sobre cada estanque a lo largo del tiempo.
 
+![Database Equipment](./assets/images/database_yakucontrol_equipment.png)
 
 ### 4.2.3. Bounded Context: Iam Context
 #### 4.2.3.1. Domain Layer
