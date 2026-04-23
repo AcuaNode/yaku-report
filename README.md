@@ -590,34 +590,42 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 
 ### Términos del Dominio
 
-| Término | Definición | Contexto |
+| Término | Definición | Bounded Context |
 | :--- | :--- | :--- |
-| **Piscigranja** | Instalación dedicada a la crianza comercial de truchas en estanques controlados. Es la unidad principal de negocio del cliente. | General |
+| **Piscigranja** | Instalación dedicada a la crianza comercial de truchas en estanques controlados. Es la unidad principal de negocio del cliente y la entidad raíz a la que se vinculan usuarios, dispositivos y suscripciones. | General |
 | **Estanque** | Depósito de agua individual dentro de una piscigranja donde se aloja y cría un lote de truchas. Es la unidad mínima de monitoreo de YakuControl. | General |
 | **Lote** | Conjunto de truchas que comparten un mismo estanque en un periodo productivo determinado. | General |
 | **Trucha arcoíris** (*Oncorhynchus mykiss*) | Especie objetivo del sistema. Sus rangos óptimos de supervivencia (pH 6.5–8.0, temperatura 10–18°C, turbidez baja) determinan los umbrales críticos configurados en el sistema. | General |
-| **Operario de campo** | Usuario del sistema con rol `ROLE_WORKER`. Realiza rondas físicas entre los estanques y es el responsable de responder ante alertas críticas y accionar equipos de emergencia. | Monitoreo / Control |
-| **Administrador** | Usuario del sistema con rol `ROLE_ADMIN`. Es el dueño o gestor de la piscigranja. Accede al Web Dashboard para revisar históricos, tendencias y el estado general de los estanques. No puede accionar equipos directamente. | Gestión / Reportes |
-| **Dispositivo IoT** | Hardware físico instalado en el estanque. Compuesto por un microcontrolador ESP32-WROOM-32 con sensores sumergibles y actuadores. Envía telemetría bruta a la nube vía Wi-Fi. | Embedded / Monitoreo |
-| **Sensor** | Componente electrónico del dispositivo IoT que mide una variable bio-química del agua. Los sensores activos son: sensor de temperatura (DS18B20), sonda de pH (PH-4502C) y sensor de turbidez. | Embedded / Monitoreo |
-| **Actuador** | Componente electrónico del dispositivo IoT que ejecuta una acción física en el estanque al recibir una instrucción. Los actuadores activos son: módulo relé (controla bomba de agua) y módulo MOSFET (controla tira LED). | Embedded / Control |
-| **Telemetría bruta** | Conjunto de valores numéricos crudos enviados por el dispositivo IoT al Edge API de forma continua. Incluye la lectura directa de cada sensor antes de cualquier procesamiento. | Monitoreo |
-| **Lectura** | Registro puntual de una variable del agua (pH, temperatura o turbidez) en un momento específico, asociado a un estanque determinado. | Monitoreo |
-| **Índice de Calidad del Agua (ICA)** | Puntaje global normalizado calculado por el Edge API que pondera las lecturas de temperatura, pH y turbidez. Si cae por debajo del umbral crítico, el estado del estanque se clasifica como peligroso y se disparan las alertas. | Monitoreo / Alertas |
-| **Umbral crítico** | Valor límite predefinido para el ICA o para una variable individual, por debajo (o encima) del cual el sistema considera que las condiciones del agua representan un riesgo para la supervivencia de las truchas. | Monitoreo / Alertas |
-| **Falso positivo** | Lectura anómala de un sensor que no refleja un riesgo real (causada por interferencia, suciedad del sensor o pico transitorio). El Edge API aplica algoritmos de filtrado para descartarlos antes de emitir alertas. | Monitoreo |
-| **Transmitancia de luz** | Porcentaje de luz capaz de penetrar el agua del estanque, calculado mediante la Ley de Beer-Lambert modificada aplicada al valor del sensor de turbidez. Determina la intensidad de la tira LED compensatoria. | Monitoreo / Control |
-| **Señal PWM** | Señal de ancho de pulso (Pulse Width Modulation) de 8 bits enviada por el microcontrolador al módulo MOSFET para regular la intensidad de la tira LED en función de la transmitancia de luz calculada. | Embedded / Control |
-| **Alerta crítica** | Notificación push o SMS generada automáticamente por el sistema cuando el ICA de un estanque supera el umbral crítico. Se envía al operario de campo asignado de forma inmediata. | Alertas |
-| **Acción de emergencia** | Instrucción remota enviada por un operario desde la app móvil para activar un actuador (encender la bomba o ajustar la iluminación LED) ante una condición crítica del agua. | Control |
-| **Edge API** | Microservicio independiente en la nube que actúa como primer filtro de la telemetría bruta. Ejecuta los algoritmos de cálculo del ICA y de transmitancia de luz, filtra falsos positivos y, solo si confirma un riesgo real, emite un evento al backend principal. | Arquitectura |
-| **Evento de riesgo** | Mensaje emitido por el Edge API hacia el backend principal cuando confirma que las condiciones de un estanque superan el umbral crítico. Desencadena el flujo de alertas y notificaciones. | Arquitectura / Alertas |
-| **Backend principal** | Servicio central RESTful que gestiona usuarios, historial de lecturas, suscripciones, autenticación y la comunicación hacia las aplicaciones cliente (app móvil y web). | Arquitectura |
-| **Suscripción** | Contrato de acceso mensual al servicio YakuControl, facturado por estanque monitoreado. Incluye conectividad, mantenimiento de servidores e integraciones con servicios externos. | Facturación |
-| **Estado del estanque** | Clasificación del nivel de riesgo de un estanque en un momento dado, derivada del ICA calculado. Puede ser: **Normal**, **Advertencia** o **Crítico**. | Monitoreo |
-| **Historial de lecturas** | Registro persistente de todas las lecturas y estados de un estanque a lo largo del tiempo. Utilizado por el administrador para análisis de tendencias y toma de decisiones estratégicas. | Reportes |
-| **Ronda de campo** | Recorrido físico periódico realizado por el operario entre los estanques de la piscigranja para inspección y mantenimiento. YakuControl complementa (no reemplaza) esta actividad con monitoreo continuo. | Operaciones |
-| **Dashboard** | Interfaz web del administrador que centraliza el estado en tiempo real de todos los estanques, gráficos de tendencias históricas e indicadores clave de calidad del agua. | Reportes / Gestión |
+| **Piscicultor / Operario de campo** | Usuario del sistema con rol `ROLE_WORKER`. Realiza rondas físicas entre los estanques, responde ante alertas críticas y acciona equipos de emergencia desde la app móvil. | Identity & Access |
+| **Administrador** | Usuario del sistema con rol `ROLE_ADMIN`. Es el dueño o gestor de la piscigranja. Accede al Web Dashboard para revisar históricos, gestionar usuarios, equipos y suscripciones. | Identity & Access |
+| **Farm Key** | Clave única de acceso generada por el IAM Context y asociada a una piscigranja. Utilizada por el dispositivo IoT para autenticarse y enviar telemetría al sistema sin necesidad de credenciales de usuario. | Identity & Access |
+| **Token JWT** | Token de autenticación de corta duración emitido por el IAM Context tras el inicio de sesión. Lleva embebido el rol del usuario (`ROLE_WORKER` o `ROLE_ADMIN`) y es validado por todos los contextos para autorizar operaciones. | Identity & Access |
+| **Dispositivo IoT** | Hardware físico instalado en el estanque, compuesto por un microcontrolador ESP32-WROOM-32 con sensores sumergibles y actuadores. Registrado y gestionado en el Equipment Context. Envía telemetría bruta al sistema vía Wi-Fi. | Equipment |
+| **Sensor** | Componente electrónico del dispositivo IoT que mide una variable bioquímica del agua. Los sensores activos son: temperatura (DS18B20), pH (PH-4502C) y turbidez. Vinculado a un estanque dentro del Equipment Context. | Equipment |
+| **Actuador** | Componente electrónico del dispositivo IoT que ejecuta una acción física en el estanque al recibir una instrucción. Actuadores activos: módulo relé (bomba de agua) y módulo MOSFET (tira LED). | Equipment |
+| **Vinculación** | Acto de asociar un dispositivo IoT (con sus sensores y actuadores) a un estanque específico dentro de una piscigranja. Solo el Administrador puede realizar esta operación. | Equipment |
+| **Telemetría bruta** | Conjunto de valores numéricos crudos enviados por el dispositivo IoT al Edge API de forma continua. Incluye la lectura directa de cada sensor antes de cualquier procesamiento. | Telemetry |
+| **Lectura** | Registro puntual de una variable del agua (pH, temperatura o turbidez) en un momento específico, asociado a un estanque determinado. Unidad atómica persistida por el Telemetry Context. | Telemetry |
+| **Índice de Calidad del Agua (ICA)** | Puntaje global normalizado calculado por el Edge API que pondera las lecturas de temperatura, pH y turbidez. Si cae por debajo del umbral crítico, el estado del estanque se clasifica como peligroso y se disparan las alertas. | Telemetry |
+| **Umbral crítico** | Valor límite predefinido para el ICA o para una variable individual, por debajo (o encima) del cual el sistema considera que las condiciones del agua representan un riesgo para la supervivencia de las truchas. | Telemetry |
+| **Falso positivo** | Lectura anómala de un sensor que no refleja un riesgo real (causada por interferencia, suciedad o pico transitorio). El Edge API aplica filtrado para descartarlos antes de emitir eventos de riesgo. | Telemetry |
+| **Transmitancia de luz** | Porcentaje de luz capaz de penetrar el agua del estanque, calculado mediante la Ley de Beer-Lambert modificada aplicada al sensor de turbidez. Determina la intensidad de la tira LED compensatoria. | Telemetry |
+| **Señal PWM** | Señal de ancho de pulso (Pulse Width Modulation) de 8 bits enviada por el microcontrolador al módulo MOSFET para regular la intensidad de la tira LED en función de la transmitancia calculada. | Telemetry |
+| **Estado del estanque** | Clasificación del nivel de riesgo de un estanque en un momento dado, derivada del ICA calculado. Puede ser: **Normal**, **Advertencia** o **Crítico**. | Telemetry |
+| **Evento de riesgo** | Mensaje emitido por el Edge API cuando confirma que las condiciones de un estanque superan el umbral crítico. Desencadena el flujo de alertas en el Notification Context. | Telemetry |
+| **Alerta crítica** | Notificación generada automáticamente por el Notification Context cuando recibe un evento de riesgo del Telemetry Context. Se envía al piscicultor asignado vía push (Firebase Cloud Messaging) de forma inmediata. | Notification |
+| **Alerta de mantenimiento** | Notificación generada por el Notification Context cuando el Equipment Context publica un evento de sensor fuera de línea o estanque sin telemetría activa. Se dirige al Administrador. | Notification |
+| **Canal de notificación** | Medio a través del cual el Notification Context entrega un mensaje al usuario. Los canales activos son: notificación push (app móvil vía FCM) y correo electrónico (SMTP). | Notification |
+| **Acción de emergencia** | Instrucción remota enviada por el piscicultor desde la app móvil para activar un actuador (encender la bomba o ajustar la LED) ante una condición crítica del agua. | Notification |
+| **Suscripción** | Contrato de acceso al servicio YakuControl asociado a una piscigranja. Tiene un ciclo de vida definido: `TRIAL` → `ACTIVE` → `SUSPENDED` → `CANCELLED`. Es el Aggregate Root del Payment Context. | Payment |
+| **Plan** | Nivel de servicio contratado dentro de una suscripción. Los planes disponibles son: `BASIC`, `PRO` y `ENTERPRISE`, cada uno con un precio base por estanque monitoreado y límites de funcionalidades incluidas. | Payment |
+| **Factura** | Comprobante de cobro individual generado por el Payment Context en cada ciclo de facturación. Tiene su propio ciclo de vida: `PENDING` → `PAID` / `FAILED`. Referencia el cargo externo en Stripe. | Payment |
+| **Período de facturación** | Rango de fechas que define el inicio y el vencimiento del ciclo activo de una suscripción. Al vencerse, el Payment Context genera una nueva Factura y renueva el período. | Payment |
+| **Edge API** | Microservicio independiente que actúa como primer filtro de la telemetría bruta. Calcula el ICA y la transmitancia, filtra falsos positivos y emite eventos de riesgo al backend principal. | Arquitectura |
+| **Backend principal** | Servicio central RESTful que aloja los cinco Bounded Contexts de YakuControl (IAM, Equipment, Telemetry, Notification y Payment) y gestiona la comunicación con las aplicaciones cliente. | Arquitectura |
+| **Dashboard** | Interfaz web del Administrador que centraliza el estado en tiempo real de todos los estanques, gráficos de tendencias históricas, gestión de equipos y estado de la suscripción. | Arquitectura |
+| **Historial de lecturas** | Registro persistente de todas las lecturas y estados de un estanque a lo largo del tiempo. Utilizado por el Administrador para análisis de tendencias y toma de decisiones estratégicas. | Telemetry |
+| **Ronda de campo** | Recorrido físico periódico realizado por el piscicultor entre los estanques para inspección y mantenimiento. YakuControl complementa (no reemplaza) esta actividad con monitoreo continuo. | General |
 
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories
@@ -632,7 +640,7 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 
 El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
 
-En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts de YakuControl (IAM, Infrastructure, Telemetry, Notification y Payment), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
+En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts de YakuControl (IAM, Equipment, Telemetry, Notification y Payment), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
 
 
 **Escenario 1:** Registrar administrador y crear piscicultor
