@@ -425,11 +425,11 @@ Tras el análisis de alternativas, se definió el siguiente mapa de relaciones p
 
 #### Conclusión del Context Mapping
 
-<<<<<<< Updated upstream
+
 El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** e **Equipment** constituyen el núcleo operativo del sistema: Equipment define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
-=======
+
 El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** y **Equipment** constituyen el núcleo operativo del sistema: Equipment define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
->>>>>>> Stashed changes
+
 
 Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
 
