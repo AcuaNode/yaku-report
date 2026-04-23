@@ -629,6 +629,32 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 ### 4.1.1. Design-Level EventStorming
 #### 4.1.1.1. Candidate Context Discovery
 #### 4.1.1.2. Domain Message Flows Modeling
+
+El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
+
+En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts de YakuControl (IAM, Infrastructure, Telemetry, Notification y Payment), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
+
+
+**Escenario 1:** Registrar administrador y crear piscicultor
+**Objetivo:** Registrar un nuevo administrador en el sistema, generar su key de acceso y permitirle crear un piscicultor vinculado a su granja.
+
+![Domain Message Flow 1](./assets/images/screenshots/domain-message-flow-1.jpg)
+
+**Escenario 2:** Crear piscigranja y vincular sensores
+**Objetivo:** El administrador crea un nuevo estanque en el sistema, vincula los sensores IoT correspondientes e inicia la telemetría para el monitoreo en tiempo real.
+
+![Domain Message Flow 2](./assets/images/screenshots/domain-message-flow-2.jpg)
+
+**Escenario 3:** Alertar ante detección de anomalías de los sensores
+**Objetivo:** El sensor ESP32 detecta una anomalía en los parámetros del agua y el sistema genera y envía alertas automáticas al administrador y al piscicultor en tiempo real.
+
+![Domain Message Flow 3](./assets/images/screenshots/domain-message-flow-3.jpg)
+
+**Escenario 4:** Pagar suscripción
+**Objetivo:** El administrador selecciona un plan de suscripción, completa el proceso de pago y el sistema habilita el acceso completo a las funcionalidades de YakuControl.
+
+![Domain Message Flow 4](./assets/images/screenshots/domain-message-flow-4.jpg)
+
 #### 4.1.1.3. Bounded Context Canvases
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
