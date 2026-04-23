@@ -584,6 +584,7 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 ![Empathy mapping – Piscicultores](./assets/images/empathy-map-piscicultor.png)
 
 ## 2.4. Big Picture EventStorming
+![Eventstorming](./assets/images/step10.png)
 ## 2.5. Ubiquitous Language
 
 El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compartido y estandarizado que usan tanto el equipo de desarrollo como los expertos del dominio acuícola para comunicarse sin ambigüedades. Todos los términos definidos aquí deben usarse de forma consistente en el código, los modelos, las entrevistas y la documentación del proyecto.
