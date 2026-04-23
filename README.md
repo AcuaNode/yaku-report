@@ -626,7 +626,7 @@ La capa de infraestructura implementa las interfaces definidas en Domain Layer a
 * **PondAssignmentRepositoryImpl** : Implementa PondAssignmentRepository para el historial de asignaciones.
 * **SpringDomainEventPublisher** : Publica el evento FishFarmerAssignedEvent al bus interno de Spring para que el módulo IAM actualice los permisos del piscicultor.
 
-![Infrastructure Layer Equipment](./assets/images/infrastructure_layer_equipment.png)
+![Infrastructure Layer Equipment](./assets/images/Infrastructure_layer_Repository.png)
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 ![Equipment-Context](./assets/images/c3_equipment_yakucontrol.png)
