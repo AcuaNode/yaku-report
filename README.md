@@ -102,7 +102,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 *Gráfico de red (network graph) de ramas en el repositorio de GitHub.*
 
-![Insights - Network Graph](./assets/images/screenshots/insights-network-graph.png)
+![Insights - Contributors](./assets/images/network.png)
 
 </div>
 
@@ -110,15 +110,15 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 *Análisis de líneas de código añadidas por contribuyente (Aponte, Lopez, Urrutia, Vivanco, Velasquez).*
 
-![Insights - Contributors](./assets/images/screenshots/insights-contributor.png)
+![Insights - Network Graph](./assets/images/insights.png)
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Análisis de actividad de commits registrada durante el periodo del 09/04 al 24/04.*
+*Análisis de actividad de commits registrada durante el periodo del 05/04 al 24/04.*
 
-![Insights - Commits](./assets/images/screenshots/insights-commits.png)
+![Insights - Commits](./assets/images/commits.png)
 
 </div>
 
