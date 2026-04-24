@@ -88,11 +88,11 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 
 | Integrantes | Tarea asignada |
 | :--- | :--- |
-| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Institution Context) |
-| Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Scheduling Context) |
-| Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Billing & Accounting Context) |
-| Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (Enrollment Context) |
-| Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Attendance Context) |
+| Aponte Cruzado, Andrea Marielena | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Equipment Context) |
+| Lopez Acuna, Mario Joaquin | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Payment Context) |
+| Urrutia Pena, Jasmin Adriana | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Telemetry Context) |
+| Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
+| Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
 **GitHub Collaboration Insights**
 
@@ -224,15 +224,172 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+**AcuaNode** es una startup tecnológica dedicada al desarrollo de soluciones de Smart Farming y monitoreo ambiental, con un enfoque en la modernización de la industria acuícola. La startup nace con el propósito de transformar la gestión tradicional de las piscigranjas en ecosistemas inteligentes y resilientes, utilizando el *Internet de las Cosas (IoT)* y *computación en la nube* para proteger la biodiversidad y la rentabilidad del productor.
+
+**YakuControl** (del quechua *yaku*, "agua") es un ecosistema digital integral que permite a los administradores de piscigranjas monitorear en tiempo real las variables bioquímicas críticas de sus estanques. Mediante el uso de hardware especializado y algoritmos alojados en la nube, el sistema actúa como un soporte vital preventivo par los piscicultores, con el fin de mitigar riesgos de mortalidad masiva causados por variaciones térmicas o intoxicaciones químicas.
+
+El objetivo de YakuTech es promover el acceso a la tecnología a través de un modelo de **Software as a Service (SaaS)** **B2B**. De esta manera, no solo buscamos reducir la brecha digital en el sector agropecuario, sino también optimizar el uso de recursos energéticos y mejorar la calidad final del producto, fomentando una industria acuícola más eficiente, transparente y sostenible.
+
+La relevancia de esta innovación se sustenta en el contexto del sector acuícola nacional. Por un lado, la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2025) señala que la acuicultura en el Perú enfrenta constantes fluctuaciones y cuantiosas pérdidas de producción asociadas a la alteración en la calidad del agua y la contaminación de los cauces.
+
+A esto se suma que, de los más de 12,700 acuicultores registrados a nivel nacional, un porcentaje crítico opera en la categoría de Acuicultura de Recursos Limitados (AREL), evidenciando una escasa adopción de tecnologías de control (PRODUCE, 2024).
+
+Todo este panorama evidencia la importancia crítica y el respaldo necesario para introducir nuestro producto en el sector, actuando como la herramienta definitiva para cerrar esta profunda brecha tecnológica.
+
+- **Misión:** Impulsar la transformación digital del sector acuícola mediante soluciones IoT de alta precisión, garantizando la seguridad alimentaria y la rentabilidad de nuestros clientes a través de la prevención de desastres biológicos.
+
+- **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
+
 ### 1.1.2. Perfiles de integrantes del equipo
+<table border="1">
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" img alt="Andrea Aponte" src="./assets/images/andrea_aponte.png" /></td>
+      <td><strong>Aponte Cruzado, Andrea Marielena - u202224135</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Mario Lopez" src="./assets/images/Mario.jpeg" /></td>
+      <td><strong>Lopez Acuna, Mario Joaquin - U202116250</strong><br>Mi nombre es Mario Lopez, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
+      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
+      </td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
+      <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br>Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
+  </tr>
+  <tr>
+      <td style="text-align:center;"><img width="350" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
+      <td><strong>Vivanco Salazar, Rafael Andres - u202311064</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
+  </tr>
+</table>
+
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
+
+#### Antecedentes
+
+La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
+
+#### Problemática
+
+**Who (¿Quién?)**<br>
+La problemática afecta directamente a dos actores fundamentales en el ecosistema acuícola:
+- **Administradores de piscigranja**: Profesionales responsables de la planificación estratégica, rentabilidad financiera y toma de decisiones basada en el rendimiento histórico de producción.
+
+- **Piscicultores:** Personal técnico encargado de la supervisión física diaria, el mantenimiento de los estanques y la ejecución de maniobras de emergencia ante variaciones ambientales.
+
+**What (¿Qué?)** <br>
+La ausencia de un sistema de monitoreo inteligente impacta a cada perfil de la siguiente manera:
+
+- **Administrador de piscigranja**: La falta de una plataforma centralizada impide visualizar tendencias o calcular costos operativos. Sin datos históricos, no puede optimizar el uso de recursos ni garantizar la escalabilidad del negocio, quedando vulnerable ante pérdidas masivas de inventario.
+
+- **Piscicultor:** Su limitación es la dependencia de la observación, lo que le impide detectar anomalías invisibles a simple vista. Esto los fuerza a actuar de forma reactiva, enfrentando crisis cuando el pez ya muestra signos de estrés, lo que eleva la carga laboral y riesgo de mortalidad por error humano.
+
+**Where (¿Dónde?)** <br>
+ Esta problemática se observa en piscigranjas de truchas arcoíris, particularmente en zonas andinas y rurales del Perú alimentadas por ríos.
+
+**When (¿Cuándo?)** <br>
+ El problema es una amenaza constante, pero se intensifica de forma crítica durante anomalías climáticas (como mediodías de calor extremo que disminuyen la solubilidad del oxígeno), lluvias intensas que elevan repentinamente la turbidez del agua (lodo), y tras los ciclos de alimentación intensiva, cuando la concentración de desechos altera el equilibrio químico del estanque.
+
+**Why (¿Por qué?)** <br>
+ La raíz del problema es la *falta de adopción tecnológica y de sistemas de telemetría en el sector acuícola.* Muchos productores de las categorías de micro y pequeña escala dependen de la simple observación o de mediciones químicas manuales esporádicas. Esto impide contar con un registro histórico, generando ineficiencia operativa que impide reaccionar a los cambios termodinámicos que destruyen el ecosistema.
+
+**How (¿Cómo?)** <br>
+ **YakuControl** propone una solución integrando el Internet de las Cosas (IoT) con una arquitectura en la nube. A través de hardware instalado en los estanques (Edge API), el sistema recopila lecturas de temperatura, pH y turbidez en tiempo real, ejecutando algoritmos que determinan la calidad del agua. Simultáneamente, las aplicaciones cliente (Web y Móvil) alertan a los operarios sobre estados críticos y permiten el encendido remoto (o automatizado) de actuadores de emergencia.
+
+**How Much (¿Cuánto?)**<br>
+Uno de los principales desafíos en el sector acuícola es la alta vulnerabilidad ante alteraciones ambientales y bioquímicas en el agua, lo que genera mortalidades masivas y pérdida total del capital. 
+
+Según documenta el portal Actualidad Ambiental (2025), el impacto económico de no contar con un monitoreo preventivo es devastador: incidentes recientes en zonas andinas, ocasionados por contaminación o alteraciones en los cauces, han generado la muerte repentina de hasta 200,000 truchas en un solo evento. Este tipo de desastres representa pérdidas de capital superiores a los S/ 300,000 para una sola piscigranja. 
+
+Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
+
+
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
+
+**Problem Statement 1 — Administrador de Piscigranja**
+
+El estado actual de la gestión acuícola se ha centrado principalmente en el registro manual de datos y la toma de decisiones basada en la experiencia empírica del productor. Lo que las herramientas existentes no logran abordar es la disponibilidad de datos históricos procesados, tendencias y reportes consolidados que permitan al dueño tomar decisiones preventivas y estratégicas sobre la salud de sus estanques. Considerando la restricción de que los productores evitan realizar grandes inversiones de capital en servidores físicos o licencias costosas, nuestro producto abordará esta brecha mediante un Web Dashboard basado en la nube (modelo SaaS) con visualización de históricos, gráficos de tendencias y un índice global de calidad del agua calculado automáticamente. Nuestro enfoque inicial serán los propietarios y administradores de piscigranjas en el Perú con más de un estanque activo. Sabremos que hemos tenido éxito cuando los dueños reporten una reducción medible en eventos de mortalidad masiva y adopten el dashboard como su herramienta principal de gestión diaria.
+
+**Problem Statement 2 — Piscicultor**
+
+El estado actual del monitoreo de estanques en piscigranjas se ha centrado principalmente en rondas físicas periódicas y observación visual directa por parte del personal de campo. Lo que los métodos y herramientas existentes no logran abordar es la detección temprana y automática de condiciones críticas del agua (pH bajo, turbidez alta, temperatura fuera de rango) durante los largos intervalos entre inspecciones. Asumiendo las restricciones de un entorno rural (conectividad intermitente) y el perfil no técnico de los usuarios, nuestro producto abordará esta brecha mediante una aplicación móvil de interfaz simplificada, conectada a sensores IoT vía Edge API, que emite alertas críticas inmediatas y permite accionar equipos de emergencia de forma remota. Nuestro enfoque inicial serán los operarios y trabajadores de campo de piscigranjas de trucha. Sabremos que hemos tenido éxito cuando los operarios respondan y mitiguen eventos críticos de calidad del agua en menos de 10 minutos desde su detección.
+
 #### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions**
+
+1. Creemos que los dueños de piscigranjas están dispuestos a pagar una suscripción mensual recurrente si la plataforma demuestra reducir la mortalidad de truchas de forma tangible. Lograr una tasa de conversión del 20% de los clientes piloto al modelo de pago tras demostrar una reducción de al menos 15% en eventos de mortalidad durante el primer trimestre
+
+2. Creemos que el principal riesgo del negocio es la baja digitalización de los productores acuícolas, que puede generar resistencia a la adopción tecnológica. Lograr que el tiempo promedio de adopción/onboarding sea menor a 48 horas mediante interfaces simplificadas
+
+3. Creemos que el modelo SaaS por estanque es más viable financieramente que la venta única de hardware, ya que genera ingresos recurrentes y permite escalar el servicio. Alcanzar el punto de equilibrio operativo al conectar los primeros 50 estanques en los primeros 6 meses
+
+4. Creemos que las integraciones con servicios externos (clima, SMS) incrementan el valor percibido de la suscripción y reducen la tasa de cancelación. Mantener una tasa de retención mensual superior al 90% en cuentas activas
+
+5. Creemos que el mercado peruano de acuicultura de trucha tiene la escala suficiente para sostener el crecimiento de la startup en sus primeros tres años de operación. Capturar el 5% de las piscigranjas formales en la región andina central en los primeros tres años de operación
+
+**User Assumptions**
+
+1. **¿Quiénes son nuestros usuarios?** Dueños y administradores de piscigranjas de trucha, y sus operarios de campo en regiones andinas del Perú. 
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** En la rutina diaria de monitoreo físico de estanques, y como eje central en la toma de decisiones estratégicas sobre la bioseguridad del ecosistema.
+3. **¿Qué problemas resuelve nuestro producto?** La detección tardía de condiciones químicas/térmicas mortales en el agua, la dependencia visual empírica y la falta de datos históricos para anticiparse a desastres.
+4. **¿Cuándo y cómo usan nuestro producto?** Los operarios lo usan en campo, en tiempo real, a través de la app móvil conectada a los sensores IoT. Los dueños lo consultan desde el Web Dashboard para revisiones periódicas, control de consumo energético y análisis histórico.
+5. **¿Qué características son las más importantes?** Ingesta de datos telemétricos sin latencia, cálculo algorítmico del Índice de Calidad del Agua, alertas push críticas, control remoto de actuadores (Airlift/Bombas) y dashboards analíticos.
+6. **¿Cómo debe verse y comportarse el producto?** Altamente responsivo, intuitivo y resiliente ante fallos de red. La App móvil debe priorizar Status Cards para acción inmediata; el Web Dashboard debe priorizar la claridad en gráficos.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hipótesis 1**
+Creemos que lograremos **reducir el tiempo de respuesta ante eventos críticos del agua** si los **operarios de campo** pueden **recibir alertas push inmediatas con el tipo de riesgo detectado** mediante la **funcionalidad de notificaciones en tiempo real de la app móvil**.
+
+**Hipótesis 2**
+Creemos que lograremos **incrementar la retención de suscriptores** si los **dueños de piscigranja** pueden **visualizar tendencias históricas y comparar el rendimiento entre estanques** mediante el **Web Dashboard con gráficos de análisis de calidad del agua**.
+
+**Hipótesis 3**
+Creemos que lograremos **reducir la mortalidad masiva de truchas** si los **operarios** pueden **accionar remotamente motores y bombas de emergencia desde su celular** mediante los **botones de control IoT de la app móvil**.
+
+**Hipótesis 4**
+Creemos que lograremos **validar la disposición a pagar del mercado** si los **dueños de piscigranja con más de un estanque** pueden **gestionar todos sus estanques desde una sola plataforma** mediante el **modelo de suscripción mensual por estanque de YakuControl**.
+
+**Hipótesis 5**
+Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el **sistema** puede **filtrar lecturas de sensores mediante el Índice de Calidad del Agua ponderado** mediante el **algoritmo matemático ejecutado en el Edge API antes de emitir cualquier alerta**.
+
 #### 1.2.2.4. Lean UX Canvas
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Lean UX Canvas - YakuControl](./assets/images/LeanUX.png)
+
+</div>
+
 ## 1.3. Segmentos objetivo
+
+YakuControl dirige su propuesta de valor a dos segmentos de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja:
+
+**Segmento 1: Piscicultores**
+
+Son el personal técnico que realiza las rondas físicas diarias entre los estanques. Su principal responsabilidad es mantener las condiciones operativas de los estanques y responder ante cualquier anomalía. Sus características clave son:
+
+- Realizan múltiples rondas al día en instalaciones que pueden abarcar varios estanques dispersos geográficamente.
+- Necesitan información rápida y accionable, no reportes complejos.
+- Requieren acceso móvil para recibir alertas críticas (pH bajo, turbidez alta, temperatura fuera de rango) en cualquier momento y desde cualquier punto de la piscigranja.
+- Necesitan botones de acción rápida para activar equipos de emergencia (bombas de oxigenación, sistemas de recirculación) de forma remota sin desplazarse físicamente hasta el panel de control.
+- Su nivel de digitalización puede ser bajo, por lo que la interfaz debe ser intuitiva y de uso inmediato.
+
+**Segmento 2: Administradores de Piscigranja**
+
+Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la prevención de pérdidas y la toma de decisiones estratégicas a largo plazo. Sus características clave son:
+
+- No necesariamente están presentes físicamente en la piscigranja de forma continua.
+- Requieren una visión consolidada del estado de todos sus estanques desde un solo lugar.
+- Necesitan acceso a reportes históricos, gráficos de tendencias y el índice global de calidad del agua para identificar patrones y anticipar riesgos.
+- Valoran la trazabilidad de eventos para tomar decisiones sobre mantenimiento, inversión en equipos o cambios operativos.
+- Son los tomadores de decisión de compra: evalúan el costo de la suscripción frente al costo potencial de una mortalidad masiva.
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
@@ -280,9 +437,23 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
 
 # Conclusiones
+El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
+
+Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las reglas de negocio de los detalles más técnicos. Al definir "Contextos Delimitados" independientes (por ejemplo, para gestionar usuarios o para la telemetría), conseguimos que la lógica de cómo se manejan los usuarios y la de cómo se vigilan los estanques no se mezclaran. Así es mucho más fácil mantener y mejorar el sistema con el tiempo.
+
+Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
+
 ## Conclusiones y recomendaciones
+
+Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
+
 ## Video About-the-Team
 
 # Bibliografía
+Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
+
+Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
+
+Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
 # Anexos
