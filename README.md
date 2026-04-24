@@ -34,7 +34,7 @@
     <h4 style="text-align: center">Lima – abril 2025</h4>
 </div>
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 ### Registro de Versiones del Informe
 
@@ -47,7 +47,7 @@
 | **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Product Implementation & Validation. |
 | **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión final, levantamiento de observaciones y entrega del informe. |
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
@@ -78,7 +78,7 @@ Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas princi
 * **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
 * **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 ## AV1
 
@@ -122,7 +122,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 </div>
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 # Contenido
 
@@ -188,7 +188,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 - [Anexos](#anexos)
 
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 # Student Outcome
 En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
@@ -198,7 +198,7 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 | **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Aponte Cruzado, Andrea Marielena**<br>*AV1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Lopez Acuna, Mario Joaquin**<br>*AV1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Urrutia Pena, Jasmin Adriana**<br>*AV1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Vivanco Salazar, Rafael Andres**<br>*AV1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Velasquez Chambi, Ruben Genaro**<br>*AV1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *AV1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
 | **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Aponte Cruzado, Andrea Marielena**<br>*AV1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Lopez Acuna, Mario Joaquin**<br>*AV1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Urrutia Pena, Jasmin Adriana**<br>*AV1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Vivanco Salazar, Rafael Andres**<br>*AV1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Velasquez Chambi, Ruben Genaro**<br>*AV1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *AV1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 # Objetivos Smart
 
@@ -219,7 +219,7 @@ Diseñar los 4 niveles fundamentales de arquitectura de software (System Landsca
 **Velasquez Chambi, Ruben Genaro (Documentation & Context Mapping)**
 Consolidar la documentación técnica final integrando los 5 Bounded Context Canvases elaborados por el equipo, garantizando la coherencia del Context Mapping. Además, extraerá y maquetará el reporte de métricas de colaboración de GitHub (Insights) con al menos 3 gráficos clave de rendimiento, entregando la versión candidata del documento en la rama *release* 48 horas antes de la presentación oficial para su auditoría final.
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -241,27 +241,29 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 
 - **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
 
+<div style="page-break-after: always;"></div>
+
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" img alt="Andrea Aponte" src="./assets/images/andrea_aponte.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" img alt="Andrea Aponte" src="./assets/images/andrea_aponte.png" /></td>
       <td><strong>Aponte Cruzado, Andrea Marielena - u202224135</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" alt="Mario Lopez" src="./assets/images/Mario.jpeg" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Mario Lopez" src="./assets/images/Mario.jpeg" /></td>
       <td><strong>Lopez Acuna, Mario Joaquin - U202116250</strong><br>Mi nombre es Mario Lopez, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
       <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
       </td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
       <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br>Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="350" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
       <td><strong>Vivanco Salazar, Rafael Andres - u202311064</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
   </tr>
 </table>
@@ -307,6 +309,7 @@ Según documenta el portal Actualidad Ambiental (2025), el impacto económico de
 
 Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
 
+<div style="page-break-after: always;"></div>
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
@@ -367,6 +370,8 @@ Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ## 1.3. Segmentos objetivo
 
 YakuControl dirige su propuesta de valor a dos segmentos de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja:
@@ -391,6 +396,8 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 - Valoran la trazabilidad de eventos para tomar decisiones sobre mantenimiento, inversión en equipos o cambios operativos.
 - Son los tomadores de decisión de compra: evalúan el costo de la suscripción frente al costo potencial de una mortalidad masiva.
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
@@ -412,6 +419,8 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 | | **Debilidades** | Startup en etapa temprana sin historial de clientes; dependencia de conectividad Wi-Fi en zonas rurales; equipo pequeño con recursos limitados. | No incluye hardware IoT propio; precio elevado inaccesible para pequeños productores; no localizado para el mercado peruano ni andino. | Precio inaccesible para pequeñas piscigranjas; sin app móvil para operarios; sin control remoto de actuadores; plataforma genérica no especializada en acuicultura. | No ofrece plataforma SaaS ni app móvil; sin alertas automáticas en tiempo real; sin procesamiento en la nube; costo inicial elevado sin modelo de suscripción. |
 | | **Oportunidades** | Mercado acuícola peruano en crecimiento con baja digitalización; potencial de expansión a otras especies y países de la región andina. | Incorporación de módulos IoT de calidad del agua; expansión en mercados emergentes de Latinoamérica. | Creación de verticales especializadas en acuicultura; expansión en mercados emergentes con soluciones más económicas. | Digitalización de sus equipos existentes con plataforma IoT; expansión en mercados emergentes de Latinoamérica. |
 | | **Amenazas** | Posible entrada de competidores internacionales con mayor capital; resistencia a la adopción tecnológica; variabilidad en conectividad de zonas andinas. | Startups IoT locales más accesibles y adaptadas al contexto regional que integran hardware y software en una sola solución. | Competidores más económicos con propuestas específicas para acuicultura; startups IoT locales con mejor comprensión del contexto regional. | Startups IoT que ofrecen soluciones completas (hardware + software + app) a menor costo; tendencia del mercado hacia plataformas digitales integradas. |
+
+<div style="page-break-after: always;"></div>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -447,13 +456,13 @@ Para superar la resistencia a la adopción tecnológica —una de las principale
 
 - **Táctica:** Participar en ferias agropecuarias y acuícolas regionales (AGROPECUARIA, ferias de PRODUCE) con la maqueta operativa como principal punto de contacto con clientes potenciales.
 
+<div style="page-break-after: always;"></div>
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
 
 En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los dos segmentos objetivo identificados: Piscicultores, quienes son los operadores de campo encargados del monitoreo y manejo directo de los estanques y Administradores de piscigranja, quienes son los dueños y responsables de la gestión del negocio acuícola. Las preguntas han sido elaboradas aplicando buenas prácticas de diseño de entrevistas, con el fin de recopilar información subjetiva que permita construir arquetipos precisos para cada segmento.
-
----
 
 #### Segmento 1: Piscicultores
 
@@ -495,11 +504,11 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 10. ¿Qué características debería tener una solución tecnológica para que la adoptara en su negocio sin dudarlo?
 11. ¿Qué tan dispuesto estaría de invertir en una solución que le permita monitorear los parámetros del agua de sus piscigranjas?
 
+<div style="page-break-after: always;"></div>
+
 ### 2.2.2. Registro de entrevistas
 
 A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
-
----
 
 **Segmento Piscicultores:**
 
@@ -597,7 +606,7 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Captura** | ![Captura entrevista administrador 3](./assets/images/screenshots/interview-screenshot-admin3.png) |
 | **Resumen** | Harvey administra una piscigranja en la comunidad campesina de Mantacra, Pampas, Huancavelica. La gestión es empírica y reactiva: la información llega de forma semanal o cuando ocurre mortandad. Los indicadores más importantes para él son la oxigenación, densidad y temperatura del agua. Tiene problemas en invierno con parasitosis y turbidez por lodo proveniente del riachuelo. El personal de campo solo informa cuando la mortandad ya ocurrió. Prefiere el celular como dispositivo principal ya que a veces no cuentan ni con laptop. Está dispuesto a invertir lo necesario en una solución tecnológica si esta le facilita la producción, reduce la mortandad y mejora su rentabilidad. |
  
----
+<div style="page-break-after: always;"></div>
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -659,6 +668,8 @@ Las entrevistas se realizaron en abril de 2026 a un total de dos participantes: 
 
 El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto piscicultores como administradores coinciden en que la temperatura, el oxígeno y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. Los piscicultores priorizan la simplicidad de uso y las alertas en tiempo real desde el celular, mientras que los administradores priorizan la visibilidad remota, la capacidad predictiva del sistema y un costo accesible. Estas necesidades complementarias refuerzan directamente la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real, previniendo pérdidas y mejorando la rentabilidad del negocio acuícola peruano.
 
+<div style="page-break-after: always;"></div>
+
 ## 2.3. Needfinding
 
 El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto. A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
@@ -671,13 +682,25 @@ Los User Personas se construyen a partir del análisis de la información recopi
 
 Representa a los trabajadores encargados del manejo diario de los estanques, enfocados en el monitoreo del agua, alimentación de los peces y detección de problemas operativos.
 
-![User Persona – Piscicultor](./assets/images/user-persona-piscicultor.png)
+<p align="center">
+  <img src="./assets/images/user-persona-piscicultor.png" width="50%">
+  <br>
+  <i>User Persona – Piscicultor</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **User persona: Administradores de piscigranjas**
 
 Es la responsable de la gestión y toma de decisiones, quienes supervisan la producción, analizan reportes y coordinan acciones para optimizar el rendimiento de la piscigranja.
 
-![User Persona – Administradores de piscigranjas](./assets/images/user-persona-administrador.png)
+<p align="center">
+  <img src="./assets/images/user-persona-administrador.png" width="65%">
+  <br>
+  <i>User Persona – Administradores de piscigranjas</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ## 2.3.2. User Task Matrix
  
@@ -715,6 +738,8 @@ En esta sección se presentan las tareas que los User Persona representativos de
  
 Las tareas con mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, todas actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado, destacan la revisión del reporte y el control de costos como tareas frecuentes de alta importancia, evidenciando su dependencia de información de segunda mano para tomar decisiones. La coincidencia más relevante entre ambos segmentos es la gestión de emergencias en los estanques: José debe reaccionar en campo y Pedro debe decidir a modo de gestión, lo que refuerza la necesidad de una solución como YakuControl que conecte a ambos en tiempo real.
 
+<div style="page-break-after: always;"></div>
+
 ### 2.3.3. User Journey Mapping
 
 En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
@@ -723,10 +748,13 @@ En esta sección se presentan los User Journey Maps para cada uno de los User Pe
 
 ![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
 
+<div style="page-break-after: always;"></div>
+
 - User Journey Map de José Guevara
 
 ![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
 
+<div style="page-break-after: always;"></div>
 
 ### 2.3.4. Empathy Mapping
 
@@ -734,11 +762,24 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 - Empathy mapping de Administrador de piscigranja
 
-![Empathy mapping – Administradores de piscigranjas](./assets/images/empathy-map-administrador.png)
+
+<p align="center">
+  <img src="./assets/images/empathy-map-administrador.png" width="75%">
+  <br>
+  <i>Empathy mapping – Administradores de piscigranjas</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 - Empathy mapping de Piscicultor
 
-![Empathy mapping – Piscicultores](./assets/images/empathy-map-piscicultor.png)
+<p align="center">
+  <img src="./assets/images/empathy-map-piscicultor.png" width="75%">
+  <br>
+  <i>Empathy mapping – Piscicultores</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ## 2.4. Big Picture EventStorming
 ![Eventstorming](./assets/images/step10.png)
@@ -784,6 +825,8 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 | **Dashboard** | Interfaz web del Administrador que centraliza el estado en tiempo real de todos los estanques, gráficos de tendencias históricas, gestión de equipos y estado de la suscripción. | Arquitectura |
 | **Historial de lecturas** | Registro persistente de todas las lecturas y estados de un estanque a lo largo del tiempo. Utilizado por el Administrador para análisis de tendencias y toma de decisiones estratégicas. | Telemetry |
 | **Ronda de campo** | Recorrido físico periódico realizado por el piscicultor entre los estanques para inspección y mantenimiento. YakuControl complementa (no reemplaza) esta actividad con monitoreo continuo. | General |
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories
@@ -861,6 +904,8 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 | **20** | **US09** | Registro de Novedades | Como piscicultor, deseo escribir notas rápidas sobre un estanque para informar al dueño. | **2** |
 
 Link Trello: https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
@@ -1012,6 +1057,8 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 
 ![Equipment-canvas](./assets/images/Equipment-canva.jpg)
 
+<div style="page-break-after: always;"></div>
+
 ### 4.1.2. Context Mapping
 
 Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
@@ -1066,6 +1113,8 @@ El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el 
 
 Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
 
+<div style="page-break-after: always;"></div>
+
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 En esta sección se ofrece una visión macroscópica del ecosistema tecnológico de la piscigranja. El objetivo de este nivel de abstracción es contextualizar a YakuControl dentro de su entorno operativo real. El diagrama ilustra la convivencia de la plataforma principal con otros sistemas aislados de la empresa y los actores organizacionales. Esto permite comprender los flujos de información y los procesos de negocio en el terreno, existan o no integraciones directas a nivel de código.
@@ -1092,6 +1141,7 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 ![Deployment Diagram](./assets/images/c4_deployment_yakucontrol.png)
 <br>
 
+<div style="page-break-after: always;"></div>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
@@ -1164,7 +1214,12 @@ La capa de infraestructura proporciona las capacidades tecnológicas críticas p
 ![Infrastructure Layer Telemetry](./assets/images/infrastructurelayertelemetry.png)
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
-![Telemetry-Context](./assets/images/c3_telemetry_yakucontrol.png)
+
+<p align="center">
+  <img src="./assets/images/c3_telemetry_yakucontrol.png" width="55%">
+  <br>
+  <i>Telemetry-Context</i>
+</p>
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -1262,7 +1317,13 @@ La capa de infraestructura implementa las interfaces definidas en Domain Layer a
 ![Infrastructure Layer Equipment](./assets/images/Infrastructure_layer_Repository.png)
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-![Equipment-Context](./assets/images/c3_equipment_yakucontrol.png)
+
+<p align="center">
+  <img src="./assets/images/c3_equipment_yakucontrol.png" width="55%">
+  <br>
+  <i>Equipment-Context</i>
+</p>
+
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 
@@ -1331,7 +1392,13 @@ La capa de infraestructura proporciona las capacidades técnicas y tecnológicas
 ![Infrastructure Layer IAM](./assets/images/infrastructure_layer_iam.png)
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-![Iam-Context](./assets/images/c3_iam_yakucontrol.png)
+
+<p align="center">
+  <img src="./assets/images/c3_iam_yakucontrol.png" width="55%">
+  <br>
+  <i>Iam-Context</i>
+</p>
+
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 El diagrama de clases de la capa de dominio de IAM detalla la estructura táctica del Bounded Context, especificando los agregados, entidades y objetos de valor que lo integran. Este esquema permite visualizar las interacciones y reglas de negocio plasmadas en los atributos y comportamientos de cada componente.
@@ -1397,7 +1464,13 @@ Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando
 ![Infrastructure](./assets/images/Notification-infrastructure.png)
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-![Notification-Context](./assets/images/c3_notification_yakucontrol.png)
+
+<p align="center">
+  <img src="./assets/images/c3_notification_yakucontrol.png" width="45%">
+  <br>
+  <i>Notification-Context</i>
+</p>
+
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ![Notification-domain-level](./assets/images/Notification-domain-class.png)
@@ -1478,7 +1551,12 @@ La capa de infraestructura del Payment Context implementa la persistencia de sus
 ![Infrastructure Layer Payment](./assets/images/payment_infrastructure.png)
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-![Payment-Context](./assets/images/c3_subscription_yakucontrol.png)
+
+<p align="center">
+  <img src="./assets/images/c3_subscription_yakucontrol.png" width="55%">
+  <br>
+  <i>Payment-Context</i>
+</p>
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -1492,6 +1570,7 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 
 ![Database Payment](./assets/images/payment-database.png)
 
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
@@ -1505,6 +1584,8 @@ Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo 
 Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
 
 ## Video About-the-Team
+
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
