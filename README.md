@@ -49,9 +49,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Project Report Collaboration Insights
-
-# Student Outcome: Project Report Collaboration Insights
+# Project Report Collaboration Insights
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
