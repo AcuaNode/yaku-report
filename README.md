@@ -41,10 +41,10 @@
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
 | **1.0** | 09/04/2026 | Rafael Vivanco | Creación inicial de la estructura del informe y definición de lineamientos. |
-| **2.0** | 12/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo I: Presentación del proyecto y Background. |
-| **3.0** | 15/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Finalización del Capítulo II: Requirements Development and Software Solution Design. |
-| **4.0** | 18/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo III: Solution UI/UX Design. |
-| **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Product Implementation & Validation. |
+| **2.0** | 12/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo I: Presentación del proyecto y Background |
+| **3.0** | 15/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Finalización del Capítulo II: Obtención y análisis de requisitos |
+| **4.0** | 18/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo III: Especificación de requisitos |
+| **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
 | **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión final, levantamiento de observaciones y entrega del informe. |
 
 <div style="page-break-after: always;"></div>
