@@ -1655,20 +1655,232 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 ### 5.2.5. Navigation Systems
 
 ## 5.3. Landing Page UI Design
+En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
+
 ### 5.3.1. Landing Page Wireframe
+Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose en la disposición estructural de los elementos clave definidos en las User Stories EP01. El esquema prioriza una jerarquía visual clara que guía al visitante desde la explicación del producto hasta las secciones de catálogo de planes, FAQ de soporte y el formulario de contacto para ventas.
+
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/diseñoux/LandingPhoneWireframe.png" alt="wireframe2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 ### 5.3.2. Landing Page Mock-up
+El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/diseñoux/LandingPhoneMockup.png" alt="Mockup2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 ## 5.4. Applications UX/UI Design
+Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores y la App Móvil para piscicultores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
+
 ### 5.4.1. Applications Wireframes
+Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organización de los dashboards y paneles de control. Los wireframes para la aplicación móvil se centran en la simplicidad de uso para operarios en campo, mientras que los de la aplicación web priorizan la claridad en gráficos de tendencias e informes de mortalidad para la toma de decisiones estratégicas.
+
+- *Wireframes para el Segmento 1: Piscicultores*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe1.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe2.png" alt="wireframe" /> |
+
+| Sección Home |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe3.png" alt="wireframe" /> |
+
+| Sección Home - Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe4.png" alt="wireframe" /> |
+
+| Sección Home - Historial de Lecturas|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe5.png" alt="wireframe" /> |
+
+| Sección Alertas |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe6.png" alt="wireframe" /> |
+
+| Sección Perfil |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe7.png" alt="wireframe" /> |
+
+
+- *Wireframes para el Segmento 2: Administradores de Piscigranja*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe8.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe9.png" alt="wireframe" /> |
+
+| Registro de Granja |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe10.png" alt="wireframe" /> |
+
+| Sección DashBoard|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe11.png" alt="wireframe" /> |
+
+| Sección Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe12.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe13.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques -   Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe14.png" alt="wireframe" /> |
+
+| Sección Equipos |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe15.png" alt="wireframe" /> |
+
+| Sección Operadores |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe16.png" alt="wireframe" /> |
+
+| Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe17.png" alt="wireframe" /> |
+
+| Sección Configuracion |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe18.png" alt="wireframe" /> |
+
+
 
 ### 5.4.2. Applications Wireflow Diagrams
+Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
+
+- *Wireflow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal:  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow1.png" alt="wireflow" /> |
+
+- *Wireflow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow2.png" alt="wireflow" /> |
 
 ### 5.4.3. Applications Mock-ups
+Se presentan las interfaces finales de alta fidelidad para las aplicaciones Web y Móvil. Estos mock-ups reflejan la implementación de componentes interactivos y estados de sistema (como lecturas en tiempo real y notificaciones de emergencia), siguiendo los lineamientos de diseño táctico para garantizar una experiencia de usuario intuitiva en entornos rurales y administrativos.
+
+- *Mockups para el Segmento 1: Piscicultores*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups1.png" alt="mockups" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups2.png" alt="mockups" /> |
+
+| Sección Home |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups3.png" alt="mockups" /> |
+
+| Sección Home - Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups4.png" alt="mockups" /> |
+
+| Sección Home - Historial de Lecturas|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups5.png" alt="mockups" /> |
+
+| Sección Alertas |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups6.png" alt="mockups" /> |
+
+| Sección Perfil |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups7.png" alt="mockups" /> |
+
+
+- *Mockups para el Segmento 2: Administradores de Piscigranja*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups8.png" alt="mockups" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups9.png" alt="mockups" /> |
+
+| Registro de Granja |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups10.png" alt="mockups" /> |
+
+| Sección DashBoard|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups11.png" alt="mockups" /> |
+
+| Sección Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups12.png" alt="mockups" /> |
+
+| Sección Registrar Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups13.png" alt="mockups" /> |
+
+| Sección Registrar Estanques -   Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups14.png" alt="mockups" /> |
+
+| Sección Equipos |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups15.png" alt="mockups" /> |
+
+| Sección Operadores |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups16.png" alt="mockups" /> |
+
+| Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups17.png" alt="mockups" /> |
+
+| Sección Configuracion |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups18.png" alt="mockups" /> |
 
 ### 5.4.4. Applications User Flow Diagrams
+En esta sección se diagraman los flujos de usuario completos, representando los pasos lógicos que realizan los distintos roles (ROLE_ADMIN y ROLE_WORKER) para alcanzar sus objetivos. Estos diagramas conectan las acciones de los usuarios con los eventos de dominio y sistemas externos, como el procesamiento de pagos vía Stripe o el envío de alertas mediante Firebase.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal:  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow1.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow2.png" alt="flow" /> |
 
 ## 5.5. Applications Prototyping
+Finalmente, se describe el prototipado interactivo de las aplicaciones, el cual permite simular la funcionalidad real del ecosistema digital de YakuControl. Este prototipo sirve como herramienta de validación para verificar la usabilidad del sistema, la eficiencia en la recepción de alertas críticas y la integración del control de hardware antes de proceder a la fase de implementación y despliegue.
+
+- *Applications Prototyping para el Segmento 1: Piscicultores*
+<img src="img/Prototyping1.png" alt="Prototyping" />
+
+- *Applications Prototyping para el Segmento 2: Administradores de Piscigranja*
+<img src="img/Prototyping2.png" alt="Prototyping" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+
+
 
 ## 5.6. IoT Device Design
 
