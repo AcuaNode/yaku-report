@@ -207,6 +207,45 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
     - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
     - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
 
+### Capítulo V: Solution UI/UX Design
+- [5.1. Style Guidelines](#51-style-guidelines)
+  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+- [5.2. Information Architecture](#52-information-architecture)
+  - [5.2.1. Organization Systems](#521-organization-systems)
+  - [5.2.2. Labeling Systems](#522-labeling-systems)
+  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+  - [5.2.4. Searching Systems](#524-searching-systems)
+  - [5.2.5. Navigation Systems](#525-navigation-systems)
+- [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+- [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+  - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+- [5.5. Applications Prototyping](#55-applications-prototyping)
+- [5.6. IoT Device Design](#56-iot-device-design)
+
+### Capítulo VI: Product Implementation, Validation & Deployment
+- [6.1. Software Configuration Management](#61-software-configuration-management)
+  - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+  - [6.1.2. Source Code Management](#612-source-code-management)
+  - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+- [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+  - [6.2.1. Sprint n](#621-sprint-n)
+    - [6.2.1.1. Sprint Planning n](#6211-sprint-planning-n)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog n](#6213-sprint-backlog-n)
+    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+    
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografia)
 - [Anexos](#anexos)
@@ -284,7 +323,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
   </tr>
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
-      <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br>Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
+      <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br> Estudiante del 7mo ciclo de la carrera de Ingenieria de Software, Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
@@ -1595,6 +1634,75 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 ![Database Payment](./assets/images/payment-database.png)
 
 <div style="page-break-after: always;"></div>
+
+<div style="page-break-after: always;"></div>
+
+# Capítulo V: Solution UI/UX Design
+## 5.1. Style Guidelines
+### 5.1.1. General Style Guidelines
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+## 5.2. Information Architecture
+### 5.2.1. Organization Systems
+
+### 5.2.2. Labeling Systems
+
+### 5.2.3. SEO Tags and Meta Tags
+
+### 5.2.4. Searching Systems
+
+### 5.2.5. Navigation Systems
+
+## 5.3. Landing Page UI Design
+### 5.3.1. Landing Page Wireframe
+
+### 5.3.2. Landing Page Mock-up
+
+## 5.4. Applications UX/UI Design
+### 5.4.1. Applications Wireframes
+
+### 5.4.2. Applications Wireflow Diagrams
+
+### 5.4.3. Applications Mock-ups
+
+### 5.4.4. Applications User Flow Diagrams
+
+## 5.5. Applications Prototyping
+
+## 5.6. IoT Device Design
+
+<div style="page-break-after: always;"></div>
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management
+### 6.1.1. Software Development Environment Configuration
+
+### 6.1.2. Source Code Management
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+### 6.1.4. Software Deployment Configuration
+
+## 6.2. Landing Page, Services & Applications Implementation
+### 6.2.1. Sprint n
+#### 6.2.1.1. Sprint Planning n
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+#### 6.2.1.3. Sprint Backlog n
+
+#### 6.2.1.4. Development Evidence for Sprint Review
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review
+
+#### 6.2.1.6. Execution Evidence for Sprint Review
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
