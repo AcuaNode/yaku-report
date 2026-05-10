@@ -1957,10 +1957,68 @@ Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node
 <div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
-## 6.1. Software Configuration Management
-### 6.1.1. Software Development Environment Configuration
+## 6.1 Software Configuration Management
 
-### 6.1.2. Source Code Management
+En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del proyecto YakuControl.
+
+### 6.1.1 Software Development Environment Configuration
+
+En esta sección se especifican los productos de software y herramientas utilizados por los miembros del equipo para colaborar en el ciclo de vida del producto digital YakuControl.
+
+| Categoría | Producto | Propósito | Referencia / Descarga |
+| :--- | :--- | :--- | :--- |
+| **Project Management** | Miro | Modelado de EventStorming y dinámicas colaborativas iniciales. | [miro.com](https://miro.com/) |
+| **Requirements Management** | GitHub | Gestión del Product Backlog, User Stories e hitos del proyecto. | [github.com](https://github.com/) |
+| **Product UX/UI Design** | Figma | Diseño de Wireframes, Mockups y Prototipos interactivos de las aplicaciones Web y Móvil. | [figma.com](https://figma.com/) |
+| **Product UX/UI Design** | Lucidchart | Elaboración de diagramas de flujo de usuario (Wireflows). | [lucid.app](https://lucid.app/) |
+| **Software Development** | IntelliJ IDEA | IDE principal para el desarrollo del Backend con Java y Spring Boot. | [jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| **Software Development** | Visual Studio Code | IDE para el desarrollo de la Landing Page y componentes Frontend. | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **Software Development** | Android Studio | Entorno para el desarrollo y emulación de la aplicación móvil con Flutter. | [developer.android.com/studio](https://developer.android.com/studio) |
+| **Software Development** | Java JDK 17 | Lenguaje de programación y entorno de ejecución para el Backend. | [oracle.com/java/](https://www.oracle.com/java/) |
+| **Software Development** | Flutter SDK | Framework para el desarrollo de la aplicación móvil multiplataforma. | [flutter.dev](https://flutter.dev/) |
+| **Software Testing** | JUnit 5 | Framework de pruebas unitarias y de integración para el Backend. | [junit.org](https://junit.org/junit5/) |
+| **Software Testing** | Postman | Herramienta para pruebas y documentación de las APIs REST. | [postman.com](https://www.postman.com/) |
+| **Software Deployment** | Microsoft Azure | Plataforma Cloud para el despliegue de servicios y bases de datos. | [azure.microsoft.com](https://azure.microsoft.com/) |
+| **Software Deployment** | Docker | Contenerización de servicios para asegurar paridad entre entornos. | [docker.com](https://www.docker.com/) |
+| **Software Documentation** | GitHub (Markdown) | Documentación técnica y gestión del reporte final del proyecto. | [github.com](https://github.com/) |
+
+### 6.1.2 Source Code Management
+
+Para el seguimiento de las modificaciones del código fuente y la documentación, el equipo utiliza **GitHub** como plataforma principal.
+
+### Repositorios de Software
+
+A continuación, se detallan las URLs de los repositorios para cada producto de la solución:
+
+*   **Project Report:** [https://github.com/AcuaNode/yaku-report](https://github.com/AcuaNode/yaku-report)
+*   **Web Services (Backend):** [https://github.com/AcuaNode/yaku-backend](https://github.com/AcuaNode/yaku-backend)
+*   **Landing Page:** [https://github.com/AcuaNode/yaku-landing](https://github.com/AcuaNode/yaku-landing)
+
+### Estrategia de Ramas (GitFlow)
+
+El equipo implementa el flujo de trabajo **GitFlow** para la gestión de versiones. Se han definido las siguientes ramas principales y convenciones:
+
+*   **main branch:** Contiene el código en estado de producción, siempre estable y listo para despliegue.
+*   **develop branch:** Rama de integración donde se consolidan las funcionalidades terminadas antes de pasar a producción.
+*   **Feature branches:** Ramas temporales creadas para el desarrollo de nuevas características o capítulos del informe.
+    *   **Convención:** `feature/nombre-de-la-caracteristica` (Ej: `feature/chapter-I`, `feature/iam-context`).
+*   **Release branches:** Ramas de preparación para una nueva entrega o lanzamiento oficial.
+    *   **Convención:** `release/vX.Y.Z` aplicando **Semantic Versioning 2.0.0**. (Ej: `release/v1.0.0`).
+*   **Hotfix branches:** Ramas para correcciones críticas urgentes que deben aplicarse directamente sobre la rama `main`.
+    *   **Convención:** `hotfix/nombre-del-error` (Ej: `hotfix/urgent-fix`).
+
+### Estándares de Commits
+
+Para mantener un historial de cambios legible y profesional, el equipo aplica la convención de **Conventional Commits**. Los mensajes de commit deben seguir la estructura: `<tipo>: <descripción breve>`.
+
+*   **feat:** Una nueva funcionalidad.
+*   **fix:** Corrección de un error.
+*   **docs:** Cambios en la documentación.
+*   **style:** Cambios que no afectan el significado del código (espacios, formato, etc.).
+*   **refactor:** Un cambio en el código que no corrige un error ni añade una funcionalidad.
+*   **test:** Añadir o corregir pruebas.
+*   **chore:** Cambios en el proceso de construcción o herramientas auxiliares.
+
 
 ### 6.1.3. Source Code Style Guide & Conventions
 
@@ -1969,12 +2027,252 @@ Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node
 ## 6.2. Landing Page, Services & Applications Implementation
 ### 6.2.1. Sprint n
 #### 6.2.1.1. Sprint Planning n
+<table>
+    <thead>
+        <tr>
+            <th>Sprint #</th>
+            <th>Sprint 1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2"><b>Sprint Planning Background</b></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>2026-05-05</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Aula H51</td>
+        </tr>
+        <tr>
+            <td>Prepared by</td>
+            <td>Lopez Acuna, Mario Joaquin</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>
+                <li>Aponte Cruzado, Andrea Marielena</li>
+                <li>Lopez Acuna, Mario Joaquin</li>
+                <li>Urrutia Pena, Jasmin Adriana</li>
+                <li>Vivanco Salazar, Rafael Andres</li>
+                <li>Velasquez Chambi, Ruben Genaro</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 0 Review Summary</td>
+            <td>
+                Se realizó la reunión inicial de investigación y definición del modelo de negocio para YakuControl, estableciendo los cimientos estratégicos del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 0 Retrospective Summary</td>
+            <td>
+                El equipo validó la propuesta de valor y segmentación de clientes, acordando priorizar el desarrollo de la infraestructura base y la presencia digital.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Goal</td>
+            <td>
+                <li><b>Landing Page:</b> Nuestro enfoque está en desarrollar una landing page profesional y responsiva para AcuaNode. Creemos que esto permitirá comunicar nuestra propuesta de valor a potenciales clientes B2B. Esto se confirmará cuando la landing page esté desplegada y sea accesible públicamente.</li>
+                <li><b>Backend Services:</b> Nuestro enfoque está en implementar el 80% de los servicios core del backend utilizando Domain-Driven Design (DDD) y Arquitectura Limpia. Creemos que esto proporcionará una base sólida y escalable para la telemetría y notificaciones. Esto se confirmará cuando los contextos de IAM, Telemetry y Notification tengan su lógica de negocio implementada y documentada en OpenAPI.</li>
+                <li><b>Web Application:</b> Nuestro enfoque está en desarrollar la primera versión de la Aplicación Web para administradores. Creemos que esto entregará visibilidad en tiempo real a los gestores de piscigranjas. Esto se confirmará cuando el dashboard web visualice los primeros datos de telemetría provenientes del backend.</li>
+                <li><b>Mobile Design:</b> Nuestro enfoque está en el diseño UI/UX de la aplicación móvil para piscicultores. Creemos que esto garantizará una interfaz intuitiva para las operaciones en campo. Esto se confirmará cuando los mockups de alta fidelidad y flujos de usuario estén completados y aprobados por el equipo.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Velocity</td>
+            <td>
+                30
+            </td>
+        </tr>
+        <tr>
+            <td>Sum of story points</td>
+            <td>
+                37
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 #### 6.2.1.2. Aspect Leaders and Collaborators
+En esta sección el equipo que incluye la elaboración de un artefacto Leadership-andCollaboration Matrix (LACX)
+
+
+|Team Members| Github Username| IoT Device Design | Landing Page | Backend Services | Web App | Report |
+|---|---|---|---|---|---|---|
+|Aponte Cruzado, Andrea Marielena |iconicmiau | C | C | C | L | C |
+|Lopez Acuna, Mario Joaquin | tertegen | L | C | C| C | C |
+|Urrutia Pena, Jasmin Adriana |SrtaYeis| C | L | C | C | C |
+|Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | L | C | C |
+|Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | C | C | C | L |
 
 #### 6.2.1.3. Sprint Backlog n
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td align="center" colspan="7"> <strong>Sprint 1</strong> </td>
+  </tr>
+
+   <tr>
+    <td align="center" colspan="2"> <strong>User Story</strong></td>
+    <td align="center" colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title<strong></td>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title<strong></td>
+    <td align="center"> <strong>Description<strong></td>
+    <td align="center"> <strong>Estimation (Hours)<strong></td>
+    <td align="center"> <strong>Assigned To<strong></td>
+    <td align="center"> <strong> Status (To-do/In-Process/To-Review/Done)  <strong></td>
+  </tr>
+  <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US01 </td>
+    <td rowspan="1" align="center"> Propuesta de Valor</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Diseño Landing </td>
+    <td align="center">Diseñar la sección de beneficios clave en la landing page.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US02 </td>
+    <td rowspan="1" align="center"> Catálogo de Planes</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Precios y Planes </td>
+    <td align="center">Diseñar la sección de suscripciones y costos.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US03 </td>
+    <td rowspan="1" align="center"> FAQ de Soporte</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Preguntas Frecuentes </td>
+    <td align="center">Diseñar la sección FAQ para resolución de dudas.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US04 </td>
+    <td rowspan="1" align="center"> Formulario de Ventas</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Formulario Contacto </td>
+    <td align="center">Diseñar el formulario para captación de leads.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+    <tr>
+    <td rowspan="1" align="center"> TS01 </td>
+    <td rowspan="1" align="center"> API de Ingesta</td>
+    <td align="center"> TA01 </td>
+     <td align="center">API de Ingesta </td>
+    <td align="center">Cuando hardware envía telemetría
+entonces Backend guarda los datos en la base de datos.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <tr>
+    <td rowspan="1" align="center"> TS02 </td>
+    <td rowspan="1" align="center"> Seguridad JWT</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Implementación Auth </td>
+    <td align="center">Configurar Spring Security y generación de tokens JWT.</td>
+    <td align="center"> 3 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US10 </td>
+    <td rowspan="1" align="center"> Gestión de Usuarios</td>
+    <td align="center"> TA01 </td>
+     <td align="center">CRUD de Usuarios </td>
+    <td align="center">Implementar la lógica de creación y gestión de operarios.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US15 </td>
+    <td rowspan="1" align="center"> Registro de Estanque</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Gestión Equipment </td>
+    <td align="center">Implementar el registro de estanques y vinculación IoT.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US07 </td>
+    <td rowspan="1" align="center"> Alertas Push</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Lógica de Notificación </td>
+    <td align="center">Implementar alertas básicas ante anomalías (sin FCM).</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Velasquez Chambi, Ruben Genaro</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US06 </td>
+    <td rowspan="1" align="center"> Dashboard Web App</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Core Monitoring </td>
+    <td align="center">Desarrollar el dashboard de visualización.</td>
+    <td align="center"> 8 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+
+</table>
+
 
 #### 6.2.1.4. Development Evidence for Sprint Review
+
+En la siguiente tabla se muestran los commits realizados en la organizacion yakuControl en el sprint 1.
+
+| Repositorio                | Branch*   | Commit Id                               | Commit Message                                                                               | Commit Message Body                                             | Commitido en (Fecha)        |
+|----------------------------|-----------|-----------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------|-----------------------------|
+| AcuaNode/yaku-backend      | main         | ab2b308337cb5a8e6573df0d1bf5685ac763bdb3 | Merge pull request #5 from AcuaNode/feature/telemetry<br>feat(telemetry): implement telemetry logic and manual data ingestion | feat(telemetry): implement telemetry logic and manual data ingestion | 2026-05-08T21:37:19Z        |
+| AcuaNode/yaku-backend      | main         | a728336c161e652da852515f9f6b03b94b087681 | Merge pull request #4 from AcuaNode/feature/notifications<br>feat(notification): implement notification logic and details     | feat(notification): implement notification logic and details        | 2026-05-08T21:37:04Z        |
+| AcuaNode/yaku-backend      | develop         | 0b45811f11d648d8f359c4f1fceae873c14cc3dd | Merge pull request #3 from AcuaNode/feature/iam<br>feat(iam): implement IAM logic, roles and farmid verification              | feat(iam): implement IAM logic, roles and farmid verification       | 2026-05-08T21:36:49Z        |
+| AcuaNode/yaku-backend      | develop         | 259390cd7b9ba9b0a8ffc04d8a0cb394929eb3ee | Merge pull request #2 from AcuaNode/feature/subscription<br>feat(subscription): implement subscription logic and plan details | feat(subscription): implement subscription logic and plan details   | 2026-05-08T21:36:29Z        |
+| AcuaNode/yaku-backend      | develop         | 5686ca3502f796f58c14c223d0ab721db4015b69 | Merge pull request #1 from AcuaNode/feature/equipment<br>feat(equipment): implement Equipment, Ponds and Farm logic/details  | feat(equipment): implement Equipment, Ponds and Farm logic/details  | 2026-05-08T21:36:09Z        |
+| AcuaNode/yaku-backend      | develop         | c62e66a94b011a2b20c6f5a854fb9383e473d34d | feat(notification): implement notification logic and details                                 |                                                                          | 2026-05-08T21:34:05Z        |
+| AcuaNode/yaku-backend      | feature/telemetry         | 70f9345326e12e77a4315291f05fa9509e76ccbe | feat(telemetry): implement telemetry logic and manual data ingestion                         |                                                                          | 2026-05-08T21:30:35Z        |
+| AcuaNode/yaku-backend      | feature/equipment         | 5e6d713a5d35f88171a65729bb29226ddc734723 | feat(equipment): implement Equipment, Ponds and Farm logic/details                           |                                                                          | 2026-05-08T21:28:01Z        |
+| AcuaNode/yaku-backend      | feature/suscription         | a99a34aef6682110450e8cc06e428a6abdaeeb44 | feat(subscription): implement subscription logic and plan details                            |                                                                          | 2026-05-08T21:25:47Z        |
+| AcuaNode/yaku-backend      | feature/iam         | b6817667a16dd64ed461be6e175d9942c4b5e09d | feat(iam): implement IAM logic, roles and farmid verification                                |                                                                          | 2026-05-08T21:23:28Z        |
+| AcuaNode/yaku-backend      | develop         | bd5f2aeec4a2b7483acde5a2fcf44532896f2591 | chore: activate debug mode                                                                   |                                                                          | 2026-05-08T21:22:09Z        |
+| AcuaNode/yaku-backend      | develop         | 955af624cc901040b157d768d3bc9cf063412f56 | feat: implement Spring Boot Application, properties, seed sql data  and shared files         |                                                                          | 2026-05-08T05:05:54Z        |
+| AcuaNode/yaku-backend      | main         | a008c73bb7dea6f48e70efc7993a5e9038f06910 | feat: initial backend config (dependencies and containerization)                             |                                                                          | 2026-05-08T04:59:50Z        
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | 556b08bf683771d4e99f915718edd5f46b8a743a | Delete CNAME    | (vacío)            | 2026-05-08T06:54:32Z    |
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | aa9e68c6b6d8f92eefce62d01fe5fd1aa365c0b1 | Create CNAME    | (vacío)            | 2026-05-08T06:54:11Z    |
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | 718f1bac8adcf7e6fd0c62aed5a92e6cdf11766b | feat: add code  | (vacío)            | 2026-05-08T06:52:55Z    |
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
