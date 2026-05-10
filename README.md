@@ -318,7 +318,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
   </tr>
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
-      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
+      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo,tengo 25 años y soy estudiante de la carrera de ingeniera de Software con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
       </td>
   </tr>
   <tr>
