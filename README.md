@@ -2280,6 +2280,48 @@ En la siguiente tabla se muestran los commits realizados en la organizacion yaku
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
+En esta sección se presenta la documentación de los servicios RESTful desarrollados durante el sprint. La API sigue el estilo arquitectónico REST y utiliza JSON como formato de intercambio de datos. El backend ha sido implementado utilizando Spring Boot y sigue los principios de Domain-Driven Design (DDD).
+
+## API Endpoints
+
+| Bounded Context | Method | Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| **IAM** | POST | `/api/v1/users/signup` | Registrar un nuevo usuario en el sistema. |
+| | POST | `/api/v1/users/signin` | Autenticar un usuario y obtener un token JWT. |
+| | GET | `/api/v1/users/by-username` | Obtener información de un usuario por su nombre de usuario. |
+| | GET | `/api/v1/users` | Listar todos los usuarios, con opción de filtrado por ID de granja. |
+| | GET | `/api/v1/users/available-roles` | Listar los roles disponibles para el registro de usuarios. |
+| **Subscription** | GET | `/api/v1/plans` | Listar todos los planes de suscripción disponibles. |
+| | GET | `/api/v1/subscriptions/{userId}` | Obtener el estado de suscripción de un usuario específico. |
+| | POST | `/api/v1/subscriptions/{userId}` | Suscribir a un usuario a un plan específico. |
+| | DELETE | `/api/v1/subscriptions/{userId}` | Cancelar la suscripción activa de un usuario. |
+| **Telemetry** | GET | `/api/v1/telemetry/ponds/{pondId}/status` | Obtener el estado actual (lecturas en tiempo real) de un estanque. |
+| | GET | `/api/v1/telemetry/ponds/{pondId}/historical` | Obtener datos históricos de telemetría con filtros de tiempo. |
+| | POST | `/api/v1/telemetry/manual-ingest` | Ingesta manual de datos de telemetría para pruebas. |
+| **Equipment** | POST | `/api/v1/equipment` | Registrar un nuevo equipo o dispositivo IoT. |
+| | POST | `/api/v1/equipment/{equipmentId}/link/{pondId}` | Vincular un equipo registrado a un estanque específico. |
+| | GET | `/api/v1/equipment` | Listar todos los equipos registrados. |
+| | DELETE | `/api/v1/equipment/{id}` | Eliminar el registro de un equipo. |
+| | POST | `/api/v1/farms` | Crear una nueva piscigranja. |
+| | GET | `/api/v1/farms` | Listar las granjas del administrador autenticado. |
+| | DELETE | `/api/v1/farms/{id}` | Eliminar una granja. |
+| | PATCH | `/api/v1/farms/{id}/token` | Regenerar el token de acceso de una granja. |
+| | POST | `/api/v1/ponds` | Crear un nuevo estanque dentro de una granja. |
+| | GET | `/api/v1/ponds` | Listar todos los estanques disponibles. |
+| | GET | `/api/v1/ponds/{id}` | Obtener detalles de un estanque específico. |
+| | DELETE | `/api/v1/ponds/{id}` | Eliminar un estanque. |
+| | GET | `/api/v1/ponds/farm/{farmId}` | Listar todos los estanques de una granja específica. |
+| | POST | `/api/v1/ponds/{pondId}/assignments` | Asignar un operario/piscicultor a un estanque. |
+| | DELETE | `/api/v1/ponds/{pondId}/deassignments/{operatorId}` | Desvincular a un operario de un estanque. |
+
+#### Evidence
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-1.png)
+
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-2.png)
+
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-3.png)
+
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint
