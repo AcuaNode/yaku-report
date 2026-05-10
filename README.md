@@ -1762,17 +1762,52 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 ### 5.4.2. Applications Wireflow Diagrams
 Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
 
-- *Wireflow Diagrams para el Segmento 1: Piscicultores*
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
 
-| User Goal:  |
+| User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
-| <img src="assets/diseñoux/wireflow1.png" alt="wireflow" /> |
+| <img src="assets/diseñoux/wireflow1.png" alt="flow" /> |
 
-- *Wireflow Diagrams para el Segmento 2: Administradores de Piscigranja*
-
-| User Goal:  |
+| User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
 |----------------------------------|
-| <img src="assets/diseñoux/wireflow2.png" alt="wireflow" /> |
+| <img src="assets/diseñoux/wireflow2.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow3.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow4.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow5.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow6.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow7.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow8.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow9.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow10.png" alt="flow" /> |
+
+
+Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit?viewport_loc=2786%2C5222%2C4017%2C2011%2C0_0&invitationId=inv_dc87452a-958f-4f51-8df3-0b6797858cb2
 
 ### 5.4.3. Applications Mock-ups
 Se presentan las interfaces finales de alta fidelidad para las aplicaciones Web y Móvil. Estos mock-ups reflejan la implementación de componentes interactivos y estados de sistema (como lecturas en tiempo real y notificaciones de emergencia), siguiendo los lineamientos de diseño táctico para garantizar una experiencia de usuario intuitiva en entornos rurales y administrativos.
@@ -1859,24 +1894,59 @@ En esta sección se diagraman los flujos de usuario completos, representando los
 
 - *User Flow Diagrams para el Segmento 1: Piscicultores*
 
-| User Goal:  |
+| User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
 | <img src="assets/diseñoux/flow1.png" alt="flow" /> |
 
-- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
-
-| User Goal:  |
+| User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
 |----------------------------------|
 | <img src="assets/diseñoux/flow2.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
+|----------------------------------|
+| <img src="assets/diseñoux/flow3.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow4.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow5.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow6.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow7.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow8.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
+|----------------------------------|
+| <img src="assets/diseñoux/flow9.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
+|----------------------------------|
+| <img src="assets/diseñoux/flow10.png" alt="flow" /> |
+
+
+Link LucidChart: https://lucid.app/lucidchart/9e8dcc5e-ae46-4a6d-b271-2eb041e48f6c/edit?viewport_loc=-5787%2C-1324%2C21334%2C10682%2C0_0&invitationId=inv_d552ef41-c861-4992-bb3f-5d33e590ebfb
 
 ## 5.5. Applications Prototyping
 Finalmente, se describe el prototipado interactivo de las aplicaciones, el cual permite simular la funcionalidad real del ecosistema digital de YakuControl. Este prototipo sirve como herramienta de validación para verificar la usabilidad del sistema, la eficiencia en la recepción de alertas críticas y la integración del control de hardware antes de proceder a la fase de implementación y despliegue.
 
 - *Applications Prototyping para el Segmento 1: Piscicultores*
-<img src="img/Prototyping1.png" alt="Prototyping" />
+<img src="assets/diseñoux/Prototyping1.png" alt="Prototyping" />
 
 - *Applications Prototyping para el Segmento 2: Administradores de Piscigranja*
-<img src="img/Prototyping2.png" alt="Prototyping" />
+<img src="assets/diseñoux/Prototyping2.png" alt="Prototyping" />
 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
