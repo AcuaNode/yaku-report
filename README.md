@@ -1641,16 +1641,41 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
  
 ## 5.1. Style Guidelines
 
-Los lineamientos de esta sección aseguran coherencia visual e identidad
-unificada en todos los componentes y vistas de YakuControl.
+Los lineamientos de esta sección aseguran coherencia visual e identidad unificada en todos los componentes y vistas de YakuControl.
 
 ### 5.1.1. General Style Guidelines
 
-La guía de estilos establece las bases de diseño para la plataforma
-YakuControl, asegurando una experiencia de usuario coherente, funcional
-y visualmente alineada con su propósito. En esta sección se detallan los
-colores, tipografías, iconografía y demás elementos visuales que conforman
-la identidad de la marca.
+La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
+
+#### Color
+
+Los colores desempeñan un papel fundamental en la percepción que los usuarios tienen de YakuControl. En una plataforma de monitoreo acuícola, el color no solo cumple una función estética, sino también informativa y operativa. Los usuarios deben distinguir de un vistazo entre estados normales, advertencias y alertas críticas. Por ello, la paleta fue seleccionada considerando tanto la psicología del color como la teoría del color.
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-color.png)
+ 
+La psicología del color estudia cómo los colores influyen en las percepciones y comportamientos humanos. Para YakuControl:
+ 
+- El azul marino oscuro evoca profundidad, confianza tecnológica y autoridad.
+- El azul cian eléctrico conecta con tecnología de punta, fluidez y datos en movimiento.
+- El turquesa evoca directamente el agua limpia y los ecosistemas acuáticos saludables.
+- El blanco neutro aporta limpieza y espacio visual, esencial en dashboards de alta densidad.
+Para la armonía cromática se escogió un esquema de colores análogos, todos pertenecientes a la familia cromática del agua. Este esquema proporciona cohesión visual, jerarquía clara mediante la progresión de oscuro a luminoso, y legibilidad óptima en vistas de monitoreo con múltiples indicadores simultáneos.
+ 
+Los colores fueron seleccionados siguiendo los lineamientos de Material Design de Google, adaptados a las necesidades de la plataforma. Además, los color tokens definen la asignación funcional de cada tono dentro del sistema de diseño, garantizando consistencia en todos los componentes y estados de la plataforma:
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-colortoken.png)
+ 
+| Rol | Nombre | Hex | Uso |
+|-----|--------|-----|-----|
+| **Primario** | Navy Deep | `#002B49` | Barra de navegación, encabezados, botones de acción principal. Transmite confianza y autoridad tecnológica. |
+| **Secundario** | Cyan Electric | `#00A3E0` | Elementos interactivos secundarios, indicadores activos, gráficas en tiempo real. |
+| **Terciario** | Aqua Fresh | `#00E0D1` | Acentos, estados activos y badges de estado óptimo. Evoca agua limpia y ecosistemas saludables. |
+| **Neutro** | Off White | `#F8FAFC` | Fondo base de la interfaz. Reduce fatiga visual en sesiones prolongadas. |
+| **Información** | Blue 500 | `#2196F3` | Mensajes informativos, tooltips y enlaces contextuales. |
+| **Éxito** | Green 600 | `#43A047` | Parámetros dentro del rango óptimo y estados saludables de estanques. |
+| **Advertencia** | Amber 700 | `#F9A825` | Parámetros cercanos a límites críticos que requieren atención próxima. |
+| **Error** | Red 600 | `#E53935` | Fallos del sistema y parámetros en nivel crítico que requieren intervención inmediata. |
+ 
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
