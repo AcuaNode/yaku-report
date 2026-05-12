@@ -2278,6 +2278,39 @@ En la siguiente tabla se muestran los commits realizados en la organizacion yaku
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
+En este Sprint 1, se han completado las bases fundamentales de la solución YakuControl, abarcando desde la presencia digital hasta la infraestructura de servicios y la primera interfaz de gestión.
+
+### 1. Landing Page - AcuaNode
+Se implementó una página de aterrizaje profesional y responsiva diseñada para comunicar la propuesta de valor de YakuControl a potenciales clientes. La página incluye secciones estratégicas como la descripción del ecosistema IoT, beneficios clave, catálogo de planes y medios de contacto . Utiliza una estética moderna basada en HSL y tipografía premium para transmitir confianza y precisión tecnológica.
+
+- **Evidencia:**
+![Landing Page Evidence](./assets/images/screenshots/landing-1.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-2.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-3.png)
+![Landing Page Evidence](./assets/images/screenshots/landig-4.png)
+
+- **Link de despliegue:** [https://acuanode.github.io/yaku-landing/#](https://acuanode.github.io/yaku-landing/#)
+
+---
+
+### 2. Backend Services - API Core
+Se desarrolló el núcleo de servicios RESTful utilizando Spring Boot bajo los principios de Clean Architecture y Domain-Driven Design (DDD). Se implementaron satisfactoriamente los contextos de IAM (Seguridad JWT), Telemetry (Ingesta de datos), Equipment (Gestión de dispositivos) y Subscription. La API cuenta con persistencia en PostgreSQL y está documentada íntegramente mediante Swagger UI para facilitar la integración con las aplicaciones cliente.
+
+- **Evidencia:**
+![Backend API Evidence](ESCRIBIR_RUTA_DE_IMAGEN_AQUI)
+
+- **Link de despliegue:** [Ver API Documentation](ESCRIBIR_LINK_AQUI)
+
+---
+
+### 3. Web Application - Dashboard v1
+Se realizó la entrega de la primera versión funcional de la aplicación web orientada a administradores de piscigranjas. Esta versión inicial se centra en el dashboard de monitoreo, permitiendo la visualización en tiempo real de los datos de telemetría (temperatura, pH, turbidez) provenientes del backend. La interfaz permite al usuario tener una visión panorámica del estado de sus estanques y recibir alertas visuales ante condiciones críticas.
+
+- **Evidencia:**
+![Web App Dashboard Evidence](ESCRIBIR_RUTA_DE_IMAGEN_AQUI)
+
+- **Link de despliegue:** [Ver Web App](ESCRIBIR_LINK_AQUI)
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación de los servicios RESTful desarrollados durante el sprint. La API sigue el estilo arquitectónico REST y utiliza JSON como formato de intercambio de datos. El backend ha sido implementado utilizando Spring Boot y sigue los principios de Domain-Driven Design (DDD).
