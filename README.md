@@ -1719,7 +1719,118 @@ Para el cuerpo de texto, el line-height es de 1.5x el tamaño de fuente:
 | Caption | 12px | 18px |
  
 ---
+#### Iconografía
 
+La iconografía de YakuControl sigue un estilo lineal outlined, alineado con las convenciones de plataformas de monitoreo industrial. Los iconos son simples, reconocibles y funcionalmente descriptivos.
+
+![Icon Guideline](./assets/disenoui/general-style-guidelines-icon.png)
+
+Se adopta como base Material Design Icons (Material Symbols) en variante *Outlined*, con tres grupos funcionales:
+ 
+**Iconos de Navegación** (sobre fondo navy `#002B49`): dashboard, estanques, equipos, operadores, notificaciones y configuración. El ícono activo se muestra sobre un fondo navy más claro con color blanco.
+ 
+**Iconos de Acción** (sobre fondo claro, color slate `#64748B`): filtros/sliders, gráfica de barras, copiar, traducir, modo oscuro.
+ 
+**Iconos de Estado y Dominio**: llave en teal `#00796B` (acceso/auth), globo navy (sincronización), lápiz blanco sobre cuadrado verde oscuro (edición activa).
+ 
+Tamaños estándar: 20px (denso), 24px (por defecto), 28px (destacado).
+
+--- 
+#### Spacing
+ 
+YakuControl utiliza un sistema de espaciado basado en múltiplos de 8px, garantizando coherencia visual y facilitando la implementación entre diseño y desarrollo.
+ 
+![Spacing Guideline](./assets/disenoui/general-style-guidelines-space.png)
+
+| Token | Valor | Uso típico |
+|-------|-------|------------|
+| `space-1` | 8px | Micro espaciado interno (entre ícono y etiqueta) |
+| `space-2` | 16px | Padding de botones, separación entre campos |
+| `space-3` | 24px | Padding interno de tarjetas |
+| `space-4` | 32px | Separación entre componentes dentro de una sección |
+| `space-5` | 48px | Separación entre secciones |
+| `space-6` | 56px | Separación entre bloques de contenido |
+| `space-7` | 72px | Separación entre grupos principales |
+| `space-8` | 80px | Separación entre secciones de página |
+| `space-9` | 96px | Márgenes y separaciones mayores |
+ 
+---
+#### Botones
+ 
+Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura estándar de 40px.
+
+![Buttom Guideline](./assets/disenoui/general-style-guidelines-buttom.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Primary** | Fondo `#002B49`, texto blanco | Acción principal de la vista |
+| **Secondary** | Fondo `#00A3E0`, texto blanco | Acciones secundarias relevantes |
+| **Success Action** | Fondo `#00796B`, texto blanco | Confirmaciones y asignaciones (ej. "Asignar a estanque") |
+| **Outlined** | Borde `#002B49`, texto `#002B49`, fondo transparente | Acciones alternativas no destructivas (ej. "Editar") |
+| **Danger** | Borde `#E53935`, texto `#E53935`, fondo transparente | Acciones destructivas (ej. "Eliminar Registro") |
+| **Icon + Label** | Fondo `#00A3E0`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
+| **Small Badge** | Fondo `#00E0D1`, texto oscuro, pill shape | Indicadores de estado compactos (ej. "ÓPTIMO") |
+| **Disabled** | Fondo `#BDBDBD`, texto `#9E9E9E` | Acciones no disponibles en el contexto actual |
+ 
+---
+#### Labels & Chips
+ 
+Los labels y chips comunican estados, categorías y acciones rápidas dentro de la interfaz.
+
+![Label Guideline](./assets/disenoui/general-style-guidelines-label.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Icon Button** | Cuadrado redondeado teal `#00796B`, ícono blanco | Acción rápida compacta (ej. añadir) |
+| **Label con ícono** | Pill cyan `#00A3E0`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
+| **Filter Chip** | Borde gris, fondo blanco, texto oscuro | Opciones de filtrado seleccionables |
+| **Status Badge** | Borde verde, texto verde, punto verde | Indicador de estado activo (ej. "● ACTIVE") |
+
+--- 
+#### Branding
+ 
+##### Arquetipo de Marca
+ 
+Los arquetipos de marca, según Brandemia (2024), son modelos de personalidad universales que las marcas adoptan para definir su carácter y generar vínculos emocionales con quienes las usan.
+
+![Brand Archetypes](./assets/disenoui/general-style-guidelines-brand-archi.png)
+
+Para YakuControl se identificó el arquetipo del "Explorador" *(The Explorer)* como el más representativo de su esencia. Brandemia (2024) caracteriza a este arquetipo por su búsqueda constante de libertad, nuevas experiencias y autodescubrimiento,rechazando la conformidad y los límites establecidos. Las marcas exploradoras transmiten independencia y autenticidad, motivando a sus usuarios a ir más allá de lo conocido. Sus valores centrales incluyen la aventura, la autonomía  y el descubrimiento, con un tono enérgico e inspirador.
+
+Este arquetipo encaja con YakuControl porque sus usuarios, acuicultores y emprendedores del sector, son personas que eligen la tecnología como herramienta para transformar su forma de trabajar, apostando por datos en tiempo real frente a métodos tradicionales de monitoreo.
+
+##### Tipo de Logotipo
+
+En cuanto a la identidad visual, Holum Studio (2022) distingue siete categorías de logotipos según su estructura y función comunicativa:
+
+- **Logotipo (Wordmark):** construido únicamente con tipografía (ej. Google).
+- **Isotipo (Brandmark):** símbolo visual sin texto (ej. Apple).
+- **Imagotipo:** ícono y texto conviven pero pueden usarse por separado (ej. Lacoste).
+- **Isologo:** ícono y texto forman una unidad inseparable (ej. Burger King).
+- **Monograma:** iniciales o siglas con tratamiento gráfico (ej. IBM).
+- **Emblema:** texto contenido dentro de una forma o figura (ej. Harley-Davidson).
+- **Símbolo abstracto:** figura no literal que evoca un concepto (ej. Nike).
+
+![Logo Types](./assets/disenoui/general-style-guidelines-branding.png)
+
+Marcas globales como Jeep, National Geographic y Patagonia son ejemplos representativos del arquetipo Explorador: transmiten aventura, autenticidad y libertad a través de identidades visuales que evocan movimiento y descubrimiento. YakuControl se alinea con esta misma esencia, adoptando la categoría de imagotipo, donde el símbolo y el nombre coexisten como unidad pero mantienen capacidad de uso independiente, permitiendo que la marca se adapte a distintos contextos sin perder su identidad.
+
+![YakuControl Imagotype](./assets/disenoui/general-style-guidelines-logotipo.jpeg)
+
+El símbolo integra un pez estilizado, ondas de agua y trazos que evocan conectividad digital, dentro de una composición circular de geometría limpia. El color dominante es Navy Deep (`#002B49`), complementado con acentos en Cyan Electric (`#00A3E0`). El nombre se escribe en Inter Bold, con la "u" como rasgo distintivo que preserva la raíz quechua de "Yaku", reforzando la autenticidad y el origen que el arquetipo Explorador valora profundamente.
+ 
+##### Tono de Comunicación
+ 
+El tono de comunicación de YakuControl fue definido considerando cuatro ejes de personalidad de marca:
+ 
+| Eje | Posición | Justificación |
+|-----|----------|---------------|
+| **Divertido / Serio** | Levemente serio | La plataforma maneja datos críticos de producción. El tono es profesional pero no rígido. |
+| **Formal / Casual** | Ligeramente casual | Se evita el lenguaje excesivamente técnico o corporativo para ser accesible a operadores de campo. |
+| **Respetuoso / Irreverente** | Respetuoso | Los usuarios confían datos sensibles de su negocio. El tono siempre es empático y considerado. |
+| **Entusiasta / Sereno** | Moderadamente entusiasta | Los mensajes de éxito y progreso celebran los logros del usuario sin exagerar. Las alertas son directas y calmadas. |
+ 
+En la práctica, esto se traduce en: frases cortas y directas, verbos en imperativo para llamadas a la acción, uso de términos del dominio acuícola con contexto claro, y mensajes de sistema que priorizan la utilidad sobre la formalidad.
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
