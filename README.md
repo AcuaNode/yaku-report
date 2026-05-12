@@ -1638,8 +1638,19 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 <div style="page-break-after: always;"></div>
 
 # Capítulo V: Solution UI/UX Design
+ 
 ## 5.1. Style Guidelines
+
+Los lineamientos de esta sección aseguran coherencia visual e identidad
+unificada en todos los componentes y vistas de YakuControl.
+
 ### 5.1.1. General Style Guidelines
+
+La guía de estilos establece las bases de diseño para la plataforma
+YakuControl, asegurando una experiencia de usuario coherente, funcional
+y visualmente alineada con su propósito. En esta sección se detallan los
+colores, tipografías, iconografía y demás elementos visuales que conforman
+la identidad de la marca.
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
