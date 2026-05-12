@@ -1647,6 +1647,7 @@ Los lineamientos de esta sección aseguran coherencia visual e identidad unifica
 
 La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
 
+---
 #### Color
 
 Los colores desempeñan un papel fundamental en la percepción que los usuarios tienen de YakuControl. En una plataforma de monitoreo acuícola, el color no solo cumple una función estética, sino también informativa y operativa. Los usuarios deben distinguir de un vistazo entre estados normales, advertencias y alertas críticas. Por ello, la paleta fue seleccionada considerando tanto la psicología del color como la teoría del color.
@@ -1675,7 +1676,50 @@ Los colores fueron seleccionados siguiendo los lineamientos de Material Design d
 | **Éxito** | Green 600 | `#43A047` | Parámetros dentro del rango óptimo y estados saludables de estanques. |
 | **Advertencia** | Amber 700 | `#F9A825` | Parámetros cercanos a límites críticos que requieren atención próxima. |
 | **Error** | Red 600 | `#E53935` | Fallos del sistema y parámetros en nivel crítico que requieren intervención inmediata. |
+
+---
+#### Tipografía
+
+La tipografía de YakuControl equilibra legibilidad técnica con una personalidad moderna y accesible. Se utilizan dos familias tipográficas con roles diferenciados, ambas disponibles en Google Fonts.
  
+**Títulos y Encabezados: Inter**
+ 
+Inter es la fuente principal de YakuControl, utilizada tanto para encabezados como para cuerpo de texto. Diseñada específicamente para interfaces digitales, ofrece alta legibilidad a cualquier tamaño, espaciado optimizado para pantallas y una amplia gama de pesos. Su geometría limpia transmite precisión y modernidad, valores centrales de la plataforma.
+ 
+```
+Inter Bold (700)      → Heading 1, Heading 2
+Inter SemiBold (600)  → Heading 3, Heading 4, Heading 5, Heading 6
+Inter Medium (500)    → Etiquetas, valores de parámetros
+Inter Regular (400)   → Body 1, Body 2, Caption
+Inter Light (300)     → Texto secundario, placeholders
+```
+ 
+La escala tipográfica para encabezados sigue una progresión proporcional con line-height de 1.1x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo1.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Heading 1 | 56px | 61.6px |
+| Heading 2 | 48px | 52.8px |
+| Heading 3 | 40px | 44px |
+| Heading 4 | 32px | 35.2px |
+| Heading 5 | 24px | 26.4px |
+| Heading 6 | 20px | 22px |
+ 
+Para el cuerpo de texto, el line-height es de 1.5x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo2.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Body 1 | 16px | 24px |
+| Body 2 | 14px | 21px |
+| Label | 13px | 19.5px |
+| Caption | 12px | 18px |
+ 
+---
+
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
