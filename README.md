@@ -1638,21 +1638,403 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 <div style="page-break-after: always;"></div>
 
 # Capítulo V: Solution UI/UX Design
+ 
 ## 5.1. Style Guidelines
+
+Los lineamientos de esta sección aseguran coherencia visual e identidad unificada en todos los componentes y vistas de YakuControl.
+
 ### 5.1.1. General Style Guidelines
+
+La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
+
+---
+#### Color
+
+Los colores desempeñan un papel fundamental en la percepción que los usuarios tienen de YakuControl. En una plataforma de monitoreo acuícola, el color no solo cumple una función estética, sino también informativa y operativa. Los usuarios deben distinguir de un vistazo entre estados normales, advertencias y alertas críticas. Por ello, la paleta fue seleccionada considerando tanto la psicología del color como la teoría del color.
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-color.png)
+ 
+La psicología del color estudia cómo los colores influyen en las percepciones y comportamientos humanos. Para YakuControl:
+ 
+- El azul marino oscuro evoca profundidad, confianza tecnológica y autoridad.
+- El azul cian eléctrico conecta con tecnología de punta, fluidez y datos en movimiento.
+- El turquesa evoca directamente el agua limpia y los ecosistemas acuáticos saludables.
+- El blanco neutro aporta limpieza y espacio visual, esencial en dashboards de alta densidad.
+Para la armonía cromática se escogió un esquema de colores análogos, todos pertenecientes a la familia cromática del agua. Este esquema proporciona cohesión visual, jerarquía clara mediante la progresión de oscuro a luminoso, y legibilidad óptima en vistas de monitoreo con múltiples indicadores simultáneos.
+ 
+Los colores fueron seleccionados siguiendo los lineamientos de Material Design de Google, adaptados a las necesidades de la plataforma. Además, los color tokens definen la asignación funcional de cada tono dentro del sistema de diseño, garantizando consistencia en todos los componentes y estados de la plataforma:
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-colortoken.png)
+ 
+| Rol | Nombre | Hex | Uso |
+|-----|--------|-----|-----|
+| **Primario** | Navy Deep | `#002B49` | Barra de navegación, encabezados, botones de acción principal. Transmite confianza y autoridad tecnológica. |
+| **Secundario** | Cyan Electric | `#00A3E0` | Elementos interactivos secundarios, indicadores activos, gráficas en tiempo real. |
+| **Terciario** | Aqua Fresh | `#00E0D1` | Acentos, estados activos y badges de estado óptimo. Evoca agua limpia y ecosistemas saludables. |
+| **Neutro** | Off White | `#F8FAFC` | Fondo base de la interfaz. Reduce fatiga visual en sesiones prolongadas. |
+| **Información** | Blue 500 | `#2196F3` | Mensajes informativos, tooltips y enlaces contextuales. |
+| **Éxito** | Green 600 | `#43A047` | Parámetros dentro del rango óptimo y estados saludables de estanques. |
+| **Advertencia** | Amber 700 | `#F9A825` | Parámetros cercanos a límites críticos que requieren atención próxima. |
+| **Error** | Red 600 | `#E53935` | Fallos del sistema y parámetros en nivel crítico que requieren intervención inmediata. |
+
+---
+#### Tipografía
+
+La tipografía de YakuControl equilibra legibilidad técnica con una personalidad moderna y accesible. Se utilizan dos familias tipográficas con roles diferenciados, ambas disponibles en Google Fonts.
+ 
+**Títulos y Encabezados: Inter**
+ 
+Inter es la fuente principal de YakuControl, utilizada tanto para encabezados como para cuerpo de texto. Diseñada específicamente para interfaces digitales, ofrece alta legibilidad a cualquier tamaño, espaciado optimizado para pantallas y una amplia gama de pesos. Su geometría limpia transmite precisión y modernidad, valores centrales de la plataforma.
+ 
+```
+Inter Bold (700)      → Heading 1, Heading 2
+Inter SemiBold (600)  → Heading 3, Heading 4, Heading 5, Heading 6
+Inter Medium (500)    → Etiquetas, valores de parámetros
+Inter Regular (400)   → Body 1, Body 2, Caption
+Inter Light (300)     → Texto secundario, placeholders
+```
+ 
+La escala tipográfica para encabezados sigue una progresión proporcional con line-height de 1.1x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo1.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Heading 1 | 56px | 61.6px |
+| Heading 2 | 48px | 52.8px |
+| Heading 3 | 40px | 44px |
+| Heading 4 | 32px | 35.2px |
+| Heading 5 | 24px | 26.4px |
+| Heading 6 | 20px | 22px |
+ 
+Para el cuerpo de texto, el line-height es de 1.5x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo2.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Body 1 | 16px | 24px |
+| Body 2 | 14px | 21px |
+| Label | 13px | 19.5px |
+| Caption | 12px | 18px |
+ 
+---
+#### Iconografía
+
+La iconografía de YakuControl sigue un estilo lineal outlined, alineado con las convenciones de plataformas de monitoreo industrial. Los iconos son simples, reconocibles y funcionalmente descriptivos.
+
+![Icon Guideline](./assets/disenoui/general-style-guidelines-icon.png)
+
+Se adopta como base Material Design Icons (Material Symbols) en variante *Outlined*, con tres grupos funcionales:
+ 
+**Iconos de Navegación** (sobre fondo navy `#002B49`): dashboard, estanques, equipos, operadores, notificaciones y configuración. El ícono activo se muestra sobre un fondo navy más claro con color blanco.
+ 
+**Iconos de Acción** (sobre fondo claro, color slate `#64748B`): filtros/sliders, gráfica de barras, copiar, traducir, modo oscuro.
+ 
+**Iconos de Estado y Dominio**: llave en teal `#00796B` (acceso/auth), globo navy (sincronización), lápiz blanco sobre cuadrado verde oscuro (edición activa).
+ 
+Tamaños estándar: 20px (denso), 24px (por defecto), 28px (destacado).
+
+--- 
+#### Spacing
+ 
+YakuControl utiliza un sistema de espaciado basado en múltiplos de 8px, garantizando coherencia visual y facilitando la implementación entre diseño y desarrollo.
+ 
+![Spacing Guideline](./assets/disenoui/general-style-guidelines-space.png)
+
+| Token | Valor | Uso típico |
+|-------|-------|------------|
+| `space-1` | 8px | Micro espaciado interno (entre ícono y etiqueta) |
+| `space-2` | 16px | Padding de botones, separación entre campos |
+| `space-3` | 24px | Padding interno de tarjetas |
+| `space-4` | 32px | Separación entre componentes dentro de una sección |
+| `space-5` | 48px | Separación entre secciones |
+| `space-6` | 56px | Separación entre bloques de contenido |
+| `space-7` | 72px | Separación entre grupos principales |
+| `space-8` | 80px | Separación entre secciones de página |
+| `space-9` | 96px | Márgenes y separaciones mayores |
+ 
+---
+#### Botones
+ 
+Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura estándar de 40px.
+
+![Buttom Guideline](./assets/disenoui/general-style-guidelines-buttom.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Primary** | Fondo `#002B49`, texto blanco | Acción principal de la vista |
+| **Secondary** | Fondo `#00A3E0`, texto blanco | Acciones secundarias relevantes |
+| **Success Action** | Fondo `#00796B`, texto blanco | Confirmaciones y asignaciones (ej. "Asignar a estanque") |
+| **Outlined** | Borde `#002B49`, texto `#002B49`, fondo transparente | Acciones alternativas no destructivas (ej. "Editar") |
+| **Danger** | Borde `#E53935`, texto `#E53935`, fondo transparente | Acciones destructivas (ej. "Eliminar Registro") |
+| **Icon + Label** | Fondo `#00A3E0`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
+| **Small Badge** | Fondo `#00E0D1`, texto oscuro, pill shape | Indicadores de estado compactos (ej. "ÓPTIMO") |
+| **Disabled** | Fondo `#BDBDBD`, texto `#9E9E9E` | Acciones no disponibles en el contexto actual |
+ 
+---
+#### Labels & Chips
+ 
+Los labels y chips comunican estados, categorías y acciones rápidas dentro de la interfaz.
+
+![Label Guideline](./assets/disenoui/general-style-guidelines-label.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Icon Button** | Cuadrado redondeado teal `#00796B`, ícono blanco | Acción rápida compacta (ej. añadir) |
+| **Label con ícono** | Pill cyan `#00A3E0`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
+| **Filter Chip** | Borde gris, fondo blanco, texto oscuro | Opciones de filtrado seleccionables |
+| **Status Badge** | Borde verde, texto verde, punto verde | Indicador de estado activo (ej. "● ACTIVE") |
+
+--- 
+#### Branding
+ 
+##### Arquetipo de Marca
+ 
+Los arquetipos de marca, según Brandemia (2024), son modelos de personalidad universales que las marcas adoptan para definir su carácter y generar vínculos emocionales con quienes las usan.
+
+![Brand Archetypes](./assets/disenoui/general-style-guidelines-brand-archi.png)
+
+Para YakuControl se identificó el arquetipo del "Explorador" *(The Explorer)* como el más representativo de su esencia. Brandemia (2024) caracteriza a este arquetipo por su búsqueda constante de libertad, nuevas experiencias y autodescubrimiento,rechazando la conformidad y los límites establecidos. Las marcas exploradoras transmiten independencia y autenticidad, motivando a sus usuarios a ir más allá de lo conocido. Sus valores centrales incluyen la aventura, la autonomía  y el descubrimiento, con un tono enérgico e inspirador.
+
+Este arquetipo encaja con YakuControl porque sus usuarios, acuicultores y emprendedores del sector, son personas que eligen la tecnología como herramienta para transformar su forma de trabajar, apostando por datos en tiempo real frente a métodos tradicionales de monitoreo.
+
+##### Tipo de Logotipo
+
+En cuanto a la identidad visual, Holum Studio (2022) distingue siete categorías de logotipos según su estructura y función comunicativa:
+
+- **Logotipo (Wordmark):** construido únicamente con tipografía (ej. Google).
+- **Isotipo (Brandmark):** símbolo visual sin texto (ej. Apple).
+- **Imagotipo:** ícono y texto conviven pero pueden usarse por separado (ej. Lacoste).
+- **Isologo:** ícono y texto forman una unidad inseparable (ej. Burger King).
+- **Monograma:** iniciales o siglas con tratamiento gráfico (ej. IBM).
+- **Emblema:** texto contenido dentro de una forma o figura (ej. Harley-Davidson).
+- **Símbolo abstracto:** figura no literal que evoca un concepto (ej. Nike).
+
+![Logo Types](./assets/disenoui/general-style-guidelines-branding.png)
+
+Marcas globales como Jeep, National Geographic y Patagonia son ejemplos representativos del arquetipo Explorador: transmiten aventura, autenticidad y libertad a través de identidades visuales que evocan movimiento y descubrimiento. YakuControl se alinea con esta misma esencia, adoptando la categoría de imagotipo, donde el símbolo y el nombre coexisten como unidad pero mantienen capacidad de uso independiente, permitiendo que la marca se adapte a distintos contextos sin perder su identidad.
+
+![YakuControl Imagotype](./assets/disenoui/general-style-guidelines-logotipo.jpeg)
+
+El símbolo integra un pez estilizado, ondas de agua y trazos que evocan conectividad digital, dentro de una composición circular de geometría limpia. El color dominante es Navy Deep (`#002B49`), complementado con acentos en Cyan Electric (`#00A3E0`). El nombre se escribe en Inter Bold, con la "u" como rasgo distintivo que preserva la raíz quechua de "Yaku", reforzando la autenticidad y el origen que el arquetipo Explorador valora profundamente.
+ 
+##### Tono de Comunicación
+ 
+El tono de comunicación de YakuControl fue definido considerando cuatro ejes de personalidad de marca:
+ 
+| Eje | Posición | Justificación |
+|-----|----------|---------------|
+| **Divertido / Serio** | Levemente serio | La plataforma maneja datos críticos de producción. El tono es profesional pero no rígido. |
+| **Formal / Casual** | Ligeramente casual | Se evita el lenguaje excesivamente técnico o corporativo para ser accesible a operadores de campo. |
+| **Respetuoso / Irreverente** | Respetuoso | Los usuarios confían datos sensibles de su negocio. El tono siempre es empático y considerado. |
+| **Entusiasta / Sereno** | Moderadamente entusiasta | Los mensajes de éxito y progreso celebran los logros del usuario sin exagerar. Las alertas son directas y calmadas. |
+ 
+En la práctica, esto se traduce en: frases cortas y directas, verbos en imperativo para llamadas a la acción, uso de términos del dominio acuícola con contexto claro, y mensajes de sistema que priorizan la utilidad sobre la formalidad.
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+**Web Style Guidelines**
+Para la interfaz web de YakuControl, orientada principalmente a administradores de piscigranjas, se han adoptado los estándares de Material Design 3. Esta decisión asegura una navegación intuitiva y una jerarquía visual clara, facilitando la gestión de grandes volúmenes de datos de telemetría y la configuración de los estanques. El diseño utiliza un tema oscuro (Dark Mode) para reducir la fatiga visual durante el monitoreo prolongado.
+
+* **Buttons:** Los botones utilizan esquinas redondeadas y estados claros (hover, focused, disabled) para indicar interactividad[cite: 381]. Se prioriza el uso del color Verde Esmeralda (#00A859) para acciones principales (ej. "Nuevo Estanque") y variantes en "outline" para acciones secundarias.
+    
+![YakuControl web buttom](./assets/disenoui/web-buttom.png)
+
+* **Data Cards & Indicators:** Utilizados masivamente en el Dashboard para representar la telemetría en tiempo real (Temperatura, pH, Oxígeno Disuelto). Utilizan anillos de progreso semánticos (Verde para normal, Rojo Coral para estado crítico) para proporcionar feedback visual inmediato sobre la salud del bio-activo.
+
+![YakuControl web card](./assets/disenoui/web-card.png)
+
+* **TextField & Selects:** Los campos de texto están diseñados para maximizar la legibilidad durante el ingreso de datos de nuevos operarios o equipos. Los componentes *Select* permiten una navegación eficiente dentro de formularios complejos, como la asignación de sensores a estanques específicos.
+
+![YakuControl web field](./assets/disenoui/web-field.png)
+
+**Mobile Style Guidelines**
+Para la aplicación móvil "Mobile Commander", el enfoque principal es la facilidad de uso y la reducción de la fricción cognitiva para el operario en campo. Al igual que en la versión web, se utiliza Material Design 3 como marco de referencia, adaptando sus componentes para ofrecer una interfaz táctil amigable en entornos al aire libre. 
+
+* **Offline-First & Feedback Components:** La arquitectura de la interfaz asume condiciones de conectividad inestables, ya que al final a veces no hay ni señal en esos lugares remotos. Por ello, se utilizan Progress Indicators (barras lineales e indicadores circulares) para gestionar la paciencia del usuario durante la sincronización asíncrona de datos locales con la nube.
+
+![YakuControl movil snack bar](./assets/disenoui/movil-snackbar.png)
+
+* **Buttons:** Los botones móviles presentan superficies táctiles amplias y bordes altamente redondeados para facilitar la interacción rápida, incluso si el operario usa guantes protectores.
+
+![YakuControl movil buttom](./assets/disenoui/movil-buttom.png)
+
+* **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Perfil", y "Alertas".
+
+![YakuControl movil nav bar](./assets/disenoui/movil-bar.png)
+
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo. 
+
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y de ensamblaje de los nodos sensores (AcuaNode) orientados a un entorno rural. El enfoque prioriza la funcionalidad, el bajo costo de implementación y la facilidad de reparación en campo sobre la estética refinada.
+
+* **Carcasa y Ensamblaje Físico:** Los dispositivos se alojan en cajas estancas industriales de PVC o ABS (grado IP65/IP67), modificadas con prensaestopas para el paso seguro de las sondas hacia el agua. Se utiliza sellador industrial en las uniones para garantizar la impermeabilidad, manteniendo un diseño modular que permita a los operarios abrir la caja y cambiar una batería sin necesidad de herramientas complejas.
+* **Feedback Visual y de Estado:** En lugar de interfaces complejas o pantallas, el sistema utiliza indicadores electrónicos básicos para no encarecer el producto. Se emplea un módulo LED estándar de un solo color (o la propia luz de la placa microcontroladora visible a través de una tapa translúcida):
+    * **Luz estática:** Indica que el dispositivo está encendido y capturando datos.
+    * **Luz parpadeante:** Indica que el dispositivo está intentando sincronizar la información vía red local.
+
 ## 5.2. Information Architecture
+
+En esta sección se describe la arquitectura de la información de la plataforma YakuControl, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas, búsqueda y navegación.
+
 ### 5.2.1. Organization Systems
+
+Se utilizarán diferentes sistemas de organización para estructurar y categorizar la información en YakuControl, facilitando el acceso a los datos de monitoreo y gestión de piscigranjas. A continuación se describen los principales sistemas implementados:
+
+1. **Visual Organization (organización visual del contenido):**
+    - **Jerárquica (visual hierarchy):** La información se presenta en niveles de importancia, con los elementos más crítico destacados visualmente mediante tamaños de fuente, colores semánticos y espaciado. Por ejemplo, los valores fuera de rango se resaltan en rojo (`#E53935`) mientras que los parámetros óptimos aparecen en verde (`#43A047`). Este sistema permite identificar situaciones críticas de un vistazo sin revisar cada dato individualmente.
+    - **Secuencial (step-by-step to accomplish):** La información se organiza en orden lógico para guiar al usuario en procesos específicos. Por ejemplo, al registrar un nuevo estanque, el sistema guía desde los datos básicos hasta la asignación de sensores y equipos, evitando omitir pasos esenciales.
+    - **Matricial (matrix to show relationships):** La información se presenta en tablas comparativas. Por ejemplo, en "Lecturas en Tiempo Real" del Dashboard, se pueden comparar temperatura, pH y turbidez de múltiples estanques simultáneamente, facilitando la detección de anomalías.
+
+2. **Categorization Schemes (esquemas de categorización)**
+    - **Por tema (by topic):** La información se agrupa en categorías temáticas: "Estanques", "Equipos", "Operadores" y "Notificaciones", permitiendo navegar directamente hacia el área de interés.
+    - **Por función (by function):** Las opciones se clasifican según las tareas disponibles. Por ejemplo, dentro de un estanque las funciones se dividen en "Telemetría en Tiempo Real", "Análisis Histórico" e "Historial de Lecturas", agilizando la ejecución de tareas específicas.
+    - **Por audiencia (by audience):** La información se segmenta según el perfil del usuario que interactúa con la plataforma:
+        - **Administradores de Piscigranja:** acceso completo a la gestión de estanques, equipos, personal y configuración del sistema. Son responsables de la supervisión general de la operación acuícola.
+        - **Piscicultores:** acceso a las vistas de monitoreo, registro de parámetros y consulta del historial de sus estanques asignados. Su enfoque está en el seguimiento diario de las condiciones del agua y el bienestar de los peces.
 
 ### 5.2.2. Labeling Systems
 
+Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación en YakuControl. A continuación se describen las etiquetas por tipo de usuario:
+ 
+**Etiquetado para Administradores de piscigranjas:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
+| Estanques | Gestión de piscinas de crianza | Listar, crear y monitorear estanques |
+| Equipos | Gestión de hardware desplegado | Registrar, asignar y editar sensores y bombas |
+| Operadores | Gestión de usuarios operativos | Crear y administrar cuentas de operadores |
+| Notificaciones | Centro de alertas del sistema | Ver y gestionar alertas de parámetros y eventos |
+| Configuración | Ajustes generales de la plataforma | Preferencias del sistema y parámetros de umbral |
+ 
+**Etiquetado para Piscicultores:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Vista general de monitoreo | Lecturas en tiempo real de los estanques asignados |
+| Estanques | Acceso a sus estanques asignados | Parámetros, historial y registro de lecturas |
+| Notificaciones | Alertas activas | Alertas pendientes de atención en su área |
+| Perfil | Información personal | Ver y editar sus datos de cuenta |
+
 ### 5.2.3. SEO Tags and Meta Tags
+ 
+Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implementarán las siguientes etiquetas SEO y meta etiquetas en la landing page, aplicación web y movil:
+
+**Landing Page SEO Tags and Meta Tags:**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas |
+| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo. |
+| Meta Keywords | monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques |
+| Meta Author | YakuControl Team |
+| Meta Viewport | width=device-width, initial-scale=1.0 |
+| Meta Charset | UTF-8 |
+| OG Title | YakuControl - Tecnología Acuícola Inteligente |
+| OG Description | Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables. |
+| OG Image | URL del logotipo de YakuControl |
+| OG URL | URL de la landing page de YakuControl |
+ 
+Representación en HTML:
+ 
+```html
+<title>YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas</title>
+<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo.">
+<meta name="keywords" content="monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques">
+<meta name="author" content="YakuControl Team">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta property="og:title" content="YakuControl - Tecnología Acuícola Inteligente">
+<meta property="og:description" content="Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables.">
+<meta property="og:image" content="https://www.yakucontrol.app/assets/images/yakucontrol-logo.png">
+<meta property="og:url" content="https://www.yakucontrol.app">
+```
+ 
+**Web Application ASO / SEO:**
+ 
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Gestión de Piscigranjas |
+| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y oxígeno disuelto. |
+| Meta Keywords | acuicultura, monitoreo acuícola, gestión de estanques, sensores IoT, piscigranjas inteligentes |
+| Developer Name | YakuControl Team |
+| Category | Tecnología / Agricultura y Acuicultura |
+ 
+**Android Native-Mobile Application ASO (Google Play Store):**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Monitoreo de Piscigranjas |
+| Short Description | Monitorea y gestiona tus estanques acuícolas en tiempo real desde tu celular. |
+| Full Description | YakuControl es una plataforma tecnológica diseñada para piscicultores y administradores de piscigranjas que buscan modernizar su operación. Desde tu dispositivo Android, podrás visualizar en tiempo real los parámetros del agua de cada estanque, recibir alertas automáticas ante condiciones críticas, consultar el historial de lecturas y gestionar tus equipos y sensores, todo en un solo lugar. |
+| Keywords | monitoreo acuícola, piscigranjas, sensores de agua, gestión de estanques, acuicultura inteligente |
+| Developer Name | YakuControl Team |
+| Category | Herramientas / Productividad |
+| Icon | Ícono de la aplicación (512x512 PNG) |
+| Feature Graphic | Gráfico destacado (1024x500 PNG) |
+| Screenshots | Capturas de pantalla de la aplicación (mínimo 2, máximo 8) |
+
 
 ### 5.2.4. Searching Systems
 
+A medida que crece el número de estanques, equipos y registros históricos en YakuControl, resulta esencial contar con herramientas que permitan a los usuarios localizar información de forma rápida y precisa. Para ello se implementarán los siguientes sistemas de búsqueda:
+ 
+**Búsqueda por palabras clave:**
+ 
+Se implementará una barra de búsqueda global, visible en la parte superior de todas las vistas de la plataforma, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
+ 
+**Filtros por categoría:**
+ 
+En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, oxígeno).
+ 
+**Visualización de resultados:**
+ 
+Los resultados se presentarán en tablas con columnas relevantes según el contexto, resaltando visualmente los valores que se encuentren fuera de rango. En vistas con grandes volúmenes de datos, como el historial de lecturas, se implementará paginación para evitar la sobrecarga visual.
+ 
+**Mensajes de ayuda:**
+ 
+Si una búsqueda no arroja resultados, el sistema mostrará un mensaje descriptivo sugiriendo revisar el término ingresado o ampliar los criterios de filtrado, evitando que el usuario quede ante una pantalla vacía sin orientación.
+
 ### 5.2.5. Navigation Systems
+
+Para garantizar una experiencia fluida en YakuControl, se implementarán los siguientes sistemas de navegación:
+ 
+**Landing Page Navigation:**
+ 
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+ 
+**Web Application Navigation:**
+ 
+La aplicación web utiliza un menú lateral fijo (sidebar) ubicado en el lado izquierdo de la pantalla, visible en todo momento independientemente del scroll. Este menú contiene los íconos y etiquetas de las secciones principales: Dashboard, Estanques, Equipos, Operadores, Notificaciones y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
+ 
+Adicionalmente, dentro de cada sección se implementan:
+ 
+- Breadcrumbs de navegación contextual: por ejemplo, "← Volver a Estanques" al ingresar al detalle de un estanque, permitiendo retroceder sin usar el botón del navegador.
+- Botones de acción primaria: como "+ Nuevo Estanque" o "+ Registrar Equipo", ubicados en la esquina superior derecha de cada vista de listado.
+- Acciones en tabla: botones de "Ver detalles", "Editar" y opciones de menú contextual (ícono de tres barras) disponibles por fila para acceso rápido a funciones específicas de cada registro.
+El flujo de navegación es coherente en todas las secciones, asegurando que los usuarios puedan moverse entre módulos sin perder el contexto de su tarea actual.
+
+**Mobile Application Navigation (Android):**
+
+La aplicación móvil nativa para Android utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
+accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
+
+Las secciones accesibles desde el menú inferior son:
+- Dashboard: vista general con métricas resumen y alertas activas.
+- Estanques: listado y detalle de estanques asignados al usuario.
+- Notificaciones: centro de alertas y eventos del sistema.
+- Perfil: información de cuenta y configuración personal.
+
+Adicionalmente, dentro de cada sección se implementan:
+
+- Navegación contextual hacia el detalle: al seleccionar un estanque o equipo, se accede a su vista de detalle con un encabezado que incluye "← Volver" para retroceder sin usar el botón nativo del dispositivo.
+- Botones de acción flotante (FAB): para acciones de creación rápida como registrar una nueva lectura o reportar una incidencia, ubicados en la esquina inferior derecha de las vistas de listado.
+- Pull-to-refresh: en las vistas de monitoreo en tiempo real, el usuario puede deslizar hacia abajo para forzar una actualización de los datos del sensor.
+
+El flujo de navegación es coherente entre la versión web y móvil, garantizando que los usuarios puedan alternar entre plataformas sin necesidad de reaprender la estructura de la aplicación.
 
 ## 5.3. Landing Page UI Design
 En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
@@ -1951,8 +2333,51 @@ Finalmente, se describe el prototipado interactivo de las aplicaciones, el cual 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 
-
 ## 5.6. IoT Device Design
+
+### Introducción
+
+El dispositivo IoT de YakuControl está diseñado para monitorear en tiempo real las variables bioquímicas críticas de los estanques de piscigranja: temperatura, pH y turbidez. Las decisiones de diseño priorizan la simplicidad de conexión, la claridad visual del circuito y la correspondencia con la arquitectura de información definida para el sistema.
+
+### Componentes del dispositivo
+
+El nodo IoT está compuesto por los siguientes elementos:
+
+- **Microcontrolador ESP32**: Unidad central de procesamiento. Gestiona la lectura de los tres sensores, controla los actuadores y se encarga de la transmisión de datos hacia la nube.
+
+- **Sensor DS18B20**: Sensor digital de temperatura del agua. Conectado al GPIO 4 del ESP32 con una resistencia pull-up de 4.7kΩ para garantizar la estabilidad de la señal en el protocolo 1-Wire.
+
+- **Sensor de pH (Custom Chip)**: Sensor analógico que mide el nivel de pH del agua del estanque. Conectado al GPIO 34 del ESP32.
+
+- **Sensor de turbidez (Custom Chip)**: Sensor analógico que mide la turbidez del agua, indicador de presencia de sedimentos o contaminantes. Conectado al GPIO 35 del ESP32.
+
+- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los GPIO 25, 18 y 19 del ESP32 respectivamente.
+
+- **Breadboard**: Placa de prototipado utilizada para gestionar las conexiones de alimentación y las señales entre componentes.
+
+### Convención de colores de cables
+
+| Color | Función |
+|-------|---------|
+| Rojo | Alimentación 3.3V que sale del ESP32 hacia el breadboard |
+| Naranja | VCC de cada sensor (alimentación desde el breadboard) |
+| Negro | GND — tierra de todos los componentes |
+| Amarillo | Señal DATA del sensor DS18B20 hacia GPIO 4 |
+| Morado | Señal OUT del sensor de turbidez hacia GPIO 35 |
+| Azul | Señal OUT del sensor de pH hacia GPIO 34 |
+| Verde y marrón | Conexiones internas de resistencias (pull-up y limitadoras de corriente) |
+
+### Diagrama del circuito
+
+El siguiente diagrama fue elaborado en Wokwi y muestra el diseño físico del nodo IoT de YakuControl:
+
+![Diagrama IoT YakuControl](./assets/images/wokwi-diagram.png)
+
+[https://wokwi.com/projects/463918475424417793](https://wokwi.com/projects/463918475424417793)
+
+### Descripción del flujo
+
+El ESP32 alimenta todos los componentes a través del breadboard con sus 3.3V. Cada sensor entrega su lectura al microcontrolador: el DS18B20 mediante protocolo digital 1-Wire por GPIO 4, mientras que el sensor de pH y el de turbidez envían señales analógicas por GPIO 34 y GPIO 35 respectivamente. Ante una lectura fuera del rango aceptable, el ESP32 activa el LED correspondiente como alerta visual inmediata en el estanque, mientras simultáneamente transmite los datos hacia la plataforma en la nube para su procesamiento y notificación remota.
 
 <div style="page-break-after: always;"></div>
 
