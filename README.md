@@ -336,7 +336,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 
 #### Antecedentes
 
-La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
+La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Un caso reciente documentado por la Agencia Peruana de Noticias Andina (2026) reporta la muerte masiva de miles de truchas en siete piscigranjas del distrito de Pariahuanca, Junín, como consecuencia de la presunta contaminación del río Yuracyacu por actividad minera, afectando ejemplares en todas las etapas de desarrollo (Andina, 2026). Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
 
 #### Problemática
 
@@ -2995,5 +2995,7 @@ Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políti
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
 
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
+
+Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
