@@ -1877,8 +1877,6 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
 | Estanques | Acceso a sus estanques asignados | Parámetros, historial y registro de lecturas |
 | Notificaciones | Alertas activas | Alertas pendientes de atención en su área |
 | Perfil | Información personal | Ver y editar sus datos de cuenta |
- 
----
 
 ### 5.2.3. SEO Tags and Meta Tags
  
@@ -1937,12 +1935,79 @@ Representación en HTML:
 | Icon | Ícono de la aplicación (512x512 PNG) |
 | Feature Graphic | Gráfico destacado (1024x500 PNG) |
 | Screenshots | Capturas de pantalla de la aplicación (mínimo 2, máximo 8) |
- 
----
+
 
 ### 5.2.4. Searching Systems
 
+A medida que crece el número de estanques, equipos y registros históricos en YakuControl, resulta esencial contar con herramientas que permitan a los usuarios localizar información de forma rápida y precisa. Para ello se implementarán los siguientes sistemas de búsqueda:
+ 
+**Búsqueda por palabras clave:**
+ 
+Se implementará una barra de búsqueda global, visible en la parte superior de todas las vistas de la plataforma, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
+ 
+**Filtros por categoría:**
+ 
+En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, oxígeno).
+ 
+**Visualización de resultados:**
+ 
+Los resultados se presentarán en tablas con columnas relevantes según el contexto, resaltando visualmente los valores que se encuentren fuera de rango. En vistas con grandes volúmenes de datos, como el historial de lecturas, se implementará paginación para evitar la sobrecarga visual.
+ 
+**Mensajes de ayuda:**
+ 
+Si una búsqueda no arroja resultados, el sistema mostrará un mensaje descriptivo sugiriendo revisar el término ingresado o ampliar los criterios de filtrado, evitando que el usuario quede ante una pantalla vacía sin orientación.
+
 ### 5.2.5. Navigation Systems
+
+Para garantizar una experiencia fluida en YakuControl, se implementarán los siguientes sistemas de navegación:
+ 
+**Landing Page Navigation:**
+ 
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal **"Solicitar Demo"** en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+ 
+**Web Application Navigation:**
+ 
+La aplicación web utiliza un menú lateral fijo (sidebar) ubicado en el lado izquierdo de la pantalla, visible en todo momento independientemente del scroll. Este menú contiene los íconos y etiquetas de las secciones principales: Dashboard, Estanques, Equipos, Operadores, Notificaciones y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
+ 
+Adicionalmente, dentro de cada sección se implementan:
+ 
+- Breadcrumbs de navegación contextual: por ejemplo, "← Volver a Estanques" al ingresar al detalle de un estanque, permitiendo retroceder sin usar el botón del navegador.
+- Botones de acción primaria: como "+ Nuevo Estanque" o "+ Registrar Equipo", ubicados en la esquina superior derecha de cada vista de listado.
+- Acciones en tabla: botones de "Ver detalles", "Editar" y opciones de menú contextual (ícono de tres barras) disponibles por fila para acceso rápido a funciones específicas de cada registro.
+El flujo de navegación es coherente en todas las secciones, asegurando que los usuarios puedan moverse entre módulos sin perder el contexto de su tarea actual.
+
+**Mobile Application Navigation (Android):**
+
+La aplicación móvil nativa para Android utiliza un **menú inferior 
+(bottom navigation bar)** como sistema de navegación principal, 
+accesible en todo momento desde cualquier vista. Este patrón es el 
+estándar recomendado por Material Design para aplicaciones móviles 
+con entre 3 y 5 destinos principales, ya que permite el acceso con 
+el pulgar sin necesidad de desplazar la mano.
+
+Las secciones accesibles desde el menú inferior son:
+
+- Dashboard: vista general con métricas resumen y alertas activas.
+- Estanques: listado y detalle de estanques asignados al usuario.
+- Notificaciones: centro de alertas y eventos del sistema.
+- Perfil: información de cuenta y configuración personal.
+
+Adicionalmente, dentro de cada sección se implementan:
+
+- Navegación contextual hacia el detalle: al seleccionar un 
+estanque o equipo, se accede a su vista de detalle con un encabezado 
+que incluye "← Volver" para retroceder sin usar el botón nativo 
+del dispositivo.
+- Botones de acción flotante (FAB): para acciones de creación 
+rápida como registrar una nueva lectura o reportar una incidencia, 
+ubicados en la esquina inferior derecha de las vistas de listado.
+- Pull-to-refresh: en las vistas de monitoreo en tiempo real, 
+el usuario puede deslizar hacia abajo para forzar una actualización 
+de los datos del sensor.
+
+El flujo de navegación es coherente entre la versión web y móvil, 
+garantizando que los usuarios puedan alternar entre plataformas sin 
+necesidad de reaprender la estructura de la aplicación.
 
 ## 5.3. Landing Page UI Design
 En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
