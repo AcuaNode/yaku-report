@@ -318,7 +318,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
   </tr>
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
-      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
+      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo,tengo 25 años y soy estudiante de la carrera de ingeniera de Software con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
       </td>
   </tr>
   <tr>
@@ -1655,30 +1655,370 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 ### 5.2.5. Navigation Systems
 
 ## 5.3. Landing Page UI Design
+En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
+
 ### 5.3.1. Landing Page Wireframe
+Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose en la disposición estructural de los elementos clave definidos en las User Stories EP01. El esquema prioriza una jerarquía visual clara que guía al visitante desde la explicación del producto hasta las secciones de catálogo de planes, FAQ de soporte y el formulario de contacto para ventas.
+
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/diseñoux/LandingPhoneWireframe.png" alt="wireframe2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 ### 5.3.2. Landing Page Mock-up
+El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/diseñoux/LandingPhoneMockup.png" alt="Mockup2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 ## 5.4. Applications UX/UI Design
+Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores y la App Móvil para piscicultores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
+
 ### 5.4.1. Applications Wireframes
+Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organización de los dashboards y paneles de control. Los wireframes para la aplicación móvil se centran en la simplicidad de uso para operarios en campo, mientras que los de la aplicación web priorizan la claridad en gráficos de tendencias e informes de mortalidad para la toma de decisiones estratégicas.
+
+- *Wireframes para el Segmento 1: Piscicultores*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe1.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe2.png" alt="wireframe" /> |
+
+| Sección Home |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe3.png" alt="wireframe" /> |
+
+| Sección Home - Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe4.png" alt="wireframe" /> |
+
+| Sección Home - Historial de Lecturas|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe5.png" alt="wireframe" /> |
+
+| Sección Alertas |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe6.png" alt="wireframe" /> |
+
+| Sección Perfil |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe7.png" alt="wireframe" /> |
+
+
+- *Wireframes para el Segmento 2: Administradores de Piscigranja*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe8.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe9.png" alt="wireframe" /> |
+
+| Registro de Granja |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe10.png" alt="wireframe" /> |
+
+| Sección DashBoard|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe11.png" alt="wireframe" /> |
+
+| Sección Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe12.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe13.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques -   Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe14.png" alt="wireframe" /> |
+
+| Sección Equipos |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe15.png" alt="wireframe" /> |
+
+| Sección Operadores |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe16.png" alt="wireframe" /> |
+
+| Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe17.png" alt="wireframe" /> |
+
+| Sección Configuracion |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe18.png" alt="wireframe" /> |
+
+
 
 ### 5.4.2. Applications Wireflow Diagrams
+Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow1.png" alt="flow" /> |
+
+| User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow2.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow3.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow4.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow5.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow6.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow7.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow8.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow9.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow10.png" alt="flow" /> |
+
+
+Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit?viewport_loc=2786%2C5222%2C4017%2C2011%2C0_0&invitationId=inv_dc87452a-958f-4f51-8df3-0b6797858cb2
 
 ### 5.4.3. Applications Mock-ups
+Se presentan las interfaces finales de alta fidelidad para las aplicaciones Web y Móvil. Estos mock-ups reflejan la implementación de componentes interactivos y estados de sistema (como lecturas en tiempo real y notificaciones de emergencia), siguiendo los lineamientos de diseño táctico para garantizar una experiencia de usuario intuitiva en entornos rurales y administrativos.
+
+- *Mockups para el Segmento 1: Piscicultores*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups1.png" alt="mockups" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups2.png" alt="mockups" /> |
+
+| Sección Home |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups3.png" alt="mockups" /> |
+
+| Sección Home - Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups4.png" alt="mockups" /> |
+
+| Sección Home - Historial de Lecturas|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups5.png" alt="mockups" /> |
+
+| Sección Alertas |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups6.png" alt="mockups" /> |
+
+| Sección Perfil |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups7.png" alt="mockups" /> |
+
+
+- *Mockups para el Segmento 2: Administradores de Piscigranja*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups8.png" alt="mockups" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups9.png" alt="mockups" /> |
+
+| Registro de Granja |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups10.png" alt="mockups" /> |
+
+| Sección DashBoard|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups11.png" alt="mockups" /> |
+
+| Sección Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups12.png" alt="mockups" /> |
+
+| Sección Registrar Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups13.png" alt="mockups" /> |
+
+| Sección Registrar Estanques -   Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/mockups14.png" alt="mockups" /> |
+
+| Sección Equipos |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups15.png" alt="mockups" /> |
+
+| Sección Operadores |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups16.png" alt="mockups" /> |
+
+| Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups17.png" alt="mockups" /> |
+
+| Sección Configuracion |
+|----------------------------------|
+| <img src="assets/diseñoux/mockups18.png" alt="mockups" /> |
 
 ### 5.4.4. Applications User Flow Diagrams
+En esta sección se diagraman los flujos de usuario completos, representando los pasos lógicos que realizan los distintos roles (ROLE_ADMIN y ROLE_WORKER) para alcanzar sus objetivos. Estos diagramas conectan las acciones de los usuarios con los eventos de dominio y sistemas externos, como el procesamiento de pagos vía Stripe o el envío de alertas mediante Firebase.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
+|----------------------------------|
+| <img src="assets/diseñoux/flow1.png" alt="flow" /> |
+
+| User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow2.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
+|----------------------------------|
+| <img src="assets/diseñoux/flow3.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow4.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow5.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow6.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow7.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
+|----------------------------------|
+| <img src="assets/diseñoux/flow8.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
+|----------------------------------|
+| <img src="assets/diseñoux/flow9.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
+|----------------------------------|
+| <img src="assets/diseñoux/flow10.png" alt="flow" /> |
+
+
+Link LucidChart: https://lucid.app/lucidchart/9e8dcc5e-ae46-4a6d-b271-2eb041e48f6c/edit?viewport_loc=-5787%2C-1324%2C21334%2C10682%2C0_0&invitationId=inv_d552ef41-c861-4992-bb3f-5d33e590ebfb
 
 ## 5.5. Applications Prototyping
+Finalmente, se describe el prototipado interactivo de las aplicaciones, el cual permite simular la funcionalidad real del ecosistema digital de YakuControl. Este prototipo sirve como herramienta de validación para verificar la usabilidad del sistema, la eficiencia en la recepción de alertas críticas y la integración del control de hardware antes de proceder a la fase de implementación y despliegue.
+
+- *Applications Prototyping para el Segmento 1: Piscicultores*
+<img src="assets/diseñoux/Prototyping1.png" alt="Prototyping" />
+
+- *Applications Prototyping para el Segmento 2: Administradores de Piscigranja*
+<img src="assets/diseñoux/Prototyping2.png" alt="Prototyping" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+
+
 
 ## 5.6. IoT Device Design
 
 <div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
-## 6.1. Software Configuration Management
-### 6.1.1. Software Development Environment Configuration
+## 6.1 Software Configuration Management
 
-### 6.1.2. Source Code Management
+En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del proyecto YakuControl.
+
+### 6.1.1 Software Development Environment Configuration
+
+En esta sección se especifican los productos de software y herramientas utilizados por los miembros del equipo para colaborar en el ciclo de vida del producto digital YakuControl.
+
+| Categoría | Producto | Propósito | Referencia / Descarga |
+| :--- | :--- | :--- | :--- |
+| **Project Management** | Miro | Modelado de EventStorming y dinámicas colaborativas iniciales. | [miro.com](https://miro.com/) |
+| **Requirements Management** | GitHub | Gestión del Product Backlog, User Stories e hitos del proyecto. | [github.com](https://github.com/) |
+| **Product UX/UI Design** | Figma | Diseño de Wireframes, Mockups y Prototipos interactivos de las aplicaciones Web y Móvil. | [figma.com](https://figma.com/) |
+| **Product UX/UI Design** | Lucidchart | Elaboración de diagramas de flujo de usuario (Wireflows). | [lucid.app](https://lucid.app/) |
+| **Software Development** | IntelliJ IDEA | IDE principal para el desarrollo del Backend con Java y Spring Boot. | [jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| **Software Development** | Visual Studio Code | IDE para el desarrollo de la Landing Page y componentes Frontend. | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **Software Development** | Android Studio | Entorno para el desarrollo y emulación de la aplicación móvil con Flutter. | [developer.android.com/studio](https://developer.android.com/studio) |
+| **Software Development** | Java JDK 17 | Lenguaje de programación y entorno de ejecución para el Backend. | [oracle.com/java/](https://www.oracle.com/java/) |
+| **Software Development** | Flutter SDK | Framework para el desarrollo de la aplicación móvil multiplataforma. | [flutter.dev](https://flutter.dev/) |
+| **Software Testing** | JUnit 5 | Framework de pruebas unitarias y de integración para el Backend. | [junit.org](https://junit.org/junit5/) |
+| **Software Testing** | Postman | Herramienta para pruebas y documentación de las APIs REST. | [postman.com](https://www.postman.com/) |
+| **Software Deployment** | Microsoft Azure | Plataforma Cloud para el despliegue de servicios y bases de datos. | [azure.microsoft.com](https://azure.microsoft.com/) |
+| **Software Deployment** | Docker | Contenerización de servicios para asegurar paridad entre entornos. | [docker.com](https://www.docker.com/) |
+| **Software Documentation** | GitHub (Markdown) | Documentación técnica y gestión del reporte final del proyecto. | [github.com](https://github.com/) |
+
+### 6.1.2 Source Code Management
+
+Para el seguimiento de las modificaciones del código fuente y la documentación, el equipo utiliza **GitHub** como plataforma principal.
+
+### Repositorios de Software
+
+A continuación, se detallan las URLs de los repositorios para cada producto de la solución:
+
+*   **Project Report:** [https://github.com/AcuaNode/yaku-report](https://github.com/AcuaNode/yaku-report)
+*   **Web Services (Backend):** [https://github.com/AcuaNode/yaku-backend](https://github.com/AcuaNode/yaku-backend)
+*   **Landing Page:** [https://github.com/AcuaNode/yaku-landing](https://github.com/AcuaNode/yaku-landing)
+
+### Estrategia de Ramas (GitFlow)
+
+El equipo implementa el flujo de trabajo **GitFlow** para la gestión de versiones. Se han definido las siguientes ramas principales y convenciones:
+
+*   **main branch:** Contiene el código en estado de producción, siempre estable y listo para despliegue.
+*   **develop branch:** Rama de integración donde se consolidan las funcionalidades terminadas antes de pasar a producción.
+*   **Feature branches:** Ramas temporales creadas para el desarrollo de nuevas características o capítulos del informe.
+    *   **Convención:** `feature/nombre-de-la-caracteristica` (Ej: `feature/chapter-I`, `feature/iam-context`).
+*   **Release branches:** Ramas de preparación para una nueva entrega o lanzamiento oficial.
+    *   **Convención:** `release/vX.Y.Z` aplicando **Semantic Versioning 2.0.0**. (Ej: `release/v1.0.0`).
+*   **Hotfix branches:** Ramas para correcciones críticas urgentes que deben aplicarse directamente sobre la rama `main`.
+    *   **Convención:** `hotfix/nombre-del-error` (Ej: `hotfix/urgent-fix`).
+
+### Estándares de Commits
+
+Para mantener un historial de cambios legible y profesional, el equipo aplica la convención de **Conventional Commits**. Los mensajes de commit deben seguir la estructura: `<tipo>: <descripción breve>`.
+
+*   **feat:** Una nueva funcionalidad.
+*   **fix:** Corrección de un error.
+*   **docs:** Cambios en la documentación.
+*   **style:** Cambios que no afectan el significado del código (espacios, formato, etc.).
+*   **refactor:** Un cambio en el código que no corrige un error ni añade una funcionalidad.
+*   **test:** Añadir o corregir pruebas.
+*   **chore:** Cambios en el proceso de construcción o herramientas auxiliares.
+
 
 ### 6.1.3. Source Code Style Guide & Conventions
 
@@ -1687,22 +2027,527 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 ## 6.2. Landing Page, Services & Applications Implementation
 ### 6.2.1. Sprint n
 #### 6.2.1.1. Sprint Planning n
+<table>
+    <thead>
+        <tr>
+            <th>Sprint #</th>
+            <th>Sprint 1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2"><b>Sprint Planning Background</b></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>2026-05-05</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Aula H51</td>
+        </tr>
+        <tr>
+            <td>Prepared by</td>
+            <td>Lopez Acuna, Mario Joaquin</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>
+                <li>Aponte Cruzado, Andrea Marielena</li>
+                <li>Lopez Acuna, Mario Joaquin</li>
+                <li>Urrutia Pena, Jasmin Adriana</li>
+                <li>Vivanco Salazar, Rafael Andres</li>
+                <li>Velasquez Chambi, Ruben Genaro</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 0 Review Summary</td>
+            <td>
+                Se realizó la reunión inicial de investigación y definición del modelo de negocio para YakuControl, estableciendo los cimientos estratégicos del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 0 Retrospective Summary</td>
+            <td>
+                El equipo validó la propuesta de valor y segmentación de clientes, acordando priorizar el desarrollo de la infraestructura base y la presencia digital.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Goal</td>
+            <td>
+                <li><b>Landing Page:</b> Nuestro enfoque está en desarrollar una landing page profesional y responsiva para AcuaNode. Creemos que esto permitirá comunicar nuestra propuesta de valor a potenciales clientes B2B. Esto se confirmará cuando la landing page esté desplegada y sea accesible públicamente.</li>
+                <li><b>Backend Services:</b> Nuestro enfoque está en implementar el 80% de los servicios core del backend utilizando Domain-Driven Design (DDD) y Arquitectura Limpia. Creemos que esto proporcionará una base sólida y escalable para la telemetría y notificaciones. Esto se confirmará cuando los contextos de IAM, Telemetry y Notification tengan su lógica de negocio implementada y documentada en OpenAPI.</li>
+                <li><b>Web Application:</b> Nuestro enfoque está en desarrollar la primera versión de la Aplicación Web para administradores. Creemos que esto entregará visibilidad en tiempo real a los gestores de piscigranjas. Esto se confirmará cuando el dashboard web visualice los primeros datos de telemetría provenientes del backend.</li>
+                <li><b>Mobile Design:</b> Nuestro enfoque está en el diseño UI/UX de la aplicación móvil para piscicultores. Creemos que esto garantizará una interfaz intuitiva para las operaciones en campo. Esto se confirmará cuando los mockups de alta fidelidad y flujos de usuario estén completados y aprobados por el equipo.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Velocity</td>
+            <td>
+                30
+            </td>
+        </tr>
+        <tr>
+            <td>Sum of story points</td>
+            <td>
+                37
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 #### 6.2.1.2. Aspect Leaders and Collaborators
+En esta sección el equipo que incluye la elaboración de un artefacto Leadership-andCollaboration Matrix (LACX)
+
+
+|Team Members| Github Username| IoT Device Design | Landing Page | Backend Services | Web App | Report |
+|---|---|---|---|---|---|---|
+|Aponte Cruzado, Andrea Marielena |iconicmiau | C | C | C | L | C |
+|Lopez Acuna, Mario Joaquin | tertegen | L | C | C| C | C |
+|Urrutia Pena, Jasmin Adriana |SrtaYeis| C | L | C | C | C |
+|Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | L | C | C |
+|Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | C | C | C | L |
 
 #### 6.2.1.3. Sprint Backlog n
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td align="center" colspan="7"> <strong>Sprint 1</strong> </td>
+  </tr>
+
+   <tr>
+    <td align="center" colspan="2"> <strong>User Story</strong></td>
+    <td align="center" colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title<strong></td>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title<strong></td>
+    <td align="center"> <strong>Description<strong></td>
+    <td align="center"> <strong>Estimation (Hours)<strong></td>
+    <td align="center"> <strong>Assigned To<strong></td>
+    <td align="center"> <strong> Status (To-do/In-Process/To-Review/Done)  <strong></td>
+  </tr>
+  <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US01 </td>
+    <td rowspan="1" align="center"> Propuesta de Valor</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Diseño Landing </td>
+    <td align="center">Diseñar la sección de beneficios clave en la landing page.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US02 </td>
+    <td rowspan="1" align="center"> Catálogo de Planes</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Precios y Planes </td>
+    <td align="center">Diseñar la sección de suscripciones y costos.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US03 </td>
+    <td rowspan="1" align="center"> FAQ de Soporte</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Preguntas Frecuentes </td>
+    <td align="center">Diseñar la sección FAQ para resolución de dudas.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US04 </td>
+    <td rowspan="1" align="center"> Formulario de Ventas</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Formulario Contacto </td>
+    <td align="center">Diseñar el formulario para captación de leads.</td>
+    <td align="center"> 0.5 </td>
+    <td align="center"> Urrutia Peña Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+    <tr>
+    <td rowspan="1" align="center"> TS01 </td>
+    <td rowspan="1" align="center"> API de Ingesta</td>
+    <td align="center"> TA01 </td>
+     <td align="center">API de Ingesta </td>
+    <td align="center">Cuando hardware envía telemetría
+entonces Backend guarda los datos en la base de datos.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <tr>
+    <td rowspan="1" align="center"> TS02 </td>
+    <td rowspan="1" align="center"> Seguridad JWT</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Implementación Auth </td>
+    <td align="center">Configurar Spring Security y generación de tokens JWT.</td>
+    <td align="center"> 3 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US10 </td>
+    <td rowspan="1" align="center"> Gestión de Usuarios</td>
+    <td align="center"> TA01 </td>
+     <td align="center">CRUD de Usuarios </td>
+    <td align="center">Implementar la lógica de creación y gestión de operarios.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US15 </td>
+    <td rowspan="1" align="center"> Registro de Estanque</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Gestión Equipment </td>
+    <td align="center">Implementar el registro de estanques y vinculación IoT.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US07 </td>
+    <td rowspan="1" align="center"> Alertas Push</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Lógica de Notificación </td>
+    <td align="center">Implementar alertas básicas ante anomalías (sin FCM).</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Velasquez Chambi, Ruben Genaro</td>
+    <td align="center">Done</td>
+  </tr>
+    <!---------------------------------------------------------------------- -->
+  <tr>
+    <td rowspan="1" align="center"> US06 </td>
+    <td rowspan="1" align="center"> Dashboard Web App</td>
+    <td align="center"> TA01 </td>
+     <td align="center">Core Monitoring </td>
+    <td align="center">Desarrollar el dashboard de visualización.</td>
+    <td align="center"> 8 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+
+</table>
+
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.4. Development Evidence for Sprint Review
 
+En la siguiente tabla se muestran los commits realizados en la organizacion yakuControl en el sprint 1.
+
+| Repositorio                | Branch*   | Commit Id                               | Commit Message                                                                               | Commit Message Body                                             | Commitido en (Fecha)        |
+|----------------------------|-----------|-----------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------|-----------------------------|
+| AcuaNode/yaku-backend      | main         | ab2b308337cb5a8e6573df0d1bf5685ac763bdb3 | Merge pull request #5 from AcuaNode/feature/telemetry<br>feat(telemetry): implement telemetry logic and manual data ingestion | feat(telemetry): implement telemetry logic and manual data ingestion | 2026-05-08T21:37:19Z        |
+| AcuaNode/yaku-backend      | main         | a728336c161e652da852515f9f6b03b94b087681 | Merge pull request #4 from AcuaNode/feature/notifications<br>feat(notification): implement notification logic and details     | feat(notification): implement notification logic and details        | 2026-05-08T21:37:04Z        |
+| AcuaNode/yaku-backend      | develop         | 0b45811f11d648d8f359c4f1fceae873c14cc3dd | Merge pull request #3 from AcuaNode/feature/iam<br>feat(iam): implement IAM logic, roles and farmid verification              | feat(iam): implement IAM logic, roles and farmid verification       | 2026-05-08T21:36:49Z        |
+| AcuaNode/yaku-backend      | develop         | 259390cd7b9ba9b0a8ffc04d8a0cb394929eb3ee | Merge pull request #2 from AcuaNode/feature/subscription<br>feat(subscription): implement subscription logic and plan details | feat(subscription): implement subscription logic and plan details   | 2026-05-08T21:36:29Z        |
+| AcuaNode/yaku-backend      | develop         | 5686ca3502f796f58c14c223d0ab721db4015b69 | Merge pull request #1 from AcuaNode/feature/equipment<br>feat(equipment): implement Equipment, Ponds and Farm logic/details  | feat(equipment): implement Equipment, Ponds and Farm logic/details  | 2026-05-08T21:36:09Z        |
+| AcuaNode/yaku-backend      | develop         | c62e66a94b011a2b20c6f5a854fb9383e473d34d | feat(notification): implement notification logic and details                                 |                                                                          | 2026-05-08T21:34:05Z        |
+| AcuaNode/yaku-backend      | feature/telemetry         | 70f9345326e12e77a4315291f05fa9509e76ccbe | feat(telemetry): implement telemetry logic and manual data ingestion                         |                                                                          | 2026-05-08T21:30:35Z        |
+| AcuaNode/yaku-backend      | feature/equipment         | 5e6d713a5d35f88171a65729bb29226ddc734723 | feat(equipment): implement Equipment, Ponds and Farm logic/details                           |                                                                          | 2026-05-08T21:28:01Z        |
+| AcuaNode/yaku-backend      | feature/suscription         | a99a34aef6682110450e8cc06e428a6abdaeeb44 | feat(subscription): implement subscription logic and plan details                            |                                                                          | 2026-05-08T21:25:47Z        |
+| AcuaNode/yaku-backend      | feature/iam         | b6817667a16dd64ed461be6e175d9942c4b5e09d | feat(iam): implement IAM logic, roles and farmid verification                                |                                                                          | 2026-05-08T21:23:28Z        |
+| AcuaNode/yaku-backend      | develop         | bd5f2aeec4a2b7483acde5a2fcf44532896f2591 | chore: activate debug mode                                                                   |                                                                          | 2026-05-08T21:22:09Z        |
+| AcuaNode/yaku-backend      | develop         | 955af624cc901040b157d768d3bc9cf063412f56 | feat: implement Spring Boot Application, properties, seed sql data  and shared files         |                                                                          | 2026-05-08T05:05:54Z        |
+| AcuaNode/yaku-backend      | main         | a008c73bb7dea6f48e70efc7993a5e9038f06910 | feat: initial backend config (dependencies and containerization)                             |                                                                          | 2026-05-08T04:59:50Z        
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | 556b08bf683771d4e99f915718edd5f46b8a743a | Delete CNAME    | (vacío)            | 2026-05-08T06:54:32Z    |
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | aa9e68c6b6d8f92eefce62d01fe5fd1aa365c0b1 | Create CNAME    | (vacío)            | 2026-05-08T06:54:11Z    |
+| AcuaNode/yaku-landing      | main (asumido; no explicitado) | 718f1bac8adcf7e6fd0c62aed5a92e6cdf11766b | feat: add code  | (vacío)            | 2026-05-08T06:52:55Z    |
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
+
+**Estrategia de Pruebas - Sprint 1 (YakuControl)**
+Para este Sprint 1, la estrategia de pruebas de YakuControl se ha abordado en dos niveles: pruebas unitarias y de integración del Core Domain, y pruebas de aceptación bajo el enfoque BDD (Behavior-Driven Development).
+
+**a. Core Unit & Integration TestingBackend Application Core Testing Suite**
+Se ha implementado una suite robusta para garantizar que las reglas de negocio encapsuladas en los agregados funcionen correctamente de manera aislada. Se configuró la base de datos en memoria H2 para las pruebas de integración globales. En total, se ejecutaron 54 pruebas exitosas distribuidas en los siguientes módulos:
+- Subscription Module: 17 pruebas unitarias evaluando la creación, cancelación y reglas de negocio de los agregados Subscription y SubscriptionPeriod.
+<br>
+- IAM Module: 7 pruebas unitarias validando la autenticación, roles y creación del agregado User.
+<br>
+- Equipment Module: 15 pruebas unitarias verificando la lógica y asignación en los agregados Pond, Equipment y Farm.
+<br>
+- Notification Module: 14 pruebas unitarias para la validación de alertas en los modelos.
+<br>
+- Notification y RecipientInfo.Integration: 1 prueba global (YakuBackendApplicationTests) que verifica la inicialización correcta del contexto de Spring Boot.
+
+**b. Behavior-Driven Development (BDD) / Acceptance Tests**
+
+En concordancia con los Criterios de Aceptación de las User Stories seleccionadas para el Sprint, se han redactado pruebas de comportamiento utilizando el lenguaje Gherkin. A continuación se detallan los archivos .
+
+
+- feature:A. Gestión de Piscigranjas y Estanques (US10, US11)Archivo: farm-management.featureGherkinFeature: Gestión de Piscigranjas y Estanques (US10, US11)
+  Como administrador, deseo gestionar mis piscigranjas y estanques
+<br>
+
+**Scenario: Registro exitoso de piscigranja (US10)**
+
+    Given que el administrador ingresa datos validos de la piscigranja
+    When guarda la informacion mediante POST /api/v1/farms
+    Then se registra correctamente con codigo 201
+    And la respuesta contiene un farmToken generado automaticamente
+<br>
+
+**Scenario: Registro exitoso de estanque (US11)**
+
+    Given que el administrador ingresa los datos del estanque
+    When guarda la informacion mediante POST /api/v1/ponds
+    Then se registra correctamente con codigo 201
+    And el estanque tiene estado inicial "ACTIVE"
+
+- feature: B. Autenticación y Registro de Usuarios (US17, US18)
+Archivo: authentication.featureGherkinFeature: Autenticacion y Registro de Usuarios (US17, US18)
+  Como usuario, deseo autenticarme y registrarme en el sistema
+
+<br>
+
+  **Scenario: Registro exitoso de usuario (US17)**
+
+    Given que el administrador ingresa datos validos
+    When registra al usuario mediante POST /api/v1/users/signup
+    Then se crea la cuenta con codigo 201
+    And el usuario tiene el rol asignado correctamente
+
+  **Scenario: Autenticacion exitosa (US18)**
+
+    Given que existen credenciales validas
+    When inicia sesion mediante POST /api/v1/users/signin
+    Then accede al sistema con codigo 200
+    And la respuesta contiene un token JWT valido
+
+- feature C. Monitoreo de Telemetría (US05)
+Archivo: telemetry-monitoring.featureGherkinFeature: Monitoreo de Telemetria de Estanques (US05)
+  Como piscicultor, deseo monitorear los parametros en tiempo real
+
+<br>
+
+  **Scenario: Visualizacion de parametros en tiempo real**
+
+    Given que selecciona un estanque con ID 1
+    When carga el dashboard mediante GET /api/v1/telemetry/ponds/1/status
+    Then visualiza los valores actuales de los sensores con codigo 200
+    And la respuesta incluye pH, temperatura y oxigeno
+
+- feature D. Registro de Dispositivos IoT (US31)Archivo: equipment-registration.featureGherkinFeature: Registro de Dispositivos IoT (US31)
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+<br>
+
+**Scenario: Registro exitoso de dispositivo IoT**
+
+    Given que ingreso datos validos del dispositivo
+    When guardo mediante POST /api/v1/equipment
+    Then el sistema lo registra correctamente con codigo 201
+    And el dispositivo tiene estado inicial "AVAILABLE"
+
+- feature E. Gestión de Suscripciones (US19)Archivo: subscription-management.featureGherkinFeature: Gestion de Suscripciones (US19)
+
+  Como administrador, deseo suscribirme a un plan
+
+<br>
+
+  **Scenario: Suscripcion exitosa a un plan**
+
+    Given que el administrador selecciona un plan existente
+    When confirma la suscripcion mediante POST /api/v1/subscriptions/{userId}/subscribe
+    Then se activa la suscripcion con codigo 200
+    And el estado de la suscripcion es "ACTIVE"
+- feature F. Sistema de Alertas Inteligentes (US22)Archivo: alert-system.featureGherkinFeature: Sistema de Alertas Inteligentes (US22)  
+  Como usuario, deseo recibir alertas cuando superen los umbrales
+<br>
+
+**Scenario: Notificacion push enviada por evento critico**
+
+    Given que ocurre un evento critico en el estanque
+    When se detecta la anomalia
+    Then se envia una notificacion push al dispositivo registrado
+    And el tipo de notificacion es "CRITICAL"
+<br>
+
+**c. Repositorio y Evidencia de Commits de Pruebas**
+
+El código fuente de nuestra suite de pruebas se encuentra alojado en el siguiente repositorio:URL: https://github.com/AcuaNode/yaku-backend/tree/feature/testsEvidencia 
+
+<br>
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| AcuaNode/yaku-backend | feature/tests | `74293bd` | test: added unit and integration testing with h2 | - | 12/05/2026 |
+| AcuaNode/yaku-backend | feature/tests | `9882e9c` | test: add Gherkin feature files for implemented user stories | Se agregaron archivos de especificación Gherkin (.feature) para las user stories implementadas en el backend: - equipment/farm-management.feature - equipment/equipment-registration.feature - iam/authentication.feature - subscription/subscription-management.feature - telemetry/telemetry-monitoring.feature - notification/alert-system.feature | 12/05/2026 |
+
+<br>
+
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
+En este Sprint 1, se han completado las bases fundamentales de la solución YakuControl, abarcando desde la presencia digital hasta la infraestructura de servicios y la primera interfaz de gestión.
+
+### 1. Landing Page - AcuaNode
+Se implementó una página de aterrizaje profesional y responsiva diseñada para comunicar la propuesta de valor de YakuControl a potenciales clientes. La página incluye secciones estratégicas como la descripción del ecosistema IoT, beneficios clave, catálogo de planes y medios de contacto . Utiliza una estética moderna basada en HSL y tipografía premium para transmitir confianza y precisión tecnológica.
+
+- **Evidencia:**
+![Landing Page Evidence](./assets/images/screenshots/landing-1.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-2.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-3.png)
+![Landing Page Evidence](./assets/images/screenshots/landig-4.png)
+
+- **Link de despliegue:** [https://acuanode.github.io/yaku-landing/#](https://acuanode.github.io/yaku-landing/#)
+
+---
+
+### 2. Backend Services - API Core
+Se desarrolló el núcleo de servicios RESTful utilizando Spring Boot bajo los principios de Clean Architecture y Domain-Driven Design (DDD). Se implementaron satisfactoriamente los contextos de IAM (Seguridad JWT), Telemetry (Ingesta de datos), Equipment (Gestión de dispositivos) y Subscription. La API cuenta con persistencia en PostgreSQL y está documentada íntegramente mediante Swagger UI para facilitar la integración con las aplicaciones cliente.
+
+- **Evidencia:**
+![Backend API Evidence](./assets/images/screenshots/swager-yaku.jpeg)
+![Backend API Evidence](./assets/images/screenshots/back-azure.jpeg)
+
+- **Link de despliegue:** [https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/api/v1](https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/api/v1)
+
+---
+
+### 3. Web Application 
+Se realizó la entrega de la primera versión funcional de la aplicación web orientada a administradores de piscigranjas. Esta versión inicial se centra en el dashboard de monitoreo, permitiendo la visualización en tiempo real de los datos de telemetría (temperatura, pH, turbidez) provenientes del backend. La interfaz permite al usuario tener una visión panorámica del estado de sus estanques y recibir alertas visuales ante condiciones críticas.
+
+- **Evidencia:**
+![Web App Dashboard Evidence](./assets/images/screenshots/login-yaku.jpeg)
+![Web App Dashboard Evidence](./assets/images/screenshots/dasboard-yaku.jpeg)
+
+- **Link de despliegue:** [https://ashy-ocean-0e996d110.7.azurestaticapps.net/](https://ashy-ocean-0e996d110.7.azurestaticapps.net/)
+
+---
+
+### 4. Azure
+Se realizé el despliegue del backend y fron-end en azure 
+
+ **Evidencia:**
+![azure](./assets/images/screenshots/azure-yaku.jpeg)
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación de los servicios RESTful desarrollados durante el sprint. La API sigue el estilo arquitectónico REST y utiliza JSON como formato de intercambio de datos. El backend ha sido implementado utilizando Spring Boot y sigue los principios de Domain-Driven Design (DDD).
+
+## API Endpoints
+
+| Bounded Context | Method | Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| **IAM** | POST | `/api/v1/users/signup` | Registrar un nuevo usuario en el sistema. |
+| | POST | `/api/v1/users/signin` | Autenticar un usuario y obtener un token JWT. |
+| | GET | `/api/v1/users/by-username` | Obtener información de un usuario por su nombre de usuario. |
+| | GET | `/api/v1/users` | Listar todos los usuarios, con opción de filtrado por ID de granja. |
+| | GET | `/api/v1/users/available-roles` | Listar los roles disponibles para el registro de usuarios. |
+| **Subscription** | GET | `/api/v1/plans` | Listar todos los planes de suscripción disponibles. |
+| | GET | `/api/v1/subscriptions/{userId}` | Obtener el estado de suscripción de un usuario específico. |
+| | POST | `/api/v1/subscriptions/{userId}` | Suscribir a un usuario a un plan específico. |
+| | DELETE | `/api/v1/subscriptions/{userId}` | Cancelar la suscripción activa de un usuario. |
+| **Telemetry** | GET | `/api/v1/telemetry/ponds/{pondId}/status` | Obtener el estado actual (lecturas en tiempo real) de un estanque. |
+| | GET | `/api/v1/telemetry/ponds/{pondId}/historical` | Obtener datos históricos de telemetría con filtros de tiempo. |
+| | POST | `/api/v1/telemetry/manual-ingest` | Ingesta manual de datos de telemetría para pruebas. |
+| **Equipment** | POST | `/api/v1/equipment` | Registrar un nuevo equipo o dispositivo IoT. |
+| | POST | `/api/v1/equipment/{equipmentId}/link/{pondId}` | Vincular un equipo registrado a un estanque específico. |
+| | GET | `/api/v1/equipment` | Listar todos los equipos registrados. |
+| | DELETE | `/api/v1/equipment/{id}` | Eliminar el registro de un equipo. |
+| | POST | `/api/v1/farms` | Crear una nueva piscigranja. |
+| | GET | `/api/v1/farms` | Listar las granjas del administrador autenticado. |
+| | DELETE | `/api/v1/farms/{id}` | Eliminar una granja. |
+| | PATCH | `/api/v1/farms/{id}/token` | Regenerar el token de acceso de una granja. |
+| | POST | `/api/v1/ponds` | Crear un nuevo estanque dentro de una granja. |
+| | GET | `/api/v1/ponds` | Listar todos los estanques disponibles. |
+| | GET | `/api/v1/ponds/{id}` | Obtener detalles de un estanque específico. |
+| | DELETE | `/api/v1/ponds/{id}` | Eliminar un estanque. |
+| | GET | `/api/v1/ponds/farm/{farmId}` | Listar todos los estanques de una granja específica. |
+| | POST | `/api/v1/ponds/{pondId}/assignments` | Asignar un operario/piscicultor a un estanque. |
+| | DELETE | `/api/v1/ponds/{pondId}/deassignments/{operatorId}` | Desvincular a un operario de un estanque. |
+
+#### Evidence
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-1.png)
+
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-2.png)
+
+![yaku-backend-dashboard-api](./assets/images/yaku-backend-3.png)
+
+
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
+- **Landing Page Desplegada**:
+Se utilizó Github Pages para desplegar la landing Page.
+https://acuanode.github.io/yaku-landing/
+
+![yaku-landing-desplegado](./assets/images/yaku-landing-desplegado.jpg)
+
+<br>
+
+- **Frontend Desplegado**:
+Se utilizó Azure, Aplicación Web Estática para desplegar el frontend.
+https://ashy-ocean-0e996d110.7.azurestaticapps.net/
+
+![yaku-frontend-desplegado](./assets/images/yaku-frontend-desplegado.jpg)
+
+<br>
+
+- **Backend Desplegado**:
+Se Utilizó Azure, Aplicación Web para desplegar el backend.
+https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
+
+<br>
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint
+
+- **Insights del Frontend**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-frontend
+
+![yaku-frontend-insights](./assets/images/yaku-frontend-insights.jpg)
+
+<br>
+
+- **Insights del Backend**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-backend
+
+![yaku-backend-insights](./assets/images/yaku-backend-insights.jpg)
+
+<br>
+
+- **Insights de la Landing**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-landing
+
+![yaku-landing-insights](./assets/images/yaku-landing-insights.jpg)
+
+
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
