@@ -96,7 +96,7 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 
 **GitHub Collaboration Insights**
 
-A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la fecha de entrega final el 24 de abril.
+A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la fecha de entrega final el 13 de mayo.
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
@@ -116,7 +116,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Análisis de actividad de commits registrada durante el periodo del 05/04 al 24/04.*
+*Análisis de actividad de commits registrada durante el periodo del 05/04 al 13/05.*
 
 ![Insights - Commits](./assets/images/commits.png)
 
