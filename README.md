@@ -1856,7 +1856,89 @@ Se utilizarán diferentes sistemas de organización para estructurar y categoriz
 
 ### 5.2.2. Labeling Systems
 
+Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación en YakuControl. A continuación se describen las etiquetas por tipo de usuario:
+ 
+**Etiquetado para Administradores de piscigranjas:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
+| Estanques | Gestión de piscinas de crianza | Listar, crear y monitorear estanques |
+| Equipos | Gestión de hardware desplegado | Registrar, asignar y editar sensores y bombas |
+| Operadores | Gestión de usuarios operativos | Crear y administrar cuentas de operadores |
+| Notificaciones | Centro de alertas del sistema | Ver y gestionar alertas de parámetros y eventos |
+| Configuración | Ajustes generales de la plataforma | Preferencias del sistema y parámetros de umbral |
+ 
+**Etiquetado para Piscicultores:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Vista general de monitoreo | Lecturas en tiempo real de los estanques asignados |
+| Estanques | Acceso a sus estanques asignados | Parámetros, historial y registro de lecturas |
+| Notificaciones | Alertas activas | Alertas pendientes de atención en su área |
+| Perfil | Información personal | Ver y editar sus datos de cuenta |
+ 
+---
+
 ### 5.2.3. SEO Tags and Meta Tags
+ 
+Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implementarán las siguientes etiquetas SEO y meta etiquetas en la landing page, aplicación web y movil:
+
+**Landing Page SEO Tags and Meta Tags:**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas |
+| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo. |
+| Meta Keywords | monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques |
+| Meta Author | YakuControl Team |
+| Meta Viewport | width=device-width, initial-scale=1.0 |
+| Meta Charset | UTF-8 |
+| OG Title | YakuControl - Tecnología Acuícola Inteligente |
+| OG Description | Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables. |
+| OG Image | URL del logotipo de YakuControl |
+| OG URL | URL de la landing page de YakuControl |
+ 
+Representación en HTML:
+ 
+```html
+<title>YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas</title>
+<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo.">
+<meta name="keywords" content="monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques">
+<meta name="author" content="YakuControl Team">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta property="og:title" content="YakuControl - Tecnología Acuícola Inteligente">
+<meta property="og:description" content="Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables.">
+<meta property="og:image" content="https://www.yakucontrol.app/assets/images/yakucontrol-logo.png">
+<meta property="og:url" content="https://www.yakucontrol.app">
+```
+ 
+**Web Application ASO / SEO:**
+ 
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Gestión de Piscigranjas |
+| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y oxígeno disuelto. |
+| Meta Keywords | acuicultura, monitoreo acuícola, gestión de estanques, sensores IoT, piscigranjas inteligentes |
+| Developer Name | YakuControl Team |
+| Category | Tecnología / Agricultura y Acuicultura |
+ 
+**Android Native-Mobile Application ASO (Google Play Store):**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Monitoreo de Piscigranjas |
+| Short Description | Monitorea y gestiona tus estanques acuícolas en tiempo real desde tu celular. |
+| Full Description | YakuControl es una plataforma tecnológica diseñada para piscicultores y administradores de piscigranjas que buscan modernizar su operación. Desde tu dispositivo Android, podrás visualizar en tiempo real los parámetros del agua de cada estanque, recibir alertas automáticas ante condiciones críticas, consultar el historial de lecturas y gestionar tus equipos y sensores, todo en un solo lugar. |
+| Keywords | monitoreo acuícola, piscigranjas, sensores de agua, gestión de estanques, acuicultura inteligente |
+| Developer Name | YakuControl Team |
+| Category | Herramientas / Productividad |
+| Icon | Ícono de la aplicación (512x512 PNG) |
+| Feature Graphic | Gráfico destacado (1024x500 PNG) |
+| Screenshots | Capturas de pantalla de la aplicación (mínimo 2, máximo 8) |
+ 
+---
 
 ### 5.2.4. Searching Systems
 
