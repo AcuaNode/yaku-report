@@ -2512,7 +2512,7 @@ https://ashy-ocean-0e996d110.7.azurestaticapps.net/
 
 <br>
 
-- **Frontend Desplegado**:
+- **Backend Desplegado**:
 Se Utilizó Azure, Aplicación Web para desplegar el backend.
 https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
 
