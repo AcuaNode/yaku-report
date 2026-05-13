@@ -2297,19 +2297,30 @@ Se implementó una página de aterrizaje profesional y responsiva diseñada para
 Se desarrolló el núcleo de servicios RESTful utilizando Spring Boot bajo los principios de Clean Architecture y Domain-Driven Design (DDD). Se implementaron satisfactoriamente los contextos de IAM (Seguridad JWT), Telemetry (Ingesta de datos), Equipment (Gestión de dispositivos) y Subscription. La API cuenta con persistencia en PostgreSQL y está documentada íntegramente mediante Swagger UI para facilitar la integración con las aplicaciones cliente.
 
 - **Evidencia:**
-![Backend API Evidence](ESCRIBIR_RUTA_DE_IMAGEN_AQUI)
+![Backend API Evidence](./assets/images/screenshots/swager-yaku.jpeg)
+![Backend API Evidence](./assets/images/screenshots/back-azure.jpeg)
 
-- **Link de despliegue:** [Ver API Documentation](ESCRIBIR_LINK_AQUI)
+- **Link de despliegue:** [https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/api/v1](https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/api/v1)
 
 ---
 
-### 3. Web Application - Dashboard v1
+### 3. Web Application 
 Se realizó la entrega de la primera versión funcional de la aplicación web orientada a administradores de piscigranjas. Esta versión inicial se centra en el dashboard de monitoreo, permitiendo la visualización en tiempo real de los datos de telemetría (temperatura, pH, turbidez) provenientes del backend. La interfaz permite al usuario tener una visión panorámica del estado de sus estanques y recibir alertas visuales ante condiciones críticas.
 
 - **Evidencia:**
-![Web App Dashboard Evidence](ESCRIBIR_RUTA_DE_IMAGEN_AQUI)
+![Web App Dashboard Evidence](./assets/images/screenshots/login-yaku.jpeg)
+![Web App Dashboard Evidence](./assets/images/screenshots/dasboard-yaku.jpeg)
 
-- **Link de despliegue:** [Ver Web App](ESCRIBIR_LINK_AQUI)
+- **Link de despliegue:** [https://ashy-ocean-0e996d110.7.azurestaticapps.net/](https://ashy-ocean-0e996d110.7.azurestaticapps.net/)
+
+---
+
+### 4. Azure
+Se realizé el despliegue del backend y fron-end en azure 
+
+ **Evidencia:**
+![azure](./assets/images/screenshots/azure-yaku.jpeg)
+
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
