@@ -2276,6 +2276,94 @@ En la siguiente tabla se muestran los commits realizados en la organizacion yaku
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
+**Estrategia de Pruebas - Sprint 1 (YakuControl)**
+Para este Sprint 1, la estrategia de pruebas de YakuControl se ha abordado en dos niveles: pruebas unitarias y de integración del Core Domain, y pruebas de aceptación bajo el enfoque BDD (Behavior-Driven Development).
+
+**a. Core Unit & Integration TestingBackend Application Core Testing Suite**
+Se ha implementado una suite robusta para garantizar que las reglas de negocio encapsuladas en los agregados funcionen correctamente de manera aislada. Se configuró la base de datos en memoria H2 para las pruebas de integración globales. En total, se ejecutaron 54 pruebas exitosas distribuidas en los siguientes módulos:
+- Subscription Module: 17 pruebas unitarias evaluando la creación, cancelación y reglas de negocio de los agregados Subscription y SubscriptionPeriod.
+<br>
+- IAM Module: 7 pruebas unitarias validando la autenticación, roles y creación del agregado User.
+<br>
+- Equipment Module: 15 pruebas unitarias verificando la lógica y asignación en los agregados Pond, Equipment y Farm.
+<br>
+- Notification Module: 14 pruebas unitarias para la validación de alertas en los modelos.
+<br>
+- Notification y RecipientInfo.Integration: 1 prueba global (YakuBackendApplicationTests) que verifica la inicialización correcta del contexto de Spring Boot.
+
+**b. Behavior-Driven Development (BDD) / Acceptance Tests**
+
+En concordancia con los Criterios de Aceptación de las User Stories seleccionadas para el Sprint, se han redactado pruebas de comportamiento utilizando el lenguaje Gherkin. A continuación se detallan los archivos .
+
+
+- feature:A. Gestión de Piscigranjas y Estanques (US10, US11)Archivo: farm-management.featureGherkinFeature: Gestión de Piscigranjas y Estanques (US10, US11)
+  Como administrador, deseo gestionar mis piscigranjas y estanques
+<br>
+
+**Scenario: Registro exitoso de piscigranja (US10)**
+
+    Given que el administrador ingresa datos validos de la piscigranja
+    When guarda la informacion mediante POST /api/v1/farms
+    Then se registra correctamente con codigo 201
+    And la respuesta contiene un farmToken generado automaticamente
+<br>
+
+**Scenario: Registro exitoso de estanque (US11)**
+
+    Given que el administrador ingresa los datos del estanque
+    When guarda la informacion mediante POST /api/v1/ponds
+    Then se registra correctamente con codigo 201
+    And el estanque tiene estado inicial "ACTIVE"
+
+- B. Autenticación y Registro de Usuarios (US17, US18)
+Archivo: authentication.featureGherkinFeature: Autenticacion y Registro de Usuarios (US17, US18)
+  Como usuario, deseo autenticarme y registrarme en el sistema
+
+  Scenario: Registro exitoso de usuario (US17)
+    Given que el administrador ingresa datos validos
+    When registra al usuario mediante POST /api/v1/users/signup
+    Then se crea la cuenta con codigo 201
+    And el usuario tiene el rol asignado correctamente
+
+  Scenario: Autenticacion exitosa (US18)
+    Given que existen credenciales validas
+    When inicia sesion mediante POST /api/v1/users/signin
+    Then accede al sistema con codigo 200
+    And la respuesta contiene un token JWT valido
+C. Monitoreo de Telemetría (US05)Archivo: telemetry-monitoring.featureGherkinFeature: Monitoreo de Telemetria de Estanques (US05)
+  Como piscicultor, deseo monitorear los parametros en tiempo real
+
+  Scenario: Visualizacion de parametros en tiempo real
+    Given que selecciona un estanque con ID 1
+    When carga el dashboard mediante GET /api/v1/telemetry/ponds/1/status
+    Then visualiza los valores actuales de los sensores con codigo 200
+    And la respuesta incluye pH, temperatura y oxigeno
+D. Registro de Dispositivos IoT (US31)Archivo: equipment-registration.featureGherkinFeature: Registro de Dispositivos IoT (US31)
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+
+  Scenario: Registro exitoso de dispositivo IoT
+    Given que ingreso datos validos del dispositivo
+    When guardo mediante POST /api/v1/equipment
+    Then el sistema lo registra correctamente con codigo 201
+    And el dispositivo tiene estado inicial "AVAILABLE"
+E. Gestión de Suscripciones (US19)Archivo: subscription-management.featureGherkinFeature: Gestion de Suscripciones (US19)
+  Como administrador, deseo suscribirme a un plan
+
+  Scenario: Suscripcion exitosa a un plan
+    Given que el administrador selecciona un plan existente
+    When confirma la suscripcion mediante POST /api/v1/subscriptions/{userId}/subscribe
+    Then se activa la suscripcion con codigo 200
+    And el estado de la suscripcion es "ACTIVE"
+F. Sistema de Alertas Inteligentes (US22)Archivo: alert-system.featureGherkinFeature: Sistema de Alertas Inteligentes (US22)  
+  Como usuario, deseo recibir alertas cuando superen los umbrales
+
+  Scenario: Notificacion push enviada por evento critico
+    Given que ocurre un evento critico en el estanque
+    When se detecta la anomalia
+    Then se envia una notificacion push al dispositivo registrado
+    And el tipo de notificacion es "CRITICAL"
+c. Repositorio y Evidencia de Commits de PruebasEl código fuente de nuestra suite de pruebas se encuentra alojado en el siguiente repositorio:URL: https://github.com/AcuaNode/yaku-backend/tree/feature/testsEvidencia de CommitsRepositoryBranchCommit IdCommit MessageCommit Message BodyDateAcuaNode/yaku-backendfeature/tests74293bdtest: added unit and integration testing with h2-12/05/2026AcuaNode/yaku-backendfeature/tests9882e9ctest: add Gherkin feature files for implemented user storiesSe agregaron archivos .feature para US10, US11, US31, US17, US18, US19, US05, US2212/05/2026
+
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
 En este Sprint 1, se han completado las bases fundamentales de la solución YakuControl, abarcando desde la presencia digital hasta la infraestructura de servicios y la primera interfaz de gestión.
