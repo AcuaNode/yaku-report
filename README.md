@@ -1834,6 +1834,38 @@ En la práctica, esto se traduce en: frases cortas y directas, verbos en imperat
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+**Web Style Guidelines**
+Para la interfaz web de YakuControl, orientada principalmente a administradores de piscigranjas, se han adoptado los estándares de Material Design 3. Esta decisión asegura una navegación intuitiva y una jerarquía visual clara, facilitando la gestión de grandes volúmenes de datos de telemetría y la configuración de los estanques[cite: 380]. El diseño utiliza un tema oscuro (Dark Mode) para reducir la fatiga visual durante el monitoreo prolongado.
+
+* **Buttons:** Los botones utilizan esquinas redondeadas y estados claros (hover, focused, disabled) para indicar interactividad[cite: 381]. Se prioriza el uso del color Verde Esmeralda (#00A859) para acciones principales (ej. "Nuevo Estanque") y variantes en "outline" para acciones secundarias.
+    
+    *[Insertar imagen de Stitch: UI_Buttons]*
+
+* **Data Cards & Indicators:** Utilizados masivamente en el Dashboard para representar la telemetría en tiempo real (Temperatura, pH, Oxígeno Disuelto). Utilizan anillos de progreso semánticos (Verde para normal, Rojo Coral para estado crítico) para proporcionar feedback visual inmediato sobre la salud del bio-activo.
+* **TextField & Selects:** Los campos de texto están diseñados para maximizar la legibilidad durante el ingreso de datos de nuevos operarios o equipos. Los componentes *Select* permiten una navegación eficiente dentro de formularios complejos, como la asignación de sensores a estanques específicos.
+
+**Mobile Style Guidelines**
+Para la aplicación móvil "Mobile Commander", el enfoque principal es la facilidad de uso y la reducción de la fricción cognitiva para el operario en campo. Al igual que en la versión web, se utiliza Material Design 3 como marco de referencia, adaptando sus componentes para ofrecer una interfaz táctil amigable en entornos al aire libre. 
+
+* **Offline-First & Feedback Components:** La arquitectura de la interfaz asume condiciones de conectividad inestables, ya que al final a veces no hay ni señal en esos lugares remotos. Por ello, se utilizan Progress Indicators (barras lineales e indicadores circulares) para gestionar la paciencia del usuario durante la sincronización asíncrona de datos locales con la nube.
+**Snackbar:** Se utilizan para proporcionar mensajes automáticos al pie de la pantalla informando sobre el estado de la red (ej. "Sincronizado localmente" o "Conexión restaurada"), permitiendo que el operario continúe su flujo sin interrupciones mayores+.
+    
+    *[Insertar imagen de Stitch: UI_Snackbars]*
+
+* **Buttons:** Los botones móviles presentan superficies táctiles amplias y bordes altamente redondeados para facilitar la interacción rápida, incluso si el operario usa guantes protectores.
+* **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Estanques", y "Alertas".
+
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo[cite: 485]. 
+
+* **Material y Diseño Físico:** La carcasa externa está fabricada en polímero de grado marino con certificación IP68, totalmente impermeable y resistente a la radiación UV para soportar la inmersión continua en los estanques de truchas. El diseño prioriza líneas lisas para evitar la acumulación de algas o residuos biológicos.
+* **Indicadores de Estado (LED RGB):** Cada nodo sensor cuenta con un anillo LED de alta luminosidad que comunica su estado operativo de forma visual para los operarios en campo sin necesidad de usar la aplicación móvil:
+    * **Verde Fijo:** Sensor calibrado y transmitiendo datos correctament.
+    * **Azul Parpadeante:** Sincronizando datos vía red de malla (Mesh) o Bluetooth.
+    * **Rojo Fijo o Parpadeante:** Alerta biológica crítica en el agua (ej. Oxígeno bajo) o fallo de baterí.
+
+    *[Insertar imagen de Stitch: IoT_Sensor_Render]*
+
 ## 5.2. Information Architecture
 
 En esta sección se describe la arquitectura de la información de la plataforma YakuControl, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas, búsqueda y navegación.
