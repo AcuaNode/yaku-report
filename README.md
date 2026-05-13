@@ -1835,7 +1835,7 @@ En la práctica, esto se traduce en: frases cortas y directas, verbos en imperat
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 **Web Style Guidelines**
-Para la interfaz web de YakuControl, orientada principalmente a administradores de piscigranjas, se han adoptado los estándares de Material Design 3. Esta decisión asegura una navegación intuitiva y una jerarquía visual clara, facilitando la gestión de grandes volúmenes de datos de telemetría y la configuración de los estanques[cite: 380]. El diseño utiliza un tema oscuro (Dark Mode) para reducir la fatiga visual durante el monitoreo prolongado.
+Para la interfaz web de YakuControl, orientada principalmente a administradores de piscigranjas, se han adoptado los estándares de Material Design 3. Esta decisión asegura una navegación intuitiva y una jerarquía visual clara, facilitando la gestión de grandes volúmenes de datos de telemetría y la configuración de los estanques. El diseño utiliza un tema oscuro (Dark Mode) para reducir la fatiga visual durante el monitoreo prolongado.
 
 * **Buttons:** Los botones utilizan esquinas redondeadas y estados claros (hover, focused, disabled) para indicar interactividad[cite: 381]. Se prioriza el uso del color Verde Esmeralda (#00A859) para acciones principales (ej. "Nuevo Estanque") y variantes en "outline" para acciones secundarias.
     
@@ -1856,7 +1856,7 @@ Para la aplicación móvil "Mobile Commander", el enfoque principal es la facili
 * **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Estanques", y "Alertas".
 
 **IoT Style Guidelines**
-Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo[cite: 485]. 
+Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo. 
 
 * **Material y Diseño Físico:** La carcasa externa está fabricada en polímero de grado marino con certificación IP68, totalmente impermeable y resistente a la radiación UV para soportar la inmersión continua en los estanques de truchas. El diseño prioriza líneas lisas para evitar la acumulación de algas o residuos biológicos.
 * **Indicadores de Estado (LED RGB):** Cada nodo sensor cuenta con un anillo LED de alta luminosidad que comunica su estado operativo de forma visual para los operarios en campo sin necesidad de usar la aplicación móvil:
