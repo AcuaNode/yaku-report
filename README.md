@@ -1995,7 +1995,7 @@ Para garantizar una experiencia fluida en YakuControl, se implementarán los sig
  
 **Landing Page Navigation:**
  
-La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal **"Solicitar Demo"** en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
  
 **Web Application Navigation:**
  
