@@ -1978,15 +1978,10 @@ El flujo de navegación es coherente en todas las secciones, asegurando que los 
 
 **Mobile Application Navigation (Android):**
 
-La aplicación móvil nativa para Android utiliza un **menú inferior 
-(bottom navigation bar)** como sistema de navegación principal, 
-accesible en todo momento desde cualquier vista. Este patrón es el 
-estándar recomendado por Material Design para aplicaciones móviles 
-con entre 3 y 5 destinos principales, ya que permite el acceso con 
-el pulgar sin necesidad de desplazar la mano.
+La aplicación móvil nativa para Android utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
+accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
 
 Las secciones accesibles desde el menú inferior son:
-
 - Dashboard: vista general con métricas resumen y alertas activas.
 - Estanques: listado y detalle de estanques asignados al usuario.
 - Notificaciones: centro de alertas y eventos del sistema.
@@ -1994,20 +1989,11 @@ Las secciones accesibles desde el menú inferior son:
 
 Adicionalmente, dentro de cada sección se implementan:
 
-- Navegación contextual hacia el detalle: al seleccionar un 
-estanque o equipo, se accede a su vista de detalle con un encabezado 
-que incluye "← Volver" para retroceder sin usar el botón nativo 
-del dispositivo.
-- Botones de acción flotante (FAB): para acciones de creación 
-rápida como registrar una nueva lectura o reportar una incidencia, 
-ubicados en la esquina inferior derecha de las vistas de listado.
-- Pull-to-refresh: en las vistas de monitoreo en tiempo real, 
-el usuario puede deslizar hacia abajo para forzar una actualización 
-de los datos del sensor.
+- Navegación contextual hacia el detalle: al seleccionar un estanque o equipo, se accede a su vista de detalle con un encabezado que incluye "← Volver" para retroceder sin usar el botón nativo del dispositivo.
+- Botones de acción flotante (FAB): para acciones de creación rápida como registrar una nueva lectura o reportar una incidencia, ubicados en la esquina inferior derecha de las vistas de listado.
+- Pull-to-refresh: en las vistas de monitoreo en tiempo real, el usuario puede deslizar hacia abajo para forzar una actualización de los datos del sensor.
 
-El flujo de navegación es coherente entre la versión web y móvil, 
-garantizando que los usuarios puedan alternar entre plataformas sin 
-necesidad de reaprender la estructura de la aplicación.
+El flujo de navegación es coherente entre la versión web y móvil, garantizando que los usuarios puedan alternar entre plataformas sin necesidad de reaprender la estructura de la aplicación.
 
 ## 5.3. Landing Page UI Design
 En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
