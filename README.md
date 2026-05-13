@@ -5,7 +5,7 @@
 <div style="text-align: center;">
     <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
     <h4 style="text-align: center;">Ingeniería de Software</h2> 
-    <h4 style="text-align: center"> Periodo: 202520 </h4>
+    <h4 style="text-align: center"> Periodo: 202610 </h4>
     <h4 style="text-align: center"> 1ASI0572 - Desarrollo de Soluciones IOT </h4>
     <h4 style="text-align: center"> NRC: 17755  </h4>
     <h4 style="text-align: center"> Docente: Marco Antonio León Baca </h4>
@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – abril 2025</h4>
+    <h4 style="text-align: center">Lima – Mayo 2026</h4>
 </div>
 
 <div style="page-break-after: always;"></div>
