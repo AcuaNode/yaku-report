@@ -2333,8 +2333,52 @@ Finalmente, se describe el prototipado interactivo de las aplicaciones, el cual 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
 
-
 ## 5.6. IoT Device Design
+
+### Introducción
+
+El dispositivo IoT de YakuControl está diseñado para monitorear en tiempo real las variables bioquímicas críticas de los estanques de piscigranja: temperatura, pH y turbidez. Las decisiones de diseño priorizan la simplicidad de conexión, la claridad visual del circuito y la correspondencia con la arquitectura de información definida para el sistema.
+
+### Componentes del dispositivo
+
+El nodo IoT está compuesto por los siguientes elementos:
+
+- **Microcontrolador ESP32**: Unidad central de procesamiento. Gestiona la lectura de los tres sensores, controla los actuadores y se encarga de la transmisión de datos hacia la nube.
+
+- **Sensor DS18B20**: Sensor digital de temperatura del agua. Conectado al GPIO 4 del ESP32 con una resistencia pull-up de 4.7kΩ para garantizar la estabilidad de la señal en el protocolo 1-Wire.
+
+- **Sensor de pH (Custom Chip)**: Sensor analógico que mide el nivel de pH del agua del estanque. Conectado al GPIO 34 del ESP32.
+
+- **Sensor de turbidez (Custom Chip)**: Sensor analógico que mide la turbidez del agua, indicador de presencia de sedimentos o contaminantes. Conectado al GPIO 35 del ESP32.
+
+- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los GPIO 25, 26 y 27 del ESP32 respectivamente.
+
+- **Breadboard**: Placa de prototipado utilizada para gestionar las conexiones de alimentación y las señales entre componentes.
+
+### Convención de colores de cables
+
+| Color | Función |
+|-------|---------|
+| Rojo | Alimentación 3.3V que sale del ESP32 hacia el breadboard |
+| Naranja | VCC de cada sensor (alimentación desde el breadboard) |
+| Negro | GND — tierra de todos los componentes |
+| Amarillo | Señal DATA del sensor DS18B20 hacia GPIO 4 |
+| Morado | Señal OUT del sensor de turbidez hacia GPIO 35 |
+| Azul | Señal OUT del sensor de pH hacia GPIO 34 |
+| Verde y marrón | Conexiones internas de resistencias (pull-up y limitadoras de corriente) |
+
+### Diagrama del circuito
+
+El siguiente diagrama fue elaborado en Wokwi y muestra el diseño físico 
+del nodo IoT de YakuControl:
+
+![Diagrama IoT YakuControl](./assets/images/wokwi-diagram.png)
+
+[Ver diagrama en Wokwi](https://wokwi.com/projects/463918475424417793)
+
+### Descripción del flujo
+
+El ESP32 alimenta todos los componentes a través del breadboard con sus 3.3V. Cada sensor entrega su lectura al microcontrolador: el DS18B20 mediante protocolo digital 1-Wire por GPIO 4, mientras que el sensor de pH y el de turbidez envían señales analógicas por GPIO 34 y GPIO 35 respectivamente. Ante una lectura fuera del rango aceptable, el ESP32 activa el LED correspondiente como alerta visual inmediata en el estanque, mientras simultáneamente transmite los datos hacia la plataforma en la nube para su procesamiento y notificación remota.
 
 <div style="page-break-after: always;"></div>
 
