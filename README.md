@@ -1839,32 +1839,41 @@ Para la interfaz web de YakuControl, orientada principalmente a administradores 
 
 * **Buttons:** Los botones utilizan esquinas redondeadas y estados claros (hover, focused, disabled) para indicar interactividad[cite: 381]. Se prioriza el uso del color Verde Esmeralda (#00A859) para acciones principales (ej. "Nuevo Estanque") y variantes en "outline" para acciones secundarias.
     
-    *[Insertar imagen de Stitch: UI_Buttons]*
+![YakuControl web buttom](./assets/disenoui/web-buttom.png)
 
 * **Data Cards & Indicators:** Utilizados masivamente en el Dashboard para representar la telemetría en tiempo real (Temperatura, pH, Oxígeno Disuelto). Utilizan anillos de progreso semánticos (Verde para normal, Rojo Coral para estado crítico) para proporcionar feedback visual inmediato sobre la salud del bio-activo.
+
+![YakuControl web card](./assets/disenoui/web-card.png)
+
 * **TextField & Selects:** Los campos de texto están diseñados para maximizar la legibilidad durante el ingreso de datos de nuevos operarios o equipos. Los componentes *Select* permiten una navegación eficiente dentro de formularios complejos, como la asignación de sensores a estanques específicos.
+
+![YakuControl web field](./assets/disenoui/web-field.png)
 
 **Mobile Style Guidelines**
 Para la aplicación móvil "Mobile Commander", el enfoque principal es la facilidad de uso y la reducción de la fricción cognitiva para el operario en campo. Al igual que en la versión web, se utiliza Material Design 3 como marco de referencia, adaptando sus componentes para ofrecer una interfaz táctil amigable en entornos al aire libre. 
 
 * **Offline-First & Feedback Components:** La arquitectura de la interfaz asume condiciones de conectividad inestables, ya que al final a veces no hay ni señal en esos lugares remotos. Por ello, se utilizan Progress Indicators (barras lineales e indicadores circulares) para gestionar la paciencia del usuario durante la sincronización asíncrona de datos locales con la nube.
-**Snackbar:** Se utilizan para proporcionar mensajes automáticos al pie de la pantalla informando sobre el estado de la red (ej. "Sincronizado localmente" o "Conexión restaurada"), permitiendo que el operario continúe su flujo sin interrupciones mayores+.
-    
-    *[Insertar imagen de Stitch: UI_Snackbars]*
+
+![YakuControl movil snack bar](./assets/disenoui/movil-snackbar.png)
 
 * **Buttons:** Los botones móviles presentan superficies táctiles amplias y bordes altamente redondeados para facilitar la interacción rápida, incluso si el operario usa guantes protectores.
-* **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Estanques", y "Alertas".
+
+![YakuControl movil buttom](./assets/disenoui/movil-buttom.png)
+
+* **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Perfil", y "Alertas".
+
+![YakuControl movil nav bar](./assets/disenoui/movil-bar.png)
 
 **IoT Style Guidelines**
 Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo. 
 
-* **Material y Diseño Físico:** La carcasa externa está fabricada en polímero de grado marino con certificación IP68, totalmente impermeable y resistente a la radiación UV para soportar la inmersión continua en los estanques de truchas. El diseño prioriza líneas lisas para evitar la acumulación de algas o residuos biológicos.
-* **Indicadores de Estado (LED RGB):** Cada nodo sensor cuenta con un anillo LED de alta luminosidad que comunica su estado operativo de forma visual para los operarios en campo sin necesidad de usar la aplicación móvil:
-    * **Verde Fijo:** Sensor calibrado y transmitiendo datos correctament.
-    * **Azul Parpadeante:** Sincronizando datos vía red de malla (Mesh) o Bluetooth.
-    * **Rojo Fijo o Parpadeante:** Alerta biológica crítica en el agua (ej. Oxígeno bajo) o fallo de baterí.
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y de ensamblaje de los nodos sensores (AcuaNode) orientados a un entorno rural. El enfoque prioriza la funcionalidad, el bajo costo de implementación y la facilidad de reparación en campo sobre la estética refinada.
 
-    *[Insertar imagen de Stitch: IoT_Sensor_Render]*
+* **Carcasa y Ensamblaje Físico:** Los dispositivos se alojan en cajas estancas industriales de PVC o ABS (grado IP65/IP67), modificadas con prensaestopas para el paso seguro de las sondas hacia el agua. Se utiliza sellador industrial en las uniones para garantizar la impermeabilidad, manteniendo un diseño modular que permita a los operarios abrir la caja y cambiar una batería sin necesidad de herramientas complejas.
+* **Feedback Visual y de Estado:** En lugar de interfaces complejas o pantallas, el sistema utiliza indicadores electrónicos básicos para no encarecer el producto. Se emplea un módulo LED estándar de un solo color (o la propia luz de la placa microcontroladora visible a través de una tapa translúcida):
+    * **Luz estática:** Indica que el dispositivo está encendido y capturando datos.
+    * **Luz parpadeante:** Indica que el dispositivo está intentando sincronizar la información vía red local.
 
 ## 5.2. Information Architecture
 
