@@ -1886,7 +1886,7 @@ Se utilizarán diferentes sistemas de organización para estructurar y categoriz
 1. **Visual Organization (organización visual del contenido):**
     - **Jerárquica (visual hierarchy):** La información se presenta en niveles de importancia, con los elementos más crítico destacados visualmente mediante tamaños de fuente, colores semánticos y espaciado. Por ejemplo, los valores fuera de rango se resaltan en rojo (`#E53935`) mientras que los parámetros óptimos aparecen en verde (`#43A047`). Este sistema permite identificar situaciones críticas de un vistazo sin revisar cada dato individualmente.
     - **Secuencial (step-by-step to accomplish):** La información se organiza en orden lógico para guiar al usuario en procesos específicos. Por ejemplo, al registrar un nuevo estanque, el sistema guía desde los datos básicos hasta la asignación de sensores y equipos, evitando omitir pasos esenciales.
-    - **Matricial (matrix to show relationships):** La información se presenta en tablas comparativas. Por ejemplo, en "Lecturas en Tiempo Real" del Dashboard, se pueden comparar temperatura, pH y oxígeno disuelto de múltiples estanques simultáneamente, facilitando la detección de anomalías.
+    - **Matricial (matrix to show relationships):** La información se presenta en tablas comparativas. Por ejemplo, en "Lecturas en Tiempo Real" del Dashboard, se pueden comparar temperatura, pH y turbidez de múltiples estanques simultáneamente, facilitando la detección de anomalías.
 
 2. **Categorization Schemes (esquemas de categorización)**
     - **Por tema (by topic):** La información se agrupa en categorías temáticas: "Estanques", "Equipos", "Operadores" y "Notificaciones", permitiendo navegar directamente hacia el área de interés.
