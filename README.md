@@ -2351,7 +2351,7 @@ El nodo IoT está compuesto por los siguientes elementos:
 
 - **Sensor de turbidez (Custom Chip)**: Sensor analógico que mide la turbidez del agua, indicador de presencia de sedimentos o contaminantes. Conectado al GPIO 35 del ESP32.
 
-- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los GPIO 25, 26 y 27 del ESP32 respectivamente.
+- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los GPIO 25, 18 y 19 del ESP32 respectivamente.
 
 - **Breadboard**: Placa de prototipado utilizada para gestionar las conexiones de alimentación y las señales entre componentes.
 
