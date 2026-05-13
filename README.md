@@ -2250,6 +2250,7 @@ entonces Backend guarda los datos en la base de datos.</td>
 
 </table>
 
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.4. Development Evidence for Sprint Review
 
@@ -2273,6 +2274,8 @@ En la siguiente tabla se muestran los commits realizados en la organizacion yaku
 | AcuaNode/yaku-landing      | main (asumido; no explicitado) | 556b08bf683771d4e99f915718edd5f46b8a743a | Delete CNAME    | (vacío)            | 2026-05-08T06:54:32Z    |
 | AcuaNode/yaku-landing      | main (asumido; no explicitado) | aa9e68c6b6d8f92eefce62d01fe5fd1aa365c0b1 | Create CNAME    | (vacío)            | 2026-05-08T06:54:11Z    |
 | AcuaNode/yaku-landing      | main (asumido; no explicitado) | 718f1bac8adcf7e6fd0c62aed5a92e6cdf11766b | feat: add code  | (vacío)            | 2026-05-08T06:52:55Z    |
+
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
@@ -2315,54 +2318,88 @@ En concordancia con los Criterios de Aceptación de las User Stories seleccionad
     Then se registra correctamente con codigo 201
     And el estanque tiene estado inicial "ACTIVE"
 
-- B. Autenticación y Registro de Usuarios (US17, US18)
+- feature: B. Autenticación y Registro de Usuarios (US17, US18)
 Archivo: authentication.featureGherkinFeature: Autenticacion y Registro de Usuarios (US17, US18)
   Como usuario, deseo autenticarme y registrarme en el sistema
 
-  Scenario: Registro exitoso de usuario (US17)
+<br>
+
+  **Scenario: Registro exitoso de usuario (US17)**
+
     Given que el administrador ingresa datos validos
     When registra al usuario mediante POST /api/v1/users/signup
     Then se crea la cuenta con codigo 201
     And el usuario tiene el rol asignado correctamente
 
-  Scenario: Autenticacion exitosa (US18)
+  **Scenario: Autenticacion exitosa (US18)**
+
     Given que existen credenciales validas
     When inicia sesion mediante POST /api/v1/users/signin
     Then accede al sistema con codigo 200
     And la respuesta contiene un token JWT valido
-C. Monitoreo de Telemetría (US05)Archivo: telemetry-monitoring.featureGherkinFeature: Monitoreo de Telemetria de Estanques (US05)
+
+- feature C. Monitoreo de Telemetría (US05)
+Archivo: telemetry-monitoring.featureGherkinFeature: Monitoreo de Telemetria de Estanques (US05)
   Como piscicultor, deseo monitorear los parametros en tiempo real
 
-  Scenario: Visualizacion de parametros en tiempo real
+<br>
+
+  **Scenario: Visualizacion de parametros en tiempo real**
+
     Given que selecciona un estanque con ID 1
     When carga el dashboard mediante GET /api/v1/telemetry/ponds/1/status
     Then visualiza los valores actuales de los sensores con codigo 200
     And la respuesta incluye pH, temperatura y oxigeno
-D. Registro de Dispositivos IoT (US31)Archivo: equipment-registration.featureGherkinFeature: Registro de Dispositivos IoT (US31)
-  Como administrador, quiero registrar dispositivos IoT en el sistema
 
-  Scenario: Registro exitoso de dispositivo IoT
+- feature D. Registro de Dispositivos IoT (US31)Archivo: equipment-registration.featureGherkinFeature: Registro de Dispositivos IoT (US31)
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+<br>
+
+**Scenario: Registro exitoso de dispositivo IoT**
+
     Given que ingreso datos validos del dispositivo
     When guardo mediante POST /api/v1/equipment
     Then el sistema lo registra correctamente con codigo 201
     And el dispositivo tiene estado inicial "AVAILABLE"
-E. Gestión de Suscripciones (US19)Archivo: subscription-management.featureGherkinFeature: Gestion de Suscripciones (US19)
+
+- feature E. Gestión de Suscripciones (US19)Archivo: subscription-management.featureGherkinFeature: Gestion de Suscripciones (US19)
+
   Como administrador, deseo suscribirme a un plan
 
-  Scenario: Suscripcion exitosa a un plan
+<br>
+
+  **Scenario: Suscripcion exitosa a un plan**
+
     Given que el administrador selecciona un plan existente
     When confirma la suscripcion mediante POST /api/v1/subscriptions/{userId}/subscribe
     Then se activa la suscripcion con codigo 200
     And el estado de la suscripcion es "ACTIVE"
-F. Sistema de Alertas Inteligentes (US22)Archivo: alert-system.featureGherkinFeature: Sistema de Alertas Inteligentes (US22)  
+- feature F. Sistema de Alertas Inteligentes (US22)Archivo: alert-system.featureGherkinFeature: Sistema de Alertas Inteligentes (US22)  
   Como usuario, deseo recibir alertas cuando superen los umbrales
+<br>
 
-  Scenario: Notificacion push enviada por evento critico
+**Scenario: Notificacion push enviada por evento critico**
+
     Given que ocurre un evento critico en el estanque
     When se detecta la anomalia
     Then se envia una notificacion push al dispositivo registrado
     And el tipo de notificacion es "CRITICAL"
-c. Repositorio y Evidencia de Commits de PruebasEl código fuente de nuestra suite de pruebas se encuentra alojado en el siguiente repositorio:URL: https://github.com/AcuaNode/yaku-backend/tree/feature/testsEvidencia de CommitsRepositoryBranchCommit IdCommit MessageCommit Message BodyDateAcuaNode/yaku-backendfeature/tests74293bdtest: added unit and integration testing with h2-12/05/2026AcuaNode/yaku-backendfeature/tests9882e9ctest: add Gherkin feature files for implemented user storiesSe agregaron archivos .feature para US10, US11, US31, US17, US18, US19, US05, US2212/05/2026
+<br>
+
+**c. Repositorio y Evidencia de Commits de Pruebas**
+
+El código fuente de nuestra suite de pruebas se encuentra alojado en el siguiente repositorio:URL: https://github.com/AcuaNode/yaku-backend/tree/feature/testsEvidencia 
+
+<br>
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| AcuaNode/yaku-backend | feature/tests | `74293bd` | test: added unit and integration testing with h2 | - | 12/05/2026 |
+| AcuaNode/yaku-backend | feature/tests | `9882e9c` | test: add Gherkin feature files for implemented user stories | Se agregaron archivos de especificación Gherkin (.feature) para las user stories implementadas en el backend: - equipment/farm-management.feature - equipment/equipment-registration.feature - iam/authentication.feature - subscription/subscription-management.feature - telemetry/telemetry-monitoring.feature - notification/alert-system.feature | 12/05/2026 |
+
+<br>
+
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
@@ -2409,6 +2446,7 @@ Se realizé el despliegue del backend y fron-end en azure
  **Evidencia:**
 ![azure](./assets/images/screenshots/azure-yaku.jpeg)
 
+<div style="page-break-after: always;"></div>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
@@ -2454,9 +2492,62 @@ En esta sección se presenta la documentación de los servicios RESTful desarrol
 ![yaku-backend-dashboard-api](./assets/images/yaku-backend-3.png)
 
 
+<div style="page-break-after: always;"></div>
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
+- **Landing Page Desplegada**:
+Se utilizó Github Pages para desplegar la landing Page.
+https://acuanode.github.io/yaku-landing/
+
+![yaku-landing-desplegado](./assets/images/yaku-landing-desplegado.jpg)
+
+<br>
+
+- **Frontend Desplegado**:
+Se utilizó Azure, Aplicación Web Estática para desplegar el frontend.
+https://ashy-ocean-0e996d110.7.azurestaticapps.net/
+
+![yaku-frontend-desplegado](./assets/images/yaku-frontend-desplegado.jpg)
+
+<br>
+
+- **Frontend Desplegado**:
+Se Utilizó Azure, Aplicación Web para desplegar el backend.
+https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
+
+<br>
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint
+
+- **Insights del Frontend**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-frontend
+
+![yaku-frontend-insights](./assets/images/yaku-frontend-insights.jpg)
+
+<br>
+
+- **Insights del Backend**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-backend
+
+![yaku-backend-insights](./assets/images/yaku-backend-insights.jpg)
+
+<br>
+
+- **Insights de la Landing**
+Link del repositorio: 
+https://github.com/AcuaNode/yaku-landing
+
+![yaku-landing-insights](./assets/images/yaku-landing-insights.jpg)
+
+
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
