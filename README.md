@@ -3001,3 +3001,5 @@ Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
+Video de Expo Tb1:
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311064_upc_edu_pe/IQDr_G4JDYGgRZKS7ojHPay1AVABkjLnyQHjPSYEtCnzIPo?e=8OlaAS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
