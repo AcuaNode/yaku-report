@@ -2369,12 +2369,11 @@ El nodo IoT está compuesto por los siguientes elementos:
 
 ### Diagrama del circuito
 
-El siguiente diagrama fue elaborado en Wokwi y muestra el diseño físico 
-del nodo IoT de YakuControl:
+El siguiente diagrama fue elaborado en Wokwi y muestra el diseño físico del nodo IoT de YakuControl:
 
 ![Diagrama IoT YakuControl](./assets/images/wokwi-diagram.png)
 
-[Ver diagrama en Wokwi](https://wokwi.com/projects/463918475424417793)
+[https://wokwi.com/projects/463918475424417793](https://wokwi.com/projects/463918475424417793)
 
 ### Descripción del flujo
 
