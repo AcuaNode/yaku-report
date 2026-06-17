@@ -2976,6 +2976,53 @@ https://github.com/AcuaNode/yaku-landing
 
 <div style="page-break-after: always;"></div>
 
+---
+### 6.2.2. Sprint 2
+#### 6.2.2.1.Sprint Planning 2.
+#### 6.2.2.2.Aspect Leaders and Collaborators.
+#### 6.2.2.3.Sprint Backlog 2.
+#### 6.2.2.4.Development Evidence for Sprint Review.
+#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+#### 6.2.2.6.Execution Evidence for Sprint Review.
+#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.2.9.Team Collaboration Insights during Sprint.
+## 6.3. Validation Interviews.
+### 6.3.1. Diseño de Entrevistas.
+**1. Introducción**
+Buenos días/tardes. Gracias por participar en esta entrevista de validación.
+Actualmente estamos desarrollando una solución IoT para el monitoreo de la calidad del agua en criaderos de truchas. El objetivo es ayudar a los piscicultores a supervisar parámetros críticos como temperatura, pH y turbidez, generando alertas tempranas ante posibles riesgos para los peces.
+
+**2. Presentación del Entrevistado**
+Nombre:
+Edad:
+Experiencia en piscicultura:
+
+**3. Presentación de la Solución**
+**4. Preguntas**
+
+- ¿Comprendió fácilmente el propósito de la solución?
+
+- ¿Le resultó fácil navegar por la aplicación?
+- ¿Encontró rápidamente la información que necesitaba?
+- ¿Los botones, iconos y pantallas mantienen un diseño consistente?
+
+- Después de observar el sistema, ¿considera que resuelve un problema real en la gestión de criaderos de "truchas"(peces)?
+- ¿Qué funcionalidad considera más útil?
+- ¿Existe alguna funcionalidad que considere innecesaria?
+- ¿Considera que esta solución podría reducir pérdidas de peces ocasionadas por problemas en la calidad del agua?
+
+**Preguntas de cierre**
+- Si esta solución estuviera disponible actualmente, ¿la utilizaría?
+- ¿Estaría dispuesto a recomendar esta solución a otros piscicultores?
+- ¿Qué fue lo que más le gustó de la solución?
+- ¿Qué aspectos considera que podrían mejorarse?
+
+### 6.3.2. Registro de Entrevistas.
+### 6.3.3. Evaluaciones según heurísticas.
+## 6.4. Video About-the-Product.
+
+
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
 
