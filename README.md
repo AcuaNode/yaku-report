@@ -864,7 +864,7 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 | **Administrador** | Usuario del sistema con rol `ROLE_ADMIN`. Es el dueño o gestor de la piscigranja. Accede al Web Dashboard para revisar históricos, gestionar usuarios, equipos y suscripciones. | Identity & Access |
 | **Farm Key** | Clave única de acceso generada por el IAM Context y asociada a una piscigranja. Utilizada por el dispositivo IoT para autenticarse y enviar telemetría al sistema sin necesidad de credenciales de usuario. | Identity & Access |
 | **Token JWT** | Token de autenticación de corta duración emitido por el IAM Context tras el inicio de sesión. Lleva embebido el rol del usuario (`ROLE_WORKER` o `ROLE_ADMIN`) y es validado por todos los contextos para autorizar operaciones. | Identity & Access |
-| **Dispositivo IoT** | Hardware físico instalado en el estanque, compuesto por un microcontrolador ESP32-WROOM-32 con sensores sumergibles y actuadores. Registrado y gestionado en el Equipment Context. Envía telemetría bruta al sistema vía Wi-Fi. | Equipment |
+| **Dispositivo IoT** | Hardware físico instalado en el estanque, compuesto por un microcontrolador Arduino UNO con sensores sumergibles y actuadores. Registrado y gestionado en el Equipment Context. Envía telemetría bruta al sistema vía Wi-Fi. | Equipment |
 | **Sensor** | Componente electrónico del dispositivo IoT que mide una variable bioquímica del agua. Los sensores activos son: temperatura (DS18B20), pH (PH-4502C) y turbidez. Vinculado a un estanque dentro del Equipment Context. | Equipment |
 | **Actuador** | Componente electrónico del dispositivo IoT que ejecuta una acción física en el estanque al recibir una instrucción. Actuadores activos: módulo relé (bomba de agua) y módulo MOSFET (tira LED). | Equipment |
 | **Vinculación** | Acto de asociar un dispositivo IoT (con sus sensores y actuadores) a un estanque específico dentro de una piscigranja. Solo el Administrador puede realizar esta operación. | Equipment |
@@ -1102,7 +1102,7 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 ![Domain Message Flow 2](./assets/images/screenshots/domain-message-flow-2.jpg)
 
 **Escenario 3:** Alertar ante detección de anomalías de los sensores
-**Objetivo:** El sensor ESP32 detecta una anomalía en los parámetros del agua y el sistema genera y envía alertas automáticas al administrador y al piscicultor en tiempo real.
+**Objetivo:** El dispositivo Arduino UNO detecta una anomalía en los parámetros del agua y el sistema genera y envía alertas automáticas al administrador y al piscicultor en tiempo real.
 
 ![Domain Message Flow 3](./assets/images/screenshots/domain-message-flow-3.jpg)
 
@@ -2345,15 +2345,15 @@ El dispositivo IoT de YakuControl está diseñado para monitorear en tiempo real
 
 El nodo IoT está compuesto por los siguientes elementos:
 
-- **Microcontrolador ESP32**: Unidad central de procesamiento. Gestiona la lectura de los tres sensores, controla los actuadores y se encarga de la transmisión de datos hacia la nube.
+- **Microcontrolador Arduino UNO**: Unidad central de procesamiento. Gestiona la lectura de los tres sensores, controla los actuadores y se encarga de la transmisión de datos hacia la nube.
 
-- **Sensor DS18B20**: Sensor digital de temperatura del agua. Conectado al GPIO 4 del ESP32 con una resistencia pull-up de 4.7kΩ para garantizar la estabilidad de la señal en el protocolo 1-Wire.
+- **Sensor DS18B20**: Sensor digital de temperatura del agua. Conectado al pin 4 del Arduino UNO con una resistencia pull-up de 4.7kΩ para garantizar la estabilidad de la señal en el protocolo 1-Wire.
 
-- **Sensor de pH (Custom Chip)**: Sensor analógico que mide el nivel de pH del agua del estanque. Conectado al GPIO 34 del ESP32.
+- **Sensor de pH (Custom Chip)**: Sensor analógico que mide el nivel de pH del agua del estanque. Conectado al pin A0 del Arduino UNO.
 
-- **Sensor de turbidez (Custom Chip)**: Sensor analógico que mide la turbidez del agua, indicador de presencia de sedimentos o contaminantes. Conectado al GPIO 35 del ESP32.
+- **Sensor de turbidez (Custom Chip)**: Sensor analógico que mide la turbidez del agua, indicador de presencia de sedimentos o contaminantes. Conectado al pin A1 del Arduino UNO.
 
-- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los GPIO 25, 18 y 19 del ESP32 respectivamente.
+- **3 LEDs (actuadores de alerta)**: Indicadores visuales de estado crítico, uno por cada variable monitoreada. Cada LED cuenta con una resistencia de 220Ω para limitar la corriente. Conectados a los pines 6, 7 y 8 del Arduino UNO respectivamente.
 
 - **Breadboard**: Placa de prototipado utilizada para gestionar las conexiones de alimentación y las señales entre componentes.
 
@@ -2361,7 +2361,7 @@ El nodo IoT está compuesto por los siguientes elementos:
 
 | Color | Función |
 |-------|---------|
-| Rojo | Alimentación 3.3V que sale del ESP32 hacia el breadboard |
+| Rojo | Alimentación 5V que sale del Arduino UNO hacia el breadboard |
 | Naranja | VCC de cada sensor (alimentación desde el breadboard) |
 | Negro | GND — tierra de todos los componentes |
 | Amarillo | Señal DATA del sensor DS18B20 hacia GPIO 4 |
@@ -2379,7 +2379,7 @@ El siguiente diagrama fue elaborado en Wokwi y muestra el diseño físico del no
 
 ### Descripción del flujo
 
-El ESP32 alimenta todos los componentes a través del breadboard con sus 3.3V. Cada sensor entrega su lectura al microcontrolador: el DS18B20 mediante protocolo digital 1-Wire por GPIO 4, mientras que el sensor de pH y el de turbidez envían señales analógicas por GPIO 34 y GPIO 35 respectivamente. Ante una lectura fuera del rango aceptable, el ESP32 activa el LED correspondiente como alerta visual inmediata en el estanque, mientras simultáneamente transmite los datos hacia la plataforma en la nube para su procesamiento y notificación remota.
+El Arduino UNO alimenta todos los componentes a través del breadboard con sus 5V. Cada sensor entrega su lectura al microcontrolador: el DS18B20 mediante protocolo digital 1-Wire por el pin 4, mientras que el sensor de pH y el de turbidez envían señales analógicas por los pines A0 y A1 respectivamente. Ante una lectura fuera del rango aceptable, el Arduino UNO activa el LED correspondiente como alerta visual inmediata en el estanque, mientras simultáneamente transmite los datos hacia la plataforma en la nube para su procesamiento y notificación remota.
 
 <div style="page-break-after: always;"></div>
 
