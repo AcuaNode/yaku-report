@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+﻿<div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
@@ -2452,8 +2452,8 @@ Para mantener un historial de cambios legible y profesional, el equipo aplica la
 ### 6.1.4. Software Deployment Configuration
 
 ## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.1. Sprint n
-#### 6.2.1.1. Sprint Planning n
+### 6.2.1. Sprint 1
+#### 6.2.1.1. Sprint Planning 1
 <table>
     <thead>
         <tr>
@@ -2543,7 +2543,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 |Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | L | C | C |
 |Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | C | C | C | L |
 
-#### 6.2.1.3. Sprint Backlog n
+#### 6.2.1.3. Sprint Backlog 1
 <table>
   <tr>
     <td> <strong>Sprint #</strong></td>
@@ -2566,37 +2566,6 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   </tr>
   <!---------------------------------------------------------------------- -->
   <tr>
-    <td rowspan="1" align="center"> US01 </td>
-    <td rowspan="1" align="center"> Propuesta de Valor</td>
-    <td align="center"> TA01 </td>
-     <td align="center">Diseño Landing </td>
-    <td align="center">Diseñar la sección de beneficios clave en la landing page.</td>
-    <td align="center"> 0.5 </td>
-    <td align="center"> Urrutia Peña Jasmin Adriana</td>
-    <td align="center">Done</td>
-  </tr>
-    <!---------------------------------------------------------------------- -->
-  <tr>
-    <td rowspan="1" align="center"> US02 </td>
-    <td rowspan="1" align="center"> Catálogo de Planes</td>
-    <td align="center"> TA01 </td>
-     <td align="center">Precios y Planes </td>
-    <td align="center">Diseñar la sección de suscripciones y costos.</td>
-    <td align="center"> 0.5 </td>
-    <td align="center"> Urrutia Peña Jasmin Adriana</td>
-    <td align="center">Done</td>
-  </tr>
-    <!---------------------------------------------------------------------- -->
-  <tr>
-    <td rowspan="1" align="center"> US03 </td>
-    <td rowspan="1" align="center"> FAQ de Soporte</td>
-    <td align="center"> TA01 </td>
-     <td align="center">Preguntas Frecuentes </td>
-    <td align="center">Diseñar la sección FAQ para resolución de dudas.</td>
-    <td align="center"> 0.5 </td>
-    <td align="center"> Urrutia Peña Jasmin Adriana</td>
-    <td align="center">Done</td>
-  </tr>
     <!---------------------------------------------------------------------- -->
   <tr>
     <td rowspan="1" align="center"> US04 </td>
@@ -2979,8 +2948,221 @@ https://github.com/AcuaNode/yaku-landing
 ---
 ### 6.2.2. Sprint 2
 #### 6.2.2.1.Sprint Planning 2.
+<table>
+    <thead>
+        <tr>
+            <th>Sprint #</th>
+            <th>Sprint 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2"><b>Sprint Planning Background</b></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>2026-05-08</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>1:00 PM</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Aula H51</td>
+        </tr>
+        <tr>
+            <td>Prepared by</td>
+            <td>Lopez Acuna, Mario Joaquin</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>
+                <li>Aponte Cruzado, Andrea Marielena</li>
+                <li>Lopez Acuna, Mario Joaquin</li>
+                <li>Urrutia Pena, Jasmin Adriana</li>
+                <li>Vivanco Salazar, Rafael Andres</li>
+                <li>Velasquez Chambi, Ruben Genaro</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Review Summary</td>
+            <td>
+                Se realizo la lading page, la primera version de la aplicacion web y backend y el diseño de la aplicacion movil
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Retrospective Summary</td>
+            <td>
+                El equipo diseño la arquitectura de la solucion y como interactuara el front-end del admin y el operador con el back-end
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+        </tr>
+        <tr>
+            <td>Sprint 2 Goal</td>
+            <td>
+               <li><b>Landing Page:</b> Nuestro enfoque está en mantener y optimizar la landing page profesional y responsiva ya desarrollada para AcuaNode. Creemos que esto consolidará nuestra presencia digital y comunicación de valor para clientes B2B. Esto se confirmará cuando la landing page cuente con métricas de rendimiento optimizadas y actualizaciones de contenido en producción.</li>
+<li><b>Backend Services:</b> Nuestro enfoque está en mantener el 100% de los servicios core del backend implementados bajo Domain-Driven Design (DDD) y Arquitectura Limpia, con integración completa de Firebase  notificaciones push, y Stripe para el procesamiento de pagos y suscripciones. Creemos que esto proporciona una base sólida, escalable y completamente operativa para la telemetría y notificaciones. Esto se confirmará cuando todos los contextos (IAM, Telemetry, Notification,equipment,suscription) estén en producción con su lógica de negocio validada y documentación OpenAPI actualizada.</li>
+<li><b>Web Application:</b> Nuestro enfoque está en la evolución de la Aplicación Web para administradores, la cual ya ha sido desarrollada al 100%. Creemos que esto entrega visibilidad en tiempo real y control total a los gestores de piscigranjas. Esto se confirmará cuando el dashboard web consolide datos históricos de telemetría, reportes avanzados y funcionalidades de gestión administrativa completamente operativas.</li>
+<li><b>Mobile Design:</b> Nuestro enfoque está en el mantenimiento y mejora continua de la aplicación móvil para piscicultores, desarrollada al 100% en Flutter. Creemos que esto garantiza una experiencia de usuario fluida, intuitiva y multiplataforma para las operaciones en campo. Esto se confirmará cuando la aplicación móvil esté publicada en Firebase con todos los flujos de usuario validados y aprobados por el equipo.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Velocity</td>
+            <td>
+                30
+            </td>
+        </tr>
+        <tr>
+            <td>Sum of story points</td>
+            <td>
+                37
+            </td>
+        </tr>
+    </tbody>
+</table> 
+
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+En esta sección el equipo que incluye la elaboración de un artefacto Leadership-andCollaboration Matrix (LACX)
+
+
+|Team Members| Github Username| IoT Device Design | Landing Page | Backend Services | Web App | Movil |Report |
+|---|---|---|---|---|---|---|---|
+|Aponte Cruzado, Andrea Marielena |iconicmiau | C | C | C | L | C |C|
+|Lopez Acuna, Mario Joaquin | tertegen | L | C | C| C | L |C|
+|Urrutia Pena, Jasmin Adriana |SrtaYeis| C | L | C | C | C |C|
+|Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | L | C | C |C|
+|Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | C | C | C | c |L|
 #### 6.2.2.3.Sprint Backlog 2.
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td align="center" colspan="7"> <strong>Sprint 2</strong> </td>
+  </tr>
+
+   <tr>
+    <td align="center" colspan="2"> <strong>User Story</strong></td>
+    <td align="center" colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title</strong></td>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title</strong></td>
+    <td align="center"> <strong>Description</strong></td>
+    <td align="center"> <strong>Estimation (Hours)</strong></td>
+    <td align="center"> <strong>Assigned To</strong></td>
+    <td align="center"> <strong>Status (To-do/In-Process/To-Review/Done)</strong></td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US05 </td>
+    <td rowspan="1" align="center"> Login en App Móvil</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Autenticación Móvil</td>
+    <td align="center">Implementar la pantalla de inicio de sesión con credenciales JWT en la app Flutter.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US08 </td>
+    <td rowspan="1" align="center"> Control de Aireación</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Control de Actuadores</td>
+    <td align="center">Implementar botones de control remoto de aireadores y bombas desde la app móvil.</td>
+    <td align="center"> 5 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+ 
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US13 </td>
+    <td rowspan="1" align="center"> Configuración de Umbrales</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Gestión de Umbrales</td>
+    <td align="center">Implementar el panel de configuración de límites críticos de pH, temperatura y turbidez en el Web Dashboard.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> TS03 </td>
+    <td rowspan="1" align="center"> Webhook de Alertas</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Integración FCM</td>
+    <td align="center">Integrar Firebase Cloud Messaging para el envío de notificaciones push ante eventos críticos detectados por el Notification Context.</td>
+    <td align="center"> 5 </td>
+    <td align="center"> Velasquez Chambi, Ruben Genaro</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US14 </td>
+    <td rowspan="1" align="center"> Pago vía Stripe</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Integración Stripe</td>
+    <td align="center">Integrar la pasarela de pagos Stripe para el procesamiento de suscripciones y renovaciones del servicio YakuControl.</td>
+    <td align="center"> 5 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US12 </td>
+    <td rowspan="1" align="center"> Historial de Tendencias</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Gráficos Históricos</td>
+    <td align="center">Desarrollar los gráficos de tendencias históricas de pH, temperatura y turbidez en el Web Dashboard del administrador.</td>
+    <td align="center"> 5 </td>
+    <td align="center"> Aponte Cruzado, Andrea Marielena</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US11 </td>
+    <td rowspan="1" align="center"> Reporte de Mortalidad</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Generación de PDF</td>
+    <td align="center">Implementar la funcionalidad de exportación de reportes PDF mensual de bajas en el panel administrativo.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Velasquez Chambi, Ruben Genaro</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US17 </td>
+    <td rowspan="1" align="center"> Control de Limpieza</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Activación de Filtros</td>
+    <td align="center">Implementar el control remoto de filtros de limpieza ante alta turbidez desde la app móvil del piscicultor.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> US16 </td>
+    <td rowspan="1" align="center"> Auditoría de Respuesta</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Reporte de Tiempos</td>
+    <td align="center">Desarrollar el módulo de auditoría que registra el tiempo de respuesta del operario ante cada alerta emitida por el sistema.</td>
+    <td align="center"> 3 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+
+</table>
+
+<div style="page-break-after: always;"></div>
+
+
 #### 6.2.2.4.Development Evidence for Sprint Review.
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
 #### 6.2.2.6.Execution Evidence for Sprint Review.
