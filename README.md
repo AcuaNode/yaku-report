@@ -3198,9 +3198,199 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 | AcuaNode/yaku-frontend-flutter | main | `4e5f6078` | feat: setup Flutter project with auth, routing, theme and base screens | feat: setup Flutter project with auth, routing, theme and base screens | 2026-06-01T00:00:00Z |
 | AcuaNode/yaku-frontend-flutter | main | `1234567a` | feat: initial Flutter project setup | feat: initial Flutter project setup | 2026-06-01T00:00:00Z |
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+
+**Estrategia de Pruebas - Sprint 2 (YakuControl)**
+
+Para el Sprint 2, la estrategia de pruebas mantiene y amplía la suite establecida en el Sprint 1. El equipo continuó utilizando dos niveles: pruebas unitarias e integración del Core Domain, y pruebas de aceptación bajo el enfoque BDD (Behavior-Driven Development) con Gherkin.
+
+**a. Core Unit & Integration Testing — Backend Application Core Testing Suite**
+
+Se mantiene la suite robusta de 54 pruebas implementada en el Sprint 1, garantizando que las nuevas integraciones (FCM, Stripe) no rompan la lógica de negocio existente. Los módulos cubiertos son:
+
+- **Subscription Module:** 17 pruebas unitarias evaluando creación, cancelación, reglas de negocio y el nuevo flujo de integración con Stripe (webhook y procesamiento de pagos).
+- **IAM Module:** 7 pruebas unitarias validando autenticación, roles, creación del agregado User y el registro de tokens FCM de dispositivo.
+- **Equipment Module:** 15 pruebas unitarias verificando la lógica y asignación en los agregados Pond, Equipment y Farm, incluyendo nuevos endpoints de búsqueda por ID.
+- **Notification Module:** 14 pruebas unitarias para la validación de alertas, umbrales configurables y el envío de notificaciones push via FCM.
+- **Spring Boot Integration Test:** 1 prueba global (`YakuBackendApplicationTests`) que verifica la inicialización correcta del contexto de Spring Boot con todas las integraciones externas cargadas.
+
+**b. Behavior-Driven Development (BDD) / Acceptance Tests**
+
+En concordancia con los Criterios de Aceptación de las User Stories del Sprint 2, se extendieron los archivos Gherkin existentes con nuevos escenarios que validan las funcionalidades implementadas.
+
+- **feature A. Monitoreo de Telemetría con Umbrales — Sprint 2 (US05, US12, US13)**
+Archivo: `telemetry-monitoring.feature`
+
+**Scenario: Visualizar historial de lecturas con filtro diario**
+
+    Given que existen registros de telemetria para el estanque 1
+    When selecciona un rango de fechas con filtro DAILY
+    And consulta los datos mediante GET /api/v1/telemetry/ponds/1/historical?timeFilter=DAILY
+    Then se muestran los datos historicos con codigo 200
+    And la respuesta incluye valores minimos, maximos y promedios
+
+**Scenario: Monitorear estado con umbrales de especie configurados**
+
+    Given que el estanque 1 tiene umbrales de especie configurados
+    When consulta el estado mediante GET /api/v1/telemetry/ponds/1/status
+    Then visualiza si los parametros estan dentro del rango normal
+    And se indica si hay alguna violacion de umbral
+
+- **feature B. Sistema de Alertas con FCM — Sprint 2 (US07, TS03)**
+Archivo: `alert-system.feature`
+
+**Scenario: Configuracion exitosa de umbrales de especie**
+
+    Given que el administrador ingresa valores validos de umbral
+      | pondId | sensorType    | minAllowed | maxAllowed |
+      | 1      | "TEMPERATURE" | 20.0       | 30.0       |
+    When guarda la configuracion mediante POST /api/v1/telemetry/species-optimal-ranges
+    Then se actualizan los umbrales con codigo 201
+
+**Scenario: Registro de token FCM para notificaciones push**
+
+    Given que el usuario con ID 1 accede desde su dispositivo movil
+    When registra su token FCM mediante POST /api/v1/users/1/device-tokens
+    Then el token se almacena correctamente con codigo 200
+    And el usuario podra recibir notificaciones push
+
+**Scenario: Notificacion push enviada por evento critico**
+
+    Given que ocurre un evento critico en el estanque
+    When se detecta la anomalia
+    Then se envia una notificacion push al dispositivo registrado
+    And el tipo de notificacion es "CRITICAL"
+
+- **feature C. Suscripciones con Stripe — Sprint 2 (US14)**
+Archivo: `subscription-management.feature`
+
+**Scenario: Suscripcion exitosa a un plan via Stripe**
+
+    Given que el administrador selecciona un plan existente
+      | planId | nombre    | precio  | duracionDias |
+      | 1      | "PREMIUM" | 19.99   | 30           |
+    When confirma la suscripcion mediante POST /api/v1/subscriptions/{userId}/subscribe
+    Then se activa la suscripcion con codigo 200
+    And el estado de la suscripcion es "ACTIVE"
+
+**Scenario: Webhook de Stripe procesado correctamente**
+
+    Given que Stripe envia un evento de pago exitoso
+    When se recibe el webhook en el endpoint correspondiente
+    Then el sistema actualiza el estado de la suscripcion a "ACTIVE"
+
+- **feature D. App Movil Flutter — Sprint 2 (US05, US08, US16, US17)**
+Archivo: `mobile-app.feature`
+
+**Scenario: Login exitoso en app movil con credenciales JWT**
+
+    Given que el operador ingresa credenciales validas
+    When confirma el inicio de sesion
+    Then accede al sistema con rol "OPERATOR"
+    And es redirigido a la vista de inicio del operador
+
+**Scenario: Control remoto de aireador desde la app movil**
+
+    Given que el operador esta en la pantalla del estanque
+    When presiona el boton de control del aireador
+    Then el sistema envia el comando al actuador
+    And se actualiza el estado del dispositivo en la interfaz
+
+**c. Repositorio y Evidencia de Commits de Pruebas**
+
+El código fuente de la suite de pruebas se encuentra alojado en:
+URL: https://github.com/AcuaNode/yaku-backend/tree/feature/tests
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| AcuaNode/yaku-backend | feature/tests | `74293bd` | test: added unit and integration testing with h2 | - | 12/05/2026 |
+| AcuaNode/yaku-backend | feature/tests | `9882e9c` | test: add Gherkin feature files for implemented user stories | Se agregaron archivos de especificación Gherkin (.feature) para las user stories del Sprint 2: telemetry/telemetry-monitoring.feature, notification/alert-system.feature, subscription/subscription-management.feature | 12/05/2026 |
+
+<br>
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.2.6.Execution Evidence for Sprint Review.
+
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+
+En esta sección se presenta la documentación actualizada de los servicios RESTful del Sprint 2. Se mantienen todos los endpoints del Sprint 1 y se añaden los nuevos endpoints implementados.
+
+## API Endpoints — Sprint 2
+
+| Bounded Context | Method | Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| **IAM** | POST | `/api/v1/users/signup` | Registrar un nuevo usuario en el sistema. |
+| | POST | `/api/v1/users/signin` | Autenticar un usuario y obtener un token JWT. |
+| | GET | `/api/v1/users/by-username` | Obtener información de un usuario por su nombre de usuario. |
+| | GET | `/api/v1/users` | Listar todos los usuarios, con opción de filtrado por ID de granja. |
+| | GET | `/api/v1/users/available-roles` | Listar los roles disponibles para el registro de usuarios. |
+| **Device Tokens** | POST | `/api/v1/users/{userId}/device-tokens` | Registrar el token FCM del dispositivo móvil para notificaciones push. |
+| **Notifications** | GET | `/api/v1/users/{userId}/notifications` | Obtener todas las notificaciones de un usuario específico. |
+| **Webhooks** | POST | `/api/v1/webhooks/notifications` | Recibir alertas externas y generar notificaciones internas. |
+| **Subscription** | GET | `/api/v1/plans` | Listar todos los planes de suscripción disponibles. |
+| | GET | `/api/v1/subscriptions/{userId}` | Obtener el estado de suscripción de un usuario. |
+| | POST | `/api/v1/subscriptions/{userId}` | Suscribir a un usuario a un plan (integrado con Stripe). |
+| | DELETE | `/api/v1/subscriptions/{userId}` | Cancelar la suscripción activa de un usuario. |
+| **Telemetry** | GET | `/api/v1/telemetry/ponds/{pondId}/status` | Obtener el estado actual con validación de umbrales configurados. |
+| | GET | `/api/v1/telemetry/ponds/{pondId}/historical` | Obtener datos históricos (DAILY, WEEKLY, MONTHLY). |
+| | POST | `/api/v1/telemetry/manual-ingest` | Ingesta manual — activa alertas automáticas si hay violación de umbral. |
+| | POST | `/api/v1/telemetry/species-optimal-ranges` | Configurar umbrales óptimos de especie por estanque y parámetro. |
+| **Equipment** | POST | `/api/v1/equipment` | Registrar un nuevo equipo o dispositivo IoT. |
+| | POST | `/api/v1/equipment/{equipmentId}/link/{pondId}` | Vincular un equipo a un estanque específico. |
+| | GET | `/api/v1/equipment` | Listar todos los equipos registrados. |
+| | DELETE | `/api/v1/equipment/{id}` | Eliminar el registro de un equipo. |
+| | POST | `/api/v1/farms` | Crear una nueva piscigranja. |
+| | GET | `/api/v1/farms` | Listar las granjas del administrador autenticado. |
+| | DELETE | `/api/v1/farms/{id}` | Eliminar una granja. |
+| | PATCH | `/api/v1/farms/{id}/token` | Regenerar el token de acceso de una granja. |
+| | POST | `/api/v1/ponds` | Crear un nuevo estanque dentro de una granja. |
+| | GET | `/api/v1/ponds` | Listar todos los estanques disponibles. |
+| | GET | `/api/v1/ponds/{id}` | Obtener detalles de un estanque específico. |
+| | DELETE | `/api/v1/ponds/{id}` | Eliminar un estanque. |
+| | GET | `/api/v1/ponds/farm/{farmId}` | Listar todos los estanques de una granja específica. |
+| | POST | `/api/v1/ponds/{pondId}/assignments` | Asignar un operario a un estanque. |
+| | DELETE | `/api/v1/ponds/{pondId}/deassignments/{operatorId}` | Desvincular a un operario de un estanque. |
+
+#### Evidence
+![yaku-backend-swagger-sprint2-1](./assets/images/yaku-backend-1.png)
+
+![yaku-backend-swagger-sprint2-2](./assets/images/yaku-backend-2.png)
+
+![yaku-backend-swagger-sprint2-3](./assets/images/yaku-backend-3.png)
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+
+- **Mobile Application (Firebase App Distribution):**
+La aplicación móvil Flutter fue distribuida a través de Firebase App Distribution para pruebas internas y validación con usuarios.
+
+<br>
+
+- **Frontend Web Desplegado:**
+Se utilizó Azure, Aplicación Web Estática para desplegar el frontend web administrativo.
+https://yakufrontend.z13.web.core.windows.net/#/register
+
+![yaku-frontend-desplegado](./assets/images/yaku-frontend-desplegado.jpg)
+
+<br>
+
+- **Backend Desplegado:**
+Se utilizó Azure, Aplicación Web para desplegar el backend con las nuevas integraciones FCM y Stripe.
+https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
+
+<br>
+
+- **Landing Page:**
+Se mantiene el despliegue en GitHub Pages.
+https://acuanode.github.io/yaku-landing/
+
+![yaku-landing-desplegado](./assets/images/yaku-landing-desplegado.jpg)
+
+<div style="page-break-after: always;"></div>
+
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
