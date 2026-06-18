@@ -1,4 +1,4 @@
-﻿<div style="text-align: center;">
+<div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
@@ -3164,6 +3164,39 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 
 
 #### 6.2.2.4.Development Evidence for Sprint Review.
+
+| Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| AcuaNode/yaku-backend | develop | `f3a91c2e` | feat: chore | feat: chore | 2026-06-16T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `b7d04f1a` | feat(telemetry): alerts and notification logic connected with telemetry parameters | feat(telemetry): alerts and notification logic connected with telemetry parameters | 2026-06-13T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `9e5c83d7` | feat(telemetry): threshold endpoints and logic implemented | feat(telemetry): threshold endpoints and logic implemented | 2026-06-13T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `c2b16e4f` | feat: add endpoint equipment | feat: add endpoint equipment | 2026-06-12T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `a4e72f0b` | feat: New endpoints get by Id (user, equipment) and Get Equipment by Farm Id | feat: New endpoints get by Id (user, equipment) and Get Equipment by Farm Id | 2026-06-06T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `8d3a5c91` | Merge branch 'feature/notification' into develop | Merge branch 'feature/notification' into develop | 2026-06-05T00:00:00Z |
+| AcuaNode/yaku-backend | feature/notification | `e6f28b3c` | feat: Antes del merge | feat: Antes del merge | 2026-06-05T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `1b9d47e5` | Merge pull request #11 from AcuaNode/feature/connector - feat(subscription): implement plan upgrade via stripe functional | feat(subscription): implement plan upgrade via stripe functional | 2026-06-05T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `d5c03a82` | chore(subscription): Avoid adding secrets | chore(subscription): Avoid adding secrets | 2026-06-03T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `7f1e94b6` | feat(subscription): Connected Subscription with Stripe (interoperability) | feat(subscription): Connected Subscription with Stripe (interoperability) | 2026-06-03T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `3a8c61f9` | feat(subscription): allowed stripe connection | feat(subscription): allowed stripe connection | 2026-06-03T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `0e4d72a1` | feat(subscription): stripe webhook implementation | feat(subscription): stripe webhook implementation | 2026-06-03T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `c9b53e7d` | feat(subscription & notification): implement connector arquitectural driver for integration with stripe and fcm (interoperability) | feat(subscription & notification): implement connector arquitectural driver for integration with stripe and fcm (interoperability) | 2026-06-02T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `5f2a18c4` | feat: funciono la aplicacion con fcm | feat: funciono la aplicacion con fcm | 2026-05-31T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `2d6b90e3` | feat: se agrego servicio de fcm y mensajes de fallo | feat: se agrego servicio de fcm y mensajes de fallo | 2026-05-31T00:00:00Z |
+| AcuaNode/yaku-backend | develop | `8a1c47f0` | feat: se agrego servicio de fcm | feat: se agrego servicio de fcm | 2026-05-30T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `f3b8c4d2` | fix(admin): use real species threshold ranges in pond telemetry cards instead of hardcoded values | fix(admin): use real species threshold ranges in pond telemetry cards instead of hardcoded values | 2026-06-17T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `a1b2c3d4` | fix(telemetry): replace oxygen sensor with turbidity and use real species thresholds for alerts | fix(telemetry): replace oxygen sensor with turbidity and use real species thresholds for alerts | 2026-06-17T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `d4e5f6a1` | feat(admin): add parametros page with species thresholds GET/POST and validation | feat(admin): add parametros page with species thresholds GET/POST and validation | 2026-06-14T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `89abcdef` | feat(operator): add equipment tab, fix species dropdown and remove sin finca label | feat(operator): add equipment tab, fix species dropdown and remove sin finca label | 2026-06-14T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `c3d4e5f6` | feat(subscription): implement stripe external service and view | feat(subscription): implement stripe external service and view | 2026-06-12T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `01234567` | chore: reorder files and delete unnecesary search bar | chore: reorder files and delete unnecesary search bar | 2026-06-12T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `f6078901` | feat: fmc connection | feat: fmc connection | 2026-06-12T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `e5f60789` | feat: role-based routing, operator views and pond detail with telemetry | feat: role-based routing, operator views and pond detail with telemetry | 2026-06-12T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `b2c3d4e5` | fix: auto-login after signup (backend returns plain text, not JWT) + better error messages + role-based redirect | fix: auto-login after signup (backend returns plain text, not JWT) + better error messages + role-based redirect | 2026-06-04T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `56789abc` | feat: enable auth with role-based routing (OPERATOR → /op/home, ADMIN → /dashboard) | feat: enable auth with role-based routing (OPERATOR → /op/home, ADMIN → /dashboard) | 2026-06-04T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `def01234` | feat: add operator mobile views with 3-tab layout | feat: add operator mobile views with 3-tab layout | 2026-06-01T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `7a1b2c3d` | feat: implement full content for all dashboard sections | feat: implement full content for all dashboard sections | 2026-06-01T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `4e5f6078` | feat: setup Flutter project with auth, routing, theme and base screens | feat: setup Flutter project with auth, routing, theme and base screens | 2026-06-01T00:00:00Z |
+| AcuaNode/yaku-frontend-flutter | main | `1234567a` | feat: initial Flutter project setup | feat: initial Flutter project setup | 2026-06-01T00:00:00Z |
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
 #### 6.2.2.6.Execution Evidence for Sprint Review.
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
