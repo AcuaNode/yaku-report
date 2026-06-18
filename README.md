@@ -3440,6 +3440,16 @@ Se utilizó Azure para desplegar la base de datos que interectuara con nuestra a
 <div style="page-break-after: always;"></div>
 
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
+
+En esta sección se presentarán los gráficos de contribuciones correspondientes al Sprint 2, extraídos directamente desde GitHub. Estos gráficos reflejan la actividad del equipo durante el período, mostrando la cantidad de commits, merges y participación por cada desarrollador, lo que permite visualizar el avance y la colaboración en el repositorio a lo largo del sprint
+
+Link: https://github.com/AcuaNode
+
+**Back-end**
+![sprint2-contributions](./assets/images/sprint2/sprint-2-contributions-github.png)
+
+**Front-end**
+
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
 **1. Introducción**
