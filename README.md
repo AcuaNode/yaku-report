@@ -3392,32 +3392,50 @@ En esta sección se presenta la documentación actualizada de los servicios REST
 
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
 
-- **Mobile Application (Firebase App Distribution):**
-La aplicación móvil Flutter fue distribuida a través de Firebase App Distribution para pruebas internas y validación con usuarios.
-
-<br>
-
-- **Frontend Web Desplegado:**
-Se utilizó Azure, Aplicación Web Estática para desplegar el frontend web administrativo.
-https://yakufrontend.z13.web.core.windows.net/#/register
-
-![yaku-frontend-desplegado](./assets/images/yaku-frontend-desplegado.jpg)
-
-<br>
-
-- **Backend Desplegado:**
-Se utilizó Azure, Aplicación Web para desplegar el backend con las nuevas integraciones FCM y Stripe.
-https://yaku-back-b5ggakd7awhucvaq.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
-
-![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
-
-<br>
-
 - **Landing Page:**
 Se mantiene el despliegue en GitHub Pages.
 https://acuanode.github.io/yaku-landing/
 
 ![yaku-landing-desplegado](./assets/images/yaku-landing-desplegado.jpg)
+
+
+- **Mobile Application (Firebase App Distribution):**
+La aplicación móvil Flutter fue distribuida a través de Firebase App Distribution para pruebas internas y validación con usuarios.
+
+Accedemos a Firebase:
+![firebase](./assets/images/sprint2/accedemos-firebase-movil.jpeg)
+En el proyecto Yakucontrol subimos nuestra aplicación movil para la distribución:
+![firebase2](./assets/images/sprint2/distribuimos-appmovil-firebase.jpeg)
+Enviamos la invitación a los tester o usurios que quieran probar nuestra aplicacion:
+![firebase3](./assets/images/sprint2/enviamos-correro-invitacion-para-el-teseo-movil-firebase.jpeg)
+
+<br>
+
+- **Frontend Web (Azure)**
+Se utilizó Azure, Aplicación Web Estática para desplegar el frontend web administrativo.
+
+![yaku-frontend-desplegado](./assets/images/sprint2/Yaku-frontend-azure.jpeg)
+
+<br>
+
+- **Backend Desplegado (Azure)**
+Se utilizó Azure para desplegar el backend con las nuevas integraciones FCM y Stripe.
+
+![yaku-backend-desplegado](./assets/images/sprint2/yaku-backend-azure.jpeg)
+
+![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
+
+<br>
+
+- **Base datos (Azure)**
+Se utilizó Azure para desplegar la base de datos que interectuara con nuestra aplicación backend
+
+![yaku-db](./assets/images/sprint2/yakudb-azure.jpeg)
+
+<br>
+
+- **Resumen de los servicios usados**
+![servicios-azure](./assets/images/sprint2/inicio-mis-servicios-azure.jpeg)
 
 <div style="page-break-after: always;"></div>
 
