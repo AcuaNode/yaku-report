@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+﻿<div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
@@ -3310,6 +3310,36 @@ URL: https://github.com/AcuaNode/yaku-backend/tree/feature/tests
 <div style="page-break-after: always;"></div>
 
 #### 6.2.2.6.Execution Evidence for Sprint Review.
+Durante este sprint se llego a implementar la version final del lading pague, con un call tu action que nos redirigue anuestra aplicacion web, tambien se llego a desarrollar la aplicacion movil. la version final del backend bajo el metodo DDD y clean arquitecture estos servicios levantados en azure y firebase para movil
+
+- **Evidencia:**
+**Lading page**
+
+![Landing Page Evidence](./assets/images/screenshots/landing-1.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-2.png)
+![Landing Page Evidence](./assets/images/screenshots/landing-3.png)
+![Landing Page Evidence](./assets/images/screenshots/landig-4.png)
+
+Link: https://acuanode.github.io/yaku-landing/ 
+**Front-end**
+
+![Front-end](./assets/images/sprint2/yakucontrol-front-end-pc.png)
+![Front-ennd2](./assets/images/sprint2/yaku-frontend-pc-2.png)
+
+Link: https://yakufrontend.z13.web.core.windows.net/#/login
+
+**Back-end**
+
+![yaku-backend-desplegado](./assets/images/yaku-backend-desplegado.jpg)
+
+Link: https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+**Movil app**
+
+![yaku-movil-1](./assets/images/sprint2/yaku-movil-1.jpeg)
+![yaku-movil-2](./assets/images/sprint2/yaku-movil-2.jpeg)
+![yaku-movil-2](./assets/images/sprint2/yaku-movil-3.jpeg)
+
 
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
 
