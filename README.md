@@ -3464,36 +3464,90 @@ El siguiente gráfico muestra la distribución de commits realizados en el front
 
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
-**1. Introducción**
-Buenos días/tardes. Gracias por participar en esta entrevista de validación.
-Actualmente estamos desarrollando una solución IoT para el monitoreo de la calidad del agua en criaderos de truchas. El objetivo es ayudar a los piscicultores a supervisar parámetros críticos como temperatura, pH y turbidez, generando alertas tempranas ante posibles riesgos para los peces.
 
-**2. Presentación del Entrevistado**
-Nombre:
-Edad:
-Experiencia en piscicultura:
+El diseño de las entrevistas de validación estuvo dado por el rol del participante y las tareas generales, usabilidad, desempeño y retrospectiva de la aplicación web o movil.
 
-**3. Presentación de la Solución**
-**4. Preguntas**
+**Segmento 1: Piscicultores**
 
-- ¿Comprendió fácilmente el propósito de la solución?
+- ¿Al ver la aplicación por primera vez, entendió para qué sirve sin que nadie se lo explique?
+- ¿Le resultó fácil moverse entre las pantallas?
+- ¿Pudo encontrar rápidamente los datos del agua que necesitaba revisar?
+- ¿Los iconos y botones le parecieron claros y fáciles de interpretar?
+- En su trabajo diario, ¿con qué frecuencia tiene que revisar manualmente el estado del agua?
+- ¿Considera que las alertas del sistema le ayudarían a reaccionar más rápido ante un problema?
+- ¿Qué parámetro del agua le preocupa más en su trabajo: temperatura, pH o turbidez?
+- ¿Hay alguna función que no entendió o que no le parece útil para su labor en campo?
+- ¿Usaría este sistema en su trabajo diario?
+- ¿Cree que este sistema le facilitaría detectar problemas antes de perder peces?
+- ¿Qué fue lo que más le gustó?
+- ¿Qué cambiaría o mejoraría?
 
-- ¿Le resultó fácil navegar por la aplicación?
-- ¿Encontró rápidamente la información que necesitaba?
-- ¿Los botones, iconos y pantallas mantienen un diseño consistente?
+**Segmento 2: Administradores de piscigranja**
 
-- Después de observar el sistema, ¿considera que resuelve un problema real en la gestión de criaderos de "truchas"(peces)?
-- ¿Qué funcionalidad considera más útil?
-- ¿Existe alguna funcionalidad que considere innecesaria?
-- ¿Considera que esta solución podría reducir pérdidas de peces ocasionadas por problemas en la calidad del agua?
-
-**Preguntas de cierre**
-- Si esta solución estuviera disponible actualmente, ¿la utilizaría?
-- ¿Estaría dispuesto a recomendar esta solución a otros piscicultores?
-- ¿Qué fue lo que más le gustó de la solución?
-- ¿Qué aspectos considera que podrían mejorarse?
+- ¿Comprendió fácilmente el propósito del sistema al navegar por la plataforma web?
+- ¿Le resultó intuitivo encontrar los reportes e información histórica?
+- ¿Considera que el diseño de la plataforma es consistente y profesional?
+- ¿La información presentada en los dashboards es suficientemente clara para tomar decisiones?
+- Actualmente, ¿cómo realiza el seguimiento del estado de sus estanques y el desempeño de su equipo?
+- ¿Considera que los reportes generados por el sistema le darían información útil para tomar decisiones operativas?
+- ¿Qué tipo de reporte le sería más valioso: histórico de parámetros, registro de alertas o comparativa entre estanques?
+- ¿Existe alguna sección o funcionalidad que considere innecesaria para su rol?
+- ¿Implementaría esta solución en su piscigranja?
+- ¿Recomendaría este sistema a otros administradores del sector?
+- ¿Qué fue lo que más le gustó de la plataforma?
+- ¿Qué aspectos mejoraría desde el punto de vista de la gestión?
 
 ### 6.3.2. Registro de Entrevistas.
+
+**Segmento Piscicultores:**
+
+**Entrevistado 1**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Martín Salcedo |
+| **Edad** | 27 |
+| **Sexo** | Masculino |
+| **Distrito** | Huaura y Cieneguilla, Lima |
+| **Ocupación** | Piscicultor |
+| **Fecha de entrevista** | 16/06/2026 |
+| **Timing** | — |
+| **Video** | [Ver entrevista](URL_DEL_VIDEO) |
+| **Captura** | ![Validation interview for 1° pisci](./assets/images/screenshots/validation-interview-screenshot-pisci1.png) |
+| **Resumen** | Martín trabaja en una piscigranja en Huaura y tuvo una impresión muy positiva de la aplicación móvil en general. No identificó funcionalidades que deban eliminarse ni cambios estructurales necesarios. Su única observación fue que el tamaño de las letras podría ser mayor, aunque reconoció que podría deberse a la configuración de su propio dispositivo. Tuvo una duda puntual respecto al registro: no tenía claro quién le proporcionaría el código de acceso para crear su cuenta, lo cual se le aclaró durante la entrevista. Lo que más destacó fue la visibilidad de las alertas, ya que considera clave poder verlas de forma inmediata para reaccionar a tiempo ante cualquier problema en el agua. |
+
+**Segmento Administradores de Piscigranja:**
+
+**Entrevistado 1**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Grecia Almonte |
+| **Edad** | 28 |
+| **Sexo** | Femenino |
+| **Distrito** | Huancayo (reside en Lima) |
+| **Ocupación** | Administradora de piscigranja |
+| **Fecha de entrevista** | 16/06/2026 |
+| **Timing** | — |
+| **Video** | [Ver entrevista](URL_DEL_VIDEO) |
+| **Captura** | ![Validation interview for 1° admin](./assets/images/screenshots/validation-interview-screenshot-admin1.png) |
+| **Resumen** | Grecia se encarga de la organización de su equipo, el bienestar de los peces, el abastecimiento y los chequeos generales de la granja. Comprendió el propósito del sistema con facilidad y destacó el diseño consistente de la plataforma, donde cada sección está claramente ubicada. El Dashboard le pareció efectivo por mostrar de forma visible el total de estanques, alertas activas y no leídas. Valoró el historial de información por estanque como bien estructurado. Considera que los reportes generados le permiten tener la información clara para tomar decisiones y mejorar a futuro; el reporte que le resulta más valioso es el historial de alertas, ya que le permite evaluar la eficacia de su equipo para reducir incidencias. Los parámetros que más le preocupan son el pH, por ser clave para el hábitat de sus especies, y la temperatura, ya que cualquier variación debería generar una alerta inmediata. No identificó ninguna sección innecesaria. Implementaría la solución porque le ayudaría a mantener un estándar activo de revisión. La recomendaría a otros administradores que no son constantes en sus chequeos. Lo que más le gustó fue la conexión entre sedes y la gestión integral desde estanques hasta equipos. Como mejora sugirió una mejor estructuración de algunas alertas por estanque. |
+
+**Entrevistado 2**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Juan José Balcázar Salcedo |
+| **Edad** | 30 |
+| **Sexo** | Masculino |
+| **Distrito** | Cascas, La Libertad |
+| **Ocupación** | Administrador de piscigranja |
+| **Fecha de entrevista** | 16/06/2026 |
+| **Timing** | — |
+| **Video** | [Ver entrevista](URL_DEL_VIDEO) |
+| **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin2.png) |
+| **Resumen** | Juan José administra una piscigranja familiar ubicada en Cascas, La Libertad. Sus impresiones sobre la solución fueron muy similares a las del primer entrevistado: valoró el diseño consistente, el Dashboard claro y la utilidad de los reportes para la toma de decisiones. Durante la entrevista surgieron dos dudas relevantes: primero, si la aplicación era la misma para piscicultores y administradores, a lo que se le explicó que no, cada segmento tiene su propia interfaz; segundo, cómo se obtenían los datos de los sensores, explicándole que una vez instalado el sistema físico en los estanques, los datos se capturan y transmiten automáticamente a la plataforma. Ambas aclaraciones le parecieron satisfactorias. Consideró que este tipo de soluciones IoT aplicadas a la piscicultura son importantes, necesarias y con gran potencial de crecimiento en el sector. |
+
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Video About-the-Product.
 
