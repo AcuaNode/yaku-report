@@ -3446,9 +3446,21 @@ En esta sección se presentarán los gráficos de contribuciones correspondiente
 Link: https://github.com/AcuaNode
 
 **Back-end**
+El siguiente gráfico muestra las contribuciones realizadas por el equipo durante el Sprint 2, registradas en el repositorio  back-end de GitHub.
 ![sprint2-contributions](./assets/images/sprint2/sprint-2-contributions-github.png)
 
+El siguiente gráfico muestra la distribución de commits realizados en el backend a lo largo del Sprint 2, segmentados por franjas de meses. Esta visualización permite identificar los momentos de mayor actividad en el desarrollo, así como la consistencia del equipo en cuanto a la frecuencia de entregas
+
+![sprint2-commits](./assets/images/sprint2/sprint2-commits-backend.png)
+
 **Front-end**
+El siguiente gráfico muestra las contribuciones realizadas por el equipo durante el Sprint 2, registradas en el repositorio Front-end de GitHub.
+![sprint2-contr](./assets/images/sprint2/sprint2-contributos-front.png)
+
+El siguiente gráfico muestra la distribución de commits realizados en el frontend a lo largo del Sprint 2, segmentados por franjas de meses. Esta visualización permite identificar los momentos de mayor actividad en el desarrollo, así como la consistencia del equipo en cuanto a la frecuencia de entregas
+
+![sprint2-commits-front](./assets/images/sprint2/sprint2-commits-front.png)
+
 
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
