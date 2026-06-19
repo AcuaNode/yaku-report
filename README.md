@@ -3593,8 +3593,16 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Resumen** |En esta entrevista de validación, la administradora de una piscigranja evalúa positivamente la plataforma de monitoreo en tiempo real Yacu Control, destacando su carácter innovador, diseño intuitivo y capacidad para automatizar el control de estanques (como truchas y tilapias) frente a los métodos tradicionales basados en mediciones manuales y registros en Excel. La entrevistada resalta el historial de parámetros como el reporte más valioso para la gestión diaria y valora la optimización de la supervisión del personal de campo mediante tokens de acceso. Finalmente, aunque considera la solución altamente almacenable e implementable para reducir costos de supervisión, sugiere como mejoras incluir nuevos parámetros de medición (como el estado de las bombas y aditivos del agua) y la integración de variables sobre las condiciones climáticas de la granja. |
 
 ### 6.3.3. Evaluaciones según heurísticas.
+
 ## 6.4. Video About-the-Product.
 
+![About the Product](./assets/images/about-the-product.png)
+
+AcuaNode (Yaku Control) es una plataforma de monitoreo inteligente para piscigranjas que reemplaza las mediciones manuales y los registros en Excel por sensores IoT conectados en tiempo real. El sistema mide parámetros críticos del agua (como temperatura y oxígeno disuelto) en los estanques de truchas y tilapias, generando alertas y reportes históricos que permiten a piscicultores y administradores tomar decisiones oportunas para reducir riesgos de pérdida de producción. Además, incorpora gestión de accesos mediante tokens para optimizar la supervisión del personal de campo.
+
+**Video** 
+
+[About the Product](upc-pre-202610-1asi0572-17755-acuanode-about-the-product-sprint-2.mp4)
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
