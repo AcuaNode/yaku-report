@@ -3594,6 +3594,134 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 
 ### 6.3.3. Evaluaciones según heurísticas.
 
+## UX Heuristics & Principles Evaluation
+**Usability – Inclusive Design – Information Architecture**
+
+| | |
+|---|---|
+| **CARRERA** | Ingeniería de Software |
+| **CURSO** | Desarrollo de Soluciones IoT |
+| **SECCIÓN** | 1ASI0572 - NRC 17755 |
+| **PROFESOR** | Marco Antonio León Baca |
+| **AUDITOR** | Acua Node (Aponte, Lopez, Urrutia, Vivanco, Velasquez) |
+| **CLIENTE(S)** | Martín Salcedo, Grecia Almonte, Juan José Balcázar Salcedo, Jean Fabio Noriega Collado |
+| **SITE o APP A EVALUAR** | YakuControl (App Móvil - Piscicultor / Web App - Administrador) |
+
+**TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de un nuevo usuario (piscicultor) mediante código de acceso de granja
+2. Visualización de lecturas de sensores y alertas en la App Móvil
+3. Navegación entre las secciones del Web Dashboard (administrador)
+4. Consulta del historial de parámetros y reportes por estanque
+5. Comprensión del flujo de captura de datos desde el hardware IoT hacia la plataforma
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Configuración avanzada de umbrales personalizados por especie
+2. Integración con APIs meteorológicas externas
+3. Gestión de pagos y facturación vía Stripe
+4. Exportación de reportes en formatos distintos a PDF
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---|---|
+| 1 | El tamaño de la tipografía en la App Móvil dificulta la lectura de algunos textos secundarios | 1 | Inclusive Design: Legibilidad y accesibilidad visual |
+| 2 | El proceso de registro de piscicultor no comunica claramente el origen del código de acceso (Farm Key) | 3 | Usability: Visibilidad del estado del sistema |
+| 3 | No es claro para el administrador si la App Móvil y la Web App comparten la misma interfaz o son productos distintos | 2 | Information Architecture: Is it understandable? |
+| 4 | No se explica en la interfaz cómo y cuándo se sincronizan los datos del hardware IoT con la plataforma | 2 | Usability: Visibilidad del estado del sistema |
+| 5 | El módulo de alertas no permite distinguir con suficiente claridad las notificaciones agrupadas por estanque cuando hay múltiples estanques activos | 3 | Information Architecture: Is it findable? |
+| 6 | El Dashboard no contempla parámetros adicionales relevantes para el negocio (estado de bombas, aditivos del agua, condiciones climáticas) | 2 | Information Architecture: Is it complete? |
+
+---
+
+### DESCRIPCIÓN DE PROBLEMAS
+
+**PROBLEMA #1: Tamaño de tipografía reducido en la App Móvil**
+
+**Severidad:** 1
+
+**Heurística violada:** Inclusive Design – Proporciona experiencias comparables / legibilidad
+
+**Problema:** Durante la entrevista de validación, el piscicultor Martín Salcedo señaló que el tamaño de letra de algunos textos secundarios en la App Móvil le resultaba pequeño, dificultando la lectura rápida de valores durante sus rondas de campo. Si bien el usuario reconoció que esto podría deberse a la configuración de accesibilidad de su propio dispositivo, la consistencia visual debe garantizarse independientemente de la configuración del usuario, especialmente considerando que esta aplicación se usa en exteriores con luz solar directa.
+
+**Recomendación:** Incrementar el tamaño base de la tipografía Body 2 y Caption en las vistas críticas de campo (lecturas en tiempo real y alertas), y validar el contraste y legibilidad bajo condiciones de luz solar intensa, manteniendo el sistema de escalado tipográfico ya definido en la guía de estilos (sección 5.1.1).
+
+---
+
+**PROBLEMA #2: Falta de claridad sobre el origen del código de registro (Farm Key)**
+
+**Severidad:** 3
+
+**Heurística violada:** Usability – Visibilidad del estado del sistema
+
+**Problema:** Martín Salcedo manifestó una duda concreta durante el flujo de registro: no tenía claro quién debía proporcionarle el código de acceso (Farm Key) necesario para crear su cuenta como piscicultor. Esta ambigüedad puede generar fricción en el onboarding de operarios de campo con bajo nivel de digitalización, uno de los segmentos prioritarios identificados en el proyecto, y podría derivar en abandono del registro o en solicitudes de soporte innecesarias.
+
+**Recomendación:** Incorporar un texto de ayuda contextual (helper text) visible junto al campo de Farm Key en la pantalla de registro, indicando explícitamente "Solicita este código a tu administrador de piscigranja", y considerar un enlace o tooltip con una breve explicación del propósito de este código.
+
+---
+
+**PROBLEMA #3: Confusión sobre la relación entre la App Móvil y la Web App**
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture – Is it understandable?
+
+**Problema:** El administrador Juan José Balcázar Salcedo preguntó durante la entrevista si la aplicación era la misma para piscicultores y administradores. Esta confusión indica que la diferenciación entre ambos productos (App Móvil para operarios vs. Web App para administradores) no se comunica de forma suficientemente clara desde los puntos de entrada del sistema (landing page, pantallas de login).
+
+**Recomendación:** Reforzar en la landing page y en las pantallas de inicio de sesión de cada plataforma una breve indicación del público objetivo (ej. "App Móvil — Para piscicultores en campo" / "Web Dashboard — Para administradores de piscigranja"), utilizando los Read Models ya definidos en el dominio para mantener coherencia entre la documentación técnica y la interfaz visible al usuario.
+
+---
+
+**PROBLEMA #4: Falta de explicación sobre el flujo de captura y sincronización de datos IoT**
+
+**Severidad:** 2
+
+**Heurística violada:** Usability – Visibilidad del estado del sistema
+
+**Problema:** El mismo administrador (Juan José Balcázar) consultó cómo se obtenían los datos de los sensores, sin tener claridad de que, una vez instalado el hardware, la transmisión es automática. La interfaz actual no comunica este flujo de forma explícita, lo que puede generar desconfianza sobre la fiabilidad o el origen de los datos mostrados en el Dashboard, especialmente en usuarios con bajo nivel de digitalización previa.
+
+**Recomendación:** Incluir un indicador visual de "última sincronización" junto a cada estanque en el Dashboard (ya contemplado parcialmente en el Read Model `CurrentPondStateResource`), y agregar una breve sección informativa o tour guiado en el primer acceso que explique el flujo Sensor → Edge API → Dashboard.
+
+---
+
+**PROBLEMA #5: Agrupación insuficiente de alertas por estanque en escenarios de múltiples granjas**
+
+**Severidad:** 3
+
+**Heurística violada:** Information Architecture – Is it findable?
+
+**Problema:** Grecia Almonte, quien administra múltiples sedes, indicó como sugerencia de mejora una "mejor estructuración de algunas alertas por estanque". Esto evidencia que, a medida que crece el número de estanques bajo gestión, el módulo actual de notificaciones no facilita lo suficiente la localización rápida de alertas relevantes para un estanque o sede específica, afectando la eficiencia en la toma de decisiones del administrador.
+
+**Recomendación:** Implementar filtros adicionales en la sección de Notificaciones que permitan agrupar y colapsar alertas por estanque o por granja (ya se cuenta con filtros por fecha, nombre y estado según la sección 5.2.5), priorizando visualmente las alertas críticas no leídas por unidad productiva.
+
+---
+
+**PROBLEMA #6: Ausencia de parámetros adicionales relevantes para la gestión integral del estanque**
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture – Is it complete?
+
+**Problema:** Jean Fabio Noriega Collado sugirió incluir nuevos parámetros de medición —como el estado de las bombas y aditivos del agua— así como la integración de variables climáticas de la granja. Actualmente el sistema solo contempla temperatura, pH y turbidez (definidos en `WaterVariableType`), dejando fuera información operativa que el administrador considera valiosa para una gestión más completa del negocio.
+
+**Recomendación:** Evaluar en una futura iteración la incorporación de un nuevo tipo de lectura para el estado de actuadores (bombas/aireadores) dentro del Telemetry Context, y explorar la integración con APIs meteorológicas externas ya contempladas en el Context Level Diagram (sección 4.1.3.2) como dependencia externa, priorizando esta mejora según el impacto reportado en las entrevistas de validación.
+
 ## 6.4. Video About-the-Product.
 
 ![About the Product](./assets/images/about-the-product.png)
