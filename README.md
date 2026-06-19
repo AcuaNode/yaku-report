@@ -3548,6 +3548,21 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin2.png) |
 | **Resumen** | Juan José administra una piscigranja familiar ubicada en Cascas, La Libertad. Sus impresiones sobre la solución fueron muy similares a las del primer entrevistado: valoró el diseño consistente, el Dashboard claro y la utilidad de los reportes para la toma de decisiones. Durante la entrevista surgieron dos dudas relevantes: primero, si la aplicación era la misma para piscicultores y administradores, a lo que se le explicó que no, cada segmento tiene su propia interfaz; segundo, cómo se obtenían los datos de los sensores, explicándole que una vez instalado el sistema físico en los estanques, los datos se capturan y transmiten automáticamente a la plataforma. Ambas aclaraciones le parecieron satisfactorias. Consideró que este tipo de soluciones IoT aplicadas a la piscicultura son importantes, necesarias y con gran potencial de crecimiento en el sector. |
 
+**Entrevistado 3**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Jean Fabio Noriega Collado |
+| **Edad** | 27 |
+| **Sexo** | Masculino |
+| **Distrito** | Jauja, Junin |
+| **Ocupación** | Administrador de piscigranja |
+| **Fecha de entrevista** | 18/06/2026 |
+| **Timing** | — |
+| **Video** | [Ver entrevista](URL_DEL_VIDEO) |
+| **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin3.png) |
+| **Resumen** |En esta entrevista de validación, la administradora de una piscigranja evalúa positivamente la plataforma de monitoreo en tiempo real Yacu Control, destacando su carácter innovador, diseño intuitivo y capacidad para automatizar el control de estanques (como truchas y tilapias) frente a los métodos tradicionales basados en mediciones manuales y registros en Excel. La entrevistada resalta el historial de parámetros como el reporte más valioso para la gestión diaria y valora la optimización de la supervisión del personal de campo mediante tokens de acceso. Finalmente, aunque considera la solución altamente almacenable e implementable para reducir costos de supervisión, sugiere como mejoras incluir nuevos parámetros de medición (como el estado de las bombas y aditivos del agua) y la integración de variables sobre las condiciones climáticas de la granja. |
+
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Video About-the-Product.
 
