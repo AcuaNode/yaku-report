@@ -3541,7 +3541,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Ocupación** | Piscicultor |
 | **Fecha de entrevista** | 16/06/2026 |
 | **Timing** | 00:00 - 09:54 |
-| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yMx0jV) |
+| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b) |
 | **Captura** | ![Validation interview for 1° pisci](./assets/images/screenshots/validation-interview-screenshot-pisci1.png) |
 | **Resumen** | Martín trabaja en una piscigranja en Huaura y tuvo una impresión muy positiva de la aplicación móvil en general. No identificó funcionalidades que deban eliminarse ni cambios estructurales necesarios. Su única observación fue que el tamaño de las letras podría ser mayor, aunque reconoció que podría deberse a la configuración de su propio dispositivo. Tuvo una duda puntual respecto al registro: no tenía claro quién le proporcionaría el código de acceso para crear su cuenta, lo cual se le aclaró durante la entrevista. Lo que más destacó fue la visibilidad de las alertas, ya que considera clave poder verlas de forma inmediata para reaccionar a tiempo ante cualquier problema en el agua. |
 
@@ -3558,7 +3558,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Ocupación** | Administradora de piscigranja |
 | **Fecha de entrevista** | 16/06/2026 |
 | **Timing** | 09:54 — 23:35 |
-| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yMx0jV) |
+| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b) |
 | **Captura** | ![Validation interview for 1° admin](./assets/images/screenshots/validation-interview-screenshot-admin1.png) |
 | **Resumen** | Grecia se encarga de la organización de su equipo, el bienestar de los peces, el abastecimiento y los chequeos generales de la granja. Comprendió el propósito del sistema con facilidad y destacó el diseño consistente de la plataforma, donde cada sección está claramente ubicada. El Dashboard le pareció efectivo por mostrar de forma visible el total de estanques, alertas activas y no leídas. Valoró el historial de información por estanque como bien estructurado. Considera que los reportes generados le permiten tener la información clara para tomar decisiones y mejorar a futuro; el reporte que le resulta más valioso es el historial de alertas, ya que le permite evaluar la eficacia de su equipo para reducir incidencias. Los parámetros que más le preocupan son el pH, por ser clave para el hábitat de sus especies, y la temperatura, ya que cualquier variación debería generar una alerta inmediata. No identificó ninguna sección innecesaria. Implementaría la solución porque le ayudaría a mantener un estándar activo de revisión. La recomendaría a otros administradores que no son constantes en sus chequeos. Lo que más le gustó fue la conexión entre sedes y la gestión integral desde estanques hasta equipos. Como mejora sugirió una mejor estructuración de algunas alertas por estanque. |
 
@@ -3573,7 +3573,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Ocupación** | Administrador de piscigranja |
 | **Fecha de entrevista** | 16/06/2026 |
 | **Timing** | 23:36 — 35:41 |
-| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yMx0jV) |
+| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b) |
 | **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin2.png) |
 | **Resumen** | Juan José administra una piscigranja familiar ubicada en Cascas, La Libertad. Sus impresiones sobre la solución fueron muy similares a las del primer entrevistado: valoró el diseño consistente, el Dashboard claro y la utilidad de los reportes para la toma de decisiones. Durante la entrevista surgieron dos dudas relevantes: primero, si la aplicación era la misma para piscicultores y administradores, a lo que se le explicó que no, cada segmento tiene su propia interfaz; segundo, cómo se obtenían los datos de los sensores, explicándole que una vez instalado el sistema físico en los estanques, los datos se capturan y transmiten automáticamente a la plataforma. Ambas aclaraciones le parecieron satisfactorias. Consideró que este tipo de soluciones IoT aplicadas a la piscicultura son importantes, necesarias y con gran potencial de crecimiento en el sector. |
 
@@ -3588,7 +3588,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Ocupación** | Administrador de piscigranja |
 | **Fecha de entrevista** | 18/06/2026 |
 | **Timing** | 35:42 — 44:12 |
-| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yMx0jV) |
+| **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b) |
 | **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin3.png) |
 | **Resumen** |En esta entrevista de validación, la administradora de una piscigranja evalúa positivamente la plataforma de monitoreo en tiempo real Yacu Control, destacando su carácter innovador, diseño intuitivo y capacidad para automatizar el control de estanques (como truchas y tilapias) frente a los métodos tradicionales basados en mediciones manuales y registros en Excel. La entrevistada resalta el historial de parámetros como el reporte más valioso para la gestión diaria y valora la optimización de la supervisión del personal de campo mediante tokens de acceso. Finalmente, aunque considera la solución altamente almacenable e implementable para reducir costos de supervisión, sugiere como mejoras incluir nuevos parámetros de medición (como el estado de las bombas y aditivos del agua) y la integración de variables sobre las condiciones climáticas de la granja. |
 
@@ -3640,6 +3640,9 @@ https://acuanode.github.io/yaku-landing/
 
 Backend Desplegado:
 https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+Validation Interview Video:
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b
 
 Video About the Product:
 https://youtu.be/_kszeRyeJT0
