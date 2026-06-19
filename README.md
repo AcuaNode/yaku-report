@@ -94,6 +94,35 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 | Vivanco Salazar, Rafael Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
 | Velasquez Chambi, Ruben Genaro | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
+## TB1 
+
+**Tareas**
+
+Iniciando actividades el **10/05/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Aponte Cruzado, Andrea Marielena | - Investigación y aplicación de estándares de diseño de dispositivos IoT- Arquitectura de información (sistemas de organización y etiquetado)- Optimización web mediante SEO Tags y Meta Tags |
+| Lopez Acuna, Mario Joaquin | - Desarrollo de sistemas de búsqueda y navegación en el FrontEnd- Implementación de técnicas de visibilidad web mediante SEO Tags |
+| Urrutia Pena, Jasmin Adriana | - Liderazgo del diseño UX/UI de la solución- Creación de Wireframes, Mock-ups y diagramas de flujo de usuario- Prototipado interactivo para la Landing Page y la aplicación móvil |
+| Vivanco Salazar, Rafael Andres | - Implementación de la gestión de configuración de software (SCM)- Configuración inicial del entorno de desarrollo- Establecimiento de las bases para el manejo del código fuente en el BackEnd |
+| Velasquez Chambi, Ruben Genaro | - Especialización e implementación técnica del Sprint 1- Desarrollo de componentes del BackEnd según 
+requerimientos funcionales |
+
+## AV2
+
+**Tareas**
+
+Iniciando actividades el **06/06/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Aponte Cruzado, Andrea Marielena | - Diseño de dispositivos IoT y Programación del EDGE- Software Configuration Management- Ejecución de entrevistas de validación (Validation Interviews)- Aplicación de evaluaciones según heurísticas masivas (x20) |
+| Lopez Acuna, Mario Joaquin | - Desarrollo de interfaces y consumo de APIs en el FrontEnd (Sprint 2)- Ejecución de entrevistas de validación (Validation Interviews)- Generación de evidencias de FrontEnd para el Sprint Review |
+| Urrutia Pena, Jasmin Adriana | - IoT Device Design y modelado de componentes- Desarrollo y documentación de actividades del Sprint 2- Recopilación de evidencias de ejecución (Execution Evidence) para el Sprint Review- Ejecución de entrevistas de validación (Validation Interviews) |
+| Vivanco Salazar, Rafael Andres | - ontrol avanzado de versiones (Source Code Management)- Desarrollo y optimización del BackEnd (Sprint 2)- Construcción de suites de prueba automatizadas (Testing Suite Evidence para Sprint Review)- Ejecución de entrevistas de validación (Validation Interviews) |
+| Velasquez Chambi, Ruben Genaro | - Desarrollo y cierre técnico de tareas del Sprint 2- Construcción y despliegue del BackEnd en la nube- Preparación de evidencias de despliegue (Software Deployment Evidence para Sprint Review)- Ejecución de entrevistas de validación (Validation Interviews) |
+
 **GitHub Collaboration Insights**
 
 A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la fecha de entrega final el 13 de mayo.
