@@ -3640,3 +3640,7 @@ https://acuanode.github.io/yaku-landing/
 
 Backend Desplegado:
 https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+Video About the Product:
+https://youtu.be/_kszeRyeJT0
+
