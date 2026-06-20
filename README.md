@@ -3745,7 +3745,7 @@ Se recomienda que, ante un incremento masivo en la cantidad de estanques y la fr
 
 ## Video About-the-Team
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBS060deZqjSJTas2DAFlJ0AUmSkeWa6SXV86TvzoJRoaE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MHop9M
+- [Ver video about the team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBS060deZqjSJTas2DAFlJ0AUmSkeWa6SXV86TvzoJRoaE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MHop9M)
 
 <div style="page-break-after: always;"></div>
 
