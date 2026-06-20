@@ -290,7 +290,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
   - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
   - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
   - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-- [6.4. Video About-the-Product](#64-video-about-the-product)
+- [6.4. Video About the Product](#64-video-about-the-product)
     
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografia)
@@ -2991,7 +2991,7 @@ https://github.com/AcuaNode/yaku-landing
 
 ---
 ### 6.2.2. Sprint 2
-#### 6.2.2.1.Sprint Planning 2.
+#### 6.2.2.1. Sprint Planning 2
 <table>
     <thead>
         <tr>
@@ -3068,7 +3068,7 @@ https://github.com/AcuaNode/yaku-landing
     </tbody>
 </table> 
 
-#### 6.2.2.2.Aspect Leaders and Collaborators.
+#### 6.2.2.2. Aspect Leaders and Collaborators
 En esta sección el equipo que incluye la elaboración de un artefacto Leadership-andCollaboration Matrix (LACX)
 
 
@@ -3079,7 +3079,9 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 |Urrutia Pena, Jasmin Adriana |SrtaYeis| C | L | C | C | C |C|
 |Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | L | C | C |C|
 |Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | C | C | C | c |L|
-#### 6.2.2.3.Sprint Backlog 2.
+
+#### 6.2.2.3. Sprint Backlog 2
+
 <table>
   <tr>
     <td> <strong>Sprint #</strong></td>
@@ -3207,7 +3209,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 <div style="page-break-after: always;"></div>
 
 
-#### 6.2.2.4.Development Evidence for Sprint Review.
+#### 6.2.2.4. Development Evidence for Sprint Review
 
 | Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -3241,7 +3243,8 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
 | AcuaNode/yaku-frontend-flutter | main | `7a1b2c3d` | feat: implement full content for all dashboard sections | feat: implement full content for all dashboard sections | 2026-06-01T00:00:00Z |
 | AcuaNode/yaku-frontend-flutter | main | `4e5f6078` | feat: setup Flutter project with auth, routing, theme and base screens | feat: setup Flutter project with auth, routing, theme and base screens | 2026-06-01T00:00:00Z |
 | AcuaNode/yaku-frontend-flutter | main | `1234567a` | feat: initial Flutter project setup | feat: initial Flutter project setup | 2026-06-01T00:00:00Z |
-#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
 **Estrategia de Pruebas - Sprint 2 (YakuControl)**
 
@@ -3353,7 +3356,8 @@ URL: https://github.com/AcuaNode/yaku-backend/tree/feature/tests
 
 <div style="page-break-after: always;"></div>
 
-#### 6.2.2.6.Execution Evidence for Sprint Review.
+#### 6.2.2.6. Execution Evidence for Sprint Review
+
 Durante este sprint se llego a implementar la version final del lading pague, con un call tu action que nos redirigue anuestra aplicacion web, tambien se llego a desarrollar la aplicacion movil. la version final del backend bajo el metodo DDD y clean arquitecture estos servicios levantados en azure y firebase para movil
 
 - **Evidencia:**
@@ -3385,7 +3389,7 @@ Link: https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/sw
 ![yaku-movil-2](./assets/images/sprint2/yaku-movil-3.jpeg)
 
 
-#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación actualizada de los servicios RESTful del Sprint 2. Se mantienen todos los endpoints del Sprint 1 y se añaden los nuevos endpoints implementados.
 
@@ -3434,7 +3438,7 @@ En esta sección se presenta la documentación actualizada de los servicios REST
 
 <div style="page-break-after: always;"></div>
 
-#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 - **Landing Page:**
 Se mantiene el despliegue en GitHub Pages.
@@ -3483,7 +3487,7 @@ Se utilizó Azure para desplegar la base de datos que interectuara con nuestra a
 
 <div style="page-break-after: always;"></div>
 
-#### 6.2.2.9.Team Collaboration Insights during Sprint.
+#### 6.2.2.9. Team Collaboration Insights during Sprint
 
 En esta sección se presentarán los gráficos de contribuciones correspondientes al Sprint 2, extraídos directamente desde GitHub. Estos gráficos reflejan la actividad del equipo durante el período, mostrando la cantidad de commits, merges y participación por cada desarrollador, lo que permite visualizar el avance y la colaboración en el repositorio a lo largo del sprint
 
@@ -3506,8 +3510,8 @@ El siguiente gráfico muestra la distribución de commits realizados en el front
 ![sprint2-commits-front](./assets/images/sprint2/sprint2-commits-front.png)
 
 
-## 6.3. Validation Interviews.
-### 6.3.1. Diseño de Entrevistas.
+## 6.3. Validation Interviews
+### 6.3.1. Diseño de Entrevistas
 
 El diseño de las entrevistas de validación estuvo dado por el rol del participante y las tareas generales, usabilidad, desempeño y retrospectiva de la aplicación web o movil.
 
@@ -3541,7 +3545,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 - ¿Qué fue lo que más le gustó de la plataforma?
 - ¿Qué aspectos mejoraría desde el punto de vista de la gestión?
 
-### 6.3.2. Registro de Entrevistas.
+### 6.3.2. Registro de Entrevistas
 
 **Segmento Piscicultores:**
 
@@ -3607,7 +3611,7 @@ El diseño de las entrevistas de validación estuvo dado por el rol del particip
 | **Captura** |  ![Validation interview for 2° admin](./assets/images/screenshots/validation-interview-screenshot-admin3.png) |
 | **Resumen** |En esta entrevista de validación, la administradora de una piscigranja evalúa positivamente la plataforma de monitoreo en tiempo real Yacu Control, destacando su carácter innovador, diseño intuitivo y capacidad para automatizar el control de estanques (como truchas y tilapias) frente a los métodos tradicionales basados en mediciones manuales y registros en Excel. La entrevistada resalta el historial de parámetros como el reporte más valioso para la gestión diaria y valora la optimización de la supervisión del personal de campo mediante tokens de acceso. Finalmente, aunque considera la solución altamente almacenable e implementable para reducir costos de supervisión, sugiere como mejoras incluir nuevos parámetros de medición (como el estado de las bombas y aditivos del agua) y la integración de variables sobre las condiciones climáticas de la granja. |
 
-### 6.3.3. Evaluaciones según heurísticas.
+### 6.3.3. Evaluaciones según heurísticas
 
 ## UX Heuristics & Principles Evaluation
 **Usability – Inclusive Design – Information Architecture**
@@ -3737,7 +3741,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Recomendación:** Evaluar en una futura iteración la incorporación de un nuevo tipo de lectura para el estado de actuadores (bombas/aireadores) dentro del Telemetry Context, y explorar la integración con APIs meteorológicas externas ya contempladas en el Context Level Diagram (sección 4.1.3.2) como dependencia externa, priorizando esta mejora según el impacto reportado en las entrevistas de validación.
 
-## 6.4. Video About-the-Product.
+## 6.4. Video About-the-Product
 
 ![About the Product](./assets/images/about-the-product.png)
 
