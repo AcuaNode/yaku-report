@@ -3745,6 +3745,8 @@ Se recomienda que, ante un incremento masivo en la cantidad de estanques y la fr
 
 ## Video About-the-Team
 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBS060deZqjSJTas2DAFlJ0AUmSkeWa6SXV86TvzoJRoaE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MHop9M
+
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
@@ -3757,21 +3759,29 @@ Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
-Video de Expo Tb1:
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311064_upc_edu_pe/IQDr_G4JDYGgRZKS7ojHPay1AVABkjLnyQHjPSYEtCnzIPo?e=8OlaAS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+-Video de Expo Tb1:
+-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311064_upc_edu_pe/IQDr_G4JDYGgRZKS7ojHPay1AVABkjLnyQHjPSYEtCnzIPo?e=8OlaAS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Frontend Desplegado:
-https://yakufrontend.z13.web.core.windows.net/
+-Frontend Desplegado:
+-https://yakufrontend.z13.web.core.windows.net/
 
-Landing Desplegada:
-https://acuanode.github.io/yaku-landing/
+-Landing Desplegada:
+-https://acuanode.github.io/yaku-landing/
 
-Backend Desplegado:
-https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
+-Backend Desplegado:
+-https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
 
-Validation Interview Video:
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b
+-Validation Interview Video:
+-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b
 
-Video About the Product:
-https://youtu.be/_kszeRyeJT0
+-Video About the Product:
+-https://youtu.be/_kszeRyeJT0
 
+-Video About the Team:
+-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBS060deZqjSJTas2DAFlJ0AUmSkeWa6SXV86TvzoJRoaE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MHop9M
+
+-Video Expo Av2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCarTVpOMPFT7oaDAbT2T3WAYLGZOcUiH1H-mmLR07-iPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=y2pCi8
+
+-Wokwi: https://wokwi.com/projects/467186064937826305
+
+-Edge: https://yaku-edge-production.up.railway.app/api/v1/data-records
