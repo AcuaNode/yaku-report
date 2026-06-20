@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – Mayo 2026</h4>
+    <h4 style="text-align: center">Lima – Junio 2026</h4>
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -47,7 +47,7 @@
 | **5.0** | 21/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
 | **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión, levantamiento de observaciones y entrega preliminar del informe. |
 | **7.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Documentación del segundo sprint |
-
+| **8.0** | 19/06/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Despliegue y ejecución de aplicaciones, avance de iot, embedded y edge app|
 
 <div style="page-break-after: always;"></div>
 
@@ -125,7 +125,7 @@ Iniciando actividades el **06/06/2026**, el equipo distribuyó las responsabilid
 
 **GitHub Collaboration Insights**
 
-A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la fecha de entrega final el 13 de mayo.
+A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la última fecha de entrega final el 19 de junio.
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
@@ -145,7 +145,7 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Análisis de actividad de commits registrada durante el periodo del 05/04 al 13/05.*
+*Análisis de actividad de commits registrada durante el periodo del 14/03 al 13/06.*
 
 ![Insights - Commits](./assets/images/commits.png)
 
