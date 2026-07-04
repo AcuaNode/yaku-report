@@ -3,35 +3,58 @@
 </div>
 
 <div style="text-align: center;">
-    <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
-    <h4 style="text-align: center;">Ingeniería de Software</h2> 
-    <h4 style="text-align: center"> Periodo: 202610 </h4>
-    <h4 style="text-align: center"> 1ASI0572 - Desarrollo de Soluciones IOT </h4>
-    <h4 style="text-align: center"> NRC: 17755  </h4>
-    <h4 style="text-align: center"> Docente: Marco Antonio León Baca </h4>
+    <h3 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h3>
+    <h4 style="text-align: center;">Carrera de Ingeniería de Software</h4>
+    <h4 style="text-align: center;"><b>1ASI0572</b></h4>
+    <h4 style="text-align: center;"><b>Desarrollo de Soluciones IoT</b></h4>
 </div>
 
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Final </h3>
-    <h4 style="text-align: center;"> Startup: Acua Node </h3>
-    <h4 style="text-align: center"> Producto: YakuControl </h4>
+    <p>NRC</p>
+    <h4 style="text-align: center;"><b>17755</b></h4>
+</div>
+
+<div style="text-align: center;">
+    <h3 style="text-align: center;"><b>Informe del Trabajo Final</b></h3>
 </div>
 
 <br>
 
-<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
-    <p>U202224135 — Aponte Cruzado, Andrea Marielena</p>
-    <p>U202116250 — Lopez Acuna, Mario Joaquin </p>
-    <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
-    <p>U202311064 — Vivanco Salazar, Rafael Andres</p>
-    <p>U202117342 — Velasquez Chambi, Ruben Genaro</p>
+<div style="text-align: center;">
+    <p>Docente</p>
+    <h4 style="text-align: center;"><b>León Baca, Marco Antonio</b></h4>
 </div>
 
+<div style="text-align: center;">
+    <p>Equipo</p>
+    <h4 style="text-align: center;"><b>AcuaNode</b></h4>
+</div>
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – Junio 2026</h4>
+    <p>Proyecto</p>
+    <h4 style="text-align: center;"><b>YakuControl</b></h4>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+
+**Integrantes**
+
+| Código | Apellidos y Nombres |
+| :--- | :--- |
+| U202224135 | Aponte Cruzado, Andrea Marielena |
+| U202116250 | Lopez Acuña, Mario Joaquin |
+| U202310008 | Urrutia Pena, Jasmin Adriana |
+| U202311064 | Vivanco Salazar, Rafael Andres |
+| U202117342 | Velasquez Chambi, Ruben Genaro |
+
+</div>
+
+<div style="text-align: center;">
+    <h4 style="text-align: center;"><b>Período 202610</b></h4>
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -286,6 +309,16 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
     - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
     - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
     - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
+  - [6.2.3. Sprint 3](#623-sprint-3)
+    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+    - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+    - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-2)
+    - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+    - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+    - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+    - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+    - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+    - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
 - [6.3. Validation Interviews](#63-validation-interviews)
   - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
   - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
@@ -3508,6 +3541,211 @@ El siguiente gráfico muestra las contribuciones realizadas por el equipo durant
 El siguiente gráfico muestra la distribución de commits realizados en el frontend a lo largo del Sprint 2, segmentados por franjas de meses. Esta visualización permite identificar los momentos de mayor actividad en el desarrollo, así como la consistencia del equipo en cuanto a la frecuencia de entregas
 
 ![sprint2-commits-front](./assets/images/sprint2/sprint2-commits-front.png)
+
+---
+### 6.2.3. Sprint 3
+#### 6.2.3.1. Sprint Planning 3
+
+<table>
+    <thead>
+        <tr>
+            <th>Sprint #</th>
+            <th>Sprint 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2"><b>Sprint Planning Background</b></td>
+        </tr>
+        <tr>
+            <td>Fecha</td>
+            <td>2026-07-02</td>
+        </tr>
+        <tr>
+            <td>Hora</td>
+            <td>14:00 PM</td>
+        </tr>
+        <tr>
+            <td>Lugar</td>
+            <td>Biblioteca de la Sede Monterrico, UPC</td>
+        </tr>
+        <tr>
+            <td>Preparado por</td>
+            <td>Aponte Cruzado, Andrea Marielena</td>
+        </tr>
+        <tr>
+            <td>Asistentes</td>
+            <td>
+                <li>Aponte Cruzado, Andrea Marielena</li>
+                <li>Lopez Acuna, Mario Joaquin</li>
+                <li>Urrutia Pena, Jasmin Adriana</li>
+                <li>Vivanco Salazar, Rafael Andres</li>
+                <li>Velasquez Chambi, Ruben Genaro</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Resumen de Sprint 2 Review</td>
+            <td>
+                Se validó la interoperabilidad del ecosistema digital completo con las notificaciones push funcionales en dispositivos Android físicos mediante Firebase Cloud Messaging y el procesamiento de suscripciones SaaS a través de Stripe.
+            </td>
+        </tr>
+        <tr>
+            <td>Resumen de Sprint 2 Retrospective</td>
+            <td>
+                El equipo se reunió presencialmente en la biblioteca de Monterrico para consolidar el hardware físico y asegurar la resiliencia del procesamiento autónomo en el Edge API, minimizando la latencia de red en entornos rurales.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Objetivos del Sprint & Criterios de Éxito</b></td>
+        </tr>
+        <tr>
+            <td>Objetivos de Sprint 3</td>
+            <td>
+                <li><b>Hardware & Sensor Validation:</b> Ensamblar el prototipo físico final de la solución, validando la calibración y el correcto funcionamiento en lazo cerrado de todos los sensores (temperatura, pH, turbidez) y actuadores (módulos relé para bombas y MOSFET para iluminación).</li>
+                <li><b>Edge API & Embedded Automation:</b> Compilar el código embebido final (.ino / C++) en el microcontrolador y desplegar la Edge App para procesar de forma local la Ley de Beer-Lambert modificada. Esto controlará automáticamente la modulación de pulsos (señal PWM de 8 bits) dirigida a la tira LED del estanque, optimizando el soporte vital del bio-activo sin depender de conexión constante a la nube.</li>
+                <li><b>Advanced Analytics & CI/CD:</b> Desarrollar un motor de agregación de datos telemétricos históricos con filtros de granularidad temporal para series de tiempo masivas, automatizando los flujos de despliegue continuo (CI/CD) mediante GitHub Actions hacia Microsoft Azure y Firebase App Distribution.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Velocidad del Sprint</td>
+            <td>
+                35 Story Points
+            </td>
+        </tr>
+        <tr>
+            <td>Suma de Story Points del Backlog</td>
+            <td>
+                32 Story Points
+            </td>
+        </tr>
+    </tbody>
+</table>
+                  
+#### 6.2.3.2. Aspect Leaders and Collaborators
+El equipo distribuyó los liderazgos técnicos y las responsabilidades cruzadas para el Sprint 3 mediante la matriz LACX (Leadership-and-Collaboration Matrix), garantizando el cumplimiento de los estándares de entrega continua de la ingeniería de software profesional.
+
+| Integrante del Equipo | Nombre de Usuario GitHub | Edge API Automation | Advanced Analytics | Web App Dashboard | Mobile Commander | CI/CD Platform | Report |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aponte Cruzado, Andrea Marielena | iconicmiau | **L** | C | C | C | C | C |
+| Lopez Acuna, Mario Joaquin | tertegen | C | C | C | **L** | C | C |
+| Urrutia Pena, Jasmin Adriana | SrtaYeis | c | C | C | C | C | **L**  |
+| Vivanco Salazar, Rafael Andres | RafaelVivanco | C | C | **L** | C | **L** | C |
+| Velasquez Chambi, Ruben Genaro | RubenGenaro10 | C | **L** | C | C | C | c |
+
+#### 6.2.3.3. Sprint Backlog 3
+
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td align="center" colspan="7"> <strong>Sprint 3</strong> </td>
+  </tr>
+   <tr>
+    <td align="center" colspan="2"> <strong>User Story</strong></td>
+    <td align="center" colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title</strong></td>
+    <td align="center"> <strong>ID</strong> </td>
+    <td align="center"> <strong>Title</strong></td>
+    <td align="center"> <strong>Description</strong></td>
+    <td align="center"> <strong>Estimation (Hours)</strong></td>
+    <td align="center"> <strong>Assigned To</strong></td>
+    <td align="center"> <strong>Status (To-do/In-Process/To-Review/Done)</strong></td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> TS04 </td>
+    <td rowspan="1" align="center"> Edge API — Beer-Lambert & PWM</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Algoritmo de Transmitancia</td>
+    <td align="center">Implementar la Ley de Beer-Lambert modificada en el Edge API para calcular la transmitancia de luz del agua a partir de la lectura de turbidez.</td>
+    <td align="center"> 8 </td>
+    <td align="center"> Aponte Cruzado, Andrea Marielena</td>
+    <td align="center">Done</td>
+  </tr>
+  <tr>
+    <td rowspan="1" align="center"> TS04 </td>
+    <td rowspan="1" align="center"> Edge API — Beer-Lambert & PWM</td>
+    <td align="center"> TA02 </td>
+    <td align="center">Cálculo de Señal PWM</td>
+    <td align="center">Calcular, a partir de la transmitancia obtenida, el valor de la señal PWM de 8 bits que se enviará al microcontrolador para regular la tira LED.</td>
+    <td align="center"> 6 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> TS05 </td>
+    <td rowspan="1" align="center"> Embedded Automation</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Firmware de Sensores y Actuadores</td>
+    <td align="center">Programar el código embebido (.ino / C++) que gestiona en lazo cerrado la lectura de los sensores (DS18B20, pH, turbidez) y el accionamiento de los actuadores (relé de bomba, MOSFET de tira LED).</td>
+    <td align="center"> 8 </td>
+    <td align="center"> Velasquez Chambi, Ruben Genaro</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> TS06 </td>
+    <td rowspan="1" align="center"> Advanced Analytics Dashboard</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Conexión Frontend–Edge</td>
+    <td align="center">Conectar el Web Dashboard y la App Móvil al Edge API para consumir los datos agregados (ICA, transmitancia, estado del estanque) y mostrarlos con filtros de granularidad temporal.</td>
+    <td align="center"> 6 </td>
+    <td align="center"> Lopez Acuna, Mario Joaquin</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> TS07 </td>
+    <td rowspan="1" align="center"> CI/CD Platform</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Pipeline de Despliegue Continuo</td>
+    <td align="center">Configurar flujos de GitHub Actions que ejecuten pruebas y desplieguen automáticamente el Edge API (Railway), el Backend (Azure) y la App Móvil (Firebase App Distribution).</td>
+    <td align="center"> 5 </td>
+    <td align="center"> Vivanco Salazar, Rafael Andres</td>
+    <td align="center">Done</td>
+  </tr>
+  <!----------------------------------------------------------------------  -->
+  <tr>
+    <td rowspan="1" align="center"> — </td>
+    <td rowspan="1" align="center"> Reporte de Cierre</td>
+    <td align="center"> TA01 </td>
+    <td align="center">Consolidación de Evidencias</td>
+    <td align="center">Recopilar y estructurar las evidencias de desarrollo, testing, ejecución, documentación y despliegue del Sprint 3 para el informe final.</td>
+    <td align="center"> 4 </td>
+    <td align="center"> Urrutia Pena, Jasmin Adriana</td>
+    <td align="center">Done</td>
+  </tr>
+</table>
+<div style="page-break-after: always;"></div>
+
+#### 6.2.3.4. Development Evidence for Sprint Review
+En la siguiente tabla se muestran los commits realizados en la organización AcuaNode durante el Sprint 3, distribuidos entre el Edge API, el firmware embebido y la integración del frontend.
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+Edge API Desplegado (Railway):
+Se utilizó Railway para desplegar el Edge API encargado del procesamiento autónomo de telemetría.
+https://yaku-edge-production.up.railway.app/api/v1/data-records
+Firmware Embebido (Wokwi):
+La simulación final del prototipo físico, con la calibración de sensores y actuadores validada, se encuentra disponible en:
+https://wokwi.com/projects/467186064937826305
+CI/CD (GitHub Actions):
+Se configuraron workflows de integración y despliegue continuo que, ante cada push a main, ejecutan las pruebas automatizadas y despliegan el Edge API a Railway, el Backend a Azure y la App Móvil a Firebase App Distribution, cerrando el ciclo de entrega continua del proyecto.
+Frontend Web y Backend (Azure):
+Se mantiene el despliegue consolidado de los Sprints anteriores, ahora integrado con los datos agregados del Edge API.
+https://yakufrontend.z13.web.core.windows.net/
+https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint
 
 
 ## 6.3. Validation Interviews
