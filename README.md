@@ -1,4 +1,4 @@
-﻿<div style="text-align: center;">
+<div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
@@ -145,6 +145,20 @@ Iniciando actividades el **06/06/2026**, el equipo distribuyó las responsabilid
 | Urrutia Pena, Jasmin Adriana | - IoT Device Design y modelado de componentes- Desarrollo y documentación de actividades del Sprint 2- Recopilación de evidencias de ejecución (Execution Evidence) para el Sprint Review- Ejecución de entrevistas de validación (Validation Interviews) |
 | Vivanco Salazar, Rafael Andres | - ontrol avanzado de versiones (Source Code Management)- Desarrollo y optimización del BackEnd (Sprint 2)- Construcción de suites de prueba automatizadas (Testing Suite Evidence para Sprint Review)- Ejecución de entrevistas de validación (Validation Interviews) |
 | Velasquez Chambi, Ruben Genaro | - Desarrollo y cierre técnico de tareas del Sprint 2- Construcción y despliegue del BackEnd en la nube- Preparación de evidencias de despliegue (Software Deployment Evidence para Sprint Review)- Ejecución de entrevistas de validación (Validation Interviews) |
+
+## TB2
+
+**Tareas**
+
+Iniciando actividades el **02/07/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Aponte Cruzado, Andrea Marielena | - Ensamblaje del prototipo final de hardware (sensores y actuadores en la carcasa definitiva)- Implementación del Edge API- Documentación técnica del Edge API |
+| Lopez Acuna, Mario Joaquin | - Validación del funcionamiento de sensores y actuadores en conjunto con el prototipo físico- Conexión del Frontend con los datos reales de telemetría provenientes del Edge- Recopilación de Execution Evidence con datos reales |
+| Urrutia Pena, Jasmin Adriana | - Consolidación y estructuración general del Sprint Backlog 3 -Pruebas del harware - Consolidación de evidencias finales del informe |
+| Vivanco Salazar, Rafael Andres | - Desarrollo del Edge API con broker Mosquitto, Flask y Redis- Configuración del pipeline de despliegue del Edge en Railway- Documentación del Software Deployment Evidence del Sprint 3 |
+| Velasquez Chambi, Ruben Genaro | - Desarrollo del código embebido final (firmware C++ bajo arquitectura ModestIoT)- Calibración y pruebas de lazo cerrado de sensores (DS18B20, turbidez) y actuadores - Consolidación de Team Collaboration Insights |
 
 **GitHub Collaboration Insights**
 
@@ -4112,7 +4126,9 @@ Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las 
 
 Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
 
-## Conclusiones y recomendaciones
+Finalmente, la validación del prototipo físico y del firmware embebido en condiciones reales de campo confirmó que la arquitectura Edge Computing propuesta cumple su objetivo central: reducir la dependencia de una conexión constante a internet sin sacrificar la capacidad de reacción ante eventos críticos. El correcto funcionamiento en conjunto de los sensores, los actuadores y el broker Mosquitto en el Edge API evidencia que YakuControl no es solo una propuesta teórica de software, sino una solución end-to-end viable para su implementación en piscigranjas de zonas rurales andinas, cerrando así la brecha tecnológica identificada al inicio del proyecto.
+
+# Recomendaciones
 
 Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
 
