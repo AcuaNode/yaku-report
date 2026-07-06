@@ -3773,8 +3773,8 @@ Para el Sprint 3, la estrategia de pruebas se amplió para cubrir el nuevo compo
 
 Se mantiene y amplía la suite de pruebas del backend, ajustada para deshabilitar la conexión MQTT en el contexto de test y evitar errores de instanciación de beans durante la ejecución de la suite en CI.
 
-- **Telemetry Module:** [COMPLETAR: número de pruebas] pruebas unitarias validando el nuevo flujo de ingesta vía Edge API y el manejo de valores nulos en la columna ICA durante la migración de esquema.
-- **Equipment Module:** [COMPLETAR: número de pruebas] pruebas unitarias sobre los ajustes realizados a Equipment y Telemetry para mejorar la conexión IoT.
+- **Telemetry Module:** 1 pruebas unitarias validando el nuevo flujo de ingesta vía Edge API y el manejo de valores nulos en la columna ICA durante la migración de esquema.
+- **Equipment Module:** 1 pruebas unitarias sobre los ajustes realizados a Equipment y Telemetry para mejorar la conexión IoT.
 - **Configuration Tests:** pruebas de contexto que verifican que `MqttPublisherConfig` se omite correctamente en el perfil de test mediante `@ConditionalOnProperty`, evitando fallos de arranque del contexto de Spring durante la ejecución de la suite completa.
 
 **b. Edge API Testing (Python / Flask)**
