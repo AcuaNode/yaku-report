@@ -3861,8 +3861,6 @@ El dispositivo embebido (`AcuaNodeDevice::sendToEdge`) envía cada lectura media
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
-#### 6.2.3.8. Software Deployment Evidence for Sprint Review
-
 - **Backend Desplegado (Azure):**
 Se utilizó Azure, Aplicación Web, para desplegar el backend con las correcciones e integraciones finales del Sprint 3 (soporte para ingesta desde el Edge API, ajustes de CORS y migración de esquema para el campo ICA).
 
