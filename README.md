@@ -71,7 +71,7 @@
 | **6.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Revisión, levantamiento de observaciones y entrega preliminar del informe. |
 | **7.0** | 24/04/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Documentación del segundo sprint |
 | **8.0** | 19/06/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Despliegue y ejecución de aplicaciones, avance de iot, embedded y edge app|
-
+| **9.0** | 05/07/2026 | A. Aponte, M. Lopez, J. Urrutia, R. Vivanco, R. Velasquez | Despliegue y ejecución de vercion final de aplicaciones, finalizacin de iot, embedded y edge app|
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
@@ -3869,6 +3869,8 @@ Se utilizó Azure, Aplicación Web, para desplegar el backend con las correccion
 **Despliegue de DB**<br>
 ![yaku-backend-azure-sprint3](./assets/sprint3/despliegue2.png)
 
+
+Link del backend desplegado: [Ver backend](https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html)
 <br>
 
 - **Frontend Desplegado (Azure):**
@@ -3876,7 +3878,7 @@ Se utilizó Azure, Aplicación Web Estática, para desplegar el frontend adminis
 
 ![yaku-backend-azure-sprint3](./assets/sprint3/despliegue3.png)
 
-
+Link del frontend desplegado: [Ver frontend](https://yakufrontend.z13.web.core.windows.net/)
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 En esta sección se presentan los gráficos de contribuciones correspondientes al Sprint 3, extraídos directamente desde GitHub. Estos gráficos reflejan la actividad del equipo durante el período, mostrando la cantidad de commits, merges y participación por cada desarrollador en los nuevos repositorios incorporados (Edge API) y en el repositorio del Backend, evidenciando la colaboración durante la fase de integración IoT.
@@ -4133,7 +4135,7 @@ AcuaNode (Yaku Control) es una plataforma de monitoreo inteligente para piscigra
 
 **Video** 
 
-[About the Product](upc-pre-202610-1asi0572-17755-acuanode-about-the-product-sprint-2.mp4)
+[About the Product](https://drive.google.com/file/d/185wII1-DWI8-6AiyMYQJB6Q93Gg5fSAg/view?usp=sharing)
 
 # Conclusiones
 El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
@@ -4174,13 +4176,13 @@ Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realiz�
 - [Ver landing](https://acuanode.github.io/yaku-landing/)
 
 -Backend Desplegado:
-- [Ver backend](https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html#/)
+- [Ver backend](https://yaku-backend-hjbmb2btfzece4c0.chilecentral-01.azurewebsites.net/swagger-ui/index.html)
 
 -Validation Interview Video:
 - [Ver entrevistas de de validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCARekpobeaTpuHwHqYuAtsAW9K3NtzznpYv17sDwuNduU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=rFfB0b)
 
 -Video About the Product:
-- [Ver video About the product](https://youtu.be/_kszeRyeJT0)
+- [Ver video About the product](https://drive.google.com/file/d/185wII1-DWI8-6AiyMYQJB6Q93Gg5fSAg/view?usp=sharing)
 
 -Video About the Team:
 - [Ver video About the team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQBS060deZqjSJTas2DAFlJ0AUmSkeWa6SXV86TvzoJRoaE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MHop9M)
@@ -4188,8 +4190,9 @@ Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realiz�
 -Video Expo Av2: 
 - [Ver video de exposición av2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQCarTVpOMPFT7oaDAbT2T3WAYLGZOcUiH1H-mmLR07-iPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=y2pCi8)
 
+-Video Expo TB2:
+- [Ver video de exposición tb2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQC5WI7LQtIMT7XNbCtGM10AAbtgBDo497wzgW7-Y4_csAE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=31e2QQ)
+  
 -Wokwi: 
 - [Ingresar a ver wokwi](https://wokwi.com/projects/467186064937826305)
 
--Edge: 
-- [Ver edge preliminar](https://yaku-edge-production.up.railway.app/api/v1/data-records)
