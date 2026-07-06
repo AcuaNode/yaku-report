@@ -2658,7 +2658,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
     <tr>
     <td rowspan="1" align="center"> TS01 </td>
     <td rowspan="1" align="center"> API de Ingesta</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA02 </td>
      <td align="center">API de Ingesta </td>
     <td align="center">Cuando hardware envía telemetría
 entonces Backend guarda los datos en la base de datos.</td>
@@ -2669,7 +2669,7 @@ entonces Backend guarda los datos en la base de datos.</td>
   <tr>
     <td rowspan="1" align="center"> TS02 </td>
     <td rowspan="1" align="center"> Seguridad JWT</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA03 </td>
      <td align="center">Implementación Auth </td>
     <td align="center">Configurar Spring Security y generación de tokens JWT.</td>
     <td align="center"> 3 </td>
@@ -2680,7 +2680,7 @@ entonces Backend guarda los datos en la base de datos.</td>
   <tr>
     <td rowspan="1" align="center"> US10 </td>
     <td rowspan="1" align="center"> Gestión de Usuarios</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA04 </td>
      <td align="center">CRUD de Usuarios </td>
     <td align="center">Implementar la lógica de creación y gestión de operarios.</td>
     <td align="center"> 4 </td>
@@ -2691,7 +2691,7 @@ entonces Backend guarda los datos en la base de datos.</td>
   <tr>
     <td rowspan="1" align="center"> US15 </td>
     <td rowspan="1" align="center"> Registro de Estanque</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA05 </td>
      <td align="center">Gestión Equipment </td>
     <td align="center">Implementar el registro de estanques y vinculación IoT.</td>
     <td align="center"> 4 </td>
@@ -2702,7 +2702,7 @@ entonces Backend guarda los datos en la base de datos.</td>
   <tr>
     <td rowspan="1" align="center"> US07 </td>
     <td rowspan="1" align="center"> Alertas Push</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA06 </td>
      <td align="center">Lógica de Notificación </td>
     <td align="center">Implementar alertas básicas ante anomalías (sin FCM).</td>
     <td align="center"> 4 </td>
@@ -2713,7 +2713,7 @@ entonces Backend guarda los datos en la base de datos.</td>
   <tr>
     <td rowspan="1" align="center"> US06 </td>
     <td rowspan="1" align="center"> Dashboard Web App</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA07 </td>
      <td align="center">Core Monitoring </td>
     <td align="center">Desarrollar el dashboard de visualización.</td>
     <td align="center"> 8 </td>
@@ -3083,7 +3083,9 @@ https://github.com/AcuaNode/yaku-landing
                <li><b>Landing Page:</b> Nuestro enfoque está en mantener y optimizar la landing page profesional y responsiva ya desarrollada para AcuaNode. Creemos que esto consolidará nuestra presencia digital y comunicación de valor para clientes B2B. Esto se confirmará cuando la landing page cuente con métricas de rendimiento optimizadas y actualizaciones de contenido en producción.</li>
 <li><b>Backend Services:</b> Nuestro enfoque está en mantener el 100% de los servicios core del backend implementados bajo Domain-Driven Design (DDD) y Arquitectura Limpia, con integración completa de Firebase  notificaciones push, y Stripe para el procesamiento de pagos y suscripciones. Creemos que esto proporciona una base sólida, escalable y completamente operativa para la telemetría y notificaciones. Esto se confirmará cuando todos los contextos (IAM, Telemetry, Notification,equipment,suscription) estén en producción con su lógica de negocio validada y documentación OpenAPI actualizada.</li>
 <li><b>Web Application:</b> Nuestro enfoque está en la evolución de la Aplicación Web para administradores, la cual ya ha sido desarrollada al 100%. Creemos que esto entrega visibilidad en tiempo real y control total a los gestores de piscigranjas. Esto se confirmará cuando el dashboard web consolide datos históricos de telemetría, reportes avanzados y funcionalidades de gestión administrativa completamente operativas.</li>
-<li><b>Mobile Design:</b> Nuestro enfoque está en el mantenimiento y mejora continua de la aplicación móvil para piscicultores, desarrollada al 100% en Flutter. Creemos que esto garantiza una experiencia de usuario fluida, intuitiva y multiplataforma para las operaciones en campo. Esto se confirmará cuando la aplicación móvil esté publicada en Firebase con todos los flujos de usuario validados y aprobados por el equipo.</li>
+<li><b>Mobile Design:</b> Nuestro enfoque está en el mantenimiento y mejora continua de la aplicación móvil para piscicultores, desarrollada al 100% en Flutter. Creemos que esto garantiza una experiencia de usuario fluida, intuitiva y multiplataforma para las operaciones en campo. Esto se confirmará cuando la aplicación móvil esté publicada en Firebase con todos los flujos de usuario validados y aprobados por el equipo.</li></b>
+<li><b> Edge Api: </b> se ha planteado el desarrollo de una aplicación edge (en el borde de la red) implementada en Python, acompañada de un sistema de gestión de base de datos relacional como componente central de persistencia. Esta decisión arquitectónica responde a la necesidad de contar con un sistema ligero, de rápida implementación y con capacidad de procesamiento cercano a la fuente de datos </li>
+<li><b>Embedded:</b>se ha desarrollado la primera versión del sistema embebido, implementando el algoritmo ICA (Independent Component Analysis) en C++ como núcleo de procesamiento. Esta versión inicial tiene un propósito fundamentalmente exploratorio y de validación: evaluar cómo responde el sistema en su conjunto, incluyendo tanto los actuadores como los sensores. </li> 
             </td>
         </tr>
         <tr>
@@ -3150,7 +3152,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US08 </td>
     <td rowspan="1" align="center"> Control de Aireación</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA02 </td>
     <td align="center">Control de Actuadores</td>
     <td align="center">Implementar botones de control remoto de aireadores y bombas desde la app móvil.</td>
     <td align="center"> 5 </td>
@@ -3163,7 +3165,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US13 </td>
     <td rowspan="1" align="center"> Configuración de Umbrales</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA03 </td>
     <td align="center">Gestión de Umbrales</td>
     <td align="center">Implementar el panel de configuración de límites críticos de pH, temperatura y turbidez en el Web Dashboard.</td>
     <td align="center"> 4 </td>
@@ -3174,7 +3176,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> TS03 </td>
     <td rowspan="1" align="center"> Webhook de Alertas</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA04 </td>
     <td align="center">Integración FCM</td>
     <td align="center">Integrar Firebase Cloud Messaging para el envío de notificaciones push ante eventos críticos detectados por el Notification Context.</td>
     <td align="center"> 5 </td>
@@ -3185,7 +3187,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US14 </td>
     <td rowspan="1" align="center"> Pago vía Stripe</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA05 </td>
     <td align="center">Integración Stripe</td>
     <td align="center">Integrar la pasarela de pagos Stripe para el procesamiento de suscripciones y renovaciones del servicio YakuControl.</td>
     <td align="center"> 5 </td>
@@ -3196,7 +3198,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US12 </td>
     <td rowspan="1" align="center"> Historial de Tendencias</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA06 </td>
     <td align="center">Gráficos Históricos</td>
     <td align="center">Desarrollar los gráficos de tendencias históricas de pH, temperatura y turbidez en el Web Dashboard del administrador.</td>
     <td align="center"> 5 </td>
@@ -3207,7 +3209,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US11 </td>
     <td rowspan="1" align="center"> Reporte de Mortalidad</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA07 </td>
     <td align="center">Generación de PDF</td>
     <td align="center">Implementar la funcionalidad de exportación de reportes PDF mensual de bajas en el panel administrativo.</td>
     <td align="center"> 4 </td>
@@ -3218,7 +3220,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US17 </td>
     <td rowspan="1" align="center"> Control de Limpieza</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA08 </td>
     <td align="center">Activación de Filtros</td>
     <td align="center">Implementar el control remoto de filtros de limpieza ante alta turbidez desde la app móvil del piscicultor.</td>
     <td align="center"> 4 </td>
@@ -3229,7 +3231,7 @@ En esta sección el equipo que incluye la elaboración de un artefacto Leadershi
   <tr>
     <td rowspan="1" align="center"> US16 </td>
     <td rowspan="1" align="center"> Auditoría de Respuesta</td>
-    <td align="center"> TA01 </td>
+    <td align="center"> TA09S </td>
     <td align="center">Reporte de Tiempos</td>
     <td align="center">Desarrollar el módulo de auditoría que registra el tiempo de respuesta del operario ante cada alerta emitida por el sistema.</td>
     <td align="center"> 3 </td>
