@@ -3861,6 +3861,24 @@ El dispositivo embebido (`AcuaNodeDevice::sendToEdge`) envía cada lectura media
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+- **Backend Desplegado (Azure):**
+Se utilizó Azure, Aplicación Web, para desplegar el backend con las correcciones e integraciones finales del Sprint 3 (soporte para ingesta desde el Edge API, ajustes de CORS y migración de esquema para el campo ICA).
+
+![yaku-backend-azure-sprint3](./assets/sprint3/despliegue1.png)
+
+**Despliegue de DB**<br>
+![yaku-backend-azure-sprint3](./assets/sprint3/despliegue2.png)
+
+<br>
+
+- **Frontend Desplegado (Azure):**
+Se utilizó Azure, Aplicación Web Estática, para desplegar el frontend administrativo actualizado con la conexión a las métricas reales de telemetría provenientes del Edge API.
+
+![yaku-backend-azure-sprint3](./assets/sprint3/despliegue3.png)
+
+
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 En esta sección se presentan los gráficos de contribuciones correspondientes al Sprint 3, extraídos directamente desde GitHub. Estos gráficos reflejan la actividad del equipo durante el período, mostrando la cantidad de commits, merges y participación por cada desarrollador en los nuevos repositorios incorporados (Edge API) y en el repositorio del Backend, evidenciando la colaboración durante la fase de integración IoT.
